@@ -59,10 +59,10 @@ const kinds: Array<string> = [
 
 export const StateSheetStory: Story = {
     name: "StateSheet",
-    render: (args) => {
+    render: (args: any) => {
         return (
             <StateSheet rows={rows} columns={columns} title="Category / Kind">
-                {({props, className, name}) => (
+                {({props, className, name}: any) => (
                     <Pill {...args} {...props} className={className} key={name}>
                         {props.kind}
                     </Pill>
@@ -91,10 +91,10 @@ const sizes = [
 ];
 
 export const Sizes: Story = {
-    render: (args) => {
+    render: (args: any) => {
         return (
             <AllVariants rows={rows} columns={sizes} title="Type / Size">
-                {({props}) => (
+                {({props}: any) => (
                     <View style={{gap: sizing.size_160, flexDirection: "row"}}>
                         <View style={{gap: sizing.size_160}}>
                             {kinds.map((kind, index) => (

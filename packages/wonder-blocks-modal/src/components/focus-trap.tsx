@@ -51,14 +51,12 @@ export default class FocusTrap extends React.Component<Props> {
             return;
         }
 
-        // eslint-disable-next-line import/no-deprecated
-        const modalRoot = ReactDOM.findDOMNode(node);
-        if (!modalRoot) {
+        if (!node) {
             throw new Error(
                 "Assertion error: modal root should exist after mount",
             );
         }
-        this.modalRoot = modalRoot;
+        this.modalRoot = node;
     };
 
     /**

@@ -97,7 +97,7 @@ export default {
  * weight via props. Defaults to `size="large"` and `weight="bold"`.
  */
 export const Default: StoryObj<typeof Heading> = {
-    render: (args) => <Heading {...args} />,
+    render: (args: any) => <Heading {...args} />,
     args: {
         children: "Heading",
         size: "large",

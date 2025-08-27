@@ -207,7 +207,11 @@ const StyledLink = addStyle(Link);
  */
 
 const Clickable = React.forwardRef(function Clickable(
-    props: Props,
+    {
+        light = false,
+        disabled = false,
+        ...props
+    }: Props,
     ref: React.ForwardedRef<
         typeof Link | HTMLAnchorElement | HTMLButtonElement
     >,
@@ -223,7 +227,7 @@ const Clickable = React.forwardRef(function Clickable(
         inRouterContext,
         commonProps,
     ) => {
-        const activeHref = props.href && !props.disabled;
+        const activeHref = props.href && !disabled;
         const useClient =
             inRouterContext &&
             !props.skipClientNav &&
@@ -238,7 +242,7 @@ const Clickable = React.forwardRef(function Clickable(
                     to={props.href}
                     role={props.role}
                     target={props.target || undefined}
-                    aria-disabled={props.disabled ? "true" : "false"}
+                    aria-disabled={disabled ? "true" : "false"}
                     ref={ref as React.Ref<typeof Link>}
                 >
                     {props.children(clickableState)}
@@ -251,7 +255,7 @@ const Clickable = React.forwardRef(function Clickable(
                     href={props.href}
                     role={props.role}
                     target={props.target || undefined}
-                    aria-disabled={props.disabled ? "true" : "false"}
+                    aria-disabled={disabled ? "true" : "false"}
                     ref={ref as React.Ref<HTMLAnchorElement>}
                 >
                     {props.children(clickableState)}
@@ -262,7 +266,7 @@ const Clickable = React.forwardRef(function Clickable(
                 <StyledButton
                     {...commonProps}
                     type="button"
-                    aria-disabled={props.disabled}
+                    aria-disabled={disabled}
                     ref={ref as React.Ref<HTMLButtonElement>}
                 >
                     {props.children(clickableState)}
@@ -287,8 +291,6 @@ const Clickable = React.forwardRef(function Clickable(
         onMouseDown,
         onMouseUp,
         hideDefaultFocusRing,
-        light,
-        disabled,
         tabIndex,
         ...restProps
     } = props;
@@ -361,10 +363,6 @@ const Clickable = React.forwardRef(function Clickable(
     }
 });
 
-Clickable.defaultProps = {
-    light: false,
-    disabled: false,
-};
 
 export default Clickable;
 

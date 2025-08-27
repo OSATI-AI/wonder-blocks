@@ -136,7 +136,7 @@ const Accordion = React.forwardRef(function Accordion(
     //  with `aria-disabled` and visually impaired users should still know
     //  they are there. Screenreaders will read them out as disabled, the
     //  status will still be clear to users.
-    const childRefs: Array<React.RefObject<HTMLButtonElement>> = Array(
+    const childRefs: Array<React.RefObject<HTMLButtonElement | null>> = Array(
         children.length,
     ).fill(null);
 

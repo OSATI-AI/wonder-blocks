@@ -354,8 +354,9 @@ const MultiSelect = (props: Props) => {
     };
 
     const handleSelectAll = () => {
-        const allChildren = React.Children.toArray(
-            children,
+        const allChildren = (Array.isArray(children) 
+            ? children 
+            : children ? [children] : []
         ) as Array<React.ReactElement>;
 
         const selected = allChildren
@@ -527,11 +528,9 @@ const MultiSelect = (props: Props) => {
         };
     };
 
-    const handleOpenerRef = (node?: any) => {
-        // eslint-disable-next-line import/no-deprecated
-        const openerElement = ReactDOM.findDOMNode(node) as HTMLElement;
-        setOpenerElement(openerElement);
-    };
+    const handleOpenerRef = useCallback((node: HTMLElement | null) => {
+        setOpenerElement(node);
+    }, []);
 
     const handleSearchTextChanged = (searchText: string) => {
         setSearchText(searchText);
@@ -569,8 +568,9 @@ const MultiSelect = (props: Props) => {
     );
 
     React.useEffect(() => {
-        const optionItems = React.Children.toArray(
-            children,
+        const optionItems = (Array.isArray(children) 
+            ? children 
+            : children ? [children] : []
         ) as OptionItemComponentArray;
         const openerContent = getMenuTextOrNode(optionItems);
         const openerStringValue = maybeGetOpenerStringValue(
@@ -651,7 +651,10 @@ const MultiSelect = (props: Props) => {
     const {clearSearch, filter, noResults, someSelected} = labels;
 
     const allChildren = (
-        React.Children.toArray(children) as Array<
+        (Array.isArray(children) 
+            ? children 
+            : children ? [children] : []
+        ) as Array<
             React.ReactElement<React.ComponentProps<typeof OptionItem>>
         >
     ).filter(Boolean);

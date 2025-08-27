@@ -76,6 +76,8 @@ export default class TooltipAnchor
     extends React.Component<Props, State>
     implements IActiveTrackerSubscriber
 {
+    private anchorRef = React.createRef<Element>();
+    
     _weSetFocusivity: boolean | null | undefined;
     _anchorNode: Element | null | undefined;
     _focused: boolean;
@@ -101,8 +103,7 @@ export default class TooltipAnchor
     }
 
     componentDidMount() {
-        // eslint-disable-next-line import/no-deprecated
-        const anchorNode = ReactDOM.findDOMNode(this);
+        const anchorNode = this.anchorRef.current;
 
         // This should never happen, but we have this check here to make TypeScript
         // happy and ensure that if this does happen, we'll know about it.
@@ -327,6 +328,7 @@ export default class TooltipAnchor
 
         return React.cloneElement(anchorableChildren, {
             "aria-describedby": ariaDescribedBy,
+            ref: this.anchorRef,
         });
     }
 }

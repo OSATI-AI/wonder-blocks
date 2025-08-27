@@ -47,7 +47,7 @@ const actionTypes = [
 
 export const StateSheetStory: StoryComponentType = {
     name: "StateSheet",
-    render: (args) => {
+    render: (args: any) => {
         const columns = [
             ...actionTypes,
             {name: "Disabled", props: {disabled: true}},
@@ -59,7 +59,7 @@ export const StateSheetStory: StoryComponentType = {
                 columns={columns}
                 title="Kind / Action Type"
             >
-                {({props, className, name}) => (
+                {({props, className, name}: any) => (
                     <IconButton
                         {...args}
                         {...props}
@@ -83,10 +83,10 @@ const sizes = [
 ];
 
 export const Sizes: StoryComponentType = {
-    render: (args) => {
+    render: (args: any) => {
         return (
             <AllVariants rows={sizes} columns={kinds} title="Size / Kind">
-                {({props}) => (
+                {({props}: any) => (
                     <View style={{gap: sizing.size_160, flexDirection: "row"}}>
                         {actionTypes.map(({props: {actionType}}, index) => (
                             <IconButton

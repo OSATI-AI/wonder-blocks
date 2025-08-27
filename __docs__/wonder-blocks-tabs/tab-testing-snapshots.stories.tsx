@@ -87,10 +87,10 @@ export default meta;
 
 export const StateSheetStory: Story = {
     name: "StateSheet",
-    render: (args) => (
+    render: (args: any) => (
         <>
             <StateSheet rows={rows} columns={columns} title="">
-                {({props, className}) => (
+                {({props, className}: any) => (
                     <div role="tablist" className={className}>
                         <Tab {...args} {...props} />
                     </div>
@@ -98,7 +98,7 @@ export const StateSheetStory: Story = {
             </StateSheet>
             <div dir="rtl">
                 <StateSheet rows={rtlRows} columns={columns} title="">
-                    {({props, className}) => (
+                    {({props, className}: any) => (
                         <div role="tablist" className={className}>
                             <Tab {...args} {...props} />
                         </div>

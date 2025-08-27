@@ -142,7 +142,7 @@ export const Text: StoryComponentType = () => {
             label="Name"
             description="Please enter your name"
             value={value}
-            onChange={(newValue) => setValue(newValue)}
+            onChange={(newValue: any) => setValue(newValue)}
             placeholder="Name"
             onKeyDown={handleKeyDown}
         />
@@ -583,7 +583,7 @@ CustomStyle.parameters = {
 };
 
 export const WithMarkup: StoryComponentType = {
-    render: (args) => {
+    render: (args: any) => {
         return (
             <LabeledTextField
                 {...args}
@@ -612,7 +612,7 @@ WithMarkup.parameters = {
 
 export const Ref: StoryComponentType = () => {
     const [value, setValue] = React.useState("Khan");
-    const inputRef: React.RefObject<HTMLInputElement> = React.createRef();
+    const inputRef = React.createRef<HTMLInputElement>();
 
     const handleKeyDown = (event: React.KeyboardEvent<HTMLInputElement>) => {
         if (event.key === "Enter") {

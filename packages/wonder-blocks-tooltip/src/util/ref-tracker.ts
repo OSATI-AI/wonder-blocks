@@ -23,9 +23,8 @@ export default class RefTracker {
             // We only want to update the reference if it is
             // actually changed. Otherwise, we can trigger another render that
             // would then update the reference again and just keep looping.
-            // eslint-disable-next-line import/no-deprecated
-            const domNode = ReactDOM.findDOMNode(ref);
-            if (domNode instanceof HTMLElement && domNode !== this._lastRef) {
+            const domNode = (ref instanceof HTMLElement) ? ref : null;
+            if (domNode && domNode !== this._lastRef) {
                 this._lastRef = domNode;
                 this._targetFn?.(domNode);
             }

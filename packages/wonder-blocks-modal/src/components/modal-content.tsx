@@ -7,7 +7,7 @@ import theme from "../theme";
 
 type Props = {
     /** Should the content scroll on overflow, or just expand. */
-    scrollOverflow: boolean;
+    scrollOverflow?: boolean;
     /** The contents of the ModalContent */
     children: React.ReactNode;
     /** Optional styling to apply to the contents. */
@@ -17,8 +17,11 @@ type Props = {
 /**
  * The Modal content included after the header
  */
-function ModalContent(props: Props) {
-    const {scrollOverflow, style, children} = props;
+function ModalContent({
+    scrollOverflow = true,
+    style,
+    children
+}: Props) {
 
     return (
         <View style={[styles.wrapper, scrollOverflow && styles.scrollOverflow]}>
@@ -64,8 +67,5 @@ const styles = StyleSheet.create({
     },
 });
 
-ModalContent.defaultProps = {
-    scrollOverflow: true,
-};
 
 export default ModalContent;

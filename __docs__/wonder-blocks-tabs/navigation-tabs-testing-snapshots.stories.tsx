@@ -196,10 +196,10 @@ export default meta;
 
 export const StateSheetStory: Story = {
     name: "StateSheet",
-    render: (args) => (
+    render: (args: any) => (
         <>
             <StateSheet rows={rows} columns={columns} title="">
-                {({props, name}) => (
+                {({props, name}: any) => (
                     <View style={styles.container}>
                         <NavigationTabs
                             {...args}
@@ -211,7 +211,7 @@ export const StateSheetStory: Story = {
             </StateSheet>
             <div dir="rtl">
                 <StateSheet rows={rtlRows} columns={columns}>
-                    {({props, name}) => (
+                    {({props, name}: any) => (
                         <View style={styles.container}>
                             <NavigationTabs
                                 {...args}
@@ -230,9 +230,9 @@ export const StateSheetStory: Story = {
 };
 
 export const Zoom: Story = {
-    render: (args) => (
+    render: (args: any) => (
         <StateSheet rows={rows} columns={columns} layout="list">
-            {({props, name}) => (
+            {({props, name}: any) => (
                 <View style={styles.container}>
                     <NavigationTabs {...args} {...props} aria-label={name} />
                 </View>

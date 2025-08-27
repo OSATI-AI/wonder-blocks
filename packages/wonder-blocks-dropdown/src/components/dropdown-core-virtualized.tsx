@@ -50,6 +50,8 @@ type State = {
  * dynamically calculates the item height depending on the type
  */
 class DropdownCoreVirtualized extends React.Component<Props, State> {
+    private containerRef = React.createRef<HTMLElement>();
+
     constructor(props: Props) {
         super(props);
 
@@ -87,11 +89,7 @@ class DropdownCoreVirtualized extends React.Component<Props, State> {
      * Update container width
      */
     setWidth() {
-        // eslint-disable-next-line import/no-deprecated
-        const rootNode = ReactDOM.findDOMNode(this) as
-            | HTMLElement
-            | null
-            | undefined;
+        const rootNode = this.containerRef.current;
         const parentNode = rootNode?.parentElement;
 
         // after the non-virtualized items are rendered, we get the container
@@ -141,8 +139,10 @@ class DropdownCoreVirtualized extends React.Component<Props, State> {
 
         // 1. get the children opaque data structure to sort each item by its
         //    label length
-        const longestItems = React.Children.toArray(allComponents)
-            .filter(Boolean)
+        const longestItems = (Array.isArray(allComponents) 
+            ? allComponents 
+            : allComponents ? [allComponents] : []
+        ).filter(Boolean)
             .sort((a, b) => {
                 // 2. only sort elements that contain a `label` prop
                 // @ts-expect-error [FEI-5019] - TS2339 - Property 'props' does not exist on type 'ReactChild | ReactFragment | ReactPortal'. | TS2339 - Property 'props' does not exist on type 'ReactChild | ReactFragment | ReactPortal'.
@@ -159,11 +159,15 @@ class DropdownCoreVirtualized extends React.Component<Props, State> {
 
         // Append longest items to calculate the container width.
         // We need to hide these sorted elements to avoid any FOUC.
-        return longestItems.map((item) =>
-            // @ts-expect-error [FEI-5019] - TS2769 - No overload matches this call.
-            React.cloneElement(item, {
-                style: {visibility: "hidden"},
-            }),
+        return (
+            <div ref={this.containerRef}>
+                {longestItems.map((item) =>
+                    // @ts-expect-error [FEI-5019] - TS2769 - No overload matches this call.
+                    React.cloneElement(item, {
+                        style: {visibility: "hidden"},
+                    }),
+                )}
+            </div>
         );
     }
 

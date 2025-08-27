@@ -60,10 +60,10 @@ const columns = [
 
 export const StateSheetStory: Story = {
     name: "StateSheet",
-    render: (args) => {
+    render: (args: any) => {
         return (
             <StateSheet rows={rows} columns={columns} title="Status / Variant">
-                {({props, className}) => (
+                {({props, className}: any) => (
                     <CompactCell {...args} {...props} className={className} />
                 )}
             </StateSheet>

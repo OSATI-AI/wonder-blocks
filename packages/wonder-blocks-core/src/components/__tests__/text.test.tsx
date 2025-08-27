@@ -5,7 +5,7 @@ import Text from "../text";
 describe("Text", () => {
     test("forwards the ref to the heading element", () => {
         // Arrange
-        const ref: React.RefObject<HTMLSpanElement> = React.createRef();
+        const ref = React.createRef<HTMLSpanElement>();
 
         // Act
         render(<Text ref={ref}>Some text</Text>);

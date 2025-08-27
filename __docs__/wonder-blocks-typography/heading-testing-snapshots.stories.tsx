@@ -40,10 +40,10 @@ const columns = weights.map((weight) => ({
 
 export const AllVariantsStory: StoryComponentType = {
     name: "All Variants",
-    render: (args) => {
+    render: (args: any) => {
         return (
             <AllVariants rows={rows} columns={columns} title="Size / Weight">
-                {({props, name}) => (
+                {({props, name}: any) => (
                     <View key={name} style={{gap: sizing.size_120}}>
                         <Heading {...props}>{name}</Heading>
                     </View>

@@ -84,7 +84,7 @@ export const Default: StoryComponentType = {
  * will include the id of the element for the corresponding prop.
  */
 export const HelperText: StoryComponentType = {
-    render: (args) => {
+    render: (args: any) => {
         return (
             <View style={{gap: sizing.size_240}}>
                 <Heading>A field with an error message</Heading>
@@ -137,7 +137,7 @@ export const ContextLabel: StoryComponentType = {
         field: <TextField value="" onChange={() => {}} />,
         label: "Label",
     },
-    render: (args) => {
+    render: (args: any) => {
         return (
             <View style={{gap: sizing.size_240}}>
                 <LabeledField {...args} contextLabel="Context label" />
@@ -444,7 +444,7 @@ export const Fields: StoryComponentType = {
         description: "Helpful description text.",
         contextLabel: "Context label",
     },
-    render: (args) => {
+    render: (args: any) => {
         return (
             <View style={{gap: sizing.size_240}}>
                 <Heading>Default</Heading>
@@ -494,7 +494,7 @@ export const Required: AllFieldsStoryComponentType = {
         showSubmitButtonInStory: true,
         contextLabel: "required",
     },
-    render: (args) => (
+    render: (args: any) => (
         <AllFields {...args} required="Custom required error message" />
     ),
 };

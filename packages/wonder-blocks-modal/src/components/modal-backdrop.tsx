@@ -35,9 +35,10 @@ type Props = {
  * `onClose` prop is already provided, the two are merged.
  */
 export default class ModalBackdrop extends React.Component<Props> {
+    private backdropRef = React.createRef<HTMLElement>();
+
     componentDidMount() {
-        // eslint-disable-next-line import/no-deprecated
-        const node: HTMLElement = ReactDOM.findDOMNode(this) as any;
+        const node = this.backdropRef.current;
         if (!node) {
             return;
         }
@@ -68,10 +69,7 @@ export default class ModalBackdrop extends React.Component<Props> {
             return null;
         }
 
-        // eslint-disable-next-line import/no-deprecated
-        return ReactDOM.findDOMNode(
-            node.querySelector(`#${initialFocusId}`),
-        ) as any;
+        return node.querySelector(`#${initialFocusId}`) as HTMLElement;
     }
 
     /**
@@ -95,10 +93,7 @@ export default class ModalBackdrop extends React.Component<Props> {
     _getDialogElement(node: HTMLElement): HTMLElement {
         // If no focusable elements are found,
         // the dialog content element itself will receive focus.
-        // eslint-disable-next-line import/no-deprecated
-        const dialogElement: HTMLElement = ReactDOM.findDOMNode(
-            node.querySelector('[role="dialog"]'),
-        ) as any;
+        const dialogElement = node.querySelector('[role="dialog"]') as HTMLElement;
         // add tabIndex to make the Dialog focusable
         dialogElement.tabIndex = -1;
 
@@ -136,6 +131,7 @@ export default class ModalBackdrop extends React.Component<Props> {
 
         return (
             <View
+                ref={this.backdropRef}
                 style={styles.modalPositioner}
                 onMouseDown={this.handleMouseDown}
                 onMouseUp={this.handleMouseUp}

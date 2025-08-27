@@ -226,11 +226,7 @@ export default class Popover extends React.Component<Props, State> {
 
         // Focus on the specified element after dismissing the popover.
         if (closedFocusId) {
-            // eslint-disable-next-line import/no-deprecated
-            const focusElement = ReactDOM.findDOMNode(
-                document.getElementById(closedFocusId),
-            ) as any;
-
+            const focusElement = document.getElementById(closedFocusId);
             focusElement?.focus();
             return;
         }

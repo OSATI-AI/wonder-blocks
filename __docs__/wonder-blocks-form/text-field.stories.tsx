@@ -547,7 +547,7 @@ export const InstantValidation: StoryComponentType = {
     args: {
         validate: validateEmail,
     },
-    render: (args) => {
+    render: (args: any) => {
         return (
             <View style={{gap: spacing.small_12}}>
                 <ControlledTextField
@@ -664,7 +664,7 @@ CustomStyle.parameters = {
 
 export const Ref: StoryComponentType = () => {
     const [value, setValue] = React.useState("");
-    const inputRef: React.RefObject<HTMLInputElement> = React.createRef();
+    const inputRef = React.createRef<HTMLInputElement>();
 
     const handleChange = (newValue: string) => {
         setValue(newValue);

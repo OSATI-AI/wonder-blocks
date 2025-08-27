@@ -62,10 +62,10 @@ export default meta;
 
 export const StateSheetStory: Story = {
     name: "StateSheet",
-    render: (args) => {
+    render: (args: any) => {
         return (
             <StateSheet rows={rows} columns={columns} title="Status / Variant">
-                {({props, className, name}) => (
+                {({props, className, name}: any) => (
                     <View
                         key={name}
                         style={{

@@ -177,7 +177,7 @@ const generateStateSheet = (
                 title="States"
                 layout={layout}
             >
-                {({props, name, className}) => (
+                {({props, name, className}: any) => (
                     <View className={className}>
                         <Tabs
                             {...args}
@@ -195,7 +195,7 @@ const generateStateSheet = (
                     title="States"
                     layout={layout}
                 >
-                    {({props, name, className}) => (
+                    {({props, name, className}: any) => (
                         <View className={className}>
                             <Tabs
                                 {...args}
@@ -213,7 +213,7 @@ const generateStateSheet = (
 
 export const StateSheetStory: Story = {
     name: "StateSheet",
-    render: (args) => {
+    render: (args: any) => {
         return generateStateSheet(args, "responsive");
     },
     parameters: {
@@ -222,7 +222,7 @@ export const StateSheetStory: Story = {
 };
 
 export const Zoom: Story = {
-    render: (args) => {
+    render: (args: any) => {
         return generateStateSheet(args, "list");
     },
     globals: {
@@ -347,7 +347,7 @@ const scenarios = [
 ];
 
 export const Scenarios: Story = {
-    render: (args) => {
+    render: (args: any) => {
         return (
             <ScenariosLayout scenarios={scenarios}>
                 {(props, name) => (

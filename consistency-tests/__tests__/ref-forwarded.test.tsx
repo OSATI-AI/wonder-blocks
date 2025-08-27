@@ -80,7 +80,7 @@ describe("Typography elements", () => {
 describe("Accordion elements", () => {
     test("Accordion forwards ref", () => {
         // Arrange
-        const ref: React.RefObject<HTMLUListElement> = React.createRef();
+        const ref = React.createRef<HTMLUListElement>();
 
         // Act
         render(
@@ -104,7 +104,7 @@ describe("Accordion elements", () => {
 
     test("AccordionSection forwards ref", () => {
         // Arrange
-        const ref: React.RefObject<HTMLButtonElement> = React.createRef();
+        const ref = React.createRef<HTMLButtonElement>();
 
         // Act
         render(
@@ -138,7 +138,7 @@ describe("Breadcrumbs elements", () => {
 
     test("BreadcrumbsItem forwards ref", () => {
         // Arrange
-        const ref: React.RefObject<HTMLLIElement> = React.createRef();
+        const ref = React.createRef<HTMLLIElement>();
 
         // Act
         render(<BreadcrumbsItem ref={ref}>Page name</BreadcrumbsItem>);
@@ -153,7 +153,7 @@ describe("Link", () => {
     // it skips client navigation.
     test("forwards ref to an HTMLAnchorElement", () => {
         // Arrange
-        const ref: React.RefObject<HTMLAnchorElement> = React.createRef();
+        const ref = React.createRef<HTMLAnchorElement>();
 
         // Act
         render(
@@ -228,7 +228,7 @@ describe("View elements", () => {
             render(
                 <View
                     tag={tag}
-                    ref={(node) => (ref = ReactDOM.findDOMNode(node))}
+                    ref={(node) => (ref = node as any)}
                 />,
             );
 
@@ -244,7 +244,7 @@ describe("Button", () => {
     // Renders a button (<button>) element if it doesn't have an href.
     test("forwards ref to an HTMLButtonElement", () => {
         // Arrange
-        const ref: React.RefObject<HTMLButtonElement> = React.createRef();
+        const ref = React.createRef<HTMLButtonElement>();
 
         // Act
         render(<Button ref={ref}>This is a button</Button>);
@@ -257,7 +257,7 @@ describe("Button", () => {
     // it skips client navigation.
     test("forwards ref to an HTMLAnchorElement", () => {
         // Arrange
-        const ref: React.RefObject<HTMLAnchorElement> = React.createRef();
+        const ref = React.createRef<HTMLAnchorElement>();
 
         // Act
         render(
@@ -296,7 +296,7 @@ describe("IconButton", () => {
     // Renders a button (<button>) element if it doesn't have an href.
     test("forwards ref to an HTMLButtonElement", () => {
         // Arrange
-        const ref: React.RefObject<HTMLButtonElement> = React.createRef();
+        const ref = React.createRef<HTMLButtonElement>();
 
         // Act
         render(<IconButton ref={ref} icon={plus} />);
@@ -309,7 +309,7 @@ describe("IconButton", () => {
     // it skips client navigation.
     test("forwards ref to an HTMLAnchorElement", () => {
         // Arrange
-        const ref: React.RefObject<HTMLAnchorElement> = React.createRef();
+        const ref = React.createRef<HTMLAnchorElement>();
 
         // Act
         render(
@@ -359,7 +359,7 @@ describe("Form elements", () => {
         ${Choice}   | ${"Choice"}
     `("$name forwards ref to an HTMLInputElement", ({Component}: any) => {
         // Arrange
-        const ref: React.RefObject<HTMLInputElement> = React.createRef();
+        const ref = React.createRef<HTMLInputElement>();
 
         // Act
         render(<Component ref={ref} checked={false} onChange={() => {}} />);
@@ -370,7 +370,7 @@ describe("Form elements", () => {
 
     test("CheckboxGroup forwards ref to an HTMLFieldSetElement", () => {
         // Arrange
-        const ref: React.RefObject<HTMLFieldSetElement> = React.createRef();
+        const ref = React.createRef<HTMLFieldSetElement>();
 
         // Act
         render(
@@ -391,7 +391,7 @@ describe("Form elements", () => {
 
     test("RadioGroup forwards ref to an HTMLFieldSetElement", () => {
         // Arrange
-        const ref: React.RefObject<HTMLFieldSetElement> = React.createRef();
+        const ref = React.createRef<HTMLFieldSetElement>();
 
         // Act
         render(
@@ -413,7 +413,7 @@ describe("Form elements", () => {
     describe("Switch", () => {
         test("forwards ref to an HTMLInputElement", () => {
             // Arrange
-            const ref: React.RefObject<HTMLInputElement> = React.createRef();
+            const ref = React.createRef<HTMLInputElement>();
 
             // Act
             render(<Switch checked={false} ref={ref} />, {
@@ -429,7 +429,7 @@ describe("Form elements", () => {
 describe("PhosphorIcon", () => {
     test("forwards ref to an HTMLSpanElement", () => {
         // Arrange
-        const ref: React.RefObject<HTMLSpanElement> = React.createRef();
+        const ref = React.createRef<HTMLSpanElement>();
 
         // Act
         render(<PhosphorIcon ref={ref} icon={plus} />);
@@ -442,7 +442,7 @@ describe("PhosphorIcon", () => {
 describe("Pill", () => {
     test("forwards ref to an HTMLElement when there's no onClick", () => {
         // Arrange
-        const ref: React.RefObject<HTMLElement> = React.createRef();
+        const ref = React.createRef<HTMLElement>();
 
         // Act
         render(<Pill ref={ref}>This is a pill</Pill>);
@@ -453,7 +453,7 @@ describe("Pill", () => {
 
     test("forwards ref to an HTMLButtonElement when there's an onClick", () => {
         // Arrange
-        const ref: React.RefObject<HTMLButtonElement> = React.createRef();
+        const ref = React.createRef<HTMLButtonElement>();
 
         // Act
         render(

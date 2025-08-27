@@ -269,7 +269,7 @@ ClientSideNavigation.parameters = {
 };
 
 export const Ref: StoryComponentType = () => {
-    const clickableRef: React.RefObject<HTMLAnchorElement> = React.createRef();
+    const clickableRef = React.createRef<HTMLAnchorElement>();
     const handleSubmit = () => {
         if (clickableRef.current) {
             clickableRef.current.focus();

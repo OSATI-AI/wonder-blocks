@@ -91,10 +91,10 @@ const stateSheetRows = [
 ];
 export const StateSheetStory: StoryComponentType = {
     name: "StateSheet",
-    render: (args) => {
+    render: (args: any) => {
         return (
             <StateSheet rows={stateSheetRows} columns={columns}>
-                {({props, name}) => (
+                {({props, name}: any) => (
                     <View key={name} style={{gap: sizing.size_120}}>
                         {kinds.map((kind) => (
                             <Banner {...props} key={kind} kind={kind} />
@@ -111,14 +111,14 @@ export const StateSheetStory: StoryComponentType = {
 
 export const AllVariantsStory: StoryComponentType = {
     name: "All Variants",
-    render: (args) => {
+    render: (args: any) => {
         return (
             <AllVariants
                 rows={rows}
                 columns={columns}
                 title="Kind / Action Type"
             >
-                {({props, name}) => (
+                {({props, name}: any) => (
                     <View key={name} style={{gap: sizing.size_120}}>
                         <Banner {...props} text={longText} />
                         <Banner
@@ -277,7 +277,7 @@ const scenarios = [
 ];
 
 export const Scenarios: StoryComponentType = {
-    render: (args) => {
+    render: (args: any) => {
         return (
             <ScenariosLayout scenarios={scenarios}>
                 {(props, name) => (

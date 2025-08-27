@@ -87,10 +87,10 @@ export function StateSheet({
                 title={title}
                 layout={layout}
             >
-                {({props, name}) => {
+                {({props, name}: any) => {
                     return (
                         <View style={[styles.container]}>
-                            {states.map(({className, name: stateName}) => (
+                            {states.map(({className, name: stateName}: any) => (
                                 <View
                                     key={stateName}
                                     className={className}

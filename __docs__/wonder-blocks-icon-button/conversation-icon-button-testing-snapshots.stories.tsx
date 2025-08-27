@@ -44,14 +44,14 @@ const actionTypes = [
 
 export const StateSheetStory: StoryComponentType = {
     name: "StateSheet",
-    render: (args) => {
+    render: (args: any) => {
         return (
             <StateSheet
                 rows={kinds}
                 columns={actionTypes}
                 title="Kind / Action Type"
             >
-                {({props, className, name}) => (
+                {({props, className, name}: any) => (
                     <ConversationIconButton
                         {...args}
                         {...props}

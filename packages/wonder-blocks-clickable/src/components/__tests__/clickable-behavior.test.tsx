@@ -2,8 +2,7 @@
 /* eslint-disable max-lines */
 import * as React from "react";
 import {render, screen, fireEvent, waitFor} from "@testing-library/react";
-import {MemoryRouter} from "react-router-dom";
-import {CompatRouter, Route, Routes} from "react-router-dom-v5-compat";
+import {MemoryRouter, Route, Routes} from "react-router-dom";
 import {userEvent} from "@testing-library/user-event";
 import {keys} from "@khanacademy/wonder-blocks-core";
 
@@ -902,32 +901,30 @@ describe("ClickableBehavior", () => {
             // Arrange
             render(
                 <MemoryRouter>
-                    <CompatRouter>
-                        <div>
-                            <ClickableBehaviorWithRouter
-                                href="/foo"
-                                onClick={(e: any) => {}}
-                                role="checkbox"
-                            >
-                                {(state: any, childrenProps: any) => {
-                                    // The base element here doesn't matter in this testing
-                                    // environment, but the simulated events in the test are in
-                                    // line with what browsers do for this element.
-                                    return (
-                                        <button {...childrenProps}>
-                                            label
-                                        </button>
-                                    );
-                                }}
-                            </ClickableBehaviorWithRouter>
-                            <Routes>
-                                <Route
-                                    path="/foo"
-                                    element={<div>Hello, world!</div>}
-                                />
-                            </Routes>
-                        </div>
-                    </CompatRouter>
+                    <div>
+                        <ClickableBehaviorWithRouter
+                            href="/foo"
+                            onClick={(e: any) => {}}
+                            role="checkbox"
+                        >
+                            {(state: any, childrenProps: any) => {
+                                // The base element here doesn't matter in this testing
+                                // environment, but the simulated events in the test are in
+                                // line with what browsers do for this element.
+                                return (
+                                    <button {...childrenProps}>
+                                        label
+                                    </button>
+                                );
+                            }}
+                        </ClickableBehaviorWithRouter>
+                        <Routes>
+                            <Route
+                                path="/foo"
+                                element={<div>Hello, world!</div>}
+                            />
+                        </Routes>
+                    </div>
                 </MemoryRouter>,
             );
 
@@ -945,7 +942,6 @@ describe("ClickableBehavior", () => {
                 // Arrange
                 render(
                     <MemoryRouter>
-                        <CompatRouter>
                             <div>
                                 <ClickableBehaviorWithRouter
                                     href="/foo"
@@ -973,7 +969,6 @@ describe("ClickableBehavior", () => {
                                     />
                                 </Routes>
                             </div>
-                        </CompatRouter>
                     </MemoryRouter>,
                 );
 
@@ -994,7 +989,6 @@ describe("ClickableBehavior", () => {
                 // Arrange
                 render(
                     <MemoryRouter>
-                        <CompatRouter>
                             <div>
                                 <ClickableBehaviorWithRouter
                                     href="/foo"
@@ -1022,7 +1016,6 @@ describe("ClickableBehavior", () => {
                                     />
                                 </Routes>
                             </div>
-                        </CompatRouter>
                     </MemoryRouter>,
                 );
 
@@ -1037,7 +1030,6 @@ describe("ClickableBehavior", () => {
                 // Arrange
                 render(
                     <MemoryRouter>
-                        <CompatRouter>
                             <div>
                                 <ClickableBehaviorWithRouter
                                     href="/foo"
@@ -1063,7 +1055,6 @@ describe("ClickableBehavior", () => {
                                     />
                                 </Routes>
                             </div>
-                        </CompatRouter>
                     </MemoryRouter>,
                 );
 
@@ -1081,7 +1072,6 @@ describe("ClickableBehavior", () => {
                 const safeWithNavMock = jest.fn();
                 render(
                     <MemoryRouter>
-                        <CompatRouter>
                             <div>
                                 <ClickableBehaviorWithRouter
                                     href="/foo"
@@ -1110,7 +1100,6 @@ describe("ClickableBehavior", () => {
                                     />
                                 </Routes>
                             </div>
-                        </CompatRouter>
                     </MemoryRouter>,
                 );
 
@@ -1128,7 +1117,6 @@ describe("ClickableBehavior", () => {
             // Arrange
             render(
                 <MemoryRouter>
-                    <CompatRouter>
                         <div>
                             <ClickableBehaviorWithRouter
                                 href="/foo"
@@ -1154,7 +1142,6 @@ describe("ClickableBehavior", () => {
                                 />
                             </Routes>
                         </div>
-                    </CompatRouter>
                 </MemoryRouter>,
             );
 
@@ -1171,7 +1158,6 @@ describe("ClickableBehavior", () => {
             // Arrange
             render(
                 <MemoryRouter>
-                    <CompatRouter>
                         <div>
                             <ClickableBehaviorWithRouter
                                 href="/foo"
@@ -1196,7 +1182,6 @@ describe("ClickableBehavior", () => {
                                 />
                             </Routes>
                         </div>
-                    </CompatRouter>
                 </MemoryRouter>,
             );
 
@@ -1312,7 +1297,6 @@ describe("ClickableBehavior", () => {
             // Arrange
             render(
                 <MemoryRouter initialEntries={["/"]}>
-                    <CompatRouter>
                         <ClickableBehavior
                             disabled={false}
                             href="https://www.khanacademy.org"
@@ -1330,7 +1314,6 @@ describe("ClickableBehavior", () => {
                                 );
                             }}
                         </ClickableBehavior>
-                    </CompatRouter>
                 </MemoryRouter>,
             );
 
@@ -1350,7 +1333,6 @@ describe("ClickableBehavior", () => {
             const safeWithNavMock = jest.fn().mockResolvedValue();
             render(
                 <MemoryRouter initialEntries={["/"]}>
-                    <CompatRouter>
                         <ClickableBehavior
                             disabled={false}
                             href="https://www.khanacademy.org"
@@ -1369,7 +1351,6 @@ describe("ClickableBehavior", () => {
                                 );
                             }}
                         </ClickableBehavior>
-                    </CompatRouter>
                 </MemoryRouter>,
             );
 
@@ -1389,7 +1370,6 @@ describe("ClickableBehavior", () => {
             const safeWithNavMock = jest.fn().mockResolvedValue();
             render(
                 <MemoryRouter initialEntries={["/"]}>
-                    <CompatRouter>
                         <ClickableBehavior
                             disabled={false}
                             href="https://www.khanacademy.org"
@@ -1408,7 +1388,6 @@ describe("ClickableBehavior", () => {
                                 );
                             }}
                         </ClickableBehavior>
-                    </CompatRouter>
                 </MemoryRouter>,
             );
 

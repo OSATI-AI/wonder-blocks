@@ -84,7 +84,7 @@ export default {
  * weight via props. Defaults to `size="medium"` and `weight="medium"`.
  */
 export const Default: StoryObj<typeof BodyText> = {
-    render: (args) => <BodyText {...args} />,
+    render: (args: any) => <BodyText {...args} />,
     args: {
         children: "BodyText",
         size: "medium",

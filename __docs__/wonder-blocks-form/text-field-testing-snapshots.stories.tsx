@@ -51,10 +51,10 @@ const columns = [
 
 export const StateSheetStory: Story = {
     name: "StateSheet",
-    render: (args) => {
+    render: (args: any) => {
         return (
             <StateSheet rows={rows} columns={columns}>
-                {({props, className, name}) => (
+                {({props, className, name}: any) => (
                     <LabeledField
                         label="Text Field"
                         field={
@@ -79,7 +79,7 @@ export const StateSheetStory: Story = {
  * What the component looks like at rest with different combinations of props.
  */
 export const Combinations: Story = {
-    render: (args) => {
+    render: (args: any) => {
         return (
             <AllVariants
                 rows={[
@@ -92,7 +92,7 @@ export const Combinations: Story = {
                 ]}
                 columns={columns}
             >
-                {({props, className, name}) => (
+                {({props, className, name}: any) => (
                     <LabeledField
                         label="Text Area"
                         field={

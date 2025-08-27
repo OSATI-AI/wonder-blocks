@@ -188,7 +188,10 @@ export default class ActionMenu extends React.Component<Props, State> {
 
     getMenuItems(): Array<DropdownItem> {
         const {children, selectedValues} = this.props;
-        const allChildren = React.Children.toArray(children).filter(Boolean);
+        const allChildren = (Array.isArray(children) 
+            ? children 
+            : children ? [children] : []
+        ).filter(Boolean);
 
         // verify if there's at least one OptionItem element to indent the
         // possible Action items
@@ -241,9 +244,8 @@ export default class ActionMenu extends React.Component<Props, State> {
         });
     }
 
-    handleOpenerRef: (node?: any) => void = (node) => {
-        // eslint-disable-next-line import/no-deprecated
-        this.openerElement = ReactDOM.findDOMNode(node) as HTMLElement;
+    handleOpenerRef = (node: HTMLElement | null) => {
+        this.openerElement = node;
     };
 
     handleClick: (e: React.SyntheticEvent) => void = (e) => {

@@ -421,11 +421,9 @@ const SingleSelect = (props: Props) => {
         setSearchText(searchText);
     };
 
-    const handleOpenerRef: (node?: any) => void = (node) => {
-        // eslint-disable-next-line import/no-deprecated
-        const openerElement = ReactDOM.findDOMNode(node) as HTMLElement;
-        setOpenerElement(openerElement);
-    };
+    const handleOpenerRef = useCallback((node: HTMLElement | null) => {
+        setOpenerElement(node);
+    }, []);
 
     const handleClick = (e: React.SyntheticEvent) => {
         handleOpenChanged(!open);
@@ -439,8 +437,9 @@ const SingleSelect = (props: Props) => {
 
     // Announce when selectedValue or children changes in the opener
     React.useEffect(() => {
-        const optionItems = React.Children.toArray(
-            children,
+        const optionItems = (Array.isArray(children) 
+            ? children 
+            : children ? [children] : []
         ) as OptionItemComponentArray;
         const selectedItem = optionItems.find(
             (option) => option.props.value === selectedValue,
@@ -463,8 +462,9 @@ const SingleSelect = (props: Props) => {
     ):
         | React.ReactElement<React.ComponentProps<typeof DropdownOpener>>
         | React.ReactElement<React.ComponentProps<typeof SelectOpener>> => {
-        const items = React.Children.toArray(
-            children,
+        const items = (Array.isArray(children) 
+            ? children 
+            : children ? [children] : []
         ) as OptionItemComponentArray;
         const selectedItem = items.find(
             (option) => option.props.value === selectedValue,
@@ -530,7 +530,10 @@ const SingleSelect = (props: Props) => {
     };
 
     const allChildren = (
-        React.Children.toArray(children) as Array<
+        (Array.isArray(children) 
+            ? children 
+            : children ? [children] : []
+        ) as Array<
             React.ReactElement<React.ComponentProps<typeof OptionItem>>
         >
     ).filter(Boolean);

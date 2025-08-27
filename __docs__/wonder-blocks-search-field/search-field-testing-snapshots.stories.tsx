@@ -80,7 +80,7 @@ export const StateSheetStory: StoryComponentType = {
     render: function StateSheetStory() {
         return (
             <StateSheet rows={rows} columns={columns}>
-                {({props, name}) => (
+                {({props, name}: any) => (
                     <LabeledField
                         label={name}
                         field={

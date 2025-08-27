@@ -101,8 +101,8 @@
     "@types/jscodeshift": "^0.12.0",
     "@types/node": "^22.13.0",
     "@types/node-fetch": "^2.6.12",
-    "@types/react": "^18.3.18",
-    "@types/react-dom": "^18.3.5",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
     "@types/react-router": "^5.1.20",
     "@types/react-router-dom": "^5.3.3",
     "@types/react-window": "^1.8.8",
@@ -168,8 +168,8 @@
     "react-window": "catalog:"
   },
   "resolutions": {
-    "@types/react": "18",
-    "@types/react-dom": "18"
+    "@types/react": "19",
+    "@types/react-dom": "19"
   },
   "packageManager": "pnpm@10.1.0+sha512.c89847b0667ddab50396bbbd008a2a43cf3b581efd59cf5d9aa8923ea1fb4b8106c041d540d08acb095037594d73ebc51e1ec89ee40c88b30b8a66c0fae0ac1b",
   "pnpm": {

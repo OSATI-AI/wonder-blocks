@@ -1,6 +1,5 @@
 import * as React from "react";
-import {MemoryRouter} from "react-router-dom";
-import {CompatRouter, Route, Routes} from "react-router-dom-v5-compat";
+import {MemoryRouter, Route, Routes} from "react-router-dom";
 import {render, screen, fireEvent, waitFor} from "@testing-library/react";
 import {userEvent} from "@testing-library/user-event";
 
@@ -19,8 +18,7 @@ describe("Clickable", () => {
         // Arrange
         render(
             <MemoryRouter>
-                <CompatRouter>
-                    <View>
+                <View>
                         <Clickable testId="button" href="/foo">
                             {(eventState: any) => <h1>Click Me!</h1>}
                         </Clickable>
@@ -30,8 +28,7 @@ describe("Clickable", () => {
                                 element={<View>Hello, world!</View>}
                             />
                         </Routes>
-                    </View>
-                </CompatRouter>
+                </View>
             </MemoryRouter>,
         );
 
@@ -46,8 +43,7 @@ describe("Clickable", () => {
         // Arrange
         render(
             <MemoryRouter>
-                <CompatRouter>
-                    <View>
+                <View>
                         <Clickable testId="button" href="/unknown">
                             {(eventState: any) => <h1>Click Me!</h1>}
                         </Clickable>
@@ -57,8 +53,7 @@ describe("Clickable", () => {
                                 element={<View>Hello, world!</View>}
                             />
                         </Routes>
-                    </View>
-                </CompatRouter>
+                </View>
             </MemoryRouter>,
         );
 
@@ -73,8 +68,7 @@ describe("Clickable", () => {
         // Arrange
         render(
             <MemoryRouter>
-                <CompatRouter>
-                    <View>
+                <View>
                         <Clickable testId="button" href="/foo" skipClientNav>
                             {(eventState: any) => <h1>Click Me!</h1>}
                         </Clickable>
@@ -84,8 +78,7 @@ describe("Clickable", () => {
                                 element={<View>Hello, world!</View>}
                             />
                         </Routes>
-                    </View>
-                </CompatRouter>
+                </View>
             </MemoryRouter>,
         );
 
@@ -100,8 +93,7 @@ describe("Clickable", () => {
         // Arrange
         render(
             <MemoryRouter>
-                <CompatRouter>
-                    <View>
+                <View>
                         <Clickable testId="button" href="/foo" disabled={true}>
                             {(eventState: any) => <h1>Click Me!</h1>}
                         </Clickable>
@@ -111,8 +103,7 @@ describe("Clickable", () => {
                                 element={<View>Hello, world!</View>}
                             />
                         </Routes>
-                    </View>
-                </CompatRouter>
+                </View>
             </MemoryRouter>,
         );
 
@@ -159,7 +150,6 @@ describe("Clickable", () => {
         // Arrange
         render(
             <MemoryRouter>
-                <CompatRouter>
                     <div>
                         <Clickable
                             testId="button"
@@ -175,7 +165,6 @@ describe("Clickable", () => {
                             />
                         </Routes>
                     </div>
-                </CompatRouter>
             </MemoryRouter>,
         );
 
@@ -191,7 +180,6 @@ describe("Clickable", () => {
         const safeWithNavMock = jest.fn();
         render(
             <MemoryRouter>
-                <CompatRouter>
                     <div>
                         <Clickable
                             testId="button"
@@ -208,7 +196,6 @@ describe("Clickable", () => {
                             />
                         </Routes>
                     </div>
-                </CompatRouter>
             </MemoryRouter>,
         );
 
@@ -223,7 +210,6 @@ describe("Clickable", () => {
         // Arrange
         render(
             <MemoryRouter>
-                <CompatRouter>
                     <div>
                         <Clickable
                             testId="button"
@@ -239,7 +225,6 @@ describe("Clickable", () => {
                             />
                         </Routes>
                     </div>
-                </CompatRouter>
             </MemoryRouter>,
         );
 
@@ -259,7 +244,6 @@ describe("Clickable", () => {
         const safeWithNavMock = jest.fn();
         render(
             <MemoryRouter>
-                <CompatRouter>
                     <div>
                         <Clickable
                             testId="button"
@@ -276,7 +260,6 @@ describe("Clickable", () => {
                             />
                         </Routes>
                     </div>
-                </CompatRouter>
             </MemoryRouter>,
         );
 
@@ -293,7 +276,6 @@ describe("Clickable", () => {
         // Arrange
         render(
             <MemoryRouter>
-                <CompatRouter>
                     <div>
                         <Clickable
                             testId="button"
@@ -310,7 +292,6 @@ describe("Clickable", () => {
                             />
                         </Routes>
                     </div>
-                </CompatRouter>
             </MemoryRouter>,
         );
 
@@ -327,7 +308,6 @@ describe("Clickable", () => {
         // Arrange
         render(
             <MemoryRouter>
-                <CompatRouter>
                     <div>
                         <Clickable
                             testId="button"
@@ -345,7 +325,6 @@ describe("Clickable", () => {
                             />
                         </Routes>
                     </div>
-                </CompatRouter>
             </MemoryRouter>,
         );
 
@@ -362,7 +341,6 @@ describe("Clickable", () => {
         // Arrange
         render(
             <MemoryRouter>
-                <CompatRouter>
                     <div>
                         <Clickable
                             testId="button"
@@ -379,7 +357,6 @@ describe("Clickable", () => {
                             />
                         </Routes>
                     </div>
-                </CompatRouter>
             </MemoryRouter>,
         );
 
@@ -397,7 +374,6 @@ describe("Clickable", () => {
         const safeWithNavMock = jest.fn();
         render(
             <MemoryRouter>
-                <CompatRouter>
                     <div>
                         <Clickable
                             testId="button"
@@ -414,7 +390,6 @@ describe("Clickable", () => {
                             />
                         </Routes>
                     </div>
-                </CompatRouter>
             </MemoryRouter>,
         );
 
@@ -434,7 +409,6 @@ describe("Clickable", () => {
         const safeWithNavMock = jest.fn();
         render(
             <MemoryRouter>
-                <CompatRouter>
                     <div>
                         <Clickable
                             testId="button"
@@ -452,7 +426,6 @@ describe("Clickable", () => {
                             />
                         </Routes>
                     </div>
-                </CompatRouter>
             </MemoryRouter>,
         );
 
@@ -583,7 +556,7 @@ describe("Clickable", () => {
 
     test("forwards the ref to the clickable button element", async () => {
         // Arrange
-        const ref: React.RefObject<HTMLButtonElement> = React.createRef();
+        const ref = React.createRef<HTMLButtonElement>();
 
         // Act
         render(
@@ -598,7 +571,7 @@ describe("Clickable", () => {
 
     test("forwards the ref to the clickable anchor element ", async () => {
         // Arrange
-        const ref: React.RefObject<HTMLAnchorElement> = React.createRef();
+        const ref = React.createRef<HTMLAnchorElement>();
 
         // Act
         render(

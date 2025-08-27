@@ -249,22 +249,19 @@ export default class FocusManager extends React.Component<Props> {
      * Gets the list of focusable elements inside the popover
      */
     // @ts-expect-error [FEI-5019] - TS2322 - Type '(node: any) => void' is not assignable to type '() => void'.
-    getComponentRootNode: () => void = (node: any) => {
+    getComponentRootNode: () => void = (node: HTMLElement | null) => {
         if (!node) {
             // The component is being umounted
             return;
         }
 
-        // eslint-disable-next-line import/no-deprecated
-        const rootNode: HTMLElement = ReactDOM.findDOMNode(node) as any;
-
-        if (!rootNode) {
+        if (!node) {
             throw new Error(
                 "Assertion error: root node should exist after mount",
             );
         }
 
-        this.rootNode = rootNode as HTMLElement;
+        this.rootNode = node;
     };
 
     /**

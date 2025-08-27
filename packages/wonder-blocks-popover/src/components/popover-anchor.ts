@@ -36,9 +36,10 @@ type Props = AriaProps & {
  * to position the dialog itself.
  */
 export default class PopoverAnchor extends React.Component<Props> {
+    private anchorRef = React.createRef<HTMLElement>();
+
     componentDidMount() {
-        // eslint-disable-next-line import/no-deprecated
-        const anchorNode = ReactDOM.findDOMNode(this) as HTMLElement;
+        const anchorNode = this.anchorRef.current;
 
         if (anchorNode) {
             this.props.anchorRef(anchorNode);
@@ -67,13 +68,17 @@ export default class PopoverAnchor extends React.Component<Props> {
             });
 
             // we clone it to allow injecting the sharedProps defined before
-            return React.cloneElement(renderedChildren, sharedProps);
+            return React.cloneElement(renderedChildren, {
+                ...sharedProps,
+                ref: this.anchorRef,
+            });
         } else {
             // add onClick handler to automatically open the dialog after
             // clicking on this anchor element
             return React.cloneElement(children, {
                 ...children.props,
                 ...sharedProps,
+                ref: this.anchorRef,
                 onClick: children.props.onClick
                     ? // @ts-expect-error [FEI-5019] - TS7006 - Parameter 'e' implicitly has an 'any' type.
                       (e) => {

@@ -256,6 +256,9 @@ class DropdownCore extends React.Component<Props, State> {
     // Keeps a reference of the virtualized list instance
     virtualizedListRef: React.RefObject<List>;
 
+    // Reference to the dropdown container element
+    dropdownRef = React.createRef<HTMLElement>();
+
     handleKeyDownDebounced: (key: string) => void;
 
     textSuggestion: string;
@@ -484,8 +487,7 @@ class DropdownCore extends React.Component<Props, State> {
     handleInteract: (event: Event) => void = (event) => {
         const {open, onOpenChanged} = this.props;
         const target: Node = event.target as any;
-        // eslint-disable-next-line import/no-deprecated
-        const thisElement = ReactDOM.findDOMNode(this);
+        const thisElement = this.dropdownRef.current;
         if (
             open &&
             thisElement &&
@@ -542,10 +544,7 @@ class DropdownCore extends React.Component<Props, State> {
             const currentFocusedItemRef =
                 this.state.itemRefs[this.focusedIndex];
 
-            // eslint-disable-next-line import/no-deprecated
-            const node = ReactDOM.findDOMNode(
-                currentFocusedItemRef.ref.current,
-            ) as HTMLElement;
+            const node = currentFocusedItemRef.ref.current as HTMLElement;
 
             if (!node && this.shouldVirtualizeList()) {
                 // Wait for the next animation frame to focus the item,
@@ -1055,6 +1054,7 @@ class DropdownCore extends React.Component<Props, State> {
 
         return (
             <View
+                ref={this.dropdownRef}
                 onKeyDown={!disabled ? this.handleKeyDown : undefined}
                 onKeyUp={!disabled ? this.handleKeyUp : undefined}
                 style={[styles.menuWrapper, style]}

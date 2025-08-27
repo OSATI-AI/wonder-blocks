@@ -57,10 +57,10 @@ const columns = [
 
 export const StateSheetStory: Story = {
     name: "StateSheet",
-    render: (args) => {
+    render: (args: any) => {
         return (
             <StateSheet rows={rows} columns={columns}>
-                {({props, className, name}) => (
+                {({props, className, name}: any) => (
                     <SingleSelect
                         {...args}
                         {...props}

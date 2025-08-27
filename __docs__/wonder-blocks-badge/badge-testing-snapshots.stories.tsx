@@ -133,11 +133,11 @@ export const StateSheetStory: StoryComponentType = {
             <View style={{gap: sizing.size_080}}>
                 <HeadingLarge>Badge</HeadingLarge>
                 <StateSheet rows={rows} columns={columns} states={states}>
-                    {({props}) => <Badge {...props} />}
+                    {({props}: any) => <Badge {...props} />}
                 </StateSheet>
                 <HeadingLarge>Status Badge</HeadingLarge>
                 <StateSheet rows={statusRows} columns={columns} states={states}>
-                    {({props}) => <StatusBadge {...props} />}
+                    {({props}: any) => <StatusBadge {...props} />}
                 </StateSheet>
                 <HeadingLarge>Gem Badge</HeadingLarge>
                 <StateSheet
@@ -145,7 +145,7 @@ export const StateSheetStory: StoryComponentType = {
                     columns={columnsWithShowIconProp}
                     states={states}
                 >
-                    {({props}) => <GemBadge {...props} />}
+                    {({props}: any) => <GemBadge {...props} />}
                 </StateSheet>
                 <HeadingLarge>Streak Badge</HeadingLarge>
                 <StateSheet
@@ -153,7 +153,7 @@ export const StateSheetStory: StoryComponentType = {
                     columns={columnsWithShowIconProp}
                     states={states}
                 >
-                    {({props}) => <StreakBadge {...props} />}
+                    {({props}: any) => <StreakBadge {...props} />}
                 </StateSheet>
                 <HeadingLarge>Due Badge</HeadingLarge>
                 <StateSheet
@@ -161,7 +161,7 @@ export const StateSheetStory: StoryComponentType = {
                     columns={columnsWithShowIconProp}
                     states={states}
                 >
-                    {({props}) => <DueBadge {...props} />}
+                    {({props}: any) => <DueBadge {...props} />}
                 </StateSheet>
             </View>
         );

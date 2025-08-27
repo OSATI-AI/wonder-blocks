@@ -1,5 +1,4 @@
 import * as React from "react";
-import * as ReactDOM from "react-dom";
 
 import {findFocusableNodes} from "../util/util";
 
@@ -27,9 +26,10 @@ type Props = {
  * receive focus. After that, the children is rendered with the focus assigned.
  */
 export default class InitialFocus extends React.Component<Props> {
+    private containerRef = React.createRef<HTMLElement>();
+
     componentDidMount() {
-        // eslint-disable-next-line import/no-deprecated
-        const node: HTMLElement = ReactDOM.findDOMNode(this) as any;
+        const node = this.containerRef.current;
 
         if (!node) {
             return;
@@ -94,6 +94,8 @@ export default class InitialFocus extends React.Component<Props> {
     }
 
     render(): React.ReactNode {
-        return this.props.children;
+        return React.cloneElement(this.props.children, {
+            ref: this.containerRef,
+        });
     }
 }

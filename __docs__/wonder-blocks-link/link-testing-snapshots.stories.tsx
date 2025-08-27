@@ -84,7 +84,7 @@ export const StateSheetStory: Story = {
 
         return (
             <StateSheet rows={rows} columns={columnsPerMode}>
-                {({props, className, name}) => (
+                {({props, className, name}: any) => (
                     <Link
                         {...args}
                         {...props}
