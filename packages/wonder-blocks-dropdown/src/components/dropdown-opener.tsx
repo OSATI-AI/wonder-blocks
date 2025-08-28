@@ -61,7 +61,7 @@ type DefaultProps = {
     disabled: Props["disabled"];
 };
 
-class DropdownOpener extends React.Component<Props> {
+class DropdownOpenerInternal extends React.Component<Props & {forwardedRef?: React.Ref<HTMLElement>}> {
     static defaultProps: DefaultProps = {
         disabled: false,
     };
@@ -99,8 +99,19 @@ class DropdownOpener extends React.Component<Props> {
         const renderedAriaLabel =
             childrenProps["aria-label"] ?? this.props["aria-label"];
 
+        const handleRef = (node: HTMLElement | null) => {
+            if (this.props.forwardedRef) {
+                if (typeof this.props.forwardedRef === 'function') {
+                    this.props.forwardedRef(node);
+                } else {
+                    (this.props.forwardedRef as React.MutableRefObject<HTMLElement | null>).current = node;
+                }
+            }
+        };
+
         return React.cloneElement(renderedChildren, {
             ...clickableChildrenProps,
+            ref: handleRef,
             "aria-label": renderedAriaLabel ?? undefined,
             "aria-invalid": this.props.error,
             disabled,
@@ -143,5 +154,11 @@ class DropdownOpener extends React.Component<Props> {
         );
     }
 }
+
+const DropdownOpener = React.forwardRef<HTMLElement, Props>((props, ref) => {
+    return <DropdownOpenerInternal {...props} forwardedRef={ref} />;
+});
+
+DropdownOpener.defaultProps = DropdownOpenerInternal.defaultProps;
 
 export default DropdownOpener;

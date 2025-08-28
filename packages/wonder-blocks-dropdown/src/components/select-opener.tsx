@@ -67,134 +67,113 @@ type DefaultProps = {
     isPlaceholder: SelectOpenerProps["isPlaceholder"];
 };
 
-type SelectOpenerState = {
-    /**
-     * We only keep track of the pressed state to apply styling for when the select
-     * opener is pressed using Enter/Space. Other states (active, hover, focus)
-     * are not tracked because we use css pseudo-classes to handle those styles
-     * instead. Note: `:active` styling is only applied on clicks across browsers,
-     * and not on keyboard interaction.
-     */
-    pressed: boolean;
-};
-
 /**
  * An opener that opens select boxes.
  */
-export default class SelectOpener extends React.Component<
-    SelectOpenerProps,
-    SelectOpenerState
-> {
-    static defaultProps: DefaultProps = {
-        disabled: false,
-        error: false,
-        isPlaceholder: false,
+const SelectOpener = React.forwardRef<HTMLButtonElement, SelectOpenerProps>((props, ref) => {
+    const [pressed, setPressed] = React.useState(false);
+
+    const {
+        children,
+        disabled,
+        error,
+        id,
+        isPlaceholder,
+        open,
+        testId,
+        "aria-label": ariaLabel,
+        "aria-required": ariaRequired,
+        "aria-controls": ariaControls,
+        onBlur,
+        // eslint-disable-next-line @typescript-eslint/no-unused-vars
+        onOpenChanged,
+        ...sharedProps
+    } = props;
+
+    const handleClick = (e: React.SyntheticEvent) => {
+        const {open} = props;
+        props.onOpenChanged(!open);
     };
 
-    constructor(props: SelectOpenerProps) {
-        super(props);
-
-        this.state = {
-            pressed: false,
-        };
-    }
-
-    handleClick: (e: React.SyntheticEvent) => void = (e) => {
-        const {open} = this.props;
-        this.props.onOpenChanged(!open);
-    };
-
-    handleKeyDown: (e: React.KeyboardEvent) => void = (e) => {
+    const handleKeyDown = (e: React.KeyboardEvent) => {
         const keyName = e.key;
         // Prevent default behavior for Enter key. Without this, the select
         // is only open while the Enter key is pressed.
         // Prevent default behavior for Space key. Without this, Safari stays in
         // active state visually
         if (keyName === keys.enter || keyName === keys.space) {
-            this.setState({pressed: true});
+            setPressed(true);
             e.preventDefault();
         }
     };
 
-    handleKeyUp: (e: React.KeyboardEvent) => void = (e) => {
+    const handleKeyUp = (e: React.KeyboardEvent) => {
         const keyName = e.key;
         // On key up for Enter and Space, trigger the click handler
         if (keyName === keys.enter || keyName === keys.space) {
-            this.setState({pressed: false});
-            this.handleClick(e);
+            setPressed(false);
+            handleClick(e);
         }
     };
 
-    render(): React.ReactNode {
-        const {
-            children,
-            disabled,
-            error,
-            id,
-            isPlaceholder,
-            open,
-            testId,
-            "aria-label": ariaLabel,
-            "aria-required": ariaRequired,
-            "aria-controls": ariaControls,
-            onBlur,
-            // eslint-disable-next-line @typescript-eslint/no-unused-vars
-            onOpenChanged,
-            ...sharedProps
-        } = this.props;
+    const iconColor = disabled
+        ? semanticColor.core.foreground.disabled.default
+        : theme.opener.color.icon;
 
-        const iconColor = disabled
-            ? semanticColor.core.foreground.disabled.default
-            : theme.opener.color.icon;
+    const style = [
+        styles.shared,
+        styles.default,
+        disabled && styles.disabled,
+        error && styles.error,
+        isPlaceholder && styles.placeholder,
+        !disabled && pressed && styles.press,
+    ];
 
-        const style = [
-            styles.shared,
-            styles.default,
-            disabled && styles.disabled,
-            error && styles.error,
-            isPlaceholder && styles.placeholder,
-            !disabled && this.state.pressed && styles.press,
-        ];
+    return (
+        <StyledButton
+            ref={ref}
+            {...sharedProps}
+            aria-disabled={disabled}
+            aria-expanded={open ? "true" : "false"}
+            aria-invalid={error}
+            aria-label={ariaLabel ?? undefined}
+            aria-required={ariaRequired}
+            aria-haspopup="listbox"
+            aria-controls={ariaControls}
+            data-testid={testId}
+            id={id}
+            role="combobox"
+            /* Note(marcysutton): type=button prevents form submits on click */
+            type="button"
+            style={style}
+            onClick={!disabled ? handleClick : undefined}
+            onKeyDown={!disabled ? handleKeyDown : undefined}
+            onKeyUp={!disabled ? handleKeyUp : undefined}
+            onBlur={onBlur}
+        >
+            <BodyText tag="span" style={styles.text}>
+                {/* Note(tamarab): Prevents unwanted vertical
+                            shift for empty selection.
+                    Note2(marcysutton): aria-hidden prevents "space"
+                            from being read in VoiceOver. */}
+                {children || <span aria-hidden="true">&nbsp;</span>}
+            </BodyText>
+            <PhosphorIcon
+                icon={caretDownIcon}
+                color={iconColor}
+                size="small"
+                style={styles.caret}
+                aria-hidden="true"
+            />
+        </StyledButton>
+    );
+});
 
-        return (
-            <StyledButton
-                {...sharedProps}
-                aria-disabled={disabled}
-                aria-expanded={open ? "true" : "false"}
-                aria-invalid={error}
-                aria-label={ariaLabel ?? undefined}
-                aria-required={ariaRequired}
-                aria-haspopup="listbox"
-                aria-controls={ariaControls}
-                data-testid={testId}
-                id={id}
-                role="combobox"
-                /* Note(marcysutton): type=button prevents form submits on click */
-                type="button"
-                style={style}
-                onClick={!disabled ? this.handleClick : undefined}
-                onKeyDown={!disabled ? this.handleKeyDown : undefined}
-                onKeyUp={!disabled ? this.handleKeyUp : undefined}
-                onBlur={onBlur}
-            >
-                <BodyText tag="span" style={styles.text}>
-                    {/* Note(tamarab): Prevents unwanted vertical
-                                shift for empty selection.
-                        Note2(marcysutton): aria-hidden prevents "space"
-                                from being read in VoiceOver. */}
-                    {children || <span aria-hidden="true">&nbsp;</span>}
-                </BodyText>
-                <PhosphorIcon
-                    icon={caretDownIcon}
-                    color={iconColor}
-                    size="small"
-                    style={styles.caret}
-                    aria-hidden="true"
-                />
-            </StyledButton>
-        );
-    }
-}
+(SelectOpener as any).defaultProps = {
+    disabled: false,
+    error: false,
+    isPlaceholder: false,
+};
 
 // Use box shadow to make the border in the press state look thicker without
 // changing the border
@@ -277,3 +256,5 @@ const styles = StyleSheet.create({
         color: semanticColor.input.default.placeholder,
     },
 });
+
+export default SelectOpener;

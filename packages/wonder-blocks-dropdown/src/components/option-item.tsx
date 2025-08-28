@@ -134,12 +134,25 @@ type DefaultProps = {
     selected: OptionProps["selected"];
 };
 
+type OptionPropsInternal = OptionProps & {
+    forwardedRef?: React.Ref<HTMLDivElement>;
+};
+
+export type OptionItemProps = Omit<OptionProps, 'disabled' | 'focused' | 'horizontalRule' | 'onToggle' | 'role' | 'selected'> & {
+    disabled?: boolean;
+    focused?: boolean;
+    horizontalRule?: CellProps["horizontalRule"];
+    onToggle?: (value: string) => unknown;
+    role?: "menuitem" | "option" | "menuitemcheckbox";
+    selected?: boolean;
+};
+
 /**
  * For option items that can be selected in a dropdown, selection denoted either
  * with a check ✔️ or a checkbox ☑️. Use as children in SingleSelect or
  * MultiSelect.
  */
-export default class OptionItem extends React.Component<OptionProps> {
+class OptionItemInternal extends React.Component<OptionPropsInternal> {
     static isClassOf(instance: React.ReactElement<any>): boolean {
         // @ts-expect-error [FEI-5019] - TS2339 - Property '__IS_OPTION_ITEM__' does not exist on type 'string | JSXElementConstructor<any>'.
         return instance && instance.type && instance.type.__IS_OPTION_ITEM__;
@@ -212,6 +225,7 @@ export default class OptionItem extends React.Component<OptionProps> {
 
         return (
             <DetailCell
+                ref={this.props.forwardedRef}
                 disabled={disabled}
                 horizontalRule={horizontalRule}
                 style={[
@@ -261,6 +275,18 @@ export default class OptionItem extends React.Component<OptionProps> {
         );
     }
 }
+
+// Create the forwardRef wrapper
+const OptionItem = React.forwardRef<HTMLDivElement, OptionItemProps>((props, ref) => {
+    return <OptionItemInternal {...props} forwardedRef={ref} />;
+});
+
+// Preserve static properties and methods
+OptionItem.isClassOf = OptionItemInternal.isClassOf;
+OptionItem.__IS_OPTION_ITEM__ = true;
+(OptionItem as any).defaultProps = OptionItemInternal.defaultProps;
+
+export default OptionItem;
 
 const focusedStyle = {
     // Override the default focus state for the cell element, so that it

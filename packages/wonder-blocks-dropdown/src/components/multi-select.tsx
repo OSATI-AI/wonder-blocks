@@ -528,7 +528,7 @@ const MultiSelect = (props: Props) => {
         };
     };
 
-    const handleOpenerRef = useCallback((node: HTMLElement | null) => {
+    const handleOpenerRef = React.useCallback((node: HTMLElement | null) => {
         setOpenerElement(node);
     }, []);
 

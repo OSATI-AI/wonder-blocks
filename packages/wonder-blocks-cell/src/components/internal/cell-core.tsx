@@ -149,7 +149,7 @@ type CellCoreProps = Partial<Omit<CellProps, "title">> & {
  * responsibility of this component is to render the contents that are passed in
  * (using the `children` prop).
  */
-const CellCore = (props: CellCoreProps): React.ReactElement => {
+const CellCore = React.forwardRef<HTMLDivElement, CellCoreProps>(function CellCore(props, ref) {
     const {
         active,
         disabled,
@@ -178,8 +178,8 @@ const CellCore = (props: CellCoreProps): React.ReactElement => {
     // Pressable cell.
     if (onClick || href) {
         return (
-            // @ts-expect-error - TypeScript doesn't know that `target` can only be defined when `href` is.
             <Clickable
+                ref={ref as any}
                 disabled={disabled}
                 onClick={onClick}
                 href={href}
@@ -208,6 +208,7 @@ const CellCore = (props: CellCoreProps): React.ReactElement => {
     // wrapper.
     return (
         <View
+            ref={ref}
             style={[
                 sharedStyles, // custom styles
                 style,
@@ -218,7 +219,7 @@ const CellCore = (props: CellCoreProps): React.ReactElement => {
             <CellInner {...props} />
         </View>
     );
-};
+});
 
 const styles = StyleSheet.create({
     wrapper: {

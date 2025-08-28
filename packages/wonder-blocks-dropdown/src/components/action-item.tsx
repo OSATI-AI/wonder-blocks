@@ -117,12 +117,23 @@ type DefaultProps = {
     role: ActionProps["role"];
 };
 
+type ActionPropsInternal = ActionProps & {
+    forwardedRef?: React.Ref<HTMLDivElement>;
+};
+
+export type ActionItemProps = Omit<ActionProps, 'disabled' | 'horizontalRule' | 'indent' | 'role'> & {
+    disabled?: boolean;
+    horizontalRule?: CellProps["horizontalRule"];
+    indent?: boolean;
+    role?: "menuitem" | "option";
+};
+
 /**
  * The action item trigger actions, such as navigating to a different page or
  * opening a modal. Supply the href and/or onClick props. Used as a child of
  * ActionMenu.
  */
-export default class ActionItem extends React.Component<ActionProps> {
+class ActionItemInternal extends React.Component<ActionPropsInternal> {
     static isClassOf(instance: React.ReactElement<any>): boolean {
         // @ts-expect-error [FEI-5019] - TS2339 - Property '__IS_ACTION_ITEM__' does not exist on type 'string | JSXElementConstructor<any>'.
         return instance && instance.type && instance.type.__IS_ACTION_ITEM__;
@@ -176,6 +187,7 @@ export default class ActionItem extends React.Component<ActionProps> {
 
         return (
             <DetailCell
+                ref={this.props.forwardedRef}
                 disabled={disabled}
                 horizontalRule={horizontalRule}
                 leftAccessory={leftAccessory}
@@ -194,6 +206,18 @@ export default class ActionItem extends React.Component<ActionProps> {
         );
     }
 }
+
+// Create the forwardRef wrapper
+const ActionItem = React.forwardRef<HTMLDivElement, ActionItemProps>((props, ref) => {
+    return <ActionItemInternal {...props} forwardedRef={ref} />;
+});
+
+// Preserve static properties and methods
+ActionItem.isClassOf = ActionItemInternal.isClassOf;
+ActionItem.__IS_ACTION_ITEM__ = true;
+(ActionItem as any).defaultProps = ActionItemInternal.defaultProps;
+
+export default ActionItem;
 
 const styles = StyleSheet.create({
     wrapper: {

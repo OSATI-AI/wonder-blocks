@@ -421,7 +421,7 @@ const SingleSelect = (props: Props) => {
         setSearchText(searchText);
     };
 
-    const handleOpenerRef = useCallback((node: HTMLElement | null) => {
+    const handleOpenerRef = React.useCallback((node: HTMLElement | null) => {
         setOpenerElement(node);
     }, []);
 

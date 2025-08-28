@@ -83,11 +83,12 @@ type DetailCellProps = CellProps & {
  * />
  * ```
  */
-const DetailCell = function (props: DetailCellProps): React.ReactElement {
+const DetailCell = React.forwardRef<HTMLDivElement, DetailCellProps>(function DetailCell(props, ref) {
     const {contentStyle, title, subtitle1, subtitle2, ...coreProps} = props;
 
     return (
         <CellCore
+            ref={ref}
             {...coreProps}
             innerStyle={styles.innerWrapper}
             contentStyle={{gap: theme.root.layout.gap.detail, ...contentStyle}}
@@ -106,7 +107,7 @@ const DetailCell = function (props: DetailCellProps): React.ReactElement {
             <Subtitle subtitle={subtitle2} disabled={coreProps.disabled} />
         </CellCore>
     );
-};
+});
 
 const styles = StyleSheet.create({
     subtitle: {

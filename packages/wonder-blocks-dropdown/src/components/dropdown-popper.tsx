@@ -50,13 +50,16 @@ const DropdownPopper = function ({
     onPopperElement,
     referenceElement,
 }: Props): React.ReactElement {
+    // Validate that referenceElement is a real DOM element, not a React component instance
+    const isValidElement = referenceElement && referenceElement instanceof Element;
+    
     const {refs, floatingStyles, placement, middlewareData} = useFloating({
         placement: alignment === "left" ? "bottom-start" : "bottom-end",
         elements: {
-            reference: referenceElement,
+            reference: isValidElement ? referenceElement : undefined,
         },
         strategy: 'fixed',
-        whileElementsMounted: autoUpdate,
+        whileElementsMounted: isValidElement ? autoUpdate : undefined,
         middleware: [
             offset(0),
             flip({

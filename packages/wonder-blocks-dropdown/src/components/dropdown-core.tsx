@@ -558,7 +558,7 @@ class DropdownCore extends React.Component<Props, State> {
             // If the node doesn't exist and we're still mounted, then
             // we need to schedule another focus attempt so that we run when
             // the node *is* mounted.
-            if (node) {
+            if (node && typeof node.focus === 'function') {
                 node.focus();
                 // Keep track of the original index of the newly focused item.
                 // To be used if the set of focusable items in the menu changes
@@ -582,7 +582,7 @@ class DropdownCore extends React.Component<Props, State> {
     }
 
     focusSearchField() {
-        if (this.searchFieldRef.current) {
+        if (this.searchFieldRef.current && typeof this.searchFieldRef.current.focus === 'function') {
             this.searchFieldRef.current.focus();
         }
     }
@@ -637,7 +637,7 @@ class DropdownCore extends React.Component<Props, State> {
         // position in the DOM, we need to manually return focus to the
         // opener element before we let the natural propagation of tab
         // shift the focus to the next element in the tab order.
-        if (this.props.openerElement) {
+        if (this.props.openerElement && typeof this.props.openerElement.focus === 'function') {
             this.props.openerElement.focus();
         }
     }
