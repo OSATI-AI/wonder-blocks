@@ -8,7 +8,7 @@ import * as tokens from "@khanacademy/wonder-blocks-tokens";
 import type {AriaProps} from "@khanacademy/wonder-blocks-core";
 import type {
     Placement,
-    PopperElementProps,
+    FloatingElementProps,
 } from "@khanacademy/wonder-blocks-tooltip";
 
 import PopoverContent from "./popover-content";
@@ -18,7 +18,7 @@ type Props = AriaProps &
     /**
      * Required to correctly position the elements inside the dialog
      * @ignore
-     */ PopperElementProps & {
+     */ FloatingElementProps & {
         /**
          * The content to render inside the dialog.
          */
@@ -80,6 +80,15 @@ export default class PopoverDialog extends React.Component<Props> {
             "aria-labelledby": ariaLabelledBy,
             "aria-label": ariaLabel,
         } = this.props;
+
+        console.log('[PopoverDialog] render called with props:', {
+            placement,
+            id,
+            isReferenceHidden,
+            tailOffset,
+            style,
+            showTail
+        });
 
         const contentProps = children.props as any;
 

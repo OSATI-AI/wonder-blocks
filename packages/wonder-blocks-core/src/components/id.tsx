@@ -33,5 +33,5 @@ export const Id = ({id, children}: Props) => {
     // to call useId() and not use the result, rather than the alternative
     // which would be to have a separate component for cases where we need
     // to call the hook and then render the component conditionally.
-    return <>{children(id ?? generatedId)}</>;
+    return children(id ?? generatedId);
 };

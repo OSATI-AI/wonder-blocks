@@ -1,31 +1,22 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
-import {Popper} from "react-popper";
+import {
+    useFloating,
+    autoUpdate,
+    offset,
+    flip,
+    shift,
+    size,
+} from "@floating-ui/react";
 
 import {maybeGetPortalMountedModalHostElement} from "@khanacademy/wonder-blocks-modal";
 
 import type {StyleType} from "@khanacademy/wonder-blocks-core";
-import {maxHeightModifier} from "../util/popper-max-height-modifier";
-
-const modifiers = [
-    {
-        name: "preventOverflow",
-        options: {
-            rootBoundary: "viewport",
-            // Allows to overlap the popper in case there's no more vertical
-            // room in the viewport.
-            altAxis: true,
-            // Also needed to make sure the Popper will be displayed correctly
-            // in different contexts (e.g inside a Modal)
-            tether: false,
-        },
-    },
-    maxHeightModifier,
-];
+import {DROPDOWN_ITEM_HEIGHT} from "../util/constants";
 
 type Props = {
     /**
-     * The children that will be wrapped by PopperJS.
+     * The children that will be wrapped by floating UI.
      */
     children: (isReferenceHidden: boolean) => React.ReactNode;
     /**
@@ -39,7 +30,7 @@ type Props = {
     alignment?: "left" | "right";
     /**
      * The popper's reference.
-     * @see https://popper.js.org/react-popper/v2/render-props/#innerref
+     * Callback to get the floating element reference.
      */
     onPopperElement?: (
         popperElement?: HTMLElement | null | undefined,
@@ -51,7 +42,7 @@ type Props = {
 };
 
 /**
- * A wrapper for PopperJS that renders the children inside a portal.
+ * A wrapper for floating UI that renders the children inside a portal.
  */
 const DropdownPopper = function ({
     children,
@@ -59,6 +50,50 @@ const DropdownPopper = function ({
     onPopperElement,
     referenceElement,
 }: Props): React.ReactElement {
+    const {refs, floatingStyles, placement, middlewareData} = useFloating({
+        placement: alignment === "left" ? "bottom-start" : "bottom-end",
+        elements: {
+            reference: referenceElement,
+        },
+        strategy: 'fixed',
+        whileElementsMounted: autoUpdate,
+        middleware: [
+            offset(0),
+            flip({
+                altAxis: true,
+                // Allows to overlap the popper in case there's no more vertical
+                // room in the viewport.
+                boundary: 'viewport' as const,
+                // Also needed to make sure the Popper will be displayed correctly
+                // in different contexts (e.g inside a Modal)
+                crossAxis: false,
+            }),
+            shift(),
+            // Replace maxHeightModifier with size middleware
+            size({
+                apply({availableHeight, elements}) {
+                    const padding = DROPDOWN_ITEM_HEIGHT;
+                    const maxHeight = availableHeight - padding;
+                    
+                    if (elements.floating) {
+                        Object.assign(elements.floating.style, {
+                            maxHeight: `${maxHeight}px`,
+                            // Also propagate the maxHeight to its children via CSS variables.
+                            // This is useful for adding scrollbars to the dropdown list.
+                            '--popper-max-height': `${maxHeight}px`,
+                        });
+                    }
+                },
+            }),
+        ],
+    });
+    
+    React.useEffect(() => {
+        if (refs.floating.current && onPopperElement) {
+            onPopperElement(refs.floating.current);
+        }
+    }, [refs.floating.current, onPopperElement]);
+    
     // If we are in a modal, we find where we should be portalling the menu by
     // using the helper function from the modal package on the opener element.
     // If we are not in a modal, we use body as the location to portal to.
@@ -71,36 +106,19 @@ const DropdownPopper = function ({
         return null;
     }
 
-    return ReactDOM.createPortal(
-        <Popper
-            innerRef={(node?: HTMLElement | null) => {
-                if (node && onPopperElement) {
-                    onPopperElement(node);
-                }
-            }}
-            referenceElement={referenceElement}
-            strategy="fixed"
-            placement={alignment === "left" ? "bottom-start" : "bottom-end"}
-            modifiers={modifiers}
-        >
-            {({placement, ref, style, hasPopperEscaped, isReferenceHidden}) => {
-                const shouldHidePopper = !!(
-                    hasPopperEscaped || isReferenceHidden
-                );
+    const isReferenceHidden = middlewareData.hide?.referenceHidden ?? false;
 
-                return (
-                    <div
-                        ref={ref}
-                        style={style}
-                        data-testid="dropdown-popper"
-                        data-placement={placement}
-                    >
-                        {children(shouldHidePopper)}
-                    </div>
-                );
-            }}
-        </Popper>,
+    return ReactDOM.createPortal(
+        <div
+            ref={refs.setFloating}
+            style={floatingStyles}
+            data-testid="dropdown-popper"
+            data-placement={placement}
+        >
+            {children(isReferenceHidden)}
+        </div>,
         modalHost,
     );
 };
+
 export default DropdownPopper;

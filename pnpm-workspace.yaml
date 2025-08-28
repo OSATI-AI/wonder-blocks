@@ -12,8 +12,8 @@ catalog:
     # Icons library
     "@phosphor-icons/core": ^2.0.2
     # Positioning
-    "@popperjs/core": ^2.11.8
-    react-popper: ^2.3.0
+    "@floating-ui/react": ^0.26.28
+    "@floating-ui/dom": ^1.6.12
     # Styling
     aphrodite: ^1.2.5
     # Dates

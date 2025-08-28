@@ -8,9 +8,8 @@ import {maybeGetPortalMountedModalHostElement} from "@khanacademy/wonder-blocks-
 import type {AriaProps} from "@khanacademy/wonder-blocks-core";
 import type {
     Placement,
-    PopperElementProps,
+    FloatingElementProps,
 } from "@khanacademy/wonder-blocks-tooltip";
-import type {RootBoundary} from "@popperjs/core";
 
 import PopoverContent from "./popover-content";
 import PopoverContentCore from "./popover-content-core";
@@ -130,7 +129,7 @@ type Props = AriaProps &
          * on the user's viewport. If set to "document", it will position itself based
          * on where there is available room within the document body.
          */
-        rootBoundary?: RootBoundary;
+        rootBoundary?: "viewport" | "document";
         /**
          * If `rootBoundary` is `viewport`, this padding value is used to provide
          * spacing between the popper and the viewport. If not provided, default
@@ -265,9 +264,20 @@ export default class Popover extends React.Component<Props, State> {
     };
 
     updateRef = (actualRef?: HTMLElement) => {
+        console.log('[Popover] updateRef called:', {
+            actualRef,
+            currentAnchorElement: this.state.anchorElement,
+            boundingRect: actualRef?.getBoundingClientRect(),
+            willUpdate: !!(actualRef && this.state.anchorElement !== actualRef)
+        });
         if (actualRef && this.state.anchorElement !== actualRef) {
             this.setState({
                 anchorElement: actualRef,
+            }, () => {
+                console.log('[Popover] State updated with new anchorElement:', {
+                    anchorElement: this.state.anchorElement,
+                    boundingRect: this.state.anchorElement?.getBoundingClientRect()
+                });
             });
         }
     };
@@ -305,9 +315,31 @@ export default class Popover extends React.Component<Props, State> {
         } = this.props;
         const {anchorElement} = this.state;
 
+        console.log('[Popover] renderPopper called:', {
+            uniqueId,
+            anchorElement,
+            placement,
+            boundingRect: anchorElement?.getBoundingClientRect(),
+            hasAnchorElement: !!anchorElement
+        });
+
+        // Don't render the popper if we don't have an anchor element
+        if (!anchorElement) {
+            console.log('[Popover] No anchor element, returning null');
+            return null;
+        }
+
         const describedBy = ariaDescribedBy || `${uniqueId}-content`;
 
         const ariaLabelledBy = ariaLabel ? undefined : `${uniqueId}-title`;
+
+        console.log('[Popover] About to render TooltipPopper with:', {
+            anchorElement,
+            placement,
+            rootBoundary,
+            viewportPadding,
+            boundingRect: anchorElement.getBoundingClientRect()
+        });
 
         const popperContent = (
             <TooltipPopper
@@ -316,19 +348,22 @@ export default class Popover extends React.Component<Props, State> {
                 rootBoundary={rootBoundary}
                 viewportPadding={viewportPadding}
             >
-                {(props: PopperElementProps) => (
-                    <PopoverDialog
-                        {...props}
-                        aria-label={ariaLabel}
-                        aria-describedby={describedBy}
-                        aria-labelledby={ariaLabelledBy}
-                        id={uniqueId}
-                        onUpdate={(placement) => this.setState({placement})}
-                        showTail={showTail}
-                    >
-                        {this.renderContent(uniqueId)}
-                    </PopoverDialog>
-                )}
+                {(props: FloatingElementProps) => {
+                    console.log('[Popover] TooltipPopper render prop called with:', props);
+                    return (
+                        <PopoverDialog
+                            {...props}
+                            aria-label={ariaLabel}
+                            aria-describedby={describedBy}
+                            aria-labelledby={ariaLabelledBy}
+                            id={uniqueId}
+                            onUpdate={(placement) => this.setState({placement})}
+                            showTail={showTail}
+                        >
+                            {this.renderContent(uniqueId)}
+                        </PopoverDialog>
+                    );
+                }}
             </TooltipPopper>
         );
 

@@ -39,10 +39,23 @@ export default class PopoverAnchor extends React.Component<Props> {
     private anchorRef = React.createRef<HTMLElement>();
 
     componentDidMount() {
-        const anchorNode = this.anchorRef.current;
+        this.updateAnchorRef();
+    }
 
+    componentDidUpdate() {
+        this.updateAnchorRef();
+    }
+
+    private updateAnchorRef = () => {
+        const anchorNode = this.anchorRef.current;
+        console.log('[PopoverAnchor] updateAnchorRef called:', {
+            anchorNode,
+            boundingRect: anchorNode?.getBoundingClientRect(),
+            hasAnchorRefCallback: !!this.props.anchorRef
+        });
         if (anchorNode) {
             this.props.anchorRef(anchorNode);
+            console.log('[PopoverAnchor] Called anchorRef callback with node:', anchorNode);
         }
     }
 

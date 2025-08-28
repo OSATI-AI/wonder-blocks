@@ -77,7 +77,7 @@ export default class TooltipAnchor
     implements IActiveTrackerSubscriber
 {
     private anchorRef = React.createRef<Element>();
-    
+
     _weSetFocusivity: boolean | null | undefined;
     _anchorNode: Element | null | undefined;
     _focused: boolean;
@@ -325,6 +325,22 @@ export default class TooltipAnchor
     render(): React.ReactNode {
         const {"aria-describedby": ariaDescribedBy} = this.props;
         const anchorableChildren = this._renderAnchorableChildren();
+
+        if (
+            React.isValidElement(anchorableChildren) &&
+            anchorableChildren.type === React.Fragment
+        ) {
+            return (
+                <span
+                    aria-describedby={ariaDescribedBy}
+                    ref={(node) => {
+                        (this.anchorRef as React.MutableRefObject<Element | null>).current = node;
+                    }}
+                >
+                    {anchorableChildren}
+                </span>
+            );
+        }
 
         return React.cloneElement(anchorableChildren, {
             "aria-describedby": ariaDescribedBy,

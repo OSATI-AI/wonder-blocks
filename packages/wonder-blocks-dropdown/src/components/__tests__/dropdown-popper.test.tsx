@@ -2,7 +2,6 @@ import * as React from "react";
 import {render, screen, waitFor} from "@testing-library/react";
 
 import DropdownPopper from "../dropdown-popper";
-import {maxHeightModifier} from "../../util/popper-max-height-modifier";
 
 describe("DropdownPopper", () => {
     it("renders the children if valid props are passed in", () => {
@@ -49,14 +48,14 @@ describe("DropdownPopper", () => {
         );
     });
 
-    it("applies a max-height style", async () => {
+    it("applies a max-height style via floating UI size middleware", async () => {
         // Arrange
         const referenceElement = document.createElement("button");
-        jest.spyOn(maxHeightModifier, "fn").mockImplementation(({state}) => {
-            state.styles.popper = {
-                ...state.styles.popper,
-                maxHeight: "500px",
-            };
+        // Mock window.innerHeight to simulate available space
+        Object.defineProperty(window, 'innerHeight', {
+            writable: true,
+            configurable: true,
+            value: 600,
         });
 
         // Act
@@ -71,10 +70,11 @@ describe("DropdownPopper", () => {
         );
 
         // Assert
-        await waitFor(() =>
-            expect(screen.getByTestId("dropdown-popper")).toHaveStyle(
-                "max-height: 500px",
-            ),
-        );
+        // The floating UI size middleware will set max-height based on available space
+        await waitFor(() => {
+            const dropdownPopper = screen.getByTestId("dropdown-popper");
+            const maxHeight = dropdownPopper.style.maxHeight;
+            expect(maxHeight).toBeTruthy();
+        });
     });
 });

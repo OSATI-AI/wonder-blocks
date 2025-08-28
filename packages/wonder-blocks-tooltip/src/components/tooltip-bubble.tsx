@@ -10,7 +10,7 @@ import {
 
 import TooltipContent from "./tooltip-content";
 import TooltipTail from "./tooltip-tail";
-import {PopperElementProps} from "../util/types";
+import {FloatingElementProps} from "../util/types";
 
 export type Props = {
     /** The unique identifier for this component. */
@@ -20,7 +20,7 @@ export type Props = {
     onActiveChanged: (active: boolean) => unknown;
     /** Optional background color. */
     backgroundColor?: keyof typeof color;
-} & PopperElementProps; // (v3 beta introduces this) // TODO(somewhatabstract): Update react-docgen to support spread operators
+} & FloatingElementProps; // (v3 beta introduces this) // TODO(somewhatabstract): Update react-docgen to support spread operators
 
 type State = {
     active: boolean;

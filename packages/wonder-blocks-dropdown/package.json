@@ -42,11 +42,11 @@
   },
   "peerDependencies": {
     "@phosphor-icons/core": "catalog:",
-    "@popperjs/core": "catalog:",
+    "@floating-ui/react": "catalog:",
+    "@floating-ui/dom": "catalog:",
     "aphrodite": "catalog:",
     "react": "catalog:",
     "react-dom": "catalog:",
-    "react-popper": "catalog:",
     "react-router": "catalog:",
     "react-router-dom": "catalog:",
     "react-router-dom-v5-compat": "catalog:",
