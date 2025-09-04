@@ -90,6 +90,20 @@ const SelectOpener = React.forwardRef<HTMLButtonElement, SelectOpenerProps>((pro
         ...sharedProps
     } = props;
 
+    // Debug logging for SelectOpener
+    console.log("[SelectOpener] Rendering with:", {
+        children,
+        isPlaceholder,
+        open,
+        disabled,
+        id
+    });
+
+    // Track when children changes
+    React.useEffect(() => {
+        console.log("[SelectOpener] children prop changed to:", children);
+    }, [children]);
+
     const handleClick = (e: React.SyntheticEvent) => {
         const {open} = props;
         props.onOpenChanged(!open);

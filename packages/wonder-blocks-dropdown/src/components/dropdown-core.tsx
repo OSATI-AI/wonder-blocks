@@ -830,13 +830,24 @@ class DropdownCore extends React.Component<Props, State> {
         focusIndex: number,
         item: DropdownItem,
     ) => {
+        console.log("[DropdownCore] handleItemClick called:", {
+            focusIndex,
+            // @ts-expect-error [FEI-5019] - TS2339 - Property 'value' does not exist on type '{}'.
+            itemValue: item.component.props.value,
+            hasComponentOnClick: !!(item.component.props as any).onClick,
+            hasPopulatedOnClick: !!item.populatedProps.onClick,
+            populatedProps: item.populatedProps
+        });
+
         this.handleClickFocus(focusIndex);
         // @ts-expect-error [FEI-5019] - TS2339 - Property 'onClick' does not exist on type '{}'.
         if (item.component.props.onClick) {
+            console.log("[DropdownCore] Calling component onClick");
             // @ts-expect-error [FEI-5019] - TS2339 - Property 'onClick' does not exist on type '{}'.
             item.component.props.onClick();
         }
         if (item.populatedProps.onClick) {
+            console.log("[DropdownCore] Calling populatedProps onClick");
             item.populatedProps.onClick();
         }
     };
@@ -877,16 +888,32 @@ class DropdownCore extends React.Component<Props, State> {
                 : null;
 
             // Render OptionItem and/or ActionItem elements.
-            return React.cloneElement(component, {
+            const clonedProps = {
                 ...populatedProps,
                 key: index,
                 onClick: () => {
+                    console.log("[DropdownCore] onClick wrapper called for item:", {
+                        // @ts-expect-error [FEI-5019] - TS2339 - Property 'value' does not exist on type '{}'.
+                        value: component.props.value,
+                        focusIndex,
+                        populatedProps
+                    });
                     this.handleItemClick(focusIndex, item);
                 },
                 // Only pass the ref if the item is focusable.
                 ref: focusable ? currentRef : null,
                 role: populatedProps.role || itemRole,
+            };
+
+            console.log("[DropdownCore] Cloning element for item:", {
+                // @ts-expect-error [FEI-5019] - TS2339 - Property 'value' does not exist on type '{}'.
+                value: component.props.value,
+                focusable,
+                focusIndex,
+                populatedProps
             });
+
+            return React.cloneElement(component, clonedProps);
         });
     }
 

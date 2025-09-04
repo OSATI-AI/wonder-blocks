@@ -176,9 +176,19 @@ class OptionItemInternal extends React.Component<OptionPropsInternal> {
     }
 
     handleClick: () => void = () => {
-        const {onClick, onToggle, value} = this.props;
+        const {onClick, onToggle, value, selected} = this.props;
+        console.log("[OptionItem] handleClick called:", {
+            value,
+            selected,
+            hasOnToggle: !!onToggle,
+            hasOnClick: !!onClick
+        });
+        
+        console.log("[OptionItem] Calling onToggle with value:", value);
         onToggle(value);
+        
         if (onClick) {
+            console.log("[OptionItem] Calling custom onClick");
             onClick();
         }
     };
@@ -207,6 +217,15 @@ class OptionItemInternal extends React.Component<OptionPropsInternal> {
             /* eslint-enable @typescript-eslint/no-unused-vars */
             ...sharedProps
         } = this.props;
+
+        console.log("[OptionItem] Rendering option:", {
+            value,
+            label: typeof label === 'string' ? label : '[React Element]',
+            selected,
+            focused,
+            disabled,
+            variant
+        });
 
         const CheckComponent = this.getCheckComponent();
 

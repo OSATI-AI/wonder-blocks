@@ -302,6 +302,11 @@ const SingleSelect = (props: Props) => {
     // The DOM reference to the opener element. This is mainly used to set focus
     // to this element, and also to pass the reference to Popper.js.
     const [openerElement, setOpenerElement] = React.useState<HTMLElement>();
+
+    // Debug logging for selectedValue changes
+    React.useEffect(() => {
+        console.log("[SingleSelect] selectedValue prop changed to:", selectedValue);
+    }, [selectedValue]);
     const {
         errorMessage,
         onOpenerBlurValidation,
@@ -341,8 +346,15 @@ const SingleSelect = (props: Props) => {
     };
 
     const handleToggle = (newSelectedValue: string) => {
+        console.log("[SingleSelect] handleToggle called with:", {
+            newSelectedValue,
+            currentSelectedValue: selectedValue,
+            willCallOnChange: newSelectedValue !== selectedValue
+        });
+
         // Call callback if selection changed.
         if (newSelectedValue !== selectedValue) {
+            console.log("[SingleSelect] Calling onChange with:", newSelectedValue);
             onChange(newSelectedValue);
         }
 
@@ -466,9 +478,21 @@ const SingleSelect = (props: Props) => {
             ? children 
             : children ? [children] : []
         ) as OptionItemComponentArray;
+        
+        console.log("[SingleSelect] renderOpener - Looking for selectedValue:", selectedValue);
+        console.log("[SingleSelect] renderOpener - Available items:", items.map(item => ({
+            value: item.props.value,
+            label: getLabel(item.props)
+        })));
+        
         const selectedItem = items.find(
             (option) => option.props.value === selectedValue,
         );
+
+        console.log("[SingleSelect] renderOpener - Selected item found:", selectedItem ? {
+            value: selectedItem.props.value,
+            label: getLabel(selectedItem.props)
+        } : null);
 
         let menuContent;
         if (selectedItem) {
@@ -476,11 +500,15 @@ const SingleSelect = (props: Props) => {
                 showOpenerLabelAsText,
                 selectedItem.props,
             );
+            console.log("[SingleSelect] renderOpener - Setting menuContent to selected item label:", menuContent);
         } else {
             // If nothing is selected, or if the selectedValue doesn't match any
             // item in the menu, use the placeholder.
             menuContent = placeholder;
+            console.log("[SingleSelect] renderOpener - Setting menuContent to placeholder:", menuContent);
         }
+
+        console.log("[SingleSelect] renderOpener - Final menuContent:", menuContent);
 
         const dropdownOpener = (
             <Id id={id}>
