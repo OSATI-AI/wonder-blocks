@@ -21,8 +21,8 @@ catalog:
     # Testing/data
     node-fetch: ^2.6.7
     # React
-    "react": 19.0.0
-    "react-dom": 19.0.0
+    "react": 19.0.0-rc-65e06cb7-20241218
+    "react-dom": 19.0.0-rc-65e06cb7-20241218
     # React Router
     react-router: ^6.26.0
     react-router-dom: ^6.26.0
