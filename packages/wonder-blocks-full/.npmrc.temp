@@ -1,0 +1,8 @@
+# Temporary .npmrc with direct token
+# REPLACE your_actual_github_token_here with your real token
+@osati-ai:registry=https://npm.pkg.github.com
+//npm.pkg.github.com/:_authToken=your_actual_github_token_here
+registry=https://npm.pkg.github.com
+
+
+

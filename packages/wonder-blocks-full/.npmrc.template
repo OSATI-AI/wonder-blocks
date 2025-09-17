@@ -1,0 +1,9 @@
+# Consumer .npmrc template
+# Copy this to your project root as .npmrc and set GITHUB_TOKEN
+
+# GitHub Packages configuration for @osati-ai scope
+@osati-ai:registry=https://npm.pkg.github.com
+//npm.pkg.github.com/:_authToken=${GITHUB_TOKEN}
+
+# All other packages (including @khanacademy/*) will use default npmjs.org registry
+# No additional configuration needed for public packages

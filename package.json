@@ -73,6 +73,7 @@
     "@khanacademy/wonder-blocks-toolbar": "workspace:*",
     "@khanacademy/wonder-blocks-tooltip": "workspace:*",
     "@khanacademy/wonder-blocks-typography": "workspace:*",
+    "@khanacademy/wonder-blocks-full": "workspace:*",
     "@khanacademy/wonder-stuff-testing": "^3.0.5",
     "@rollup/plugin-node-resolve": "^16.0.0",
     "@rollup/plugin-swc": "^0.4.0",

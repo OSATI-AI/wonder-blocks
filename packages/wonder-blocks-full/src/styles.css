@@ -1,0 +1,8 @@
+/**
+ * Wonder Blocks Full - Complete Styles Bundle
+ *
+ * This file imports all CSS variables and styles from the Wonder Blocks design system.
+ * It includes all CSS variables for theming, layout, typography, and component styling.
+ */
+
+@import "@khanacademy/wonder-blocks-tokens/styles.css";

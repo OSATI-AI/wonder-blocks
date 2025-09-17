@@ -1,0 +1,96 @@
+{
+  "name": "@osati-ai/wonder-blocks-full",
+  "version": "1.0.2",
+  "design": "v1",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com",
+    "access": "restricted",
+    "linkWorkspacePackages": false
+  },
+  "description": "Complete Wonder Blocks design system package - includes all components, utilities, and styles",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/es/index.js",
+  "types": "./dist/index.d.ts",
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "import": "./dist/es/index.js",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./styles.css": "./dist/styles.css"
+  },
+  "scripts": {
+    "build:css": "cp src/styles.css dist/styles.css",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublishOnly": "../../utils/publish/package-pre-publish-check.sh"
+  },
+  "keywords": [
+    "react",
+    "design-system",
+    "components",
+    "ui",
+    "wonder-blocks",
+    "khanacademy"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@khanacademy/wonder-blocks-accordion": "workspace:*",
+    "@khanacademy/wonder-blocks-announcer": "workspace:*",
+    "@khanacademy/wonder-blocks-badge": "workspace:*",
+    "@khanacademy/wonder-blocks-banner": "workspace:*",
+    "@khanacademy/wonder-blocks-birthday-picker": "workspace:*",
+    "@khanacademy/wonder-blocks-breadcrumbs": "workspace:*",
+    "@khanacademy/wonder-blocks-button": "workspace:*",
+    "@khanacademy/wonder-blocks-cell": "workspace:*",
+    "@khanacademy/wonder-blocks-clickable": "workspace:*",
+    "@khanacademy/wonder-blocks-core": "workspace:*",
+    "@khanacademy/wonder-blocks-data": "workspace:*",
+    "@khanacademy/wonder-blocks-dropdown": "workspace:*",
+    "@khanacademy/wonder-blocks-form": "workspace:*",
+    "@khanacademy/wonder-blocks-grid": "workspace:*",
+    "@khanacademy/wonder-blocks-icon": "workspace:*",
+    "@khanacademy/wonder-blocks-icon-button": "workspace:*",
+    "@khanacademy/wonder-blocks-labeled-field": "workspace:*",
+    "@khanacademy/wonder-blocks-layout": "workspace:*",
+    "@khanacademy/wonder-blocks-link": "workspace:*",
+    "@khanacademy/wonder-blocks-modal": "workspace:*",
+    "@khanacademy/wonder-blocks-pill": "workspace:*",
+    "@khanacademy/wonder-blocks-popover": "workspace:*",
+    "@khanacademy/wonder-blocks-progress-spinner": "workspace:*",
+    "@khanacademy/wonder-blocks-search-field": "workspace:*",
+    "@khanacademy/wonder-blocks-styles": "workspace:*",
+    "@khanacademy/wonder-blocks-switch": "workspace:*",
+    "@khanacademy/wonder-blocks-tabs": "workspace:*",
+    "@khanacademy/wonder-blocks-theming": "workspace:*",
+    "@khanacademy/wonder-blocks-timing": "workspace:*",
+    "@khanacademy/wonder-blocks-tokens": "workspace:*",
+    "@khanacademy/wonder-blocks-toolbar": "workspace:*",
+    "@khanacademy/wonder-blocks-tooltip": "workspace:*",
+    "@khanacademy/wonder-blocks-typography": "workspace:*"
+  },
+  "peerDependencies": {
+    "aphrodite": "catalog:",
+    "react": "catalog:",
+    "react-dom": "catalog:",
+    "react-router": "catalog:",
+    "react-router-dom": "catalog:",
+    "react-router-dom-v5-compat": "catalog:"
+  },
+  "peerDependenciesMeta": {
+    "react-router": {
+      "optional": true
+    },
+    "react-router-dom": {
+      "optional": true
+    },
+    "react-router-dom-v5-compat": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@khanacademy/wb-dev-build-settings": "workspace:*"
+  }
+}
