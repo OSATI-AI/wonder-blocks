@@ -1,1 +1,1 @@
-export * from "@khanacademy/wonder-blocks-timing";
+export * from "@osati-ai/wonder-blocks-timing";

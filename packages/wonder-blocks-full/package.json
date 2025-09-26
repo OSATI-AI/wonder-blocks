@@ -1,6 +1,6 @@
 {
   "name": "@osati-ai/wonder-blocks-full",
-  "version": "1.0.2",
+  "version": "1.0.6",
   "design": "v1",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com",
@@ -36,42 +36,11 @@
   ],
   "author": "",
   "license": "MIT",
-  "dependencies": {
-    "@khanacademy/wonder-blocks-accordion": "workspace:*",
-    "@khanacademy/wonder-blocks-announcer": "workspace:*",
-    "@khanacademy/wonder-blocks-badge": "workspace:*",
-    "@khanacademy/wonder-blocks-banner": "workspace:*",
-    "@khanacademy/wonder-blocks-birthday-picker": "workspace:*",
-    "@khanacademy/wonder-blocks-breadcrumbs": "workspace:*",
-    "@khanacademy/wonder-blocks-button": "workspace:*",
-    "@khanacademy/wonder-blocks-cell": "workspace:*",
-    "@khanacademy/wonder-blocks-clickable": "workspace:*",
-    "@khanacademy/wonder-blocks-core": "workspace:*",
-    "@khanacademy/wonder-blocks-data": "workspace:*",
-    "@khanacademy/wonder-blocks-dropdown": "workspace:*",
-    "@khanacademy/wonder-blocks-form": "workspace:*",
-    "@khanacademy/wonder-blocks-grid": "workspace:*",
-    "@khanacademy/wonder-blocks-icon": "workspace:*",
-    "@khanacademy/wonder-blocks-icon-button": "workspace:*",
-    "@khanacademy/wonder-blocks-labeled-field": "workspace:*",
-    "@khanacademy/wonder-blocks-layout": "workspace:*",
-    "@khanacademy/wonder-blocks-link": "workspace:*",
-    "@khanacademy/wonder-blocks-modal": "workspace:*",
-    "@khanacademy/wonder-blocks-pill": "workspace:*",
-    "@khanacademy/wonder-blocks-popover": "workspace:*",
-    "@khanacademy/wonder-blocks-progress-spinner": "workspace:*",
-    "@khanacademy/wonder-blocks-search-field": "workspace:*",
-    "@khanacademy/wonder-blocks-styles": "workspace:*",
-    "@khanacademy/wonder-blocks-switch": "workspace:*",
-    "@khanacademy/wonder-blocks-tabs": "workspace:*",
-    "@khanacademy/wonder-blocks-theming": "workspace:*",
-    "@khanacademy/wonder-blocks-timing": "workspace:*",
-    "@khanacademy/wonder-blocks-tokens": "workspace:*",
-    "@khanacademy/wonder-blocks-toolbar": "workspace:*",
-    "@khanacademy/wonder-blocks-tooltip": "workspace:*",
-    "@khanacademy/wonder-blocks-typography": "workspace:*"
-  },
+  "dependencies": {},
   "peerDependencies": {
+    "@floating-ui/dom": "catalog:",
+    "@floating-ui/react": "catalog:",
+    "@phosphor-icons/core": "catalog:",
     "aphrodite": "catalog:",
     "react": "catalog:",
     "react-dom": "catalog:",
@@ -80,6 +49,15 @@
     "react-router-dom-v5-compat": "catalog:"
   },
   "peerDependenciesMeta": {
+    "@floating-ui/dom": {
+      "optional": true
+    },
+    "@floating-ui/react": {
+      "optional": true
+    },
+    "@phosphor-icons/core": {
+      "optional": true
+    },
     "react-router": {
       "optional": true
     },
@@ -91,6 +69,39 @@
     }
   },
   "devDependencies": {
-    "@khanacademy/wb-dev-build-settings": "workspace:*"
+    "@osati-ai/wb-dev-build-settings": "workspace:*",
+    "@osati-ai/wonder-blocks-accordion": "workspace:*",
+    "@osati-ai/wonder-blocks-announcer": "workspace:*",
+    "@osati-ai/wonder-blocks-badge": "workspace:*",
+    "@osati-ai/wonder-blocks-banner": "workspace:*",
+    "@osati-ai/wonder-blocks-birthday-picker": "workspace:*",
+    "@osati-ai/wonder-blocks-breadcrumbs": "workspace:*",
+    "@osati-ai/wonder-blocks-button": "workspace:*",
+    "@osati-ai/wonder-blocks-cell": "workspace:*",
+    "@osati-ai/wonder-blocks-clickable": "workspace:*",
+    "@osati-ai/wonder-blocks-core": "workspace:*",
+    "@osati-ai/wonder-blocks-data": "workspace:*",
+    "@osati-ai/wonder-blocks-dropdown": "workspace:*",
+    "@osati-ai/wonder-blocks-form": "workspace:*",
+    "@osati-ai/wonder-blocks-grid": "workspace:*",
+    "@osati-ai/wonder-blocks-icon": "workspace:*",
+    "@osati-ai/wonder-blocks-icon-button": "workspace:*",
+    "@osati-ai/wonder-blocks-labeled-field": "workspace:*",
+    "@osati-ai/wonder-blocks-layout": "workspace:*",
+    "@osati-ai/wonder-blocks-link": "workspace:*",
+    "@osati-ai/wonder-blocks-modal": "workspace:*",
+    "@osati-ai/wonder-blocks-pill": "workspace:*",
+    "@osati-ai/wonder-blocks-popover": "workspace:*",
+    "@osati-ai/wonder-blocks-progress-spinner": "workspace:*",
+    "@osati-ai/wonder-blocks-search-field": "workspace:*",
+    "@osati-ai/wonder-blocks-styles": "workspace:*",
+    "@osati-ai/wonder-blocks-switch": "workspace:*",
+    "@osati-ai/wonder-blocks-tabs": "workspace:*",
+    "@osati-ai/wonder-blocks-theming": "workspace:*",
+    "@osati-ai/wonder-blocks-timing": "workspace:*",
+    "@osati-ai/wonder-blocks-tokens": "workspace:*",
+    "@osati-ai/wonder-blocks-toolbar": "workspace:*",
+    "@osati-ai/wonder-blocks-tooltip": "workspace:*",
+    "@osati-ai/wonder-blocks-typography": "workspace:*"
   }
 }

@@ -2,17 +2,17 @@ import * as React from "react";
 import {action} from "@storybook/addon-actions";
 import type {Meta, StoryObj} from "@storybook/react";
 
-import {PropsFor, View} from "@khanacademy/wonder-blocks-core";
-import Button from "@khanacademy/wonder-blocks-button";
-import {spacing} from "@khanacademy/wonder-blocks-tokens";
-import {LabelLarge} from "@khanacademy/wonder-blocks-typography";
+import {PropsFor, View} from "@osati-ai/wonder-blocks-core";
+import Button from "@osati-ai/wonder-blocks-button";
+import {spacing} from "@osati-ai/wonder-blocks-tokens";
+import {LabelLarge} from "@osati-ai/wonder-blocks-typography";
 
-import SearchField from "@khanacademy/wonder-blocks-search-field";
+import SearchField from "@osati-ai/wonder-blocks-search-field";
 
 import ComponentInfo from "../components/component-info";
 import packageConfig from "../../packages/wonder-blocks-search-field/package.json";
 import SearchFieldArgtypes from "./search-field.argtypes";
-import {LabeledField} from "@khanacademy/wonder-blocks-labeled-field";
+import {LabeledField} from "@osati-ai/wonder-blocks-labeled-field";
 
 /**
  * `SearchField` helps users input text to search for relevant content. It is
@@ -29,7 +29,7 @@ import {LabeledField} from "@khanacademy/wonder-blocks-labeled-field";
  * ### Usage
  *
  * ```tsx
- * import {SearchField} from "@khanacademy/wonder-blocks-search-field";
+ * import {SearchField} from "@osati-ai/wonder-blocks-search-field";
  *
  * const [value, setValue] = React.useState("");
  *

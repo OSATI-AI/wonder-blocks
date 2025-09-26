@@ -1,5 +1,5 @@
 {
-  "name": "@khanacademy/wonder-blocks-grid",
+  "name": "@osati-ai/wonder-blocks-grid",
   "version": "3.1.34",
   "design": "v1",
   "publishConfig": {
@@ -16,15 +16,15 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "@khanacademy/wonder-blocks-core": "workspace:*",
-    "@khanacademy/wonder-blocks-layout": "workspace:*",
-    "@khanacademy/wonder-blocks-tokens": "workspace:*"
+    "@osati-ai/wonder-blocks-core": "workspace:*",
+    "@osati-ai/wonder-blocks-layout": "workspace:*",
+    "@osati-ai/wonder-blocks-tokens": "workspace:*"
   },
   "peerDependencies": {
     "aphrodite": "catalog:",
     "react": "catalog:"
   },
   "devDependencies": {
-    "@khanacademy/wb-dev-build-settings": "workspace:*"
+    "@osati-ai/wb-dev-build-settings": "workspace:*"
   }
 }

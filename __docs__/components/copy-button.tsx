@@ -1,10 +1,10 @@
 import * as React from "react";
 import CopyIcon from "@phosphor-icons/core/bold/copy-bold.svg";
 import CheckIcon from "@phosphor-icons/core/bold/check-bold.svg";
-import IconButton from "@khanacademy/wonder-blocks-icon-button";
-import {announceMessage} from "@khanacademy/wonder-blocks-announcer";
+import IconButton from "@osati-ai/wonder-blocks-icon-button";
+import {announceMessage} from "@osati-ai/wonder-blocks-announcer";
 import {IconButtonProps} from "../../packages/wonder-blocks-icon-button/src/util/icon-button.types";
-import {StyleType} from "@khanacademy/wonder-blocks-core";
+import {StyleType} from "@osati-ai/wonder-blocks-core";
 
 type Props = {
     value: string;

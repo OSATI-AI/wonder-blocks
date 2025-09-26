@@ -1,9 +1,9 @@
 import * as React from "react";
 import type {ArgTypes} from "@storybook/react";
-import {PhosphorIcon} from "@khanacademy/wonder-blocks-icon";
-import Pill from "@khanacademy/wonder-blocks-pill";
+import {PhosphorIcon} from "@osati-ai/wonder-blocks-icon";
+import Pill from "@osati-ai/wonder-blocks-pill";
 import {IconMappings} from "../wonder-blocks-icon/phosphor-icon.argtypes";
-import type {ActionItem} from "@khanacademy/wonder-blocks-dropdown";
+import type {ActionItem} from "@osati-ai/wonder-blocks-dropdown";
 
 const AccessoryMappings = {
     none: null,

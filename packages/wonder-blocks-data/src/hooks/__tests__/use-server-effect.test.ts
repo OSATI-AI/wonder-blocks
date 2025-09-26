@@ -2,9 +2,9 @@ import {renderHook} from "@testing-library/react";
 import {
     renderHookStatic,
     testHarness,
-} from "@khanacademy/wonder-blocks-testing-core";
+} from "@osati-ai/wonder-blocks-testing-core";
 
-import {Server} from "@khanacademy/wonder-blocks-core";
+import {Server} from "@osati-ai/wonder-blocks-core";
 
 import TrackData from "../../components/track-data";
 import {RequestFulfillment} from "../../util/request-fulfillment";

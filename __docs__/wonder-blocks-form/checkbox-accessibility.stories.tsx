@@ -1,10 +1,10 @@
 import * as React from "react";
 import {StyleSheet} from "aphrodite";
 
-import {PropsFor, View} from "@khanacademy/wonder-blocks-core";
-import {Checkbox} from "@khanacademy/wonder-blocks-form";
-import {BodyText} from "@khanacademy/wonder-blocks-typography";
-import {semanticColor} from "@khanacademy/wonder-blocks-tokens";
+import {PropsFor, View} from "@osati-ai/wonder-blocks-core";
+import {Checkbox} from "@osati-ai/wonder-blocks-form";
+import {BodyText} from "@osati-ai/wonder-blocks-typography";
+import {semanticColor} from "@osati-ai/wonder-blocks-tokens";
 
 type CheckboxProps = PropsFor<typeof Checkbox>;
 

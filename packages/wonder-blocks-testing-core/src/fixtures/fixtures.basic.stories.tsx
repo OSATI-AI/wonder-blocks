@@ -38,6 +38,7 @@ export const F1: unknown = fixture(
 
 export const F2: unknown = fixture(
     "This is a fixture with props from functions, and a bit of logging",
+    // @ts-expect-error - log is not defined
     ({log}) => {
         log("This is a log from a fixture during props generation", {
             and: "some data",

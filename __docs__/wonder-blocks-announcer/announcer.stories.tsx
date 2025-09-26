@@ -5,9 +5,9 @@ import type {Meta, StoryObj} from "@storybook/react";
 import {
     announceMessage,
     type AnnounceMessageProps,
-} from "@khanacademy/wonder-blocks-announcer";
-import Button from "@khanacademy/wonder-blocks-button";
-import {View} from "@khanacademy/wonder-blocks-core";
+} from "@osati-ai/wonder-blocks-announcer";
+import Button from "@osati-ai/wonder-blocks-button";
+import {View} from "@osati-ai/wonder-blocks-core";
 
 import ComponentInfo from "../components/component-info";
 import packageConfig from "../../packages/wonder-blocks-announcer/package.json";
@@ -86,7 +86,7 @@ type StoryComponentType = StoryObj<typeof AnnouncerExample>;
  * Calling `announceMessage` in an event handler:
  *
  * ```jsx
- * import { announceMessage } from "@khanacademy/wonder-blocks-announcer";
+ * import { announceMessage } from "@osati-ai/wonder-blocks-announcer";
  *
  * <div>
  *      <button onClick={() => announceMessage({message: 'Saved your work for you.'})}>
@@ -98,7 +98,7 @@ type StoryComponentType = StoryObj<typeof AnnouncerExample>;
  * Calling `announceMessage` in React.useEffect() when state changes:
  *
  *```jsx
- *  import { announceMessage } from "@khanacademy/wonder-blocks-announcer";
+ *  import { announceMessage } from "@osati-ai/wonder-blocks-announcer";
  *
  * const MyComponent = () => {
  *      React.useEffect(() => {
@@ -130,7 +130,7 @@ Otherwise it will default to `document.body` (without the `targetElement` proper
 #### Usage
 ```jsx
  * import { useRef } from "React";
- * import { initAnnouncer } from "@khanacademy/wonder-blocks-announcer";
+ * import { initAnnouncer } from "@osati-ai/wonder-blocks-announcer";
  *
  * const LayoutComponent = () => {
  *      const containerRef = useRef(null);

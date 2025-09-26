@@ -1,6 +1,6 @@
 import * as React from "react";
 
-import {AccordionSection} from "@khanacademy/wonder-blocks-accordion";
+import {AccordionSection} from "@osati-ai/wonder-blocks-accordion";
 
 import ComponentTile from "../component-tile";
 import {CommonTileProps} from "../types";

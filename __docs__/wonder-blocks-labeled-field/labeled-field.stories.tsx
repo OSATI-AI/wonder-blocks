@@ -3,20 +3,20 @@ import type {Meta, StoryObj} from "@storybook/react";
 import {StyleSheet} from "aphrodite";
 import ComponentInfo from "../components/component-info";
 import packageConfig from "../../packages/wonder-blocks-labeled-field/package.json";
-import {LabeledField} from "@khanacademy/wonder-blocks-labeled-field";
-import {TextArea, TextField} from "@khanacademy/wonder-blocks-form";
+import {LabeledField} from "@osati-ai/wonder-blocks-labeled-field";
+import {TextArea, TextField} from "@osati-ai/wonder-blocks-form";
 import LabeledFieldArgTypes from "./labeled-field.argtypes";
-import {addStyle, PropsFor, View} from "@khanacademy/wonder-blocks-core";
-import {border, semanticColor, sizing} from "@khanacademy/wonder-blocks-tokens";
+import {addStyle, PropsFor, View} from "@osati-ai/wonder-blocks-core";
+import {border, semanticColor, sizing} from "@osati-ai/wonder-blocks-tokens";
 import {
     MultiSelect,
     OptionItem,
     SingleSelect,
-} from "@khanacademy/wonder-blocks-dropdown";
-import SearchField from "@khanacademy/wonder-blocks-search-field";
-import Button from "@khanacademy/wonder-blocks-button";
+} from "@osati-ai/wonder-blocks-dropdown";
+import SearchField from "@osati-ai/wonder-blocks-search-field";
+import Button from "@osati-ai/wonder-blocks-button";
 import {themeModes} from "../../.storybook/modes";
-import {Heading} from "@khanacademy/wonder-blocks-typography";
+import {Heading} from "@osati-ai/wonder-blocks-typography";
 
 /**
  * A LabeledField is an element that provides a label, context label, and

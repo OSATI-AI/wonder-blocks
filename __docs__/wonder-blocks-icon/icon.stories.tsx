@@ -3,10 +3,10 @@ import type {Meta, StoryObj} from "@storybook/react";
 import {StyleSheet} from "aphrodite";
 import ComponentInfo from "../components/component-info";
 import packageConfig from "../../packages/wonder-blocks-icon/package.json";
-import {GemIcon, Icon, StreakIcon} from "@khanacademy/wonder-blocks-icon";
-import {View} from "@khanacademy/wonder-blocks-core";
-import {border, sizing} from "@khanacademy/wonder-blocks-tokens";
-import {LabelSmall} from "@khanacademy/wonder-blocks-typography";
+import {GemIcon, Icon, StreakIcon} from "@osati-ai/wonder-blocks-icon";
+import {View} from "@osati-ai/wonder-blocks-core";
+import {border, sizing} from "@osati-ai/wonder-blocks-tokens";
+import {LabelSmall} from "@osati-ai/wonder-blocks-typography";
 import {
     multiColoredIcon,
     singleColoredIcon,

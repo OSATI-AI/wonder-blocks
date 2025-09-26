@@ -9,17 +9,17 @@ import {
     TabItem,
     TabRenderProps,
     Tabs,
-} from "@khanacademy/wonder-blocks-tabs";
+} from "@osati-ai/wonder-blocks-tabs";
 import argTypes from "./tabs.argtypes";
-import Button from "@khanacademy/wonder-blocks-button";
-import Link from "@khanacademy/wonder-blocks-link";
-import {TextField} from "@khanacademy/wonder-blocks-form";
-import {View} from "@khanacademy/wonder-blocks-core";
+import Button from "@osati-ai/wonder-blocks-button";
+import Link from "@osati-ai/wonder-blocks-link";
+import {TextField} from "@osati-ai/wonder-blocks-form";
+import {View} from "@osati-ai/wonder-blocks-core";
 import {Placeholder} from "../components/placeholder";
 import {generateTabs, ControlledTabs} from "./tabs-utils";
-import {sizing} from "@khanacademy/wonder-blocks-tokens";
-import Tooltip from "@khanacademy/wonder-blocks-tooltip";
-import {Popover, PopoverContent} from "@khanacademy/wonder-blocks-popover";
+import {sizing} from "@osati-ai/wonder-blocks-tokens";
+import Tooltip from "@osati-ai/wonder-blocks-tooltip";
+import {Popover, PopoverContent} from "@osati-ai/wonder-blocks-popover";
 
 const tabs: TabItem[] = [
     {

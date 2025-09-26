@@ -5,10 +5,10 @@ import {
     render,
     waitFor,
 } from "@testing-library/react";
-import {renderHookStatic} from "@khanacademy/wonder-blocks-testing-core";
+import {renderHookStatic} from "@osati-ai/wonder-blocks-testing-core";
 import {values} from "@khanacademy/wonder-stuff-core";
 
-import {Server} from "@khanacademy/wonder-blocks-core";
+import {Server} from "@osati-ai/wonder-blocks-core";
 import {Status} from "../../util/status";
 
 import {RequestFulfillment} from "../../util/request-fulfillment";

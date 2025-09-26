@@ -3,11 +3,11 @@ import {
     Link as ReactRouterLink,
     useInRouterContext,
 } from "react-router-dom-v5-compat";
-import {getClickableBehavior} from "@khanacademy/wonder-blocks-clickable";
+import {getClickableBehavior} from "@osati-ai/wonder-blocks-clickable";
 
-import type {AriaProps, StyleType} from "@khanacademy/wonder-blocks-core";
-import {PhosphorIcon} from "@khanacademy/wonder-blocks-icon";
-import type {Typography} from "@khanacademy/wonder-blocks-typography";
+import type {AriaProps, StyleType} from "@osati-ai/wonder-blocks-core";
+import {PhosphorIcon} from "@osati-ai/wonder-blocks-icon";
+import type {Typography} from "@osati-ai/wonder-blocks-typography";
 import LinkCore from "./link-core";
 
 type CommonProps = AriaProps & {

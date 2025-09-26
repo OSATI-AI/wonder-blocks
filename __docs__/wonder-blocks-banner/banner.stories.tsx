@@ -3,11 +3,11 @@ import {StyleSheet} from "aphrodite";
 import type {Meta, StoryObj} from "@storybook/react";
 import magnifyingGlass from "@phosphor-icons/core/regular/magnifying-glass.svg";
 
-import Button from "@khanacademy/wonder-blocks-button";
-import {View} from "@khanacademy/wonder-blocks-core";
-import Link from "@khanacademy/wonder-blocks-link";
-import {border, semanticColor, sizing} from "@khanacademy/wonder-blocks-tokens";
-import Banner from "@khanacademy/wonder-blocks-banner";
+import Button from "@osati-ai/wonder-blocks-button";
+import {View} from "@osati-ai/wonder-blocks-core";
+import Link from "@osati-ai/wonder-blocks-link";
+import {border, semanticColor, sizing} from "@osati-ai/wonder-blocks-tokens";
+import Banner from "@osati-ai/wonder-blocks-banner";
 
 import BannerArgTypes from "./banner.argtypes";
 import ComponentInfo from "../components/component-info";
@@ -29,7 +29,7 @@ type StoryComponentType = StoryObj<typeof Banner>;
  *
  * ### Usage
  * ```jsx
- * import Banner from "@khanacademy/wonder-blocks-banner";
+ * import Banner from "@osati-ai/wonder-blocks-banner";
  *
  * <Banner
  *     text="Here is some example text."

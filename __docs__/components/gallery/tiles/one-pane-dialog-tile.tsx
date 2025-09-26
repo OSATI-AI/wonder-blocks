@@ -1,10 +1,10 @@
 import * as React from "react";
 import {StyleSheet} from "aphrodite";
 
-import Button from "@khanacademy/wonder-blocks-button";
-import {View} from "@khanacademy/wonder-blocks-core";
-import {OnePaneDialog} from "@khanacademy/wonder-blocks-modal";
-import {Body} from "@khanacademy/wonder-blocks-typography";
+import Button from "@osati-ai/wonder-blocks-button";
+import {View} from "@osati-ai/wonder-blocks-core";
+import {OnePaneDialog} from "@osati-ai/wonder-blocks-modal";
+import {Body} from "@osati-ai/wonder-blocks-typography";
 
 import ComponentTile from "../component-tile";
 import {CommonTileProps} from "../types";

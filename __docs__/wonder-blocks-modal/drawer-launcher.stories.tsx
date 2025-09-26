@@ -2,15 +2,15 @@ import * as React from "react";
 import {StyleSheet} from "aphrodite";
 import type {Meta, StoryObj} from "@storybook/react";
 
-import Button from "@khanacademy/wonder-blocks-button";
-import {View} from "@khanacademy/wonder-blocks-core";
-import {ActionMenu, ActionItem} from "@khanacademy/wonder-blocks-dropdown";
-import {RadioGroup, Choice} from "@khanacademy/wonder-blocks-form";
-import {LabeledField} from "@khanacademy/wonder-blocks-labeled-field";
-import {sizing} from "@khanacademy/wonder-blocks-tokens";
-import {BodyText} from "@khanacademy/wonder-blocks-typography";
+import Button from "@osati-ai/wonder-blocks-button";
+import {View} from "@osati-ai/wonder-blocks-core";
+import {ActionMenu, ActionItem} from "@osati-ai/wonder-blocks-dropdown";
+import {RadioGroup, Choice} from "@osati-ai/wonder-blocks-form";
+import {LabeledField} from "@osati-ai/wonder-blocks-labeled-field";
+import {sizing} from "@osati-ai/wonder-blocks-tokens";
+import {BodyText} from "@osati-ai/wonder-blocks-typography";
 
-import {DrawerDialog, DrawerLauncher} from "@khanacademy/wonder-blocks-modal";
+import {DrawerDialog, DrawerLauncher} from "@osati-ai/wonder-blocks-modal";
 import packageConfig from "../../packages/wonder-blocks-modal/package.json";
 
 import type {ModalElement} from "../../packages/wonder-blocks-modal/src/util/types";
@@ -83,9 +83,9 @@ export default {
 ### Usage
 
 \`\`\`jsx
-import {DrawerLauncher} from "@khanacademy/wonder-blocks-modal";
-import {DrawerDialog} from "@khanacademy/wonder-blocks-modal";
-import {BodyText} from "@khanacademy/wonder-blocks-typography";
+import {DrawerLauncher} from "@osati-ai/wonder-blocks-modal";
+import {DrawerDialog} from "@osati-ai/wonder-blocks-modal";
+import {BodyText} from "@osati-ai/wonder-blocks-typography";
 
 <DrawerLauncher
      onClose={handleClose}

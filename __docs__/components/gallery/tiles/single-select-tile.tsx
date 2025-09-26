@@ -1,7 +1,7 @@
 import * as React from "react";
 
-import {View} from "@khanacademy/wonder-blocks-core";
-import {OptionItem, SingleSelect} from "@khanacademy/wonder-blocks-dropdown";
+import {View} from "@osati-ai/wonder-blocks-core";
+import {OptionItem, SingleSelect} from "@osati-ai/wonder-blocks-dropdown";
 
 import ComponentTile from "../component-tile";
 import {styles} from "../styles";

@@ -2,16 +2,16 @@ import * as React from "react";
 import type {Meta, StoryObj} from "@storybook/react";
 import info from "@phosphor-icons/core/regular/info.svg";
 import {ScenariosLayout} from "../components/scenarios-layout";
-import {addStyle, View} from "@khanacademy/wonder-blocks-core";
+import {addStyle, View} from "@osati-ai/wonder-blocks-core";
 import {
     border,
     semanticColor,
     spacing,
-} from "@khanacademy/wonder-blocks-tokens";
-import Clickable from "@khanacademy/wonder-blocks-clickable";
-import {actionStyles} from "@khanacademy/wonder-blocks-styles";
-import IconButton from "@khanacademy/wonder-blocks-icon-button";
-import Button from "@khanacademy/wonder-blocks-button";
+} from "@osati-ai/wonder-blocks-tokens";
+import Clickable from "@osati-ai/wonder-blocks-clickable";
+import {actionStyles} from "@osati-ai/wonder-blocks-styles";
+import IconButton from "@osati-ai/wonder-blocks-icon-button";
+import Button from "@osati-ai/wonder-blocks-button";
 
 const StyledButton = addStyle("button");
 

@@ -1,5 +1,5 @@
 {
-  "name": "@khanacademy/wonder-blocks-tabs",
+  "name": "@osati-ai/wonder-blocks-tabs",
   "version": "0.3.27",
   "design": "v1",
   "description": "Tabs are used to control what content is shown",
@@ -16,15 +16,15 @@
     "access": "public"
   },
   "dependencies": {
-    "@khanacademy/wonder-blocks-core": "workspace:*",
-    "@khanacademy/wonder-blocks-tokens": "workspace:*",
-    "@khanacademy/wonder-blocks-typography": "workspace:*"
+    "@osati-ai/wonder-blocks-core": "workspace:*",
+    "@osati-ai/wonder-blocks-tokens": "workspace:*",
+    "@osati-ai/wonder-blocks-typography": "workspace:*"
   },
   "peerDependencies": {
     "aphrodite": "catalog:",
     "react": "catalog:"
   },
   "devDependencies": {
-    "@khanacademy/wb-dev-build-settings": "workspace:*"
+    "@osati-ai/wb-dev-build-settings": "workspace:*"
   }
 }

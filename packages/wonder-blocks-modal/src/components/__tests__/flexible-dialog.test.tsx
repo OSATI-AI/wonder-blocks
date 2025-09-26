@@ -1,7 +1,7 @@
 import * as React from "react";
 import {render, screen, within} from "@testing-library/react";
 
-import {Heading, BodyText} from "@khanacademy/wonder-blocks-typography";
+import {Heading, BodyText} from "@osati-ai/wonder-blocks-typography";
 import FlexibleDialog from "../flexible-dialog";
 
 describe("FlexibleDialog", () => {

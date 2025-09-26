@@ -3,13 +3,13 @@ import {Meta, StoryObj} from "@storybook/react";
 import {themeModes} from "../../.storybook/modes";
 import ComponentInfo from "../components/component-info";
 import packageConfig from "../../packages/wonder-blocks-search-field/package.json";
-import SearchField from "@khanacademy/wonder-blocks-search-field";
+import SearchField from "@osati-ai/wonder-blocks-search-field";
 import {defaultPseudoStates, StateSheet} from "../components/state-sheet";
 import {
     longText,
     longTextWithNoWordBreak,
 } from "../components/text-for-testing";
-import {LabeledField} from "@khanacademy/wonder-blocks-labeled-field";
+import {LabeledField} from "@osati-ai/wonder-blocks-labeled-field";
 
 export default {
     title: "Packages / SearchField / Testing / Snapshots / SearchField",

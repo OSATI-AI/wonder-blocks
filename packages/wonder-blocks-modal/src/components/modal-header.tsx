@@ -1,9 +1,9 @@
 import * as React from "react";
-import {Breadcrumbs} from "@khanacademy/wonder-blocks-breadcrumbs";
-import {View} from "@khanacademy/wonder-blocks-core";
-import {Heading, BodyText} from "@khanacademy/wonder-blocks-typography";
+import {Breadcrumbs} from "@osati-ai/wonder-blocks-breadcrumbs";
+import {View} from "@osati-ai/wonder-blocks-core";
+import {Heading, BodyText} from "@osati-ai/wonder-blocks-typography";
 import {StyleSheet} from "aphrodite";
-import {semanticColor} from "@khanacademy/wonder-blocks-tokens";
+import {semanticColor} from "@osati-ai/wonder-blocks-tokens";
 import theme from "../theme";
 
 type Common = {

@@ -1,4 +1,4 @@
-# @khanacademy/wonder-blocks-timing
+# @osati-ai/wonder-blocks-timing
 
 ## 7.0.2
 

@@ -3,11 +3,11 @@ import {Meta, StoryObj} from "@storybook/react";
 import info from "@phosphor-icons/core/regular/info.svg";
 import ComponentInfo from "../components/component-info";
 import packageConfig from "../../packages/wonder-blocks-styles/package.json";
-import IconButton from "@khanacademy/wonder-blocks-icon-button";
-import {focusStyles} from "@khanacademy/wonder-blocks-styles";
-import {addStyle, View} from "@khanacademy/wonder-blocks-core";
-import {semanticColor, spacing} from "@khanacademy/wonder-blocks-tokens";
-import Clickable from "@khanacademy/wonder-blocks-clickable";
+import IconButton from "@osati-ai/wonder-blocks-icon-button";
+import {focusStyles} from "@osati-ai/wonder-blocks-styles";
+import {addStyle, View} from "@osati-ai/wonder-blocks-core";
+import {semanticColor, spacing} from "@osati-ai/wonder-blocks-tokens";
+import Clickable from "@osati-ai/wonder-blocks-clickable";
 import {ScenariosLayout} from "../components/scenarios-layout";
 
 /**
@@ -16,7 +16,7 @@ import {ScenariosLayout} from "../components/scenarios-layout";
  * ### Usage
  *
  * ```tsx
- * import {focusStyles} from "@khanacademy/wonder-blocks-styles";
+ * import {focusStyles} from "@osati-ai/wonder-blocks-styles";
  *
  * <StyledButton style={focusStyles.focus}>
  *      Custom button

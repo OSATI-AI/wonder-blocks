@@ -1,6 +1,6 @@
 import * as React from "react";
 import {StoryObj} from "@storybook/react";
-import {GemBadge} from "@khanacademy/wonder-blocks-badge";
+import {GemBadge} from "@osati-ai/wonder-blocks-badge";
 import ComponentInfo from "../components/component-info";
 import packageConfig from "../../packages/wonder-blocks-badge/package.json";
 import badgeArgTypes, {showIconArgType} from "./badge.argtypes";

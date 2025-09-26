@@ -1,5 +1,5 @@
 import {Meta} from "@storybook/blocks";
-import {Data} from "@khanacademy/wonder-blocks-data";
+import {Data} from "@osati-ai/wonder-blocks-data";
 
 <Meta
     title="Packages / Data / Exports / Data"
@@ -47,11 +47,11 @@ We start out without any data and so the request is made. Upon receipt of that
 data or an error, we re-render.
 
 ```jsx
-import {Body, BodyMonospace} from "@khanacademy/wonder-blocks-typography";
-import {View} from "@khanacademy/wonder-blocks-core";
-import {Data} from "@khanacademy/wonder-blocks-data";
-import {Strut} from "@khanacademy/wonder-blocks-layout";
-import {color, spacing} from "@khanacademy/wonder-blocks-tokens";
+import {Body, BodyMonospace} from "@osati-ai/wonder-blocks-typography";
+import {View} from "@osati-ai/wonder-blocks-core";
+import {Data} from "@osati-ai/wonder-blocks-data";
+import {Strut} from "@osati-ai/wonder-blocks-layout";
+import {color, spacing} from "@osati-ai/wonder-blocks-tokens";
 
 const myValidHandler = () =>
     new Promise((resolve, reject) =>
@@ -103,10 +103,10 @@ the `Data` component will render it immediately. The hydration cache is
 populated using the `initializeHydrationCache` method before rendering.
 
 ```jsx
-import {Body, BodyMonospace} from "@khanacademy/wonder-blocks-typography";
-import {View} from "@khanacademy/wonder-blocks-core";
-import {Data, initializeHydrationCache} from "@khanacademy/wonder-blocks-data";
-import {Strut} from "@khanacademy/wonder-blocks-layout";
+import {Body, BodyMonospace} from "@osati-ai/wonder-blocks-typography";
+import {View} from "@osati-ai/wonder-blocks-core";
+import {Data, initializeHydrationCache} from "@osati-ai/wonder-blocks-data";
+import {Strut} from "@osati-ai/wonder-blocks-layout";
 
 const myHandler = () => {
     throw new Error(

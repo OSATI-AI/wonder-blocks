@@ -3,15 +3,15 @@ import {StyleSheet} from "aphrodite";
 
 import {action} from "@storybook/addon-actions";
 import type {Meta, StoryObj} from "@storybook/react";
-import {PropsFor, View} from "@khanacademy/wonder-blocks-core";
-import Button from "@khanacademy/wonder-blocks-button";
-import {Checkbox} from "@khanacademy/wonder-blocks-form";
-import {OnePaneDialog, ModalLauncher} from "@khanacademy/wonder-blocks-modal";
-import {border, semanticColor, sizing} from "@khanacademy/wonder-blocks-tokens";
-import {Heading} from "@khanacademy/wonder-blocks-typography";
-import {MultiSelect, OptionItem} from "@khanacademy/wonder-blocks-dropdown";
-import Pill from "@khanacademy/wonder-blocks-pill";
-import type {LabelsValues} from "@khanacademy/wonder-blocks-dropdown";
+import {PropsFor, View} from "@osati-ai/wonder-blocks-core";
+import Button from "@osati-ai/wonder-blocks-button";
+import {Checkbox} from "@osati-ai/wonder-blocks-form";
+import {OnePaneDialog, ModalLauncher} from "@osati-ai/wonder-blocks-modal";
+import {border, semanticColor, sizing} from "@osati-ai/wonder-blocks-tokens";
+import {Heading} from "@osati-ai/wonder-blocks-typography";
+import {MultiSelect, OptionItem} from "@osati-ai/wonder-blocks-dropdown";
+import Pill from "@osati-ai/wonder-blocks-pill";
+import type {LabelsValues} from "@osati-ai/wonder-blocks-dropdown";
 
 import ComponentInfo from "../components/component-info";
 import packageConfig from "../../packages/wonder-blocks-dropdown/package.json";
@@ -24,8 +24,8 @@ import {
     chatIcon,
 } from "./option-item-examples";
 import {OpenerProps} from "../../packages/wonder-blocks-dropdown/src/util/types";
-import {LabeledField} from "@khanacademy/wonder-blocks-labeled-field";
-import {focusStyles} from "@khanacademy/wonder-blocks-styles";
+import {LabeledField} from "@osati-ai/wonder-blocks-labeled-field";
+import {focusStyles} from "@osati-ai/wonder-blocks-styles";
 
 type StoryComponentType = StoryObj<typeof MultiSelect>;
 
@@ -50,7 +50,7 @@ type MultiSelectArgs = Partial<typeof MultiSelect>;
  * ### Usage
  *
  * ```tsx
- * import {OptionItem, MultiSelect} from "@khanacademy/wonder-blocks-dropdown";
+ * import {OptionItem, MultiSelect} from "@osati-ai/wonder-blocks-dropdown";
  *
  * <MultiSelect aria-label="Fruits" onChange={setSelectedValues} selectedValues={selectedValues}>
  *  <OptionItem value="pear">Pear</OptionItem>

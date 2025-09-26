@@ -1,8 +1,8 @@
 import * as React from "react";
 import type {Meta, StoryObj} from "@storybook/react";
-import {Body, LabelSmall} from "@khanacademy/wonder-blocks-typography";
+import {Body, LabelSmall} from "@osati-ai/wonder-blocks-typography";
 
-import {TooltipContent} from "@khanacademy/wonder-blocks-tooltip";
+import {TooltipContent} from "@osati-ai/wonder-blocks-tooltip";
 import packageConfig from "../../packages/wonder-blocks-tooltip/package.json";
 
 import ComponentInfo from "../components/component-info";

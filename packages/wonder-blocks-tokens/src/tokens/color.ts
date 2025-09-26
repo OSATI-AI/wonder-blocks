@@ -61,7 +61,7 @@ const fadedColorWithWhite = (color: string, alpha: number) =>
 /**
  * OG color primitives used for the Classic experience.
  *
- * @deprecated Use `semanticColor` from `@khanacademy/wonder-blocks-tokens` instead.
+ * @deprecated Use `semanticColor` from `@osati-ai/wonder-blocks-tokens` instead.
  */
 export const color = {
     // Wonder Blocks base colors

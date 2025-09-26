@@ -1,14 +1,14 @@
 import * as React from "react";
 import type {Meta, StoryObj} from "@storybook/react";
 
-import Link from "@khanacademy/wonder-blocks-link";
+import Link from "@osati-ai/wonder-blocks-link";
 
-import {PhosphorIcon} from "@khanacademy/wonder-blocks-icon";
+import {PhosphorIcon} from "@osati-ai/wonder-blocks-icon";
 import {IconMappings} from "../wonder-blocks-icon/phosphor-icon.argtypes";
 import {defaultPseudoStates, StateSheet} from "../components/state-sheet";
 import {allModes} from "../../.storybook/modes";
 import {rtlText} from "../components/text-for-testing";
-import {semanticColor} from "@khanacademy/wonder-blocks-tokens";
+import {semanticColor} from "@osati-ai/wonder-blocks-tokens";
 
 const rows = [
     {name: "Default", props: {}},

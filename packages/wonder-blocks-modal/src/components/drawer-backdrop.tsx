@@ -1,9 +1,9 @@
 import * as React from "react";
 
-import {View} from "@khanacademy/wonder-blocks-core";
+import {View} from "@osati-ai/wonder-blocks-core";
 
 import {StyleSheet} from "aphrodite";
-import {semanticColor} from "@khanacademy/wonder-blocks-tokens";
+import {semanticColor} from "@osati-ai/wonder-blocks-tokens";
 import {ModalLauncherPortalAttributeName} from "../util/constants";
 import {findFocusableNodes} from "../util/find-focusable-nodes";
 import type {ModalElement} from "../util/types";

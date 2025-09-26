@@ -1,13 +1,13 @@
-import {addStyle, AriaProps, StyleType} from "@khanacademy/wonder-blocks-core";
+import {addStyle, AriaProps, StyleType} from "@osati-ai/wonder-blocks-core";
 import {StyleSheet} from "aphrodite";
 import * as React from "react";
-import {styles as typographyStyles} from "@khanacademy/wonder-blocks-typography";
+import {styles as typographyStyles} from "@osati-ai/wonder-blocks-typography";
 import {
     border,
     breakpoint,
     semanticColor,
     sizing,
-} from "@khanacademy/wonder-blocks-tokens";
+} from "@osati-ai/wonder-blocks-tokens";
 
 type NavigationTabItemLinkProps = {style: StyleType; "aria-current"?: "page"};
 
@@ -57,8 +57,8 @@ const StyledLi = addStyle("li");
  * ## Usage
  *
  * ```jsx
- * import {NavigationTab, NavigationTabItem} from "@khanacademy/wonder-blocks-tabs";
- * import Link from "@khanacademy/wonder-blocks-link";
+ * import {NavigationTab, NavigationTabItem} from "@osati-ai/wonder-blocks-tabs";
+ * import Link from "@osati-ai/wonder-blocks-link";
  *
  * <NavigationTabs>
  *  <NavigationTabItem>

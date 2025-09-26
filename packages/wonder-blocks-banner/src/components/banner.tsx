@@ -3,12 +3,12 @@ import {StyleSheet} from "aphrodite";
 
 import xIcon from "@phosphor-icons/core/bold/x-bold.svg";
 
-import Button from "@khanacademy/wonder-blocks-button";
-import {addStyle, StyleType, View} from "@khanacademy/wonder-blocks-core";
-import {PhosphorIcon, PhosphorIconAsset} from "@khanacademy/wonder-blocks-icon";
-import IconButton from "@khanacademy/wonder-blocks-icon-button";
-import Link from "@khanacademy/wonder-blocks-link";
-import {font, semanticColor, sizing} from "@khanacademy/wonder-blocks-tokens";
+import Button from "@osati-ai/wonder-blocks-button";
+import {addStyle, StyleType, View} from "@osati-ai/wonder-blocks-core";
+import {PhosphorIcon, PhosphorIconAsset} from "@osati-ai/wonder-blocks-icon";
+import IconButton from "@osati-ai/wonder-blocks-icon-button";
+import Link from "@osati-ai/wonder-blocks-link";
+import {font, semanticColor, sizing} from "@osati-ai/wonder-blocks-tokens";
 
 import infoIcon from "@phosphor-icons/core/bold/info-bold.svg";
 import successIcon from "@phosphor-icons/core/bold/smiley-bold.svg";
@@ -211,7 +211,7 @@ const StyledDiv = addStyle("div");
  *
  * ### Usage
  * ```jsx
- * import Banner from "@khanacademy/wonder-blocks-banner";
+ * import Banner from "@osati-ai/wonder-blocks-banner";
  *
  * <Banner
  *     text="Here is some example text."

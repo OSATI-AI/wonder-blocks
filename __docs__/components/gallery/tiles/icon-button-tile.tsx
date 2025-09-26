@@ -1,8 +1,8 @@
 import * as React from "react";
 import magnifyingGlass from "@phosphor-icons/core/regular/magnifying-glass.svg";
 
-import {View} from "@khanacademy/wonder-blocks-core";
-import IconButton from "@khanacademy/wonder-blocks-icon-button";
+import {View} from "@osati-ai/wonder-blocks-core";
+import IconButton from "@osati-ai/wonder-blocks-icon-button";
 
 import ComponentTile from "../component-tile";
 import {styles} from "../styles";

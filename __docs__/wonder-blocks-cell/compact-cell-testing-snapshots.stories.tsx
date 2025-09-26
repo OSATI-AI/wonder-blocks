@@ -1,8 +1,8 @@
 import * as React from "react";
 import type {Meta, StoryObj} from "@storybook/react";
 
-import {CompactCell} from "@khanacademy/wonder-blocks-cell";
-import {PhosphorIcon} from "@khanacademy/wonder-blocks-icon";
+import {CompactCell} from "@osati-ai/wonder-blocks-cell";
+import {PhosphorIcon} from "@osati-ai/wonder-blocks-icon";
 import {IconMappings} from "../wonder-blocks-icon/phosphor-icon.argtypes";
 import {defaultPseudoStates, StateSheet} from "../components/state-sheet";
 import {

@@ -2,19 +2,19 @@ import * as React from "react";
 import {StyleSheet} from "aphrodite";
 import type {StyleDeclaration} from "aphrodite";
 
-import Clickable from "@khanacademy/wonder-blocks-clickable";
-import {View} from "@khanacademy/wonder-blocks-core";
-import {BodyText} from "@khanacademy/wonder-blocks-typography";
-import type {StyleType, AriaProps} from "@khanacademy/wonder-blocks-core";
-import type {ClickableRole} from "@khanacademy/wonder-blocks-clickable";
+import Clickable from "@osati-ai/wonder-blocks-clickable";
+import {View} from "@osati-ai/wonder-blocks-core";
+import {BodyText} from "@osati-ai/wonder-blocks-typography";
+import type {StyleType, AriaProps} from "@osati-ai/wonder-blocks-core";
+import type {ClickableRole} from "@osati-ai/wonder-blocks-clickable";
 import {
     semanticColor,
     border,
     color,
     sizing,
-} from "@khanacademy/wonder-blocks-tokens";
-import type {Typography} from "@khanacademy/wonder-blocks-typography";
-import {focusStyles} from "@khanacademy/wonder-blocks-styles";
+} from "@osati-ai/wonder-blocks-tokens";
+import type {Typography} from "@osati-ai/wonder-blocks-typography";
+import {focusStyles} from "@osati-ai/wonder-blocks-styles";
 
 export type PillKind =
     | "neutral"
@@ -121,7 +121,7 @@ const PillInner = (props: {
  * ### Usage
  *
  * ```jsx
- * import Pill from "@khanacademy/wonder-blocks-pill";
+ * import Pill from "@osati-ai/wonder-blocks-pill";
  *
  * <Pill text="Hello, world!" />
  * ```

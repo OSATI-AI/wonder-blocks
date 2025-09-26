@@ -1,10 +1,10 @@
 import * as React from "react";
 import {StyleSheet} from "aphrodite";
 
-import type {AriaProps, StyleType} from "@khanacademy/wonder-blocks-core";
-import {addStyle, View} from "@khanacademy/wonder-blocks-core";
-import {spacing} from "@khanacademy/wonder-blocks-tokens";
-import {Body, HeadingSmall} from "@khanacademy/wonder-blocks-typography";
+import type {AriaProps, StyleType} from "@osati-ai/wonder-blocks-core";
+import {addStyle, View} from "@osati-ai/wonder-blocks-core";
+import {spacing} from "@osati-ai/wonder-blocks-tokens";
+import {Body, HeadingSmall} from "@osati-ai/wonder-blocks-typography";
 
 import type {PopoverContextType} from "./popover-context";
 
@@ -92,7 +92,7 @@ const StyledImg = addStyle("img");
  * ### Usage
  *
  * ```jsx
- * import {PopoverContent} from "@khanacademy/wonder-blocks-popover";
+ * import {PopoverContent} from "@osati-ai/wonder-blocks-popover";
  *
  * <PopoverContent
  *  closeButtonVisible

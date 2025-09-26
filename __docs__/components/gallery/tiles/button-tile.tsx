@@ -1,8 +1,8 @@
 import * as React from "react";
 import {StyleSheet} from "aphrodite";
 
-import Button from "@khanacademy/wonder-blocks-button";
-import {spacing} from "@khanacademy/wonder-blocks-tokens";
+import Button from "@osati-ai/wonder-blocks-button";
+import {spacing} from "@osati-ai/wonder-blocks-tokens";
 
 import ComponentTile from "../component-tile";
 import {CommonTileProps} from "../types";

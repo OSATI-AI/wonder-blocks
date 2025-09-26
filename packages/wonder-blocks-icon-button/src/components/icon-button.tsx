@@ -1,9 +1,9 @@
 import * as React from "react";
 import {StyleSheet} from "aphrodite";
 
-import {PhosphorIcon} from "@khanacademy/wonder-blocks-icon";
-import {focusStyles} from "@khanacademy/wonder-blocks-styles";
-import {semanticColor} from "@khanacademy/wonder-blocks-tokens";
+import {PhosphorIcon} from "@osati-ai/wonder-blocks-icon";
+import {focusStyles} from "@osati-ai/wonder-blocks-styles";
+import {semanticColor} from "@osati-ai/wonder-blocks-tokens";
 
 import type {
     IconButtonActionType,
@@ -88,7 +88,7 @@ function IconChooser({
  *
  * ```js
  * import magnifyingGlassIcon from "@phosphor-icons/core/regular/magnifying-glass.svg";
- * import IconButton from "@khanacademy/wonder-blocks-icon-button";
+ * import IconButton from "@osati-ai/wonder-blocks-icon-button";
  *
  * <IconButton
  *     icon={magnifyingGlassIcon}

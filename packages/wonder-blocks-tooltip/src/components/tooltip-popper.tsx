@@ -15,7 +15,7 @@ import {
     type Placement as FloatingPlacement,
 } from "@floating-ui/react";
 
-import {spacing} from "@khanacademy/wonder-blocks-tokens";
+import {spacing} from "@osati-ai/wonder-blocks-tokens";
 import type {
     Placement,
     FloatingElementProps,
@@ -111,15 +111,15 @@ export default function TooltipPopper(props: Props): React.ReactNode {
         whileElementsMounted: shouldAutoUpdate ? autoUpdate : undefined,
         middleware: [
             offset(8), // Space between anchor and tooltip
-            flip({
-                boundary: rootBoundary === "viewport" ? "clippingAncestors" as const : "viewport" as const,
-                padding: viewportPadding,
-            }),
-            shift({
-                boundary: rootBoundary === "viewport" ? "clippingAncestors" as const : "viewport" as const,
-                padding: viewportPadding,
-                limiter: limitShift(),
-            }),
+            // flip({
+            //     boundary: rootBoundary === "viewport" ? "clippingAncestors" as const : "viewport" as const,
+            //     padding: viewportPadding,
+            // }),
+            // shift({
+            //     boundary: rootBoundary === "viewport" ? "clippingAncestors" as const : "viewport" as const,
+            //     padding: viewportPadding,
+            //     limiter: limitShift(),
+            // }),
             arrow({element: arrowRef}),
             hide(),
             // Custom middleware to replace smallViewportModifier
@@ -129,10 +129,10 @@ export default function TooltipPopper(props: Props): React.ReactNode {
                     if (!elements.floating || !elements.reference) {
                         return {};
                     }
-                    
+
                     const popperHeight = rects.floating.height + rects.reference.height;
                     const viewportHeight = window.innerHeight;
-                    
+
                     if (viewportHeight < popperHeight && middlewareData.hide) {
                         return {
                             data: {

@@ -12,7 +12,7 @@
         "emitDeclarationOnly": true,
 
         "paths": {
-            "@khanacademy/*": [
+            "@osati-ai/*": [
                 "./*/src"
             ]
         },

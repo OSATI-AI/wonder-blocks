@@ -1,7 +1,7 @@
 import * as React from "react";
 
-import {View} from "@khanacademy/wonder-blocks-core";
-import {CircularSpinner} from "@khanacademy/wonder-blocks-progress-spinner";
+import {View} from "@osati-ai/wonder-blocks-core";
+import {CircularSpinner} from "@osati-ai/wonder-blocks-progress-spinner";
 
 import ComponentTile from "../component-tile";
 import {styles} from "../styles";

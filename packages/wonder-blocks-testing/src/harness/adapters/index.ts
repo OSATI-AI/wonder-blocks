@@ -1,5 +1,5 @@
-import {harnessAdapters} from "@khanacademy/wonder-blocks-testing-core";
-import type {TestHarnessConfigs} from "@khanacademy/wonder-blocks-testing-core";
+import {harnessAdapters} from "@osati-ai/wonder-blocks-testing-core";
+import type {TestHarnessConfigs} from "@osati-ai/wonder-blocks-testing-core";
 import * as data from "./data";
 import * as renderState from "./render-state";
 

@@ -1,9 +1,9 @@
 import * as React from "react";
 import {StyleSheet} from "aphrodite";
 
-import {PhosphorIcon} from "@khanacademy/wonder-blocks-icon";
-import {focusStyles} from "@khanacademy/wonder-blocks-styles";
-import {border, semanticColor, sizing} from "@khanacademy/wonder-blocks-tokens";
+import {PhosphorIcon} from "@osati-ai/wonder-blocks-icon";
+import {focusStyles} from "@osati-ai/wonder-blocks-styles";
+import {border, semanticColor, sizing} from "@osati-ai/wonder-blocks-tokens";
 
 import type {
     ActivityIconButtonActionType,
@@ -38,7 +38,7 @@ type Props = BaseIconButtonProps & {
  *
  * ```tsx
  * import microphone from "@phosphor-icons/core/bold/microphone-bold.svg";
- * import {ConversationIconButton} from "@khanacademy/wonder-blocks-icon-button";
+ * import {ConversationIconButton} from "@osati-ai/wonder-blocks-icon-button";
  *
  * <ConversationIconButton
  *     icon={microphone}

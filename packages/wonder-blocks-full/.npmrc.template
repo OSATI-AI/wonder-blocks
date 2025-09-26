@@ -5,5 +5,5 @@
 @osati-ai:registry=https://npm.pkg.github.com
 //npm.pkg.github.com/:_authToken=${GITHUB_TOKEN}
 
-# All other packages (including @khanacademy/*) will use default npmjs.org registry
+# All other packages (including @osati-ai/*) will use default npmjs.org registry
 # No additional configuration needed for public packages

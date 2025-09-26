@@ -1,0 +1,39 @@
+import { StyleType } from "@osati-ai/wonder-blocks-core";
+import * as React from "react";
+type Props = {
+    /**
+     * The id of the tablist.
+     */
+    id?: string;
+    /**
+     * Optional test ID for e2e testing.
+     */
+    testId?: string;
+    /**
+     * The contents of the tablist.
+     */
+    children: React.ReactNode;
+    /**
+     * If there is no visible label for the tablist, set aria-label to a
+     * label describing the tablist.
+     */
+    "aria-label"?: string;
+    /**
+     * If the tablist has a visible label, set aria-labelledby to a value
+     * that refers to the labelling element.
+     */
+    "aria-labelledby"?: string;
+    /**
+     * Called when focus moves out of the tablist.
+     */
+    onBlur?: (event: React.FocusEvent<HTMLDivElement>) => void;
+    /**
+     * Custom styles for the `Tablist` component.
+     */
+    style?: StyleType;
+};
+/**
+ * A component that has `role="tablist"` and is used to group tab elements.
+ */
+export declare const Tablist: React.ForwardRefExoticComponent<Props & React.RefAttributes<HTMLDivElement>>;
+export {};

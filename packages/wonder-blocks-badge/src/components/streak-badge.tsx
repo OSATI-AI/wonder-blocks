@@ -1,7 +1,7 @@
 import * as React from "react";
 import {StyleSheet} from "aphrodite";
-import {Icon, StreakIcon} from "@khanacademy/wonder-blocks-icon";
-import {semanticColor} from "@khanacademy/wonder-blocks-tokens";
+import {Icon, StreakIcon} from "@osati-ai/wonder-blocks-icon";
+import {semanticColor} from "@osati-ai/wonder-blocks-tokens";
 import {Badge} from "./badge";
 import {BaseBadgeProps, ShowIconProps} from "../types";
 

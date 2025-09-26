@@ -1,5 +1,5 @@
 {
-  "name": "@khanacademy/wonder-blocks-tooltip",
+  "name": "@osati-ai/wonder-blocks-tooltip",
   "version": "4.1.42",
   "design": "v1",
   "publishConfig": {
@@ -16,11 +16,11 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "@khanacademy/wonder-blocks-core": "workspace:*",
-    "@khanacademy/wonder-blocks-layout": "workspace:*",
-    "@khanacademy/wonder-blocks-modal": "workspace:*",
-    "@khanacademy/wonder-blocks-tokens": "workspace:*",
-    "@khanacademy/wonder-blocks-typography": "workspace:*"
+    "@osati-ai/wonder-blocks-core": "workspace:*",
+    "@osati-ai/wonder-blocks-layout": "workspace:*",
+    "@osati-ai/wonder-blocks-modal": "workspace:*",
+    "@osati-ai/wonder-blocks-tokens": "workspace:*",
+    "@osati-ai/wonder-blocks-typography": "workspace:*"
   },
   "peerDependencies": {
     "@floating-ui/react": "catalog:",
@@ -30,6 +30,6 @@
     "react-dom": "catalog:"
   },
   "devDependencies": {
-    "@khanacademy/wb-dev-build-settings": "workspace:*"
+    "@osati-ai/wb-dev-build-settings": "workspace:*"
   }
 }

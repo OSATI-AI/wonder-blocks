@@ -1,9 +1,9 @@
 import * as React from "react";
 import {StyleSheet} from "aphrodite";
-import {View} from "@khanacademy/wonder-blocks-core";
-import {LabelMedium} from "@khanacademy/wonder-blocks-typography";
-import {TextArea} from "@khanacademy/wonder-blocks-form";
-import {spacing} from "@khanacademy/wonder-blocks-tokens";
+import {View} from "@osati-ai/wonder-blocks-core";
+import {LabelMedium} from "@osati-ai/wonder-blocks-typography";
+import {TextArea} from "@osati-ai/wonder-blocks-form";
+import {spacing} from "@osati-ai/wonder-blocks-tokens";
 
 export default {
     title: "Packages / Form / Overview", // Named the same as overiew docs to hide it from the sidebar

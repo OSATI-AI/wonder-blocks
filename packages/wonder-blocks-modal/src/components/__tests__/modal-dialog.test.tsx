@@ -72,7 +72,7 @@ describe("ModalDialog", () => {
 
     it("forwards the ref to the dialog element", () => {
         // Arrange
-        const ref: React.RefObject<HTMLDivElement> = React.createRef();
+        const ref: React.RefObject<HTMLDivElement | null> = React.createRef();
 
         // Act
         render(

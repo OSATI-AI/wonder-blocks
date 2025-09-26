@@ -1,10 +1,10 @@
 import * as React from "react";
 import {StyleSheet} from "aphrodite";
 
-import {DetailCell} from "@khanacademy/wonder-blocks-cell";
-import {View} from "@khanacademy/wonder-blocks-core";
-import {PhosphorIcon} from "@khanacademy/wonder-blocks-icon";
-import * as tokens from "@khanacademy/wonder-blocks-tokens";
+import {DetailCell} from "@osati-ai/wonder-blocks-cell";
+import {View} from "@osati-ai/wonder-blocks-core";
+import {PhosphorIcon} from "@osati-ai/wonder-blocks-icon";
+import * as tokens from "@osati-ai/wonder-blocks-tokens";
 import {IconMappings} from "../../../wonder-blocks-icon/phosphor-icon.argtypes";
 
 import ComponentTile from "../component-tile";

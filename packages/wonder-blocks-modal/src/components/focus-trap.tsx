@@ -1,9 +1,9 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
 
-import {View} from "@khanacademy/wonder-blocks-core";
+import {View} from "@osati-ai/wonder-blocks-core";
 
-import type {StyleType} from "@khanacademy/wonder-blocks-core";
+import type {StyleType} from "@osati-ai/wonder-blocks-core";
 
 /**
  * List of elements that can be focused

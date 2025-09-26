@@ -1,1 +1,1 @@
-export * from "@khanacademy/wonder-blocks-labeled-field";
+export * from "@osati-ai/wonder-blocks-labeled-field";

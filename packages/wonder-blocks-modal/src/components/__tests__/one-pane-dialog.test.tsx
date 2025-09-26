@@ -4,7 +4,7 @@ import {render, screen} from "@testing-library/react";
 import {
     Breadcrumbs,
     BreadcrumbsItem,
-} from "@khanacademy/wonder-blocks-breadcrumbs";
+} from "@osati-ai/wonder-blocks-breadcrumbs";
 import OnePaneDialog from "../one-pane-dialog";
 
 describe("OnePaneDialog", () => {

@@ -1,9 +1,9 @@
 import * as React from "react";
 import {StyleSheet} from "aphrodite";
 
-import {border} from "@khanacademy/wonder-blocks-tokens";
-import {addStyle, View} from "@khanacademy/wonder-blocks-core";
-import {focusStyles} from "@khanacademy/wonder-blocks-styles";
+import {border} from "@osati-ai/wonder-blocks-tokens";
+import {addStyle, View} from "@osati-ai/wonder-blocks-core";
+import {focusStyles} from "@osati-ai/wonder-blocks-styles";
 import theme from "../theme/index";
 import type {ChoiceCoreProps, Checked} from "../util/types";
 
@@ -60,7 +60,7 @@ const StyledInput = addStyle("input");
                     style={defaultStyle}
                     data-testid={testId}
                     ref={(node) => {
-                        // @ts-expect-error: current is not actually read-only
+                        // @ts-ignore: current is not actually read-only
                         innerRef.current = node;
                         if (typeof ref === "function") {
                             ref(node);

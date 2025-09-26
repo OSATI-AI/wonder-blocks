@@ -1,4 +1,4 @@
-import {Server} from "@khanacademy/wonder-blocks-core";
+import {Server} from "@osati-ai/wonder-blocks-core";
 import {SsrCache} from "../ssr-cache";
 import {SerializableInMemoryCache} from "../serializable-in-memory-cache";
 

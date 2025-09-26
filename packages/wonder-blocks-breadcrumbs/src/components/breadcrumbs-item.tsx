@@ -1,10 +1,10 @@
 import * as React from "react";
 import {StyleSheet} from "aphrodite";
 
-import type {AriaProps} from "@khanacademy/wonder-blocks-core";
-import {addStyle} from "@khanacademy/wonder-blocks-core";
-import Link from "@khanacademy/wonder-blocks-link";
-import {font, spacing} from "@khanacademy/wonder-blocks-tokens";
+import type {AriaProps} from "@osati-ai/wonder-blocks-core";
+import {addStyle} from "@osati-ai/wonder-blocks-core";
+import Link from "@osati-ai/wonder-blocks-link";
+import {font, spacing} from "@osati-ai/wonder-blocks-tokens";
 
 type Props = AriaProps & {
     /**

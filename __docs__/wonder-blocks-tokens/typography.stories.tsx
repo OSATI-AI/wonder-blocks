@@ -1,9 +1,9 @@
 import * as React from "react";
 import {Title, Subtitle, Description, Stories} from "@storybook/blocks";
 import {Meta} from "@storybook/react";
-import {View} from "@khanacademy/wonder-blocks-core";
+import {View} from "@osati-ai/wonder-blocks-core";
 import TokenTable from "../components/token-table";
-import * as tokens from "@khanacademy/wonder-blocks-tokens";
+import * as tokens from "@osati-ai/wonder-blocks-tokens";
 import {themeModes} from "../../.storybook/modes";
 import ComponentInfo from "../components/component-info";
 import packageConfig from "../../packages/wonder-blocks-tokens/package.json";
@@ -24,7 +24,7 @@ import {Code} from "../components/code";
  * and weight of text elements in our components.
  *
  * ```tsx
- * import {font} from "@khanacademy/wonder-blocks-tokens";
+ * import {font} from "@osati-ai/wonder-blocks-tokens";
  * const styles = {
  *     fontSize: font.heading.size.large,
  *     lineHeight: font.heading.lineHeight.large,

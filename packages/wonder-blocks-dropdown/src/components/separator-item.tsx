@@ -4,10 +4,10 @@
 import * as React from "react";
 import {StyleSheet} from "aphrodite";
 
-import {border, semanticColor, sizing} from "@khanacademy/wonder-blocks-tokens";
-import {View} from "@khanacademy/wonder-blocks-core";
+import {border, semanticColor, sizing} from "@osati-ai/wonder-blocks-tokens";
+import {View} from "@osati-ai/wonder-blocks-core";
 
-import type {StyleType} from "@khanacademy/wonder-blocks-core";
+import type {StyleType} from "@osati-ai/wonder-blocks-core";
 
 /**
  * A separator used in a dropdown menu.

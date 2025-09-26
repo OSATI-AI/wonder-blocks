@@ -2,9 +2,9 @@ import * as React from "react";
 import {css, StyleSheet} from "aphrodite";
 import type {Meta, StoryObj} from "@storybook/react";
 
-import {addStyle, View} from "@khanacademy/wonder-blocks-core";
-import {OptionItem, SingleSelect} from "@khanacademy/wonder-blocks-dropdown";
-import {color, sizing, spacing} from "@khanacademy/wonder-blocks-tokens";
+import {addStyle, View} from "@osati-ai/wonder-blocks-core";
+import {OptionItem, SingleSelect} from "@osati-ai/wonder-blocks-dropdown";
+import {color, sizing, spacing} from "@osati-ai/wonder-blocks-tokens";
 import {
     Title,
     Heading,
@@ -25,7 +25,7 @@ import {
     Caption,
     Footnote,
     styles as typographyStyles,
-} from "@khanacademy/wonder-blocks-typography";
+} from "@osati-ai/wonder-blocks-typography";
 import packageConfig from "../../packages/wonder-blocks-typography/package.json";
 
 import ComponentInfo from "../components/component-info";
@@ -45,7 +45,7 @@ labels.
 ### Usage
 
 ```jsx
-import {Body, Title} from "@khanacademy/wonder-blocks-typography";
+import {Body, Title} from "@osati-ai/wonder-blocks-typography";
 
 <Title>Title: Hello, world!</Title>
 <Body>This is just a regular paragraph</Body>
@@ -436,7 +436,7 @@ LineHeight.parameters = {
  * The following shows the typography styles available.
  *
  * ```
- *     import { styles as typographyStyles } from "@khanacademy/wonder-blocks-typography";
+ *     import { styles as typographyStyles } from "@osati-ai/wonder-blocks-typography";
  * ```
  */
 export const TypographyStyles: StoryObj = {

@@ -1,12 +1,12 @@
 import * as React from "react";
 import {render} from "@testing-library/react";
-import * as Tooltip from "@khanacademy/wonder-blocks-tooltip";
+import * as Tooltip from "@osati-ai/wonder-blocks-tooltip";
 
-import type {Placement} from "@khanacademy/wonder-blocks-tooltip";
+import type {Placement} from "@osati-ai/wonder-blocks-tooltip";
 import PopoverDialog from "../popover-dialog";
 import PopoverContentCore from "../popover-content-core";
 
-jest.mock("@khanacademy/wonder-blocks-tooltip");
+jest.mock("@osati-ai/wonder-blocks-tooltip");
 
 describe("PopoverDialog", () => {
     it("should call onUpdate if placement is changed", () => {

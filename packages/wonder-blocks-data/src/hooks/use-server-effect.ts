@@ -1,4 +1,4 @@
-import {Server} from "@khanacademy/wonder-blocks-core";
+import {Server} from "@osati-ai/wonder-blocks-core";
 import {useContext} from "react";
 import {TrackerContext} from "../util/request-tracking";
 import {SsrCache} from "../util/ssr-cache";

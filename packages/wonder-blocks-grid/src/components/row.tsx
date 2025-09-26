@@ -1,12 +1,12 @@
 import * as React from "react";
-import {View} from "@khanacademy/wonder-blocks-core";
+import {View} from "@osati-ai/wonder-blocks-core";
 import {
     MediaLayout,
     Strut,
     queryMatchesSize,
-} from "@khanacademy/wonder-blocks-layout";
-import type {StyleType} from "@khanacademy/wonder-blocks-core";
-import type {MediaQuery, MediaSize} from "@khanacademy/wonder-blocks-layout";
+} from "@osati-ai/wonder-blocks-layout";
+import type {StyleType} from "@osati-ai/wonder-blocks-core";
+import type {MediaQuery, MediaSize} from "@osati-ai/wonder-blocks-layout";
 
 import styles from "../util/styles";
 import Gutter from "./gutter";

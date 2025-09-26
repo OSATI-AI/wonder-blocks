@@ -1,7 +1,7 @@
 import {
     GraphQLJson,
     mockRequester,
-} from "@khanacademy/wonder-blocks-testing-core";
+} from "@osati-ai/wonder-blocks-testing-core";
 import {gqlRequestMatchesMock} from "./gql-request-matches-mock";
 import type {GqlFetchMockFn, GqlMockOperation} from "./types";
 

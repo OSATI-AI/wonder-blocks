@@ -3,8 +3,8 @@ import * as React from "react";
 import {fireEvent, render, screen} from "@testing-library/react";
 import {userEvent} from "@testing-library/user-event";
 
-import {PropsFor, View} from "@khanacademy/wonder-blocks-core";
-import Button from "@khanacademy/wonder-blocks-button";
+import {PropsFor, View} from "@osati-ai/wonder-blocks-core";
+import Button from "@osati-ai/wonder-blocks-button";
 
 import TextField from "../text-field";
 
@@ -793,7 +793,7 @@ describe("TextField", () => {
                     <TextField
                         value="tooShort"
                         onChange={() => {}}
-                        validate={(value) => {
+                        validate={(value: string) => {
                             if (value.length < 10) {
                                 return "Error: value should be >= 10";
                             }
@@ -813,7 +813,7 @@ describe("TextField", () => {
                     <TextField
                         value=""
                         onChange={() => {}}
-                        validate={(value) => {
+                        validate={(value: string) => {
                             if (value.length < 10) {
                                 return "Error: value should be >= 10";
                             }
@@ -833,7 +833,7 @@ describe("TextField", () => {
                     <TextField
                         value="LongerThan10"
                         onChange={() => {}}
-                        validate={(value) => {
+                        validate={(value: string) => {
                             if (value.length < 10) {
                                 return "Error: value should be >= 10";
                             }
@@ -854,7 +854,7 @@ describe("TextField", () => {
                         <TextField
                             value={value}
                             onChange={setValue}
-                            validate={(value) => {
+                            validate={(value: string) => {
                                 if (value.length > 4) {
                                     return "Error";
                                 }
@@ -881,7 +881,7 @@ describe("TextField", () => {
                         <TextField
                             value={value}
                             onChange={setValue}
-                            validate={(value) => {
+                            validate={(value: string) => {
                                 if (value.length > 4) {
                                     return "Error";
                                 }

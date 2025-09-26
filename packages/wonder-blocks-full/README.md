@@ -83,10 +83,10 @@ function MyComponent() {
 ### Option 2: Import from original packages (recommended for tree-shaking)
 
 ```typescript
-import { Button } from "@khanacademy/wonder-blocks-button";
-import { Text, View } from "@khanacademy/wonder-blocks-core";
-import { Modal } from "@khanacademy/wonder-blocks-modal";
-import { Dropdown } from "@khanacademy/wonder-blocks-dropdown";
+import { Button } from "@osati-ai/wonder-blocks-button";
+import { Text, View } from "@osati-ai/wonder-blocks-core";
+import { Modal } from "@osati-ai/wonder-blocks-modal";
+import { Dropdown } from "@osati-ai/wonder-blocks-dropdown";
 ```
 
 ### Option 3: Import namespaced exports
@@ -114,60 +114,60 @@ function MyComponent() {
 All Wonder Blocks components are available either as direct exports or as namespaced exports from the main package. For optimal tree-shaking, you can also import directly from the individual packages:
 
 ### Core Components
-- **@khanacademy/wonder-blocks-core** - Core utilities, components (View, Text, etc.)
-- **@khanacademy/wonder-blocks-button** - Button components
-- **@khanacademy/wonder-blocks-clickable** - Clickable wrapper component
-- **@khanacademy/wonder-blocks-icon** - Icon components
-- **@khanacademy/wonder-blocks-icon-button** - Icon button components
-- **@khanacademy/wonder-blocks-link** - Link components
-- **@khanacademy/wonder-blocks-typography** - Typography components
+- **@osati-ai/wonder-blocks-core** - Core utilities, components (View, Text, etc.)
+- **@osati-ai/wonder-blocks-button** - Button components
+- **@osati-ai/wonder-blocks-clickable** - Clickable wrapper component
+- **@osati-ai/wonder-blocks-icon** - Icon components
+- **@osati-ai/wonder-blocks-icon-button** - Icon button components
+- **@osati-ai/wonder-blocks-link** - Link components
+- **@osati-ai/wonder-blocks-typography** - Typography components
 
 ### Layout & Structure
-- **@khanacademy/wonder-blocks-layout** - Layout utilities (Row, Column, etc.)
-- **@khanacademy/wonder-blocks-grid** - Grid system components
+- **@osati-ai/wonder-blocks-layout** - Layout utilities (Row, Column, etc.)
+- **@osati-ai/wonder-blocks-grid** - Grid system components
 
 ### Form Components
-- **@khanacademy/wonder-blocks-form** - Form components (TextInput, etc.)
-- **@khanacademy/wonder-blocks-labeled-field** - Labeled field wrapper
-- **@khanacademy/wonder-blocks-search-field** - Search input component
-- **@khanacademy/wonder-blocks-switch** - Switch/toggle component
-- **@khanacademy/wonder-blocks-birthday-picker** - Birthday picker component
+- **@osati-ai/wonder-blocks-form** - Form components (TextInput, etc.)
+- **@osati-ai/wonder-blocks-labeled-field** - Labeled field wrapper
+- **@osati-ai/wonder-blocks-search-field** - Search input component
+- **@osati-ai/wonder-blocks-switch** - Switch/toggle component
+- **@osati-ai/wonder-blocks-birthday-picker** - Birthday picker component
 
 ### Navigation & Information
-- **@khanacademy/wonder-blocks-breadcrumbs** - Breadcrumb navigation
-- **@khanacademy/wonder-blocks-tabs** - Tab components
-- **@khanacademy/wonder-blocks-dropdown** - Dropdown components
-- **@khanacademy/wonder-blocks-modal** - Modal components
-- **@khanacademy/wonder-blocks-popover** - Popover components
-- **@khanacademy/wonder-blocks-tooltip** - Tooltip components
+- **@osati-ai/wonder-blocks-breadcrumbs** - Breadcrumb navigation
+- **@osati-ai/wonder-blocks-tabs** - Tab components
+- **@osati-ai/wonder-blocks-dropdown** - Dropdown components
+- **@osati-ai/wonder-blocks-modal** - Modal components
+- **@osati-ai/wonder-blocks-popover** - Popover components
+- **@osati-ai/wonder-blocks-tooltip** - Tooltip components
 
 ### Display Components
-- **@khanacademy/wonder-blocks-badge** - Badge components
-- **@khanacademy/wonder-blocks-banner** - Banner components
-- **@khanacademy/wonder-blocks-pill** - Pill components
-- **@khanacademy/wonder-blocks-cell** - Cell/list item components
-- **@khanacademy/wonder-blocks-accordion** - Accordion/collapsible components
-- **@khanacademy/wonder-blocks-progress-spinner** - Loading spinner
-- **@khanacademy/wonder-blocks-toolbar** - Toolbar components
+- **@osati-ai/wonder-blocks-badge** - Badge components
+- **@osati-ai/wonder-blocks-banner** - Banner components
+- **@osati-ai/wonder-blocks-pill** - Pill components
+- **@osati-ai/wonder-blocks-cell** - Cell/list item components
+- **@osati-ai/wonder-blocks-accordion** - Accordion/collapsible components
+- **@osati-ai/wonder-blocks-progress-spinner** - Loading spinner
+- **@osati-ai/wonder-blocks-toolbar** - Toolbar components
 
 ### Utilities & Styling
-- **@khanacademy/wonder-blocks-styles** - Styling utilities
-- **@khanacademy/wonder-blocks-tokens** - Design tokens
-- **@khanacademy/wonder-blocks-theming** - Theming utilities
-- **@khanacademy/wonder-blocks-timing** - Timing/animation utilities
-- **@khanacademy/wonder-blocks-data** - Data management utilities
-- **@khanacademy/wonder-blocks-announcer** - Accessibility announcer
+- **@osati-ai/wonder-blocks-styles** - Styling utilities
+- **@osati-ai/wonder-blocks-tokens** - Design tokens
+- **@osati-ai/wonder-blocks-theming** - Theming utilities
+- **@osati-ai/wonder-blocks-timing** - Timing/animation utilities
+- **@osati-ai/wonder-blocks-data** - Data management utilities
+- **@osati-ai/wonder-blocks-announcer** - Accessibility announcer
 
 ### Testing
-- **@khanacademy/wonder-blocks-testing** - Testing utilities
-- **@khanacademy/wonder-blocks-testing-core** - Core testing utilities
+- **@osati-ai/wonder-blocks-testing** - Testing utilities
+- **@osati-ai/wonder-blocks-testing-core** - Core testing utilities
 
 ## Examples
 
 ### Basic Button Usage
 
 ```typescript
-import { Button } from "@khanacademy/wonder-blocks-full";
+import { Button } from "@osati-ai/wonder-blocks-full";
 
 function MyComponent() {
     return (
@@ -264,16 +264,16 @@ Optional peer dependencies (required only if using router-related components):
 This package is fully tree-shakeable. When you import specific components from subpackages, bundlers like Webpack, Rollup, or Vite will only include the code you actually use.
 
 For optimal bundle size:
-- ✅ Use subpackage imports: `import { Button } from "@khanacademy/wonder-blocks-full/button"`
-- ❌ Avoid importing everything: `import * as WB from "@khanacademy/wonder-blocks-full"`
+- ✅ Use subpackage imports: `import { Button } from "@osati-ai/wonder-blocks-full/button"`
+- ❌ Avoid importing everything: `import * as WB from "@osati-ai/wonder-blocks-full"`
 
 ## TypeScript Support
 
 All packages include full TypeScript definitions. No need to install additional `@types/*` packages.
 
 ```typescript
-import type { ButtonProps } from "@khanacademy/wonder-blocks-full/button";
-import type { TextProps } from "@khanacademy/wonder-blocks-full/core";
+import type { ButtonProps } from "@osati-ai/wonder-blocks-full/button";
+import type { TextProps } from "@osati-ai/wonder-blocks-full/core";
 ```
 
 ## Migration from Individual Packages
@@ -282,18 +282,18 @@ If you're currently using individual Wonder Blocks packages, you can migrate gra
 
 ### Before
 ```typescript
-import { Button } from "@khanacademy/wonder-blocks-button";
-import { Text } from "@khanacademy/wonder-blocks-core";
-import { Modal } from "@khanacademy/wonder-blocks-modal";
+import { Button } from "@osati-ai/wonder-blocks-button";
+import { Text } from "@osati-ai/wonder-blocks-core";
+import { Modal } from "@osati-ai/wonder-blocks-modal";
 ```
 
 ### After
 ```typescript
 import { Button, Text, Modal } from "@osati-ai/wonder-blocks-full";
 // OR use individual packages for better tree-shaking
-import { Button } from "@khanacademy/wonder-blocks-button";
-import { Text } from "@khanacademy/wonder-blocks-core";
-import { Modal } from "@khanacademy/wonder-blocks-modal";
+import { Button } from "@osati-ai/wonder-blocks-button";
+import { Text } from "@osati-ai/wonder-blocks-core";
+import { Modal } from "@osati-ai/wonder-blocks-modal";
 ```
 
 The API remains exactly the same - you get the choice of convenience vs. optimal tree-shaking.
@@ -358,7 +358,7 @@ This repository includes several `.npmrc` files for different purposes:
 This setup allows consumers to use both private and public packages:
 
 - **Private packages** (`@osati-ai/*`): From GitHub Packages
-- **Public packages** (`@khanacademy/*`): From npmjs.org
+- **Public packages** (`@osati-ai/*`): From npmjs.org
 
 Example consumer `.npmrc`:
 ```bash
@@ -379,7 +379,7 @@ Example consumer `.npmrc`:
 
 - ✅ **Repository privacy**: Publishing does NOT make your repository public
 - ✅ **Package access**: Only users with repository access can install the package
-- ✅ **Mixed registries**: Public `@khanacademy/*` packages still work from npmjs
+- ✅ **Mixed registries**: Public `@osati-ai/*` packages still work from npmjs
 - ✅ **Authentication required**: Consumers need GitHub token with `read:packages` scope
 
 ## Contributing

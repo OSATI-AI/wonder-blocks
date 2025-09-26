@@ -1,5 +1,5 @@
 {
-  "name": "@khanacademy/wonder-blocks-timing",
+  "name": "@osati-ai/wonder-blocks-timing",
   "private": false,
   "version": "7.0.2",
   "design": "v1",
@@ -18,8 +18,8 @@
     "react": "catalog:"
   },
   "devDependencies": {
-    "@khanacademy/wb-dev-build-settings": "workspace:*",
-    "@khanacademy/wonder-blocks-testing-core": "workspace:*"
+    "@osati-ai/wb-dev-build-settings": "workspace:*",
+    "@osati-ai/wonder-blocks-testing-core": "workspace:*"
   },
   "author": "",
   "license": "MIT"

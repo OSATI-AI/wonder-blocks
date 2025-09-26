@@ -1,8 +1,9 @@
 import * as React from "react";
-import {Redirect, useLocation as useLocationV5} from "react-router-dom";
+import {useLocation as useLocationV5} from "react-router-dom";
 import {useLocation, useNavigate} from "react-router-dom-v5-compat";
 import {render} from "@testing-library/react";
 import * as Router from "../router";
+import { Link } from "react-router-dom";
 
 describe("Router.adapter", () => {
     it("should throw if the config does not match any expecations", () => {
@@ -158,7 +159,7 @@ describe("Router.adapter", () => {
                 const location = useLocationV5();
                 React.useEffect(() => navigateListen(location), [location]);
                 if (location.pathname === "/math") {
-                    return <Redirect to="/math/calculator" />;
+                    return <Link to="/math/calculator" />;
                 }
                 return null;
             };

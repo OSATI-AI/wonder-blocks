@@ -1,8 +1,8 @@
 import * as React from "react";
-import {View} from "@khanacademy/wonder-blocks-core";
+import {View} from "@osati-ai/wonder-blocks-core";
 
 import ComponentTile from "../component-tile";
-import {Listbox, OptionItem} from "@khanacademy/wonder-blocks-dropdown";
+import {Listbox, OptionItem} from "@osati-ai/wonder-blocks-dropdown";
 import {CommonTileProps} from "../types";
 
 type MaybeString = string | null | undefined;

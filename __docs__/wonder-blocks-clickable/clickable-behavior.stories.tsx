@@ -2,10 +2,10 @@ import * as React from "react";
 import {StyleSheet} from "aphrodite";
 import type {Meta, StoryObj} from "@storybook/react";
 
-import {View, addStyle} from "@khanacademy/wonder-blocks-core";
-import {semanticColor, spacing} from "@khanacademy/wonder-blocks-tokens";
+import {View, addStyle} from "@osati-ai/wonder-blocks-core";
+import {semanticColor, spacing} from "@osati-ai/wonder-blocks-tokens";
 
-import {getClickableBehavior} from "@khanacademy/wonder-blocks-clickable";
+import {getClickableBehavior} from "@osati-ai/wonder-blocks-clickable";
 import packageConfig from "../../packages/wonder-blocks-clickable/package.json";
 
 import ComponentInfo from "../components/component-info";

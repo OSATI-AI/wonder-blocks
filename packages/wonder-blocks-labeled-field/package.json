@@ -1,5 +1,5 @@
 {
-  "name": "@khanacademy/wonder-blocks-labeled-field",
+  "name": "@osati-ai/wonder-blocks-labeled-field",
   "version": "4.0.3",
   "design": "v1",
   "description": "LabeledField handles accessibility and layout for associating labels with form components.",
@@ -25,10 +25,10 @@
     "access": "public"
   },
   "dependencies": {
-    "@khanacademy/wonder-blocks-core": "workspace:*",
-    "@khanacademy/wonder-blocks-layout": "workspace:*",
-    "@khanacademy/wonder-blocks-tokens": "workspace:*",
-    "@khanacademy/wonder-blocks-typography": "workspace:*"
+    "@osati-ai/wonder-blocks-core": "workspace:*",
+    "@osati-ai/wonder-blocks-layout": "workspace:*",
+    "@osati-ai/wonder-blocks-tokens": "workspace:*",
+    "@osati-ai/wonder-blocks-typography": "workspace:*"
   },
   "peerDependencies": {
     "@phosphor-icons/core": "catalog:",
@@ -36,6 +36,6 @@
     "react": "catalog:"
   },
   "devDependencies": {
-    "@khanacademy/wb-dev-build-settings": "workspace:*"
+    "@osati-ai/wb-dev-build-settings": "workspace:*"
   }
 }

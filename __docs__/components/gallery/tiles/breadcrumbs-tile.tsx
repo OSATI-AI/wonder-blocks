@@ -3,9 +3,9 @@ import * as React from "react";
 import {
     Breadcrumbs,
     BreadcrumbsItem,
-} from "@khanacademy/wonder-blocks-breadcrumbs";
-import {View} from "@khanacademy/wonder-blocks-core";
-import Link from "@khanacademy/wonder-blocks-link";
+} from "@osati-ai/wonder-blocks-breadcrumbs";
+import {View} from "@osati-ai/wonder-blocks-core";
+import Link from "@osati-ai/wonder-blocks-link";
 
 import ComponentTile from "../component-tile";
 import {styles} from "../styles";

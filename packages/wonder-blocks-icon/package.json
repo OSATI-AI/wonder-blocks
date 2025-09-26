@@ -1,5 +1,5 @@
 {
-  "name": "@khanacademy/wonder-blocks-icon",
+  "name": "@osati-ai/wonder-blocks-icon",
   "version": "5.2.17",
   "design": "v1",
   "publishConfig": {
@@ -16,11 +16,11 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "@khanacademy/wonder-blocks-core": "workspace:*",
-    "@khanacademy/wonder-blocks-tokens": "workspace:*"
+    "@osati-ai/wonder-blocks-core": "workspace:*",
+    "@osati-ai/wonder-blocks-tokens": "workspace:*"
   },
   "devDependencies": {
-    "@khanacademy/wb-dev-build-settings": "workspace:*"
+    "@osati-ai/wb-dev-build-settings": "workspace:*"
   },
   "peerDependencies": {
     "@phosphor-icons/core": "catalog:",

@@ -2,11 +2,11 @@ import * as React from "react";
 import type {StoryObj} from "@storybook/react";
 import ComponentInfo from "../components/component-info";
 import packageConfig from "../../packages/wonder-blocks-badge/package.json";
-import {DueBadge} from "@khanacademy/wonder-blocks-badge";
-import {PropsFor, View} from "@khanacademy/wonder-blocks-core";
+import {DueBadge} from "@osati-ai/wonder-blocks-badge";
+import {PropsFor, View} from "@osati-ai/wonder-blocks-core";
 import badgeArgtypes, {showIconArgType} from "./badge.argtypes";
 import {themeModes} from "../../.storybook/modes";
-import {sizing} from "@khanacademy/wonder-blocks-tokens";
+import {sizing} from "@osati-ai/wonder-blocks-tokens";
 
 export default {
     title: "Packages / Badge / DueBadge",

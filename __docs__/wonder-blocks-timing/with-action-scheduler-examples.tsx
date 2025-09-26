@@ -1,8 +1,8 @@
 import * as React from "react";
-import Button from "@khanacademy/wonder-blocks-button";
-import {View} from "@khanacademy/wonder-blocks-core";
-import {withActionScheduler} from "@khanacademy/wonder-blocks-timing";
-import type {WithActionSchedulerProps} from "@khanacademy/wonder-blocks-timing";
+import Button from "@osati-ai/wonder-blocks-button";
+import {View} from "@osati-ai/wonder-blocks-core";
+import {withActionScheduler} from "@osati-ai/wonder-blocks-timing";
+import type {WithActionSchedulerProps} from "@osati-ai/wonder-blocks-timing";
 
 export const Unmounter = function (props: {
     children: React.ReactNode;

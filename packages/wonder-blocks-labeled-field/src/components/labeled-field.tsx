@@ -2,10 +2,10 @@ import * as React from "react";
 import {StyleSheet} from "aphrodite";
 import WarningCircle from "@phosphor-icons/core/bold/warning-circle-bold.svg";
 import LockIcon from "@phosphor-icons/core/bold/lock-bold.svg";
-import {BodyText} from "@khanacademy/wonder-blocks-typography";
-import {View, StyleType} from "@khanacademy/wonder-blocks-core";
-import {font, semanticColor, sizing} from "@khanacademy/wonder-blocks-tokens";
-import {PhosphorIcon} from "@khanacademy/wonder-blocks-icon";
+import {BodyText} from "@osati-ai/wonder-blocks-typography";
+import {View, StyleType} from "@osati-ai/wonder-blocks-core";
+import {font, semanticColor, sizing} from "@osati-ai/wonder-blocks-tokens";
+import {PhosphorIcon} from "@osati-ai/wonder-blocks-icon";
 import theme from "../theme";
 
 type Props = {
@@ -144,8 +144,8 @@ export default function LabeledField(props: Props) {
     const additionalHelperMessageId = `${uniqueId}-additional-helper-message`;
     const contextLabelId = `${uniqueId}-context-label`;
 
-    const hasError = !!errorMessage || !!field.props.error;
-    const isDisabled = !!field.props.disabled;
+    const hasError = !!errorMessage || !!(field.props as any).error;
+    const isDisabled = !!(field.props as any).disabled;
 
     function renderLabelAndContextLabel(): React.ReactNode {
         return (
@@ -255,6 +255,7 @@ export default function LabeledField(props: Props) {
 
     function renderField() {
         return React.cloneElement(field, {
+            // @ts-ignore
             id: fieldId,
             "aria-describedby": [
                 contextLabel && contextLabelId,
@@ -267,7 +268,7 @@ export default function LabeledField(props: Props) {
                 .join(" "),
             error: hasError,
             testId: testId ? `${testId}-field` : undefined,
-            readOnly: readOnlyMessage || field.props.readOnly,
+            readOnly: readOnlyMessage || ((field.props as any)?.readOnly ?? false),
         });
     }
 

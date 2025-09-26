@@ -1,10 +1,10 @@
 import * as React from "react";
 import {StyleSheet} from "aphrodite";
 
-import {View, addStyle, StyleType} from "@khanacademy/wonder-blocks-core";
-import {Strut} from "@khanacademy/wonder-blocks-layout";
-import {semanticColor, spacing} from "@khanacademy/wonder-blocks-tokens";
-import {LabelMedium, LabelSmall} from "@khanacademy/wonder-blocks-typography";
+import {View, addStyle, StyleType} from "@osati-ai/wonder-blocks-core";
+import {Strut} from "@osati-ai/wonder-blocks-layout";
+import {semanticColor, spacing} from "@osati-ai/wonder-blocks-tokens";
+import {LabelMedium, LabelSmall} from "@osati-ai/wonder-blocks-typography";
 import theme from "../theme";
 
 type Props = {

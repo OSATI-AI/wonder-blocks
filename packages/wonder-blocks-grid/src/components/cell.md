@@ -3,10 +3,10 @@
 A row inside of a grid containing many Cells. Each cell has a column width of 1 and will display at different sizes of the viewport (always matching the number of available columns).
 
 ```jsx
-import {Row} from "@khanacademy/wonder-blocks-grid";
-import Color from "@khanacademy/wonder-blocks-color";
-import {View, Text} from "@khanacademy/wonder-blocks-core";
-import {MediaLayout} from "@khanacademy/wonder-blocks-layout";
+import {Row} from "@osati-ai/wonder-blocks-grid";
+import Color from "@osati-ai/wonder-blocks-color";
+import {View, Text} from "@osati-ai/wonder-blocks-core";
+import {MediaLayout} from "@osati-ai/wonder-blocks-layout";
 import {StyleSheet} from "aphrodite";
 
 const styleSheets = {

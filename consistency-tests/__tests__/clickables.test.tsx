@@ -11,16 +11,16 @@ import {render, screen} from "@testing-library/react";
 import {userEvent} from "@testing-library/user-event";
 
 import plus from "@phosphor-icons/core/regular/plus.svg";
-import Button from "@khanacademy/wonder-blocks-button";
-import Clickable from "@khanacademy/wonder-blocks-clickable";
+import Button from "@osati-ai/wonder-blocks-button";
+import Clickable from "@osati-ai/wonder-blocks-clickable";
 import {
     CheckboxGroup,
     Choice,
     RadioGroup,
-} from "@khanacademy/wonder-blocks-form";
-import IconButton from "@khanacademy/wonder-blocks-icon-button";
-import Link from "@khanacademy/wonder-blocks-link";
-import {CompactCell, DetailCell} from "@khanacademy/wonder-blocks-cell";
+} from "@osati-ai/wonder-blocks-form";
+import IconButton from "@osati-ai/wonder-blocks-icon-button";
+import Link from "@osati-ai/wonder-blocks-link";
+import {CompactCell, DetailCell} from "@osati-ai/wonder-blocks-cell";
 
 // We create a wrapper around Clickable since it expects a render function for
 // is children while all of the other components do not.

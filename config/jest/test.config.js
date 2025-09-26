@@ -48,7 +48,7 @@ module.exports = {
         "<rootDir>/config/jest/matchers/to-have-no-a11y-violations.ts",
     ],
     moduleNameMapper: {
-        "^@khanacademy/wonder-blocks-(.*)$":
+        "^@osati-ai/wonder-blocks-(.*)$":
             "<rootDir>/packages/wonder-blocks-$1/src/index.ts",
     },
     collectCoverageFrom: [

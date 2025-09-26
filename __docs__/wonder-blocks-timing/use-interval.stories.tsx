@@ -1,14 +1,14 @@
 import * as React from "react";
 
-import {View} from "@khanacademy/wonder-blocks-core";
-import Button from "@khanacademy/wonder-blocks-button";
+import {View} from "@osati-ai/wonder-blocks-core";
+import Button from "@osati-ai/wonder-blocks-button";
 
 import {
     useInterval,
     ClearPolicy,
     SchedulePolicy,
-} from "@khanacademy/wonder-blocks-timing";
-import {Body} from "@khanacademy/wonder-blocks-typography";
+} from "@osati-ai/wonder-blocks-timing";
+import {Body} from "@osati-ai/wonder-blocks-typography";
 
 export default {
     title: "Packages / Timing / useInterval",

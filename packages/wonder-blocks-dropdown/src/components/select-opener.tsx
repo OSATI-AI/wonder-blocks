@@ -1,14 +1,14 @@
 import * as React from "react";
 import {StyleSheet} from "aphrodite";
 
-import {keys, type AriaProps} from "@khanacademy/wonder-blocks-core";
+import {keys, type AriaProps} from "@osati-ai/wonder-blocks-core";
 
-import {addStyle} from "@khanacademy/wonder-blocks-core";
-import {PhosphorIcon} from "@khanacademy/wonder-blocks-icon";
-import {BodyText} from "@khanacademy/wonder-blocks-typography";
-import {border, semanticColor, sizing} from "@khanacademy/wonder-blocks-tokens";
+import {addStyle} from "@osati-ai/wonder-blocks-core";
+import {PhosphorIcon} from "@osati-ai/wonder-blocks-icon";
+import {BodyText} from "@osati-ai/wonder-blocks-typography";
+import {border, semanticColor, sizing} from "@osati-ai/wonder-blocks-tokens";
 import caretDownIcon from "@phosphor-icons/core/bold/caret-down-bold.svg";
-import {focusStyles} from "@khanacademy/wonder-blocks-styles";
+import {focusStyles} from "@osati-ai/wonder-blocks-styles";
 import {DROPDOWN_ITEM_HEIGHT} from "../util/constants";
 import {OptionLabel} from "../util/types";
 import theme from "../theme";
@@ -28,7 +28,7 @@ type SelectOpenerProps = AriaProps & {
     /**
      * Whether or not the input is in an error state. Defaults to false.
      */
-    error: boolean;
+    error: boolean | undefined;
     /**
      * Auto-populated by parent. Used for accessibility purposes, where the label
      * id should match the field id.
@@ -38,7 +38,7 @@ type SelectOpenerProps = AriaProps & {
      * Whether the displayed text is a placeholder, determined by the creator
      * of this component. A placeholder has more faded text colors and styles.
      */
-    isPlaceholder: boolean;
+    isPlaceholder: boolean | undefined;
     /**
      * A label to expose on the opener, in the absence of an associated label element or `aria-labelledby`.
      */

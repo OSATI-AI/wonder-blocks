@@ -1,7 +1,7 @@
 import * as React from "react";
 
-import {View} from "@khanacademy/wonder-blocks-core";
-import Link from "@khanacademy/wonder-blocks-link";
+import {View} from "@osati-ai/wonder-blocks-core";
+import Link from "@osati-ai/wonder-blocks-link";
 
 import ComponentTile from "../component-tile";
 import {styles} from "../styles";

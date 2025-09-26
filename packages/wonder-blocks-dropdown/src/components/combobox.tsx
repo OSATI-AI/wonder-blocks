@@ -4,15 +4,15 @@ import * as React from "react";
 import caretDownIcon from "@phosphor-icons/core/regular/caret-down.svg";
 import xIcon from "@phosphor-icons/core/regular/x.svg";
 
-import {StyleType, View} from "@khanacademy/wonder-blocks-core";
-import {TextField} from "@khanacademy/wonder-blocks-form";
-import IconButton from "@khanacademy/wonder-blocks-icon-button";
-import {border, semanticColor, sizing} from "@khanacademy/wonder-blocks-tokens";
+import {StyleType, View} from "@osati-ai/wonder-blocks-core";
+import {TextField} from "@osati-ai/wonder-blocks-form";
+import IconButton from "@osati-ai/wonder-blocks-icon-button";
+import {border, semanticColor, sizing} from "@osati-ai/wonder-blocks-tokens";
 
-import {DetailCell} from "@khanacademy/wonder-blocks-cell";
-import {PhosphorIcon} from "@khanacademy/wonder-blocks-icon";
+import {DetailCell} from "@osati-ai/wonder-blocks-cell";
+import {PhosphorIcon} from "@osati-ai/wonder-blocks-icon";
 import {useId} from "react";
-import {focusStyles} from "@khanacademy/wonder-blocks-styles";
+import {focusStyles} from "@osati-ai/wonder-blocks-styles";
 import {useListbox} from "../hooks/use-listbox";
 import {useMultipleSelection} from "../hooks/use-multiple-selection";
 import {

@@ -1,6 +1,6 @@
 import * as React from "react";
 
-import SearchField from "@khanacademy/wonder-blocks-search-field";
+import SearchField from "@osati-ai/wonder-blocks-search-field";
 
 import ComponentTile from "../component-tile";
 import {CommonTileProps} from "../types";

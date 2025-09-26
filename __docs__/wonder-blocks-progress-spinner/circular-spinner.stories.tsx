@@ -2,10 +2,10 @@ import * as React from "react";
 import {StyleSheet, css} from "aphrodite";
 import type {Meta, StoryObj} from "@storybook/react";
 
-import {View} from "@khanacademy/wonder-blocks-core";
-import {color, spacing} from "@khanacademy/wonder-blocks-tokens";
-import {Body, LabelLarge} from "@khanacademy/wonder-blocks-typography";
-import {CircularSpinner} from "@khanacademy/wonder-blocks-progress-spinner";
+import {View} from "@osati-ai/wonder-blocks-core";
+import {color, spacing} from "@osati-ai/wonder-blocks-tokens";
+import {Body, LabelLarge} from "@osati-ai/wonder-blocks-typography";
+import {CircularSpinner} from "@osati-ai/wonder-blocks-progress-spinner";
 
 import ComponentInfo from "../components/component-info";
 import packageConfig from "../../packages/wonder-blocks-progress-spinner/package.json";

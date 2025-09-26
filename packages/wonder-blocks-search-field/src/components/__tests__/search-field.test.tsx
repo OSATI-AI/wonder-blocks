@@ -2,8 +2,8 @@ import * as React from "react";
 import {render, screen, waitFor} from "@testing-library/react";
 import {userEvent} from "@testing-library/user-event";
 
-import {PropsFor, View} from "@khanacademy/wonder-blocks-core";
-import Button from "@khanacademy/wonder-blocks-button";
+import {PropsFor, View} from "@osati-ai/wonder-blocks-core";
+import Button from "@osati-ai/wonder-blocks-button";
 
 import SearchField from "../search-field";
 
@@ -317,7 +317,7 @@ describe("SearchField", () => {
 
     test("forwards the ref to the input element", async () => {
         // Arrange
-        const ref: React.RefObject<HTMLInputElement> = React.createRef();
+        const ref: React.RefObject<HTMLInputElement | null> = React.createRef();
 
         // Act
         render(
@@ -337,7 +337,7 @@ describe("SearchField", () => {
 
     test("forwards the ref to the input element with the expected value", async () => {
         // Arrange
-        const ref: React.RefObject<HTMLInputElement> = React.createRef();
+        const ref: React.RefObject<HTMLInputElement | null> = React.createRef();
 
         // Act
         render(

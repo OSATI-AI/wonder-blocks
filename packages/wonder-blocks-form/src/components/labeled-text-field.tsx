@@ -1,6 +1,6 @@
 import * as React from "react";
 
-import {Id, StyleType} from "@khanacademy/wonder-blocks-core";
+import {Id, StyleType} from "@osati-ai/wonder-blocks-core";
 
 import FieldHeading from "./field-heading";
 import TextField from "./text-field";
@@ -70,7 +70,6 @@ type CommonProps = {
     ariaDescribedby?: string | undefined;
     /**
      * Provide a validation for the input value.
-     * Return a string error message or null | void for a valid input.
      */
     validate?: (value: string) => string | null | undefined;
     /**
@@ -286,13 +285,7 @@ class LabeledTextField extends React.Component<PropsWithForwardRef, State> {
     }
 }
 
-type ExportProps = OmitConstrained<
-    JSX.LibraryManagedAttributes<
-        typeof LabeledTextField,
-        React.ComponentProps<typeof LabeledTextField>
-    >,
-    "forwardedRef"
->;
+type ExportProps = OmitConstrained<Props, never>;
 
 /**
  * **DEPRECATED**: Please use `LabeledField` with `TextField` instead.
@@ -305,7 +298,7 @@ type ExportProps = OmitConstrained<
  * ### Usage
  *
  * ```jsx
- * import {LabeledTextField} from "@khanacademy/wonder-blocks-form";
+ * import {LabeledTextField} from "@osati-ai/wonder-blocks-form";
  *
  * const [value, setValue] = React.useState("");
  *

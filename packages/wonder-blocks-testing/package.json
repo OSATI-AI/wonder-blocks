@@ -1,5 +1,5 @@
 {
-  "name": "@khanacademy/wonder-blocks-testing",
+  "name": "@osati-ai/wonder-blocks-testing",
   "version": "15.1.7",
   "design": "v1",
   "publishConfig": {
@@ -14,9 +14,9 @@
     "prepublishOnly": "../../utils/publish/package-pre-publish-check.sh"
   },
   "dependencies": {
-    "@khanacademy/wonder-blocks-core": "workspace:*",
-    "@khanacademy/wonder-blocks-data": "workspace:*",
-    "@khanacademy/wonder-blocks-testing-core": "workspace:*"
+    "@osati-ai/wonder-blocks-core": "workspace:*",
+    "@osati-ai/wonder-blocks-data": "workspace:*",
+    "@osati-ai/wonder-blocks-testing-core": "workspace:*"
   },
   "peerDependencies": {
     "@khanacademy/wonder-stuff-core": "catalog:",
@@ -29,7 +29,7 @@
     "react-router-dom-v5-compat": "catalog:"
   },
   "devDependencies": {
-    "@khanacademy/wb-dev-build-settings": "workspace:*",
+    "@osati-ai/wb-dev-build-settings": "workspace:*",
     "@khanacademy/wonder-stuff-testing": "catalog:"
   },
   "author": "",

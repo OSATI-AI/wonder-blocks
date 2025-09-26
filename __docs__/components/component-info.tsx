@@ -1,9 +1,9 @@
 import * as React from "react";
 
 import githubLogo from "@phosphor-icons/core/fill/github-logo-fill.svg";
-import Button from "@khanacademy/wonder-blocks-button";
-import {View} from "@khanacademy/wonder-blocks-core";
-import {Caption} from "@khanacademy/wonder-blocks-typography";
+import Button from "@osati-ai/wonder-blocks-button";
+import {View} from "@osati-ai/wonder-blocks-core";
+import {Caption} from "@osati-ai/wonder-blocks-typography";
 
 type Props = {
     /**

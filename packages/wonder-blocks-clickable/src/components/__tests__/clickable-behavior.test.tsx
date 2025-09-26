@@ -4,7 +4,7 @@ import * as React from "react";
 import {render, screen, fireEvent, waitFor} from "@testing-library/react";
 import {MemoryRouter, Route, Routes} from "react-router-dom";
 import {userEvent} from "@testing-library/user-event";
-import {keys} from "@khanacademy/wonder-blocks-core";
+import {keys} from "@osati-ai/wonder-blocks-core";
 
 import getClickableBehavior from "../../util/get-clickable-behavior";
 import ClickableBehavior from "../clickable-behavior";

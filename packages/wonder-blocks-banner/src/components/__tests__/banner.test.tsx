@@ -2,7 +2,7 @@ import * as React from "react";
 import {render, screen} from "@testing-library/react";
 import magnifyingGlass from "@phosphor-icons/core/regular/magnifying-glass.svg";
 
-import Button from "@khanacademy/wonder-blocks-button";
+import Button from "@osati-ai/wonder-blocks-button";
 import customIcon from "./custom-icon-mock.svg";
 
 import Banner from "../banner";

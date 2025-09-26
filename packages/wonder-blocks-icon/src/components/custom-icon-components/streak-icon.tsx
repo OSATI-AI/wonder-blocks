@@ -1,6 +1,6 @@
 import * as React from "react";
-import {addStyle} from "@khanacademy/wonder-blocks-core";
-import {semanticColor} from "@khanacademy/wonder-blocks-tokens";
+import {addStyle} from "@osati-ai/wonder-blocks-core";
+import {semanticColor} from "@osati-ai/wonder-blocks-tokens";
 import {CustomIconProps} from "../../types";
 import {useImageRoleAttributes} from "../../hooks/use-image-role-attributes";
 

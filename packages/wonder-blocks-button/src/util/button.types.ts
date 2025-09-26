@@ -1,6 +1,6 @@
 import * as React from "react";
-import type {AriaProps, StyleType} from "@khanacademy/wonder-blocks-core";
-import type {PhosphorIconAsset} from "@khanacademy/wonder-blocks-icon";
+import type {AriaProps, StyleType} from "@osati-ai/wonder-blocks-core";
+import type {PhosphorIconAsset} from "@osati-ai/wonder-blocks-icon";
 import {Link} from "react-router-dom-v5-compat";
 
 // Variants

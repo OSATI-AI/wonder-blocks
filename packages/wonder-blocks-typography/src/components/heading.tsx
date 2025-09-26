@@ -1,5 +1,5 @@
 import * as React from "react";
-import {PropsFor, Text} from "@khanacademy/wonder-blocks-core";
+import {PropsFor, Text} from "@osati-ai/wonder-blocks-core";
 import styles from "../util/styles";
 
 const tagMap = {
@@ -44,10 +44,10 @@ const Heading = React.forwardRef(function Heading(props: Props, ref) {
     const finalSize = size ?? "large";
 
     // Resolve tag: prefer explicit `tag`, fallback to size-based tag if size was provided, or "h2" if neither
-    const resolvedTag = tag ?? (size ? tagMap[size] : "h2");
+    const resolvedTag = tag ?? (size ? tagMap[size as keyof typeof tagMap] : "h2");
 
     // map props to theme and global token defaults for CSS styles
-    const themeHeading = styleMapping[`${finalSize}-${weight}`];
+    const themeHeading: React.CSSProperties = styleMapping[`${finalSize}-${weight}` as keyof typeof styleMapping];
 
     return (
         <Text

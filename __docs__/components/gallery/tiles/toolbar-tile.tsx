@@ -1,10 +1,10 @@
 import * as React from "react";
 import xIcon from "@phosphor-icons/core/regular/x.svg";
 
-import Button from "@khanacademy/wonder-blocks-button";
-import IconButton from "@khanacademy/wonder-blocks-icon-button";
-import {View} from "@khanacademy/wonder-blocks-core";
-import Toolbar from "@khanacademy/wonder-blocks-toolbar";
+import Button from "@osati-ai/wonder-blocks-button";
+import IconButton from "@osati-ai/wonder-blocks-icon-button";
+import {View} from "@osati-ai/wonder-blocks-core";
+import Toolbar from "@osati-ai/wonder-blocks-toolbar";
 
 import ComponentTile from "../component-tile";
 import {CommonTileProps} from "../types";

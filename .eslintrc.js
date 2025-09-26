@@ -134,7 +134,7 @@ module.exports = {
             },
         ],
         // NOTE: This rule reports false positives for cross-module imports using
-        // `@khanacademy/wonder-stuff-*`.  This is likely due to a bad interaction
+        // `@osati-ai/wonder-stuff-*`.  This is likely due to a bad interaction
         // with the settings we're using for `import/resolver`.
         // "monorepo/no-relative-import": "error",
         "import/no-restricted-paths": [

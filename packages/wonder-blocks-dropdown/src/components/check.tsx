@@ -1,8 +1,8 @@
 import * as React from "react";
 import {StyleSheet} from "aphrodite";
 
-import {PhosphorIcon} from "@khanacademy/wonder-blocks-icon";
-import {semanticColor, sizing} from "@khanacademy/wonder-blocks-tokens";
+import {PhosphorIcon} from "@osati-ai/wonder-blocks-icon";
+import {semanticColor, sizing} from "@osati-ai/wonder-blocks-tokens";
 import checkIcon from "@phosphor-icons/core/bold/check-bold.svg";
 
 /**

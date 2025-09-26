@@ -10,7 +10,7 @@ export default defineConfig({
     resolve: {
         alias: [
             {
-                find: "@khanacademy/wonder-blocks-tokens/styles.css",
+                find: "@osati-ai/wonder-blocks-tokens/styles.css",
                 replacement: resolve(
                     __dirname,
                     "./packages/wonder-blocks-tokens/dist/css/index.css",

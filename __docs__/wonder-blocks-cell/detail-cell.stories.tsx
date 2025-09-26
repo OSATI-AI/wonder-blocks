@@ -4,16 +4,16 @@ import {MemoryRouter} from "react-router-dom";
 import {CompatRouter, Route, Routes} from "react-router-dom-v5-compat";
 import type {Meta, StoryObj} from "@storybook/react";
 
-import {PropsFor, View} from "@khanacademy/wonder-blocks-core";
+import {PropsFor, View} from "@osati-ai/wonder-blocks-core";
 import {
     border,
     color,
     semanticColor,
     spacing,
-} from "@khanacademy/wonder-blocks-tokens";
-import {PhosphorIcon} from "@khanacademy/wonder-blocks-icon";
+} from "@osati-ai/wonder-blocks-tokens";
+import {PhosphorIcon} from "@osati-ai/wonder-blocks-icon";
 
-import {DetailCell} from "@khanacademy/wonder-blocks-cell";
+import {DetailCell} from "@osati-ai/wonder-blocks-cell";
 import packageConfig from "../../packages/wonder-blocks-cell/package.json";
 
 import ComponentInfo from "../components/component-info";

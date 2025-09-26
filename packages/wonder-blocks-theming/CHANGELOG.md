@@ -1,4 +1,4 @@
-# @khanacademy/wonder-blocks-theming
+# @osati-ai/wonder-blocks-theming
 
 ## 4.0.0
 
@@ -115,7 +115,7 @@
 ### Patch Changes
 
 - Updated dependencies [48d3c7e9]
-    - @khanacademy/wonder-blocks-color@3.0.0
+    - @osati-ai/wonder-blocks-color@3.0.0
 
 ## 1.1.0
 

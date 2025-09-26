@@ -1,5 +1,5 @@
 {
-  "name": "@khanacademy/wonder-blocks-styles",
+  "name": "@osati-ai/wonder-blocks-styles",
   "version": "0.2.29",
   "description": "Reusable Wonder Blocks styles.",
   "main": "dist/index.js",
@@ -15,9 +15,9 @@
     "access": "public"
   },
   "dependencies": {
-    "@khanacademy/wonder-blocks-tokens": "workspace:*"
+    "@osati-ai/wonder-blocks-tokens": "workspace:*"
   },
   "devDependencies": {
-    "@khanacademy/wb-dev-build-settings": "workspace:*"
+    "@osati-ai/wb-dev-build-settings": "workspace:*"
   }
 }

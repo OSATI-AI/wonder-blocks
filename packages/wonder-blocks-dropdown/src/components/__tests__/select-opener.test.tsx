@@ -1,7 +1,7 @@
 import * as React from "react";
 import {fireEvent, render, screen} from "@testing-library/react";
 import {userEvent} from "@testing-library/user-event";
-import {keys} from "@khanacademy/wonder-blocks-core";
+import {keys} from "@osati-ai/wonder-blocks-core";
 
 import SelectOpener from "../select-opener";
 
@@ -225,6 +225,8 @@ describe("SelectOpener", () => {
                 // Act
                 render(
                     <SelectOpener
+                        disabled={false}
+                        isPlaceholder={false}
                         error={error}
                         onOpenChanged={jest.fn()}
                         open={false}
@@ -246,6 +248,9 @@ describe("SelectOpener", () => {
         const onBlur = jest.fn();
         render(
             <SelectOpener
+                disabled={false}
+                isPlaceholder={false}
+                error={false}
                 onBlur={onBlur}
                 open={false}
                 onOpenChanged={jest.fn()}

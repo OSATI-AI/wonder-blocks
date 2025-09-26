@@ -3,7 +3,7 @@ import {
     font,
     semanticColor,
     sizing,
-} from "@khanacademy/wonder-blocks-tokens";
+} from "@osati-ai/wonder-blocks-tokens";
 
 export default {
     listbox: {

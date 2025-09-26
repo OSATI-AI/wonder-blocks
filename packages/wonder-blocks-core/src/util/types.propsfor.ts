@@ -11,4 +11,5 @@ import * as React from "react";
  */
 export type PropsFor<
     T extends keyof JSX.IntrinsicElements | React.JSXElementConstructor<any>,
+    // @ts-ignore
 > = JSX.LibraryManagedAttributes<T, React.ComponentProps<T>>;

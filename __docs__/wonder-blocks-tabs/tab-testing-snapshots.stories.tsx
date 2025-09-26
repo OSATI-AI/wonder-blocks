@@ -1,11 +1,11 @@
 import type {Meta, StoryObj} from "@storybook/react";
 import * as React from "react";
 
-import {Tab} from "@khanacademy/wonder-blocks-tabs";
-import {PhosphorIcon} from "@khanacademy/wonder-blocks-icon";
+import {Tab} from "@osati-ai/wonder-blocks-tabs";
+import {PhosphorIcon} from "@osati-ai/wonder-blocks-icon";
 import {IconMappings} from "../wonder-blocks-icon/phosphor-icon.argtypes";
-import {addStyle} from "@khanacademy/wonder-blocks-core";
-import {sizing} from "@khanacademy/wonder-blocks-tokens";
+import {addStyle} from "@osati-ai/wonder-blocks-core";
+import {sizing} from "@osati-ai/wonder-blocks-tokens";
 import {rtlText} from "../components/text-for-testing";
 import {defaultPseudoStates, StateSheet} from "../components/state-sheet";
 import {themeModes} from "../../.storybook/modes";

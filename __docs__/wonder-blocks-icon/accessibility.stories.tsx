@@ -1,8 +1,8 @@
 import * as React from "react";
-import {View} from "@khanacademy/wonder-blocks-core";
-import {PhosphorIcon} from "@khanacademy/wonder-blocks-icon";
-import {color, spacing} from "@khanacademy/wonder-blocks-tokens";
-import {LabelMedium} from "@khanacademy/wonder-blocks-typography";
+import {View} from "@osati-ai/wonder-blocks-core";
+import {PhosphorIcon} from "@osati-ai/wonder-blocks-icon";
+import {color, spacing} from "@osati-ai/wonder-blocks-tokens";
+import {LabelMedium} from "@osati-ai/wonder-blocks-typography";
 
 import {IconMappings} from "./phosphor-icon.argtypes";
 

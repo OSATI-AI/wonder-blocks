@@ -1,4 +1,4 @@
-import {spacing} from "@khanacademy/wonder-blocks-tokens";
+import {spacing} from "@osati-ai/wonder-blocks-tokens";
 
 import type {MediaSize, MediaSpec} from "./types";
 

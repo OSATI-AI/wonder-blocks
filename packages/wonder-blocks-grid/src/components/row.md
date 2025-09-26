@@ -5,9 +5,9 @@ applied giving it a white background, a gold border, and some vertical padding.
 Note that the margins and gutter have been inserted automatically.
 
 ```jsx
-import {Cell} from "@khanacademy/wonder-blocks-grid";
-import Color from "@khanacademy/wonder-blocks-color";
-import {View, Text} from "@khanacademy/wonder-blocks-core";
+import {Cell} from "@osati-ai/wonder-blocks-grid";
+import Color from "@osati-ai/wonder-blocks-color";
+import {View, Text} from "@osati-ai/wonder-blocks-core";
 import {StyleSheet} from "aphrodite";
 
 const styles = StyleSheet.create({
@@ -44,10 +44,10 @@ Another example – If the height of the [Cell's](#cell) contents is taller than
 the [Row](#row) it will allow vertical scrolling.
 
 ```jsx
-import {Cell} from "@khanacademy/wonder-blocks-grid";
-import Color from "@khanacademy/wonder-blocks-color";
-import {Body} from "@khanacademy/wonder-blocks-typography";
-import {View, Text} from "@khanacademy/wonder-blocks-core";
+import {Cell} from "@osati-ai/wonder-blocks-grid";
+import Color from "@osati-ai/wonder-blocks-color";
+import {Body} from "@osati-ai/wonder-blocks-typography";
+import {View, Text} from "@osati-ai/wonder-blocks-core";
 import {StyleSheet} from "aphrodite";
 
 const styles = StyleSheet.create({

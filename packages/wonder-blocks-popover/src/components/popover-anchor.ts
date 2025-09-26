@@ -1,7 +1,7 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
 
-import type {AriaProps} from "@khanacademy/wonder-blocks-core";
+import type {AriaProps} from "@osati-ai/wonder-blocks-core";
 
 type Props = AriaProps & {
     /**

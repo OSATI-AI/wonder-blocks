@@ -1,6 +1,6 @@
 import * as React from "react";
 
-import {PhosphorIcon} from "@khanacademy/wonder-blocks-icon";
+import {PhosphorIcon} from "@osati-ai/wonder-blocks-icon";
 import {IconMappings} from "../wonder-blocks-icon/phosphor-icon.argtypes";
 
 const iconsMap: Record<string, React.ReactElement<typeof PhosphorIcon>> = {};

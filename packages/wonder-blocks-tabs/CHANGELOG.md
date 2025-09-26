@@ -1,4 +1,4 @@
-# @khanacademy/wonder-blocks-tabs
+# @osati-ai/wonder-blocks-tabs
 
 ## 0.3.27
 
@@ -7,8 +7,8 @@
 - Updated dependencies [5a02279]
 - Updated dependencies [aa6ad92]
 - Updated dependencies [aa6ad92]
-    - @khanacademy/wonder-blocks-tokens@12.2.0
-    - @khanacademy/wonder-blocks-typography@4.2.19
+    - @osati-ai/wonder-blocks-tokens@12.2.0
+    - @osati-ai/wonder-blocks-typography@4.2.19
 
 ## 0.3.26
 
@@ -21,16 +21,16 @@
 ### Patch Changes
 
 - Updated dependencies [4aad557]
-    - @khanacademy/wonder-blocks-tokens@12.1.0
-    - @khanacademy/wonder-blocks-typography@4.2.18
+    - @osati-ai/wonder-blocks-tokens@12.1.0
+    - @osati-ai/wonder-blocks-typography@4.2.18
 
 ## 0.3.24
 
 ### Patch Changes
 
 - Updated dependencies [1334e74]
-    - @khanacademy/wonder-blocks-core@12.4.0
-    - @khanacademy/wonder-blocks-typography@4.2.17
+    - @osati-ai/wonder-blocks-core@12.4.0
+    - @osati-ai/wonder-blocks-typography@4.2.17
 
 ## 0.3.23
 
@@ -40,16 +40,16 @@
 - Updated dependencies [98f4272]
 - Updated dependencies [b3dd28f]
 - Updated dependencies [3c3d8fb]
-    - @khanacademy/wonder-blocks-tokens@12.0.2
-    - @khanacademy/wonder-blocks-typography@4.2.16
+    - @osati-ai/wonder-blocks-tokens@12.0.2
+    - @osati-ai/wonder-blocks-typography@4.2.16
 
 ## 0.3.22
 
 ### Patch Changes
 
 - Updated dependencies [9aad939]
-    - @khanacademy/wonder-blocks-tokens@12.0.1
-    - @khanacademy/wonder-blocks-typography@4.2.15
+    - @osati-ai/wonder-blocks-tokens@12.0.1
+    - @osati-ai/wonder-blocks-typography@4.2.15
 
 ## 0.3.21
 
@@ -60,24 +60,24 @@
 - Updated dependencies [eafcfa3]
 - Updated dependencies [b42b694]
 - Updated dependencies [956f8bd]
-    - @khanacademy/wonder-blocks-tokens@12.0.0
-    - @khanacademy/wonder-blocks-typography@4.2.14
+    - @osati-ai/wonder-blocks-tokens@12.0.0
+    - @osati-ai/wonder-blocks-typography@4.2.14
 
 ## 0.3.20
 
 ### Patch Changes
 
 - Updated dependencies [03415d1]
-    - @khanacademy/wonder-blocks-tokens@11.4.1
-    - @khanacademy/wonder-blocks-typography@4.2.13
+    - @osati-ai/wonder-blocks-tokens@11.4.1
+    - @osati-ai/wonder-blocks-typography@4.2.13
 
 ## 0.3.19
 
 ### Patch Changes
 
 - Updated dependencies [4d207b1]
-    - @khanacademy/wonder-blocks-tokens@11.4.0
-    - @khanacademy/wonder-blocks-typography@4.2.12
+    - @osati-ai/wonder-blocks-tokens@11.4.0
+    - @osati-ai/wonder-blocks-typography@4.2.12
 
 ## 0.3.18
 
@@ -86,8 +86,8 @@
 - Updated dependencies [7cd0ebf]
 - Updated dependencies [51b6e69]
 - Updated dependencies [51b6e69]
-    - @khanacademy/wonder-blocks-tokens@11.3.1
-    - @khanacademy/wonder-blocks-typography@4.2.11
+    - @osati-ai/wonder-blocks-tokens@11.3.1
+    - @osati-ai/wonder-blocks-typography@4.2.11
 
 ## 0.3.17
 
@@ -97,16 +97,16 @@
 - Updated dependencies [e21e448]
 - Updated dependencies [e21e448]
 - Updated dependencies [dddbe55]
-    - @khanacademy/wonder-blocks-tokens@11.3.0
-    - @khanacademy/wonder-blocks-typography@4.2.10
+    - @osati-ai/wonder-blocks-tokens@11.3.0
+    - @osati-ai/wonder-blocks-typography@4.2.10
 
 ## 0.3.16
 
 ### Patch Changes
 
 - Updated dependencies [d8716ab]
-    - @khanacademy/wonder-blocks-tokens@11.2.2
-    - @khanacademy/wonder-blocks-typography@4.2.9
+    - @osati-ai/wonder-blocks-tokens@11.2.2
+    - @osati-ai/wonder-blocks-typography@4.2.9
 
 ## 0.3.15
 
@@ -114,16 +114,16 @@
 
 - Updated dependencies [de9435a]
 - Updated dependencies [f50aafc]
-    - @khanacademy/wonder-blocks-tokens@11.2.1
-    - @khanacademy/wonder-blocks-typography@4.2.8
+    - @osati-ai/wonder-blocks-tokens@11.2.1
+    - @osati-ai/wonder-blocks-typography@4.2.8
 
 ## 0.3.14
 
 ### Patch Changes
 
 - Updated dependencies [e457d8c]
-    - @khanacademy/wonder-blocks-tokens@11.2.0
-    - @khanacademy/wonder-blocks-typography@4.2.7
+    - @osati-ai/wonder-blocks-tokens@11.2.0
+    - @osati-ai/wonder-blocks-typography@4.2.7
 
 ## 0.3.13
 
@@ -136,23 +136,23 @@
 ### Patch Changes
 
 - Updated dependencies [f26858a]
-    - @khanacademy/wonder-blocks-tokens@11.1.1
-    - @khanacademy/wonder-blocks-typography@4.2.6
+    - @osati-ai/wonder-blocks-tokens@11.1.1
+    - @osati-ai/wonder-blocks-typography@4.2.6
 
 ## 0.3.11
 
 ### Patch Changes
 
 - Updated dependencies [705ee01]
-    - @khanacademy/wonder-blocks-typography@4.2.5
+    - @osati-ai/wonder-blocks-typography@4.2.5
 
 ## 0.3.10
 
 ### Patch Changes
 
 - Updated dependencies [0f4f771]
-    - @khanacademy/wonder-blocks-tokens@11.1.0
-    - @khanacademy/wonder-blocks-typography@4.2.4
+    - @osati-ai/wonder-blocks-tokens@11.1.0
+    - @osati-ai/wonder-blocks-typography@4.2.4
 
 ## 0.3.9
 
@@ -161,31 +161,31 @@
 - Updated dependencies [1ac2ba7]
 - Updated dependencies [0cb7a69]
 - Updated dependencies [cbf58b0]
-    - @khanacademy/wonder-blocks-tokens@11.0.0
-    - @khanacademy/wonder-blocks-typography@4.2.3
+    - @osati-ai/wonder-blocks-tokens@11.0.0
+    - @osati-ai/wonder-blocks-typography@4.2.3
 
 ## 0.3.8
 
 ### Patch Changes
 
 - Updated dependencies [7811eb1]
-    - @khanacademy/wonder-blocks-tokens@10.6.0
-    - @khanacademy/wonder-blocks-typography@4.2.2
+    - @osati-ai/wonder-blocks-tokens@10.6.0
+    - @osati-ai/wonder-blocks-typography@4.2.2
 
 ## 0.3.7
 
 ### Patch Changes
 
 - Updated dependencies [8468d8d]
-    - @khanacademy/wonder-blocks-tokens@10.5.0
-    - @khanacademy/wonder-blocks-typography@4.2.1
+    - @osati-ai/wonder-blocks-tokens@10.5.0
+    - @osati-ai/wonder-blocks-typography@4.2.1
 
 ## 0.3.6
 
 ### Patch Changes
 
 - Updated dependencies [6998d03]
-    - @khanacademy/wonder-blocks-typography@4.2.0
+    - @osati-ai/wonder-blocks-typography@4.2.0
 
 ## 0.3.5
 
@@ -201,8 +201,8 @@
 - Updated dependencies [1c3c335]
 - Updated dependencies [689f5d3]
 - Updated dependencies [7d2a646]
-    - @khanacademy/wonder-blocks-tokens@10.4.0
-    - @khanacademy/wonder-blocks-typography@4.1.0
+    - @osati-ai/wonder-blocks-tokens@10.4.0
+    - @osati-ai/wonder-blocks-typography@4.1.0
 
 ## 0.3.4
 
@@ -210,17 +210,17 @@
 
 - Updated dependencies [dd76e7c]
 - Updated dependencies [dd76e7c]
-    - @khanacademy/wonder-blocks-typography@4.0.0
-    - @khanacademy/wonder-blocks-tokens@10.3.0
-    - @khanacademy/wonder-blocks-core@12.3.0
+    - @osati-ai/wonder-blocks-typography@4.0.0
+    - @osati-ai/wonder-blocks-tokens@10.3.0
+    - @osati-ai/wonder-blocks-core@12.3.0
 
 ## 0.3.3
 
 ### Patch Changes
 
 - Updated dependencies [1338494]
-    - @khanacademy/wonder-blocks-tokens@10.2.1
-    - @khanacademy/wonder-blocks-typography@3.2.4
+    - @osati-ai/wonder-blocks-tokens@10.2.1
+    - @osati-ai/wonder-blocks-typography@3.2.4
 
 ## 0.3.2
 
@@ -228,9 +228,9 @@
 
 - Updated dependencies [c7d95bf]
 - Updated dependencies [668093b]
-    - @khanacademy/wonder-blocks-tokens@10.2.0
-    - @khanacademy/wonder-blocks-core@12.3.0
-    - @khanacademy/wonder-blocks-typography@3.2.3
+    - @osati-ai/wonder-blocks-tokens@10.2.0
+    - @osati-ai/wonder-blocks-core@12.3.0
+    - @osati-ai/wonder-blocks-typography@3.2.3
 
 ## 0.3.1
 
@@ -240,8 +240,8 @@
 - Updated dependencies [d00a6f1]
 - Updated dependencies [abf5496]
 - Updated dependencies [812c167]
-    - @khanacademy/wonder-blocks-tokens@10.1.0
-    - @khanacademy/wonder-blocks-typography@3.2.2
+    - @osati-ai/wonder-blocks-tokens@10.1.0
+    - @osati-ai/wonder-blocks-typography@3.2.2
 
 ## 0.3.0
 
@@ -277,8 +277,8 @@
 - 5acef63: NavigationTabs: Make sure the current tab styles don't change when interacted with
 - Updated dependencies [28fa0c0]
 - Updated dependencies [28fa0c0]
-    - @khanacademy/wonder-blocks-core@12.3.0
-    - @khanacademy/wonder-blocks-typography@3.2.1
+    - @osati-ai/wonder-blocks-core@12.3.0
+    - @osati-ai/wonder-blocks-typography@3.2.1
 
 ## 0.2.7
 
@@ -286,9 +286,9 @@
 
 - Updated dependencies [b9e4946]
 - Updated dependencies [b9e4946]
-    - @khanacademy/wonder-blocks-tokens@10.0.0
-    - @khanacademy/wonder-blocks-typography@3.2.0
-    - @khanacademy/wonder-blocks-core@12.2.1
+    - @osati-ai/wonder-blocks-tokens@10.0.0
+    - @osati-ai/wonder-blocks-typography@3.2.0
+    - @osati-ai/wonder-blocks-core@12.2.1
 
 ## 0.2.6
 
@@ -298,14 +298,14 @@
 - Updated dependencies [6018552]
 - Updated dependencies [7bbf311]
 - Updated dependencies [7f79943]
-    - @khanacademy/wonder-blocks-tokens@9.0.0
+    - @osati-ai/wonder-blocks-tokens@9.0.0
 
 ## 0.2.5
 
 ### Patch Changes
 
 - Updated dependencies [e63adea]
-    - @khanacademy/wonder-blocks-tokens@8.0.0
+    - @osati-ai/wonder-blocks-tokens@8.0.0
 
 ## 0.2.4
 
@@ -313,7 +313,7 @@
 
 - e8ccf60: Update `borderRadius` styles to use new `border.radius` tokens
 - Updated dependencies [e8ccf60]
-    - @khanacademy/wonder-blocks-tokens@7.0.0
+    - @osati-ai/wonder-blocks-tokens@7.0.0
 
 ## 0.2.3
 
@@ -321,7 +321,7 @@
 
 - 24bf12f: Update sizing tokens used internally to Base 10 to handle browser minimum size issues
 - Updated dependencies [24bf12f]
-    - @khanacademy/wonder-blocks-tokens@6.0.0
+    - @osati-ai/wonder-blocks-tokens@6.0.0
 
 ## 0.2.2
 
@@ -329,7 +329,7 @@
 
 - 4846e9c: Fix pseudo-states to account for aria-disabled
 - Updated dependencies [3dc5dac]
-    - @khanacademy/wonder-blocks-tokens@5.2.0
+    - @osati-ai/wonder-blocks-tokens@5.2.0
 
 ## 0.2.1
 

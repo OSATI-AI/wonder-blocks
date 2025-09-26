@@ -1,7 +1,7 @@
 import * as React from "react";
 import {StyleSheet} from "aphrodite";
-import type {StyleType} from "@khanacademy/wonder-blocks-core";
-import {breakpoint, semanticColor} from "@khanacademy/wonder-blocks-tokens";
+import type {StyleType} from "@osati-ai/wonder-blocks-core";
+import {breakpoint, semanticColor} from "@osati-ai/wonder-blocks-tokens";
 import type {DrawerAlignment} from "../util/types";
 import {
     useDrawerContext,
@@ -92,8 +92,8 @@ type RenderProps = {
  * ### Usage
  *
  * ```jsx
- * import {DrawerDialog} from "@khanacademy/wonder-blocks-modal";
- * import {BodyText} from "@khanacademy/wonder-blocks-typography";
+ * import {DrawerDialog} from "@osati-ai/wonder-blocks-modal";
+ * import {BodyText} from "@osati-ai/wonder-blocks-typography";
  *
  * <DrawerDialog
  *     title={<Heading size="xxlarge" id="main-heading">Select mission</Heading>}

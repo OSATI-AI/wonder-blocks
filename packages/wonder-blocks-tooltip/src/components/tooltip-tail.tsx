@@ -1,11 +1,11 @@
 import * as React from "react";
 import {css, StyleSheet} from "aphrodite";
 
-import {View} from "@khanacademy/wonder-blocks-core";
-import {color, spacing} from "@khanacademy/wonder-blocks-tokens";
-import {Strut} from "@khanacademy/wonder-blocks-layout";
+import {View} from "@osati-ai/wonder-blocks-core";
+import {color, spacing} from "@osati-ai/wonder-blocks-tokens";
+import {Strut} from "@osati-ai/wonder-blocks-layout";
 
-import type {StyleType} from "@khanacademy/wonder-blocks-core";
+import type {StyleType} from "@osati-ai/wonder-blocks-core";
 import type {getRefFn, Placement, Offset} from "../util/types";
 
 export type Props = {

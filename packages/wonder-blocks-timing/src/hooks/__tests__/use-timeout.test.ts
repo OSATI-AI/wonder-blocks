@@ -1,5 +1,5 @@
 import {renderHook, act} from "@testing-library/react";
-import {hookHarness} from "@khanacademy/wonder-blocks-testing-core";
+import {hookHarness} from "@osati-ai/wonder-blocks-testing-core";
 import {SchedulePolicy, ClearPolicy, ActionPolicy} from "../../util/policies";
 
 import {useTimeout} from "../use-timeout";

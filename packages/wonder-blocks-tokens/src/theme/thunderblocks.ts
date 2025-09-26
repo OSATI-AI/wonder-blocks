@@ -1,4 +1,4 @@
-import {mergeTheme} from "@khanacademy/wonder-blocks-theming";
+import {mergeTheme} from "@osati-ai/wonder-blocks-theming";
 
 import defaultTheme from "./default";
 import {semanticColor} from "./semantic/semantic-color-thunderblocks";

@@ -1,7 +1,7 @@
 import * as React from "react";
 import {StyleSheet} from "aphrodite";
 
-import {BodyText} from "@khanacademy/wonder-blocks-typography";
+import {BodyText} from "@osati-ai/wonder-blocks-typography";
 
 import CellCore from "./internal/cell-core";
 
@@ -71,8 +71,8 @@ type DetailCellProps = CellProps & {
  * ### Usage
  *
  * ```jsx
- * import {DetailCell} from "@khanacademy/wonder-blocks-cell";
- * import {PhosphorIcon} from "@khanacademy/wonder-blocks-icon";
+ * import {DetailCell} from "@osati-ai/wonder-blocks-cell";
+ * import {PhosphorIcon} from "@osati-ai/wonder-blocks-icon";
  *
  * <DetailCell
  *  leftAccessory={<PhosphorIcon icon={contentVideo} size="medium" />}

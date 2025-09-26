@@ -1,8 +1,8 @@
 import * as React from "react";
 import {StyleSheet} from "aphrodite";
 
-import {addStyle} from "@khanacademy/wonder-blocks-core";
-import {color, spacing} from "@khanacademy/wonder-blocks-tokens";
+import {addStyle} from "@osati-ai/wonder-blocks-core";
+import {color, spacing} from "@osati-ai/wonder-blocks-tokens";
 import {maybeGetCssVariableInfo} from "./tokens-util";
 
 const StyledTable = addStyle("table");

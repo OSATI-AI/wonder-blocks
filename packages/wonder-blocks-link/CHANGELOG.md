@@ -1,4 +1,4 @@
-# @khanacademy/wonder-blocks-link
+# @osati-ai/wonder-blocks-link
 
 ## 9.2.1
 
@@ -9,11 +9,11 @@
 - Updated dependencies [aa6ad92]
 - Updated dependencies [aa6ad92]
 - Updated dependencies [aa6ad92]
-    - @khanacademy/wonder-blocks-tokens@12.2.0
-    - @khanacademy/wonder-blocks-clickable@7.1.23
-    - @khanacademy/wonder-blocks-styles@0.2.29
-    - @khanacademy/wonder-blocks-icon@5.2.17
-    - @khanacademy/wonder-blocks-typography@4.2.19
+    - @osati-ai/wonder-blocks-tokens@12.2.0
+    - @osati-ai/wonder-blocks-clickable@7.1.23
+    - @osati-ai/wonder-blocks-styles@0.2.29
+    - @osati-ai/wonder-blocks-icon@5.2.17
+    - @osati-ai/wonder-blocks-typography@4.2.19
 
 ## 9.2.0
 
@@ -24,20 +24,20 @@
 ### Patch Changes
 
 - Updated dependencies [4aad557]
-    - @khanacademy/wonder-blocks-tokens@12.1.0
-    - @khanacademy/wonder-blocks-clickable@7.1.22
-    - @khanacademy/wonder-blocks-icon@5.2.16
-    - @khanacademy/wonder-blocks-styles@0.2.28
-    - @khanacademy/wonder-blocks-typography@4.2.18
+    - @osati-ai/wonder-blocks-tokens@12.1.0
+    - @osati-ai/wonder-blocks-clickable@7.1.22
+    - @osati-ai/wonder-blocks-icon@5.2.16
+    - @osati-ai/wonder-blocks-styles@0.2.28
+    - @osati-ai/wonder-blocks-typography@4.2.18
 
 ## 9.1.21
 
 ### Patch Changes
 
 - Updated dependencies [1334e74]
-    - @khanacademy/wonder-blocks-core@12.4.0
-    - @khanacademy/wonder-blocks-clickable@7.1.21
-    - @khanacademy/wonder-blocks-icon@5.2.15
+    - @osati-ai/wonder-blocks-core@12.4.0
+    - @osati-ai/wonder-blocks-clickable@7.1.21
+    - @osati-ai/wonder-blocks-icon@5.2.15
 
 ## 9.1.20
 
@@ -47,18 +47,18 @@
 - Updated dependencies [98f4272]
 - Updated dependencies [b3dd28f]
 - Updated dependencies [3c3d8fb]
-    - @khanacademy/wonder-blocks-tokens@12.0.2
-    - @khanacademy/wonder-blocks-clickable@7.1.20
-    - @khanacademy/wonder-blocks-icon@5.2.14
+    - @osati-ai/wonder-blocks-tokens@12.0.2
+    - @osati-ai/wonder-blocks-clickable@7.1.20
+    - @osati-ai/wonder-blocks-icon@5.2.14
 
 ## 9.1.19
 
 ### Patch Changes
 
 - Updated dependencies [9aad939]
-    - @khanacademy/wonder-blocks-tokens@12.0.1
-    - @khanacademy/wonder-blocks-clickable@7.1.19
-    - @khanacademy/wonder-blocks-icon@5.2.13
+    - @osati-ai/wonder-blocks-tokens@12.0.1
+    - @osati-ai/wonder-blocks-clickable@7.1.19
+    - @osati-ai/wonder-blocks-icon@5.2.13
 
 ## 9.1.18
 
@@ -69,27 +69,27 @@
 - Updated dependencies [eafcfa3]
 - Updated dependencies [b42b694]
 - Updated dependencies [956f8bd]
-    - @khanacademy/wonder-blocks-tokens@12.0.0
-    - @khanacademy/wonder-blocks-clickable@7.1.18
-    - @khanacademy/wonder-blocks-icon@5.2.12
+    - @osati-ai/wonder-blocks-tokens@12.0.0
+    - @osati-ai/wonder-blocks-clickable@7.1.18
+    - @osati-ai/wonder-blocks-icon@5.2.12
 
 ## 9.1.17
 
 ### Patch Changes
 
 - Updated dependencies [03415d1]
-    - @khanacademy/wonder-blocks-tokens@11.4.1
-    - @khanacademy/wonder-blocks-clickable@7.1.17
-    - @khanacademy/wonder-blocks-icon@5.2.11
+    - @osati-ai/wonder-blocks-tokens@11.4.1
+    - @osati-ai/wonder-blocks-clickable@7.1.17
+    - @osati-ai/wonder-blocks-icon@5.2.11
 
 ## 9.1.16
 
 ### Patch Changes
 
 - Updated dependencies [4d207b1]
-    - @khanacademy/wonder-blocks-tokens@11.4.0
-    - @khanacademy/wonder-blocks-clickable@7.1.16
-    - @khanacademy/wonder-blocks-icon@5.2.10
+    - @osati-ai/wonder-blocks-tokens@11.4.0
+    - @osati-ai/wonder-blocks-clickable@7.1.16
+    - @osati-ai/wonder-blocks-icon@5.2.10
 
 ## 9.1.15
 
@@ -98,9 +98,9 @@
 - Updated dependencies [7cd0ebf]
 - Updated dependencies [51b6e69]
 - Updated dependencies [51b6e69]
-    - @khanacademy/wonder-blocks-tokens@11.3.1
-    - @khanacademy/wonder-blocks-clickable@7.1.15
-    - @khanacademy/wonder-blocks-icon@5.2.9
+    - @osati-ai/wonder-blocks-tokens@11.3.1
+    - @osati-ai/wonder-blocks-clickable@7.1.15
+    - @osati-ai/wonder-blocks-icon@5.2.9
 
 ## 9.1.14
 
@@ -109,18 +109,18 @@
 - Updated dependencies [a98fe6c]
 - Updated dependencies [e21e448]
 - Updated dependencies [dddbe55]
-    - @khanacademy/wonder-blocks-tokens@11.3.0
-    - @khanacademy/wonder-blocks-clickable@7.1.14
-    - @khanacademy/wonder-blocks-icon@5.2.8
+    - @osati-ai/wonder-blocks-tokens@11.3.0
+    - @osati-ai/wonder-blocks-clickable@7.1.14
+    - @osati-ai/wonder-blocks-icon@5.2.8
 
 ## 9.1.13
 
 ### Patch Changes
 
 - Updated dependencies [d8716ab]
-    - @khanacademy/wonder-blocks-tokens@11.2.2
-    - @khanacademy/wonder-blocks-clickable@7.1.13
-    - @khanacademy/wonder-blocks-icon@5.2.7
+    - @osati-ai/wonder-blocks-tokens@11.2.2
+    - @osati-ai/wonder-blocks-clickable@7.1.13
+    - @osati-ai/wonder-blocks-icon@5.2.7
 
 ## 9.1.12
 
@@ -128,36 +128,36 @@
 
 - Updated dependencies [de9435a]
 - Updated dependencies [f50aafc]
-    - @khanacademy/wonder-blocks-tokens@11.2.1
-    - @khanacademy/wonder-blocks-clickable@7.1.12
-    - @khanacademy/wonder-blocks-icon@5.2.6
+    - @osati-ai/wonder-blocks-tokens@11.2.1
+    - @osati-ai/wonder-blocks-clickable@7.1.12
+    - @osati-ai/wonder-blocks-icon@5.2.6
 
 ## 9.1.11
 
 ### Patch Changes
 
 - Updated dependencies [e457d8c]
-    - @khanacademy/wonder-blocks-tokens@11.2.0
-    - @khanacademy/wonder-blocks-clickable@7.1.11
-    - @khanacademy/wonder-blocks-icon@5.2.5
+    - @osati-ai/wonder-blocks-tokens@11.2.0
+    - @osati-ai/wonder-blocks-clickable@7.1.11
+    - @osati-ai/wonder-blocks-icon@5.2.5
 
 ## 9.1.10
 
 ### Patch Changes
 
 - Updated dependencies [f26858a]
-    - @khanacademy/wonder-blocks-tokens@11.1.1
-    - @khanacademy/wonder-blocks-clickable@7.1.10
-    - @khanacademy/wonder-blocks-icon@5.2.4
+    - @osati-ai/wonder-blocks-tokens@11.1.1
+    - @osati-ai/wonder-blocks-clickable@7.1.10
+    - @osati-ai/wonder-blocks-icon@5.2.4
 
 ## 9.1.9
 
 ### Patch Changes
 
 - Updated dependencies [0f4f771]
-    - @khanacademy/wonder-blocks-tokens@11.1.0
-    - @khanacademy/wonder-blocks-clickable@7.1.9
-    - @khanacademy/wonder-blocks-icon@5.2.3
+    - @osati-ai/wonder-blocks-tokens@11.1.0
+    - @osati-ai/wonder-blocks-clickable@7.1.9
+    - @osati-ai/wonder-blocks-icon@5.2.3
 
 ## 9.1.8
 
@@ -167,18 +167,18 @@
 - Updated dependencies [0cb7a69]
 - Updated dependencies [cbf58b0]
 - Updated dependencies [cbf58b0]
-    - @khanacademy/wonder-blocks-tokens@11.0.0
-    - @khanacademy/wonder-blocks-icon@5.2.2
-    - @khanacademy/wonder-blocks-clickable@7.1.8
+    - @osati-ai/wonder-blocks-tokens@11.0.0
+    - @osati-ai/wonder-blocks-icon@5.2.2
+    - @osati-ai/wonder-blocks-clickable@7.1.8
 
 ## 9.1.7
 
 ### Patch Changes
 
 - Updated dependencies [7811eb1]
-    - @khanacademy/wonder-blocks-tokens@10.6.0
-    - @khanacademy/wonder-blocks-clickable@7.1.7
-    - @khanacademy/wonder-blocks-icon@5.2.1
+    - @osati-ai/wonder-blocks-tokens@10.6.0
+    - @osati-ai/wonder-blocks-clickable@7.1.7
+    - @osati-ai/wonder-blocks-icon@5.2.1
 
 ## 9.1.6
 
@@ -190,9 +190,9 @@
 - Updated dependencies [2cace08]
 - Updated dependencies [f714517]
 - Updated dependencies [8468d8d]
-    - @khanacademy/wonder-blocks-tokens@10.5.0
-    - @khanacademy/wonder-blocks-icon@5.2.0
-    - @khanacademy/wonder-blocks-clickable@7.1.6
+    - @osati-ai/wonder-blocks-tokens@10.5.0
+    - @osati-ai/wonder-blocks-icon@5.2.0
+    - @osati-ai/wonder-blocks-clickable@7.1.6
 
 ## 9.1.5
 
@@ -208,26 +208,26 @@
 - Updated dependencies [7abcccf]
 - Updated dependencies [1c3c335]
 - Updated dependencies [689f5d3]
-    - @khanacademy/wonder-blocks-tokens@10.4.0
-    - @khanacademy/wonder-blocks-clickable@7.1.5
+    - @osati-ai/wonder-blocks-tokens@10.4.0
+    - @osati-ai/wonder-blocks-clickable@7.1.5
 
 ## 9.1.4
 
 ### Patch Changes
 
 - Updated dependencies [dd76e7c]
-    - @khanacademy/wonder-blocks-tokens@10.3.0
-    - @khanacademy/wonder-blocks-clickable@7.1.4
-    - @khanacademy/wonder-blocks-core@12.3.0
-    - @khanacademy/wonder-blocks-icon@5.1.4
+    - @osati-ai/wonder-blocks-tokens@10.3.0
+    - @osati-ai/wonder-blocks-clickable@7.1.4
+    - @osati-ai/wonder-blocks-core@12.3.0
+    - @osati-ai/wonder-blocks-icon@5.1.4
 
 ## 9.1.3
 
 ### Patch Changes
 
 - Updated dependencies [1338494]
-    - @khanacademy/wonder-blocks-tokens@10.2.1
-    - @khanacademy/wonder-blocks-clickable@7.1.3
+    - @osati-ai/wonder-blocks-tokens@10.2.1
+    - @osati-ai/wonder-blocks-clickable@7.1.3
 
 ## 9.1.2
 
@@ -235,10 +235,10 @@
 
 - Updated dependencies [c7d95bf]
 - Updated dependencies [668093b]
-    - @khanacademy/wonder-blocks-tokens@10.2.0
-    - @khanacademy/wonder-blocks-clickable@7.1.2
-    - @khanacademy/wonder-blocks-core@12.3.0
-    - @khanacademy/wonder-blocks-icon@5.1.4
+    - @osati-ai/wonder-blocks-tokens@10.2.0
+    - @osati-ai/wonder-blocks-clickable@7.1.2
+    - @osati-ai/wonder-blocks-core@12.3.0
+    - @osati-ai/wonder-blocks-icon@5.1.4
 
 ## 9.1.1
 
@@ -248,8 +248,8 @@
 - Updated dependencies [d00a6f1]
 - Updated dependencies [abf5496]
 - Updated dependencies [812c167]
-    - @khanacademy/wonder-blocks-tokens@10.1.0
-    - @khanacademy/wonder-blocks-clickable@7.1.1
+    - @osati-ai/wonder-blocks-tokens@10.1.0
+    - @osati-ai/wonder-blocks-clickable@7.1.1
 
 ## 9.1.0
 
@@ -262,19 +262,19 @@
 - Updated dependencies [28fa0c0]
 - Updated dependencies [28fa0c0]
 - Updated dependencies [38042e2]
-    - @khanacademy/wonder-blocks-core@12.3.0
-    - @khanacademy/wonder-blocks-clickable@7.1.0
-    - @khanacademy/wonder-blocks-icon@5.1.4
+    - @osati-ai/wonder-blocks-core@12.3.0
+    - @osati-ai/wonder-blocks-clickable@7.1.0
+    - @osati-ai/wonder-blocks-icon@5.1.4
 
 ## 9.0.4
 
 ### Patch Changes
 
 - Updated dependencies [b9e4946]
-    - @khanacademy/wonder-blocks-tokens@10.0.0
-    - @khanacademy/wonder-blocks-clickable@7.0.4
-    - @khanacademy/wonder-blocks-core@12.2.1
-    - @khanacademy/wonder-blocks-icon@5.1.3
+    - @osati-ai/wonder-blocks-tokens@10.0.0
+    - @osati-ai/wonder-blocks-clickable@7.0.4
+    - @osati-ai/wonder-blocks-core@12.2.1
+    - @osati-ai/wonder-blocks-icon@5.1.3
 
 ## 9.0.3
 
@@ -284,8 +284,8 @@
 - Updated dependencies [6018552]
 - Updated dependencies [7bbf311]
 - Updated dependencies [7f79943]
-    - @khanacademy/wonder-blocks-tokens@9.0.0
-    - @khanacademy/wonder-blocks-clickable@7.0.3
+    - @osati-ai/wonder-blocks-tokens@9.0.0
+    - @osati-ai/wonder-blocks-clickable@7.0.3
 
 ## 9.0.2
 
@@ -294,8 +294,8 @@
 - e63adea: Update `border.width` tokens to use new naming conventions.
 - Updated dependencies [e63adea]
 - Updated dependencies [e63adea]
-    - @khanacademy/wonder-blocks-tokens@8.0.0
-    - @khanacademy/wonder-blocks-clickable@7.0.2
+    - @osati-ai/wonder-blocks-tokens@8.0.0
+    - @osati-ai/wonder-blocks-clickable@7.0.2
 
 ## 9.0.1
 
@@ -304,8 +304,8 @@
 - e8ccf60: Update `borderRadius` styles to use new `border.radius` tokens
 - e8ccf60: Update focus outline to use `radius.radius_040` (4px, 0.4rem) instead of `3px`.
 - Updated dependencies [e8ccf60]
-    - @khanacademy/wonder-blocks-tokens@7.0.0
-    - @khanacademy/wonder-blocks-clickable@7.0.1
+    - @osati-ai/wonder-blocks-tokens@7.0.0
+    - @osati-ai/wonder-blocks-clickable@7.0.1
 
 ## 9.0.0
 
@@ -316,24 +316,24 @@
 ### Patch Changes
 
 - Updated dependencies [38c926c]
-    - @khanacademy/wonder-blocks-clickable@7.0.0
-    - @khanacademy/wonder-blocks-core@12.2.1
+    - @osati-ai/wonder-blocks-clickable@7.0.0
+    - @osati-ai/wonder-blocks-core@12.2.1
 
 ## 8.0.4
 
 ### Patch Changes
 
 - Updated dependencies [24bf12f]
-    - @khanacademy/wonder-blocks-tokens@6.0.0
-    - @khanacademy/wonder-blocks-clickable@6.1.6
+    - @osati-ai/wonder-blocks-tokens@6.0.0
+    - @osati-ai/wonder-blocks-clickable@6.1.6
 
 ## 8.0.3
 
 ### Patch Changes
 
 - Updated dependencies [3dc5dac]
-    - @khanacademy/wonder-blocks-tokens@5.2.0
-    - @khanacademy/wonder-blocks-clickable@6.1.5
+    - @osati-ai/wonder-blocks-tokens@5.2.0
+    - @osati-ai/wonder-blocks-clickable@6.1.5
 
 ## 8.0.2
 
@@ -342,18 +342,18 @@
 - 1d7be37: Use pnpm catalog to pin dependency versions across packages
 - Updated dependencies [1d7be37]
 - Updated dependencies [999101f]
-    - @khanacademy/wonder-blocks-clickable@6.1.4
-    - @khanacademy/wonder-blocks-core@12.2.1
-    - @khanacademy/wonder-blocks-icon@5.1.3
-    - @khanacademy/wonder-blocks-tokens@5.1.1
+    - @osati-ai/wonder-blocks-clickable@6.1.4
+    - @osati-ai/wonder-blocks-core@12.2.1
+    - @osati-ai/wonder-blocks-icon@5.1.3
+    - @osati-ai/wonder-blocks-tokens@5.1.1
 
 ## 8.0.1
 
 ### Patch Changes
 
 - Updated dependencies [507cf2f]
-    - @khanacademy/wonder-blocks-tokens@5.1.0
-    - @khanacademy/wonder-blocks-clickable@6.1.3
+    - @osati-ai/wonder-blocks-tokens@5.1.0
+    - @osati-ai/wonder-blocks-clickable@6.1.3
 
 ## 8.0.0
 
@@ -376,10 +376,10 @@
 - Updated dependencies [8fc65a9]
 - Updated dependencies [e1b78db]
 - Updated dependencies [051f0f8]
-    - @khanacademy/wonder-blocks-core@12.2.0
-    - @khanacademy/wonder-blocks-tokens@5.0.0
-    - @khanacademy/wonder-blocks-clickable@6.1.2
-    - @khanacademy/wonder-blocks-icon@5.1.2
+    - @osati-ai/wonder-blocks-core@12.2.0
+    - @osati-ai/wonder-blocks-tokens@5.0.0
+    - @osati-ai/wonder-blocks-clickable@6.1.2
+    - @osati-ai/wonder-blocks-icon@5.1.2
 
 ## 7.1.1
 
@@ -387,10 +387,10 @@
 
 - ee8d95a: Rollback rollup version from v4 to v2 to prevent an issue with CJS builds in unit tests
 - Updated dependencies [ee8d95a]
-    - @khanacademy/wonder-blocks-clickable@6.1.1
-    - @khanacademy/wonder-blocks-core@12.1.1
-    - @khanacademy/wonder-blocks-icon@5.1.1
-    - @khanacademy/wonder-blocks-tokens@4.2.1
+    - @osati-ai/wonder-blocks-clickable@6.1.1
+    - @osati-ai/wonder-blocks-core@12.1.1
+    - @osati-ai/wonder-blocks-icon@5.1.1
+    - @osati-ai/wonder-blocks-tokens@4.2.1
 
 ## 7.1.0
 
@@ -408,19 +408,19 @@
 - Updated dependencies [969864b]
 - Updated dependencies [bb2a026]
 - Updated dependencies [f03298f]
-    - @khanacademy/wonder-blocks-clickable@6.1.0
-    - @khanacademy/wonder-blocks-core@12.1.0
-    - @khanacademy/wonder-blocks-icon@5.1.0
-    - @khanacademy/wonder-blocks-tokens@4.2.0
+    - @osati-ai/wonder-blocks-clickable@6.1.0
+    - @osati-ai/wonder-blocks-core@12.1.0
+    - @osati-ai/wonder-blocks-icon@5.1.0
+    - @osati-ai/wonder-blocks-tokens@4.2.0
 
 ## 7.0.8
 
 ### Patch Changes
 
 - Updated dependencies [0199324d]
-    - @khanacademy/wonder-blocks-clickable@6.0.0
-    - @khanacademy/wonder-blocks-core@12.0.0
-    - @khanacademy/wonder-blocks-icon@5.0.6
+    - @osati-ai/wonder-blocks-clickable@6.0.0
+    - @osati-ai/wonder-blocks-core@12.0.0
+    - @osati-ai/wonder-blocks-icon@5.0.6
 
 ## 7.0.7
 
@@ -428,25 +428,25 @@
 
 - Updated dependencies [8cfaeab0]
 - Updated dependencies [c162abb4]
-    - @khanacademy/wonder-blocks-tokens@4.1.0
-    - @khanacademy/wonder-blocks-clickable@5.0.7
+    - @osati-ai/wonder-blocks-tokens@4.1.0
+    - @osati-ai/wonder-blocks-clickable@5.0.7
 
 ## 7.0.6
 
 ### Patch Changes
 
 - Updated dependencies [0de25cd8]
-    - @khanacademy/wonder-blocks-tokens@4.0.0
-    - @khanacademy/wonder-blocks-clickable@5.0.6
+    - @osati-ai/wonder-blocks-tokens@4.0.0
+    - @osati-ai/wonder-blocks-clickable@5.0.6
 
 ## 7.0.5
 
 ### Patch Changes
 
 - Updated dependencies [7516b239]
-    - @khanacademy/wonder-blocks-core@11.1.0
-    - @khanacademy/wonder-blocks-clickable@5.0.5
-    - @khanacademy/wonder-blocks-icon@5.0.5
+    - @osati-ai/wonder-blocks-core@11.1.0
+    - @osati-ai/wonder-blocks-clickable@5.0.5
+    - @osati-ai/wonder-blocks-icon@5.0.5
 
 ## 7.0.4
 
@@ -454,19 +454,19 @@
 
 - 11a0f5c6: No functional changes. Adding prepublishOnly script.
 - Updated dependencies [11a0f5c6]
-    - @khanacademy/wonder-blocks-clickable@5.0.4
-    - @khanacademy/wonder-blocks-tokens@3.0.1
-    - @khanacademy/wonder-blocks-core@11.0.1
-    - @khanacademy/wonder-blocks-icon@5.0.4
+    - @osati-ai/wonder-blocks-clickable@5.0.4
+    - @osati-ai/wonder-blocks-tokens@3.0.1
+    - @osati-ai/wonder-blocks-core@11.0.1
+    - @osati-ai/wonder-blocks-icon@5.0.4
 
 ## 7.0.3
 
 ### Patch Changes
 
 - Updated dependencies [d23c9c5f]
-    - @khanacademy/wonder-blocks-core@11.0.0
-    - @khanacademy/wonder-blocks-clickable@5.0.3
-    - @khanacademy/wonder-blocks-icon@5.0.3
+    - @osati-ai/wonder-blocks-core@11.0.0
+    - @osati-ai/wonder-blocks-clickable@5.0.3
+    - @osati-ai/wonder-blocks-icon@5.0.3
 
 ## 7.0.2
 
@@ -475,18 +475,18 @@
 - Updated dependencies [b6009b77]
 - Updated dependencies [897686bc]
 - Updated dependencies [56d961f1]
-    - @khanacademy/wonder-blocks-core@10.0.0
-    - @khanacademy/wonder-blocks-clickable@5.0.2
-    - @khanacademy/wonder-blocks-icon@5.0.2
+    - @osati-ai/wonder-blocks-core@10.0.0
+    - @osati-ai/wonder-blocks-clickable@5.0.2
+    - @osati-ai/wonder-blocks-icon@5.0.2
 
 ## 7.0.1
 
 ### Patch Changes
 
 - Updated dependencies [f4abd572]
-    - @khanacademy/wonder-blocks-core@9.0.0
-    - @khanacademy/wonder-blocks-clickable@5.0.1
-    - @khanacademy/wonder-blocks-icon@5.0.1
+    - @osati-ai/wonder-blocks-core@9.0.0
+    - @osati-ai/wonder-blocks-clickable@5.0.1
+    - @osati-ai/wonder-blocks-icon@5.0.1
 
 ## 7.0.0
 
@@ -497,25 +497,25 @@
 ### Patch Changes
 
 - Updated dependencies [e6abdd17]
-    - @khanacademy/wonder-blocks-core@8.0.0
-    - @khanacademy/wonder-blocks-clickable@5.0.0
-    - @khanacademy/wonder-blocks-icon@5.0.0
-    - @khanacademy/wonder-blocks-tokens@3.0.0
+    - @osati-ai/wonder-blocks-core@8.0.0
+    - @osati-ai/wonder-blocks-clickable@5.0.0
+    - @osati-ai/wonder-blocks-icon@5.0.0
+    - @osati-ai/wonder-blocks-tokens@3.0.0
 
 ## 6.1.10
 
 ### Patch Changes
 
 - Updated dependencies [c1110599]
-    - @khanacademy/wonder-blocks-icon@4.2.0
+    - @osati-ai/wonder-blocks-icon@4.2.0
 
 ## 6.1.9
 
 ### Patch Changes
 
 - Updated dependencies [6999fd39]
-    - @khanacademy/wonder-blocks-tokens@2.1.0
-    - @khanacademy/wonder-blocks-clickable@4.2.9
+    - @osati-ai/wonder-blocks-tokens@2.1.0
+    - @osati-ai/wonder-blocks-clickable@4.2.9
 
 ## 6.1.8
 
@@ -523,19 +523,19 @@
 
 - 02a1b298: Make sure we don't package tsconfig and tsbuildinfo files
 - Updated dependencies [02a1b298]
-    - @khanacademy/wonder-blocks-clickable@4.2.8
-    - @khanacademy/wonder-blocks-core@7.0.1
-    - @khanacademy/wonder-blocks-icon@4.1.5
-    - @khanacademy/wonder-blocks-tokens@2.0.1
+    - @osati-ai/wonder-blocks-clickable@4.2.8
+    - @osati-ai/wonder-blocks-core@7.0.1
+    - @osati-ai/wonder-blocks-icon@4.1.5
+    - @osati-ai/wonder-blocks-tokens@2.0.1
 
 ## 6.1.7
 
 ### Patch Changes
 
 - Updated dependencies [07f7f407]
-    - @khanacademy/wonder-blocks-core@7.0.0
-    - @khanacademy/wonder-blocks-clickable@4.2.7
-    - @khanacademy/wonder-blocks-icon@4.1.4
+    - @osati-ai/wonder-blocks-core@7.0.0
+    - @osati-ai/wonder-blocks-clickable@4.2.7
+    - @osati-ai/wonder-blocks-icon@4.1.4
 
 ## 6.1.6
 
@@ -544,8 +544,8 @@
 - f17dc1ee: Change Link to define color.pink internally
 - Updated dependencies [f17dc1ee]
 - Updated dependencies [991eb43f]
-    - @khanacademy/wonder-blocks-tokens@2.0.0
-    - @khanacademy/wonder-blocks-clickable@4.2.6
+    - @osati-ai/wonder-blocks-tokens@2.0.0
+    - @osati-ai/wonder-blocks-clickable@4.2.6
 
 ## 6.1.5
 
@@ -553,43 +553,43 @@
 
 - 559e82d5: Update to build tooling, generating smaller output
 - Updated dependencies [559e82d5]
-    - @khanacademy/wonder-blocks-clickable@4.2.5
-    - @khanacademy/wonder-blocks-core@6.4.3
-    - @khanacademy/wonder-blocks-icon@4.1.3
-    - @khanacademy/wonder-blocks-tokens@1.3.1
+    - @osati-ai/wonder-blocks-clickable@4.2.5
+    - @osati-ai/wonder-blocks-core@6.4.3
+    - @osati-ai/wonder-blocks-icon@4.1.3
+    - @osati-ai/wonder-blocks-tokens@1.3.1
 
 ## 6.1.4
 
 ### Patch Changes
 
 - Updated dependencies [eab37b8b]
-    - @khanacademy/wonder-blocks-core@6.4.2
-    - @khanacademy/wonder-blocks-clickable@4.2.4
-    - @khanacademy/wonder-blocks-icon@4.1.2
+    - @osati-ai/wonder-blocks-core@6.4.2
+    - @osati-ai/wonder-blocks-clickable@4.2.4
+    - @osati-ai/wonder-blocks-icon@4.1.2
 
 ## 6.1.3
 
 ### Patch Changes
 
 - Updated dependencies [f099cf87]
-    - @khanacademy/wonder-blocks-clickable@4.2.3
+    - @osati-ai/wonder-blocks-clickable@4.2.3
 
 ## 6.1.2
 
 ### Patch Changes
 
 - Updated dependencies [5dfac06e]
-    - @khanacademy/wonder-blocks-core@6.4.1
-    - @khanacademy/wonder-blocks-clickable@4.2.2
-    - @khanacademy/wonder-blocks-icon@4.1.1
+    - @osati-ai/wonder-blocks-core@6.4.1
+    - @osati-ai/wonder-blocks-clickable@4.2.2
+    - @osati-ai/wonder-blocks-icon@4.1.1
 
 ## 6.1.1
 
 ### Patch Changes
 
 - Updated dependencies [9bfeead9]
-    - @khanacademy/wonder-blocks-tokens@1.3.0
-    - @khanacademy/wonder-blocks-clickable@4.2.1
+    - @osati-ai/wonder-blocks-tokens@1.3.0
+    - @osati-ai/wonder-blocks-clickable@4.2.1
 
 ## 6.1.0
 
@@ -600,9 +600,9 @@
 ### Patch Changes
 
 - Updated dependencies [58075352]
-    - @khanacademy/wonder-blocks-clickable@4.2.0
-    - @khanacademy/wonder-blocks-core@6.4.0
-    - @khanacademy/wonder-blocks-icon@4.1.0
+    - @osati-ai/wonder-blocks-clickable@4.2.0
+    - @osati-ai/wonder-blocks-core@6.4.0
+    - @osati-ai/wonder-blocks-icon@4.1.0
 
 ## 6.0.11
 
@@ -612,38 +612,38 @@
 - Updated dependencies [874081aa]
 - Updated dependencies [874081aa]
 - Updated dependencies [a9bf603a]
-    - @khanacademy/wonder-blocks-tokens@1.2.0
-    - @khanacademy/wonder-blocks-clickable@4.1.3
+    - @osati-ai/wonder-blocks-tokens@1.2.0
+    - @osati-ai/wonder-blocks-clickable@4.1.3
 
 ## 6.0.10
 
 ### Patch Changes
 
 - Updated dependencies [e6433bee]
-    - @khanacademy/wonder-blocks-clickable@4.1.2
+    - @osati-ai/wonder-blocks-clickable@4.1.2
 
 ## 6.0.9
 
 ### Patch Changes
 
 - Updated dependencies [4cfb4977]
-    - @khanacademy/wonder-blocks-tokens@1.1.0
-    - @khanacademy/wonder-blocks-clickable@4.1.1
+    - @osati-ai/wonder-blocks-tokens@1.1.0
+    - @osati-ai/wonder-blocks-clickable@4.1.1
 
 ## 6.0.8
 
 ### Patch Changes
 
 - Updated dependencies [60fdac1c]
-    - @khanacademy/wonder-blocks-clickable@4.1.0
+    - @osati-ai/wonder-blocks-clickable@4.1.0
 
 ## 6.0.7
 
 ### Patch Changes
 
 - Updated dependencies [e83f8991]
-    - @khanacademy/wonder-blocks-tokens@1.0.0
-    - @khanacademy/wonder-blocks-clickable@4.0.14
+    - @osati-ai/wonder-blocks-tokens@1.0.0
+    - @osati-ai/wonder-blocks-clickable@4.0.14
 
 ## 6.0.6
 
@@ -654,8 +654,8 @@
 - Updated dependencies [7cd7f6cc]
 - Updated dependencies [7c51f377]
 - Updated dependencies [7c51f377]
-    - @khanacademy/wonder-blocks-tokens@0.2.0
-    - @khanacademy/wonder-blocks-clickable@4.0.13
+    - @osati-ai/wonder-blocks-tokens@0.2.0
+    - @osati-ai/wonder-blocks-clickable@4.0.13
 
 ## 6.0.5
 
@@ -663,37 +663,37 @@
 
 - Updated dependencies [23ab9f8c]
 - Updated dependencies [6df21f71]
-    - @khanacademy/wonder-blocks-icon@4.0.1
-    - @khanacademy/wonder-blocks-core@6.3.1
-    - @khanacademy/wonder-blocks-clickable@4.0.12
+    - @osati-ai/wonder-blocks-icon@4.0.1
+    - @osati-ai/wonder-blocks-core@6.3.1
+    - @osati-ai/wonder-blocks-clickable@4.0.12
 
 ## 6.0.4
 
 ### Patch Changes
 
 - Updated dependencies [171e3b01]
-    - @khanacademy/wonder-blocks-icon@4.0.0
+    - @osati-ai/wonder-blocks-icon@4.0.0
 
 ## 6.0.3
 
 ### Patch Changes
 
 - Updated dependencies [96f675d2]
-    - @khanacademy/wonder-blocks-icon@3.0.0
+    - @osati-ai/wonder-blocks-icon@3.0.0
 
 ## 6.0.2
 
 ### Patch Changes
 
 - Updated dependencies [6b8bf8d5]
-    - @khanacademy/wonder-blocks-clickable@4.0.11
+    - @osati-ai/wonder-blocks-clickable@4.0.11
 
 ## 6.0.1
 
 ### Patch Changes
 
 - Updated dependencies [7b24db93]
-    - @khanacademy/wonder-blocks-clickable@4.0.10
+    - @osati-ai/wonder-blocks-clickable@4.0.10
 
 ## 6.0.0
 
@@ -706,49 +706,49 @@
 ### Patch Changes
 
 - Updated dependencies [7055ca94]
-    - @khanacademy/wonder-blocks-core@6.3.0
-    - @khanacademy/wonder-blocks-clickable@4.0.9
-    - @khanacademy/wonder-blocks-icon@2.2.1
+    - @osati-ai/wonder-blocks-core@6.3.0
+    - @osati-ai/wonder-blocks-clickable@4.0.9
+    - @osati-ai/wonder-blocks-icon@2.2.1
 
 ## 5.0.9
 
 ### Patch Changes
 
 - Updated dependencies [ea0e7c02]
-    - @khanacademy/wonder-blocks-icon@2.2.0
+    - @osati-ai/wonder-blocks-icon@2.2.0
 
 ## 5.0.8
 
 ### Patch Changes
 
 - Updated dependencies [48d3c7e9]
-    - @khanacademy/wonder-blocks-color@3.0.0
-    - @khanacademy/wonder-blocks-clickable@4.0.8
+    - @osati-ai/wonder-blocks-color@3.0.0
+    - @osati-ai/wonder-blocks-clickable@4.0.8
 
 ## 5.0.7
 
 ### Patch Changes
 
 - Updated dependencies [80cab317]
-    - @khanacademy/wonder-blocks-clickable@4.0.7
+    - @osati-ai/wonder-blocks-clickable@4.0.7
 
 ## 5.0.6
 
 ### Patch Changes
 
 - Updated dependencies [4b97b9a2]
-    - @khanacademy/wonder-blocks-core@6.2.0
-    - @khanacademy/wonder-blocks-clickable@4.0.6
-    - @khanacademy/wonder-blocks-icon@2.1.6
+    - @osati-ai/wonder-blocks-core@6.2.0
+    - @osati-ai/wonder-blocks-clickable@4.0.6
+    - @osati-ai/wonder-blocks-icon@2.1.6
 
 ## 5.0.5
 
 ### Patch Changes
 
 - Updated dependencies [2871f0a9]
-    - @khanacademy/wonder-blocks-core@6.1.1
-    - @khanacademy/wonder-blocks-clickable@4.0.5
-    - @khanacademy/wonder-blocks-icon@2.1.5
+    - @osati-ai/wonder-blocks-core@6.1.1
+    - @osati-ai/wonder-blocks-clickable@4.0.5
+    - @osati-ai/wonder-blocks-icon@2.1.5
 
 ## 5.0.4
 
@@ -757,18 +757,18 @@
 - Updated dependencies [efb59c29]
 - Updated dependencies [834855e5]
 - Updated dependencies [8bc40ed2]
-    - @khanacademy/wonder-blocks-core@6.1.0
-    - @khanacademy/wonder-blocks-clickable@4.0.4
-    - @khanacademy/wonder-blocks-icon@2.1.4
+    - @osati-ai/wonder-blocks-core@6.1.0
+    - @osati-ai/wonder-blocks-clickable@4.0.4
+    - @osati-ai/wonder-blocks-icon@2.1.4
 
 ## 5.0.3
 
 ### Patch Changes
 
 - Updated dependencies [f19da46e]
-    - @khanacademy/wonder-blocks-core@6.0.2
-    - @khanacademy/wonder-blocks-clickable@4.0.3
-    - @khanacademy/wonder-blocks-icon@2.1.3
+    - @osati-ai/wonder-blocks-core@6.0.2
+    - @osati-ai/wonder-blocks-clickable@4.0.3
+    - @osati-ai/wonder-blocks-icon@2.1.3
 
 ## 5.0.2
 
@@ -776,16 +776,16 @@
 
 - Updated dependencies [8dc4a5a3]
 - Updated dependencies [1920feb8]
-    - @khanacademy/wonder-blocks-clickable@4.0.2
-    - @khanacademy/wonder-blocks-core@6.0.1
-    - @khanacademy/wonder-blocks-icon@2.1.2
+    - @osati-ai/wonder-blocks-clickable@4.0.2
+    - @osati-ai/wonder-blocks-core@6.0.1
+    - @osati-ai/wonder-blocks-icon@2.1.2
 
 ## 5.0.1
 
 ### Patch Changes
 
 - Updated dependencies [f230b267]
-    - @khanacademy/wonder-blocks-clickable@4.0.1
+    - @osati-ai/wonder-blocks-clickable@4.0.1
 
 ## 5.0.0
 
@@ -800,9 +800,9 @@
 - Updated dependencies [674a1e5c]
 - Updated dependencies [674a1e5c]
 - Updated dependencies [674a1e5c]
-    - @khanacademy/wonder-blocks-clickable@4.0.0
-    - @khanacademy/wonder-blocks-core@6.0.0
-    - @khanacademy/wonder-blocks-icon@2.1.1
+    - @osati-ai/wonder-blocks-clickable@4.0.0
+    - @osati-ai/wonder-blocks-core@6.0.0
+    - @osati-ai/wonder-blocks-icon@2.1.1
 
 ## 4.4.0
 
@@ -815,9 +815,9 @@
 
 - Updated dependencies [ec6a33a4]
 - Updated dependencies [1344436f]
-    - @khanacademy/wonder-blocks-icon@2.1.0
-    - @khanacademy/wonder-blocks-core@5.4.0
-    - @khanacademy/wonder-blocks-clickable@3.1.3
+    - @osati-ai/wonder-blocks-icon@2.1.0
+    - @osati-ai/wonder-blocks-core@5.4.0
+    - @osati-ai/wonder-blocks-clickable@3.1.3
 
 ## 4.3.1
 
@@ -825,9 +825,9 @@
 
 - 9f3752d4: Used named functions in componenets with forwarded refs
 - Updated dependencies [9f3752d4]
-    - @khanacademy/wonder-blocks-core@5.3.1
-    - @khanacademy/wonder-blocks-clickable@3.1.2
-    - @khanacademy/wonder-blocks-icon@2.0.15
+    - @osati-ai/wonder-blocks-core@5.3.1
+    - @osati-ai/wonder-blocks-clickable@3.1.2
+    - @osati-ai/wonder-blocks-icon@2.0.15
 
 ## 4.3.0
 
@@ -839,9 +839,9 @@
 
 - Updated dependencies [c37b99aa]
 - Updated dependencies [c4cef3e6]
-    - @khanacademy/wonder-blocks-core@5.3.0
-    - @khanacademy/wonder-blocks-clickable@3.1.1
-    - @khanacademy/wonder-blocks-icon@2.0.14
+    - @osati-ai/wonder-blocks-core@5.3.0
+    - @osati-ai/wonder-blocks-clickable@3.1.1
+    - @osati-ai/wonder-blocks-icon@2.0.14
 
 ## 4.2.8
 
@@ -849,25 +849,25 @@
 
 - b88a4959: Vertically aligned inline text links with icons
 - Updated dependencies [ad8beb23]
-    - @khanacademy/wonder-blocks-clickable@3.1.0
+    - @osati-ai/wonder-blocks-clickable@3.1.0
 
 ## 4.2.7
 
 ### Patch Changes
 
 - Updated dependencies [d4c412b5]
-    - @khanacademy/wonder-blocks-core@5.2.3
-    - @khanacademy/wonder-blocks-clickable@3.0.13
-    - @khanacademy/wonder-blocks-icon@2.0.13
+    - @osati-ai/wonder-blocks-core@5.2.3
+    - @osati-ai/wonder-blocks-clickable@3.0.13
+    - @osati-ai/wonder-blocks-icon@2.0.13
 
 ## 4.2.6
 
 ### Patch Changes
 
 - Updated dependencies [64a188e3]
-    - @khanacademy/wonder-blocks-core@5.2.2
-    - @khanacademy/wonder-blocks-clickable@3.0.12
-    - @khanacademy/wonder-blocks-icon@2.0.12
+    - @osati-ai/wonder-blocks-core@5.2.2
+    - @osati-ai/wonder-blocks-clickable@3.0.12
+    - @osati-ai/wonder-blocks-icon@2.0.12
 
 ## 4.2.5
 
@@ -875,9 +875,9 @@
 
 - Updated dependencies [5a1ea891]
 - Updated dependencies [df9a10aa]
-    - @khanacademy/wonder-blocks-core@5.2.1
-    - @khanacademy/wonder-blocks-clickable@3.0.11
-    - @khanacademy/wonder-blocks-icon@2.0.11
+    - @osati-ai/wonder-blocks-core@5.2.1
+    - @osati-ai/wonder-blocks-clickable@3.0.11
+    - @osati-ai/wonder-blocks-icon@2.0.11
 
 ## 4.2.4
 
@@ -887,9 +887,9 @@
 - Updated dependencies [fa70c895]
 - Updated dependencies [19ab0408]
 - Updated dependencies [fa70c895]
-    - @khanacademy/wonder-blocks-core@5.2.0
-    - @khanacademy/wonder-blocks-clickable@3.0.10
-    - @khanacademy/wonder-blocks-icon@2.0.10
+    - @osati-ai/wonder-blocks-core@5.2.0
+    - @osati-ai/wonder-blocks-clickable@3.0.10
+    - @osati-ai/wonder-blocks-icon@2.0.10
 
 ## 4.2.3
 
@@ -930,21 +930,21 @@
 
 - Updated dependencies [3c400719]
 - Updated dependencies [a6164ed0]
-    - @khanacademy/wonder-blocks-core@5.1.0
-    - @khanacademy/wonder-blocks-clickable@3.0.9
-    - @khanacademy/wonder-blocks-icon@2.0.9
+    - @osati-ai/wonder-blocks-core@5.1.0
+    - @osati-ai/wonder-blocks-clickable@3.0.9
+    - @osati-ai/wonder-blocks-icon@2.0.9
 
 ## 4.0.8
 
 ### Patch Changes
 
-- @khanacademy/wonder-blocks-clickable@3.0.8
+- @osati-ai/wonder-blocks-clickable@3.0.8
 
 ## 4.0.7
 
 ### Patch Changes
 
-- @khanacademy/wonder-blocks-clickable@3.0.7
+- @osati-ai/wonder-blocks-clickable@3.0.7
 
 ## 4.0.6
 
@@ -952,36 +952,36 @@
 
 - c20f48f3: Don't transpile classes when building bundles
 - Updated dependencies [c20f48f3]
-    - @khanacademy/wonder-blocks-clickable@3.0.6
-    - @khanacademy/wonder-blocks-core@5.0.4
+    - @osati-ai/wonder-blocks-clickable@3.0.6
+    - @osati-ai/wonder-blocks-core@5.0.4
 
 ## 4.0.5
 
 ### Patch Changes
 
-- @khanacademy/wonder-blocks-clickable@3.0.5
+- @osati-ai/wonder-blocks-clickable@3.0.5
 
 ## 4.0.4
 
 ### Patch Changes
 
-- @khanacademy/wonder-blocks-clickable@3.0.4
+- @osati-ai/wonder-blocks-clickable@3.0.4
 
 ## 4.0.3
 
 ### Patch Changes
 
 - Updated dependencies [b281e2eb]
-    - @khanacademy/wonder-blocks-core@5.0.3
-    - @khanacademy/wonder-blocks-clickable@3.0.3
+    - @osati-ai/wonder-blocks-core@5.0.3
+    - @osati-ai/wonder-blocks-clickable@3.0.3
 
 ## 4.0.2
 
 ### Patch Changes
 
 - Updated dependencies [21ce20c7]
-    - @khanacademy/wonder-blocks-core@5.0.2
-    - @khanacademy/wonder-blocks-clickable@3.0.2
+    - @osati-ai/wonder-blocks-core@5.0.2
+    - @osati-ai/wonder-blocks-clickable@3.0.2
 
 ## 4.0.1
 
@@ -991,9 +991,9 @@
 - d4c2b18c: Fix a variety of issues with Flow types generated by flowgen
 - Updated dependencies [ccb6fe00]
 - Updated dependencies [d4c2b18c]
-    - @khanacademy/wonder-blocks-clickable@3.0.1
-    - @khanacademy/wonder-blocks-core@5.0.1
-    - @khanacademy/wonder-blocks-color@2.0.1
+    - @osati-ai/wonder-blocks-clickable@3.0.1
+    - @osati-ai/wonder-blocks-core@5.0.1
+    - @osati-ai/wonder-blocks-color@2.0.1
 
 ## 4.0.0
 
@@ -1004,9 +1004,9 @@
 ### Patch Changes
 
 - Updated dependencies [1ca4d7e3]
-    - @khanacademy/wonder-blocks-clickable@3.0.0
-    - @khanacademy/wonder-blocks-color@2.0.0
-    - @khanacademy/wonder-blocks-core@5.0.0
+    - @osati-ai/wonder-blocks-clickable@3.0.0
+    - @osati-ai/wonder-blocks-color@2.0.0
+    - @osati-ai/wonder-blocks-core@5.0.0
 
 ## 3.9.4
 
@@ -1014,9 +1014,9 @@
 
 - b5ba5568: Ensure that flow lib defs use React.ElementConfig<> isntead of JSX.LibraryManagedAttributes<>
 - Updated dependencies [b5ba5568]
-    - @khanacademy/wonder-blocks-clickable@2.4.8
-    - @khanacademy/wonder-blocks-color@1.2.3
-    - @khanacademy/wonder-blocks-core@4.9.1
+    - @osati-ai/wonder-blocks-clickable@2.4.8
+    - @osati-ai/wonder-blocks-color@1.2.3
+    - @osati-ai/wonder-blocks-core@4.9.1
 
 ## 3.9.3
 
@@ -1024,8 +1024,8 @@
 
 - 2c0ad5ca: Going back to old link styles temporarily
 - Updated dependencies [779b031d]
-    - @khanacademy/wonder-blocks-core@4.9.0
-    - @khanacademy/wonder-blocks-clickable@2.4.7
+    - @osati-ai/wonder-blocks-core@4.9.0
+    - @osati-ai/wonder-blocks-clickable@2.4.7
 
 ## 3.9.2
 
@@ -1048,9 +1048,9 @@
 - Updated dependencies [2983c05b]
 - Updated dependencies [77ff6a66]
 - Updated dependencies [ec8d4b7f]
-    - @khanacademy/wonder-blocks-clickable@2.4.6
-    - @khanacademy/wonder-blocks-color@1.2.2
-    - @khanacademy/wonder-blocks-core@4.8.0
+    - @osati-ai/wonder-blocks-clickable@2.4.6
+    - @osati-ai/wonder-blocks-color@1.2.2
+    - @osati-ai/wonder-blocks-core@4.8.0
 
 ## 3.9.1
 
@@ -1061,9 +1061,9 @@
 - Updated dependencies [91cb727c]
 - Updated dependencies [91cb727c]
 - Updated dependencies [91cb727c]
-    - @khanacademy/wonder-blocks-clickable@2.4.5
-    - @khanacademy/wonder-blocks-color@1.2.1
-    - @khanacademy/wonder-blocks-core@4.7.0
+    - @osati-ai/wonder-blocks-clickable@2.4.5
+    - @osati-ai/wonder-blocks-color@1.2.1
+    - @osati-ai/wonder-blocks-core@4.7.0
 
 ## 3.9.0
 
@@ -1080,15 +1080,15 @@
 ### Patch Changes
 
 - Updated dependencies [496119f2]
-    - @khanacademy/wonder-blocks-clickable@2.4.4
-    - @khanacademy/wonder-blocks-core@4.6.2
+    - @osati-ai/wonder-blocks-clickable@2.4.4
+    - @osati-ai/wonder-blocks-core@4.6.2
 
 ## 3.8.16
 
 ### Patch Changes
 
-- @khanacademy/wonder-blocks-clickable@2.4.3
-- @khanacademy/wonder-blocks-core@4.6.1
+- @osati-ai/wonder-blocks-clickable@2.4.3
+- @osati-ai/wonder-blocks-core@4.6.1
 
 ## 3.8.15
 
@@ -1097,15 +1097,15 @@
 - Updated dependencies [b561425a]
 - Updated dependencies [a566e232]
 - Updated dependencies [d2b21a6e]
-    - @khanacademy/wonder-blocks-core@4.6.0
-    - @khanacademy/wonder-blocks-clickable@2.4.2
+    - @osati-ai/wonder-blocks-core@4.6.0
+    - @osati-ai/wonder-blocks-clickable@2.4.2
 
 ## 3.8.14
 
 ### Patch Changes
 
 - Updated dependencies [4c682709]
-    - @khanacademy/wonder-blocks-clickable@2.4.1
+    - @osati-ai/wonder-blocks-clickable@2.4.1
 
 ## 3.8.13
 
@@ -1113,44 +1113,44 @@
 
 - ceb111df: ClickableBehavior no longer has tabIndex 0 by default. It must be passed in.
 - Updated dependencies [ceb111df]
-    - @khanacademy/wonder-blocks-clickable@2.4.0
+    - @osati-ai/wonder-blocks-clickable@2.4.0
 
 ## 3.8.12
 
 ### Patch Changes
 
 - Updated dependencies [175a2dd2]
-    - @khanacademy/wonder-blocks-core@4.5.0
-    - @khanacademy/wonder-blocks-clickable@2.3.3
+    - @osati-ai/wonder-blocks-core@4.5.0
+    - @osati-ai/wonder-blocks-clickable@2.3.3
 
 ## 3.8.11
 
 ### Patch Changes
 
 - Updated dependencies [5b8ba5da]
-    - @khanacademy/wonder-blocks-clickable@2.3.2
+    - @osati-ai/wonder-blocks-clickable@2.3.2
 
 ## 3.8.10
 
 ### Patch Changes
 
 - Updated dependencies [6ee20af9]
-    - @khanacademy/wonder-blocks-core@4.4.0
-    - @khanacademy/wonder-blocks-clickable@2.3.1
+    - @osati-ai/wonder-blocks-core@4.4.0
+    - @osati-ai/wonder-blocks-clickable@2.3.1
 
 ## 3.8.9
 
 ### Patch Changes
 
 - Updated dependencies [34c7aacb]
-    - @khanacademy/wonder-blocks-color@1.2.0
+    - @osati-ai/wonder-blocks-color@1.2.0
 
 ## 3.8.8
 
 ### Patch Changes
 
 - Updated dependencies [ee6fc773]
-    - @khanacademy/wonder-blocks-clickable@2.3.0
+    - @osati-ai/wonder-blocks-clickable@2.3.0
 
 ## 3.8.7
 
@@ -1158,41 +1158,41 @@
 
 - Updated dependencies [5f4a4297]
 - Updated dependencies [2b96fd59]
-    - @khanacademy/wonder-blocks-core@4.3.2
-    - @khanacademy/wonder-blocks-clickable@2.2.7
+    - @osati-ai/wonder-blocks-core@4.3.2
+    - @osati-ai/wonder-blocks-clickable@2.2.7
 
 ## 3.8.6
 
 ### Patch Changes
 
-- @khanacademy/wonder-blocks-clickable@2.2.6
-- @khanacademy/wonder-blocks-core@4.3.1
+- @osati-ai/wonder-blocks-clickable@2.2.6
+- @osati-ai/wonder-blocks-core@4.3.1
 
 ## 3.8.5
 
 ### Patch Changes
 
 - Updated dependencies [246a921d]
-    - @khanacademy/wonder-blocks-core@4.3.0
-    - @khanacademy/wonder-blocks-clickable@2.2.5
+    - @osati-ai/wonder-blocks-core@4.3.0
+    - @osati-ai/wonder-blocks-clickable@2.2.5
 
 ## 3.8.4
 
 ### Patch Changes
 
 - Updated dependencies [166ecc97]
-    - @khanacademy/wonder-blocks-clickable@2.2.4
+    - @osati-ai/wonder-blocks-clickable@2.2.4
 
 ## 3.8.3
 
 ### Patch Changes
 
-- @khanacademy/wonder-blocks-clickable@2.2.3
-- @khanacademy/wonder-blocks-core@4.2.1
+- @osati-ai/wonder-blocks-clickable@2.2.3
+- @osati-ai/wonder-blocks-core@4.2.1
 
 ## 3.8.2
 
 ### Patch Changes
 
 - Updated dependencies [901bfe82]
-    - @khanacademy/wonder-blocks-clickable@2.2.2
+    - @osati-ai/wonder-blocks-clickable@2.2.2

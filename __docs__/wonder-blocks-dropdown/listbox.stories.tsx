@@ -3,10 +3,10 @@ import type {Meta, StoryObj} from "@storybook/react";
 import {StyleSheet} from "aphrodite";
 import * as React from "react";
 
-import {PropsFor, View} from "@khanacademy/wonder-blocks-core";
-import {Listbox, OptionItem} from "@khanacademy/wonder-blocks-dropdown";
-import Pill from "@khanacademy/wonder-blocks-pill";
-import {semanticColor, sizing} from "@khanacademy/wonder-blocks-tokens";
+import {PropsFor, View} from "@osati-ai/wonder-blocks-core";
+import {Listbox, OptionItem} from "@osati-ai/wonder-blocks-dropdown";
+import Pill from "@osati-ai/wonder-blocks-pill";
+import {semanticColor, sizing} from "@osati-ai/wonder-blocks-tokens";
 
 import {allProfilesWithPictures} from "./option-item-examples";
 

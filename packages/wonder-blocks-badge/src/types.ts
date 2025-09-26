@@ -1,4 +1,4 @@
-import {AriaProps, StyleType} from "@khanacademy/wonder-blocks-core";
+import {AriaProps, StyleType} from "@osati-ai/wonder-blocks-core";
 import * as React from "react";
 
 type IconOnly = {

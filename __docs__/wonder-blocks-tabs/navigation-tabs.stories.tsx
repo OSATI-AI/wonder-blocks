@@ -7,17 +7,17 @@ import packageConfig from "../../packages/wonder-blocks-tabs/package.json";
 import {
     NavigationTabItem,
     NavigationTabs,
-} from "@khanacademy/wonder-blocks-tabs";
-import Link from "@khanacademy/wonder-blocks-link";
+} from "@osati-ai/wonder-blocks-tabs";
+import Link from "@osati-ai/wonder-blocks-link";
 import argTypes from "./navigation-tabs.argtypes";
-import {semanticColor, sizing} from "@khanacademy/wonder-blocks-tokens";
-import {PhosphorIcon} from "@khanacademy/wonder-blocks-icon";
+import {semanticColor, sizing} from "@osati-ai/wonder-blocks-tokens";
+import {PhosphorIcon} from "@osati-ai/wonder-blocks-icon";
 import {IconMappings} from "../wonder-blocks-icon/phosphor-icon.argtypes";
-import {OptionItem, SingleSelect} from "@khanacademy/wonder-blocks-dropdown";
-import {addStyle, View} from "@khanacademy/wonder-blocks-core";
-import Tooltip from "@khanacademy/wonder-blocks-tooltip";
-import {Popover, PopoverContent} from "@khanacademy/wonder-blocks-popover";
-import {HeadingMedium} from "@khanacademy/wonder-blocks-typography";
+import {OptionItem, SingleSelect} from "@osati-ai/wonder-blocks-dropdown";
+import {addStyle, View} from "@osati-ai/wonder-blocks-core";
+import Tooltip from "@osati-ai/wonder-blocks-tooltip";
+import {Popover, PopoverContent} from "@osati-ai/wonder-blocks-popover";
+import {HeadingMedium} from "@osati-ai/wonder-blocks-typography";
 
 export default {
     title: "Packages / Tabs / NavigationTabs",

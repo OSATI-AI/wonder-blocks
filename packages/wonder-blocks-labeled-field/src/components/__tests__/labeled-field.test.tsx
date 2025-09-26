@@ -1,8 +1,8 @@
 import * as React from "react";
 import {render, screen, within} from "@testing-library/react";
 
-import {TextField} from "@khanacademy/wonder-blocks-form";
-import {RenderStateRoot} from "@khanacademy/wonder-blocks-core";
+import {TextField} from "@osati-ai/wonder-blocks-form";
+import {RenderStateRoot} from "@osati-ai/wonder-blocks-core";
 import LabeledField from "../labeled-field";
 
 const defaultOptions = {

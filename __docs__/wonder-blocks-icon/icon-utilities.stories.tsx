@@ -3,8 +3,8 @@ import type {Meta, StoryObj} from "@storybook/react";
 import {action} from "@storybook/addon-actions";
 import ComponentInfo from "../components/component-info";
 import packageConfig from "../../packages/wonder-blocks-form/package.json";
-import {useImageRoleAttributes} from "@khanacademy/wonder-blocks-icon";
-import {semanticColor, sizing} from "@khanacademy/wonder-blocks-tokens";
+import {useImageRoleAttributes} from "@osati-ai/wonder-blocks-icon";
+import {semanticColor, sizing} from "@osati-ai/wonder-blocks-tokens";
 
 export default {
     title: "Packages / Icon / Icon Utilities",

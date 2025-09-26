@@ -1,5 +1,5 @@
 import * as React from "react";
-import {View, Server} from "@khanacademy/wonder-blocks-core";
+import {View, Server} from "@osati-ai/wonder-blocks-core";
 import {render} from "@testing-library/react";
 
 import MediaLayout from "../media-layout";

@@ -1,9 +1,9 @@
 import * as React from "react";
 import {Title, Subtitle, Description, Stories} from "@storybook/blocks";
 import {Meta} from "@storybook/react";
-import {View} from "@khanacademy/wonder-blocks-core";
+import {View} from "@osati-ai/wonder-blocks-core";
 import TokenTable from "../components/token-table";
-import {border, semanticColor, sizing} from "@khanacademy/wonder-blocks-tokens";
+import {border, semanticColor, sizing} from "@osati-ai/wonder-blocks-tokens";
 import ComponentInfo from "../components/component-info";
 import packageConfig from "../../packages/wonder-blocks-tokens/package.json";
 import {Code} from "../components/code";
@@ -17,7 +17,7 @@ import {Code} from "../components/code";
  * ## Usage
  *
  * ```ts
- *   import {border} from "@khanacademy/wonder-blocks-tokens";
+ *   import {border} from "@osati-ai/wonder-blocks-tokens";
  *   const styles = {
  *       borderedContainer: {
  *           borderRadius: border.radius.radius_040,

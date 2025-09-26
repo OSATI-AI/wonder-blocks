@@ -1,6 +1,6 @@
 import * as React from "react";
 
-import type {AriaProps, StyleType} from "@khanacademy/wonder-blocks-core";
+import type {AriaProps, StyleType} from "@osati-ai/wonder-blocks-core";
 import Checkbox from "./checkbox";
 import Radio from "./radio";
 
@@ -63,7 +63,7 @@ type Props = AriaProps & {
  * ### Checkbox Usage
  *
  * ```jsx
- * import {Choice, CheckboxGroup} from "@khanacademy/wonder-blocks-form";
+ * import {Choice, CheckboxGroup} from "@osati-ai/wonder-blocks-form";
  *
  * const [selectedValues, setSelectedValues] = React.useState([]);
  *
@@ -92,7 +92,7 @@ type Props = AriaProps & {
  * ### Radio Usage
  *
  * ```jsx
- * import {Choice, RadioGroup} from "@khanacademy/wonder-blocks-form";
+ * import {Choice, RadioGroup} from "@osati-ai/wonder-blocks-form";
  *
  * const [selectedValue, setSelectedValue] = React.useState("");
  *

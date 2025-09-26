@@ -1,13 +1,13 @@
 import * as React from "react";
 import type {Meta, StoryObj} from "@storybook/react";
 
-import Switch from "@khanacademy/wonder-blocks-switch";
-import {CompactCell, DetailCell} from "@khanacademy/wonder-blocks-cell";
-import Tooltip from "@khanacademy/wonder-blocks-tooltip";
-import {LabelMedium, LabelSmall} from "@khanacademy/wonder-blocks-typography";
-import {View} from "@khanacademy/wonder-blocks-core";
-import {color, spacing} from "@khanacademy/wonder-blocks-tokens";
-import {PhosphorIcon} from "@khanacademy/wonder-blocks-icon";
+import Switch from "@osati-ai/wonder-blocks-switch";
+import {CompactCell, DetailCell} from "@osati-ai/wonder-blocks-cell";
+import Tooltip from "@osati-ai/wonder-blocks-tooltip";
+import {LabelMedium, LabelSmall} from "@osati-ai/wonder-blocks-typography";
+import {View} from "@osati-ai/wonder-blocks-core";
+import {color, spacing} from "@osati-ai/wonder-blocks-tokens";
+import {PhosphorIcon} from "@osati-ai/wonder-blocks-icon";
 
 import packageConfig from "../../packages/wonder-blocks-switch/package.json";
 import ComponentInfo from "../components/component-info";

@@ -5,8 +5,8 @@ import {
     Id,
     type AriaProps,
     type StyleType,
-} from "@khanacademy/wonder-blocks-core";
-import {sizing} from "@khanacademy/wonder-blocks-tokens";
+} from "@osati-ai/wonder-blocks-core";
+import {sizing} from "@osati-ai/wonder-blocks-tokens";
 import DropdownOpener from "./dropdown-opener";
 import ActionItem from "./action-item";
 import OptionItem from "./option-item";
@@ -110,7 +110,7 @@ type DefaultProps = Readonly<{
  * ## Usage
  *
  * ```jsx
- * import {ActionMenu, ActionItem} from "@khanacademy/wonder-blocks-dropdown";
+ * import {ActionMenu, ActionItem} from "@osati-ai/wonder-blocks-dropdown";
  *
  * <ActionMenu menuText="Menu">
  *  <ActionItem href="/profile" label="Profile" />
@@ -119,7 +119,7 @@ type DefaultProps = Readonly<{
  * ```
  */
 export default class ActionMenu extends React.Component<Props, State> {
-    openerElement?: HTMLElement;
+    openerElement?: HTMLElement | null;
 
     static defaultProps: DefaultProps = {
         alignment: "left",
@@ -188,8 +188,8 @@ export default class ActionMenu extends React.Component<Props, State> {
 
     getMenuItems(): Array<DropdownItem> {
         const {children, selectedValues} = this.props;
-        const allChildren = (Array.isArray(children) 
-            ? children 
+        const allChildren = (Array.isArray(children)
+            ? children
             : children ? [children] : []
         ).filter(Boolean);
 

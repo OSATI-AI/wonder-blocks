@@ -54,7 +54,7 @@ type Props = TextViewSharedProps & {
  * ### Usage
  *
  * ```jsx
- * import {View} from "@khanacademy/wonder-blocks-core";
+ * import {View} from "@osati-ai/wonder-blocks-core";
  *
  * <View>This is a View!</View>
  * ```

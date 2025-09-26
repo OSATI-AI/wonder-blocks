@@ -1,12 +1,12 @@
 import * as React from "react";
 
-import {ClickableBehavior} from "@khanacademy/wonder-blocks-clickable";
+import {ClickableBehavior} from "@osati-ai/wonder-blocks-clickable";
 
-import type {AriaProps} from "@khanacademy/wonder-blocks-core";
+import type {AriaProps} from "@osati-ai/wonder-blocks-core";
 import type {
     ChildrenProps,
     ClickableState,
-} from "@khanacademy/wonder-blocks-clickable";
+} from "@osati-ai/wonder-blocks-clickable";
 
 import type {OpenerProps, OptionLabel} from "../util/types";
 
@@ -156,9 +156,12 @@ class DropdownOpenerInternal extends React.Component<Props & {forwardedRef?: Rea
 }
 
 const DropdownOpener = React.forwardRef<HTMLElement, Props>((props, ref) => {
-    return <DropdownOpenerInternal {...props} forwardedRef={ref} />;
+    // merge default props
+    const mergedProps = {
+        ...DropdownOpenerInternal.defaultProps,
+        ...props,
+    };
+    return <DropdownOpenerInternal {...mergedProps} forwardedRef={ref} />;
 });
-
-DropdownOpener.defaultProps = DropdownOpenerInternal.defaultProps;
 
 export default DropdownOpener;

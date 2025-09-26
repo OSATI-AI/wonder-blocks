@@ -8,15 +8,15 @@ import crownIcon from "./icons/crown.svg";
 import masteryCourseIcon from "./icons/mastery-course.svg";
 import masteryCourseIconBold from "./icons/mastery-course-bold.svg";
 
-import Banner from "@khanacademy/wonder-blocks-banner";
-import {addStyle, View} from "@khanacademy/wonder-blocks-core";
+import Banner from "@osati-ai/wonder-blocks-banner";
+import {addStyle, View} from "@osati-ai/wonder-blocks-core";
 import {
     Body,
     HeadingSmall,
     LabelMedium,
-} from "@khanacademy/wonder-blocks-typography";
-import {PhosphorIcon} from "@khanacademy/wonder-blocks-icon";
-import * as tokens from "@khanacademy/wonder-blocks-tokens";
+} from "@osati-ai/wonder-blocks-typography";
+import {PhosphorIcon} from "@osati-ai/wonder-blocks-icon";
+import * as tokens from "@osati-ai/wonder-blocks-tokens";
 
 import ComponentInfo from "../components/component-info";
 import packageConfig from "../../packages/wonder-blocks-icon/package.json";
@@ -34,7 +34,7 @@ import PhosphorIconArgtypes, {IconMappings} from "./phosphor-icon.argtypes";
  *
  * ```tsx
  * import magnifyingGlassIcon from "@phosphor-icons/core/regular/magnifying-glass.svg";
- * import {PhosphorIcon} from "@khanacademy/wonder-blocks-icon";
+ * import {PhosphorIcon} from "@osati-ai/wonder-blocks-icon";
  *
  * <PhosphorIcon
  *     icon={magnifyingGlassIcon}

@@ -46,7 +46,7 @@ type State = {
  * ## Usage
  *
  * ```js
- * import {InitialFallback} from "@khanacademy/wonder-blocks-core";
+ * import {InitialFallback} from "@osati-ai/wonder-blocks-core";
  *
  * <InitialFallback fallback={() => <div>Renders on the server!</div>}>
  *   {() => (

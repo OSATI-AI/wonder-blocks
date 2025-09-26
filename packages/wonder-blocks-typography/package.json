@@ -1,5 +1,5 @@
 {
-  "name": "@khanacademy/wonder-blocks-typography",
+  "name": "@osati-ai/wonder-blocks-typography",
   "version": "4.2.19",
   "design": "v2",
   "publishConfig": {
@@ -16,14 +16,14 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "@khanacademy/wonder-blocks-core": "workspace:*",
-    "@khanacademy/wonder-blocks-tokens": "workspace:*"
+    "@osati-ai/wonder-blocks-core": "workspace:*",
+    "@osati-ai/wonder-blocks-tokens": "workspace:*"
   },
   "peerDependencies": {
     "aphrodite": "catalog:",
     "react": "catalog:"
   },
   "devDependencies": {
-    "@khanacademy/wb-dev-build-settings": "workspace:*"
+    "@osati-ai/wb-dev-build-settings": "workspace:*"
   }
 }

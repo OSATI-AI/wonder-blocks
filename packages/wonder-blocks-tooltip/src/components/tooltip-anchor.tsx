@@ -5,7 +5,7 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
 
-import {Text as WBText} from "@khanacademy/wonder-blocks-core";
+import {Text as WBText} from "@osati-ai/wonder-blocks-core";
 
 import ActiveTracker from "../util/active-tracker";
 import {

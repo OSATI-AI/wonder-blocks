@@ -2,22 +2,22 @@ import * as React from "react";
 import {StyleSheet} from "aphrodite";
 import type {Meta, StoryObj} from "@storybook/react";
 
-import {View} from "@khanacademy/wonder-blocks-core";
-import {color, spacing} from "@khanacademy/wonder-blocks-tokens";
+import {View} from "@osati-ai/wonder-blocks-core";
+import {color, spacing} from "@osati-ai/wonder-blocks-tokens";
 import {
     Body,
     HeadingSmall,
     HeadingLarge,
-} from "@khanacademy/wonder-blocks-typography";
+} from "@osati-ai/wonder-blocks-typography";
 
 import type {
     MediaSpec,
     MediaLayoutContextValue,
-} from "@khanacademy/wonder-blocks-layout";
+} from "@osati-ai/wonder-blocks-layout";
 import {
     MediaLayout,
     MediaLayoutContext,
-} from "@khanacademy/wonder-blocks-layout";
+} from "@osati-ai/wonder-blocks-layout";
 
 import ComponentInfo from "../components/component-info";
 import packageConfig from "../../packages/wonder-blocks-layout/package.json";

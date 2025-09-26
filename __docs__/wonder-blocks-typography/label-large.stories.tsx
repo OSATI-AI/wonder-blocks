@@ -5,7 +5,7 @@ import packageConfig from "../../packages/wonder-blocks-typography/package.json"
 import ComponentInfo from "../components/component-info";
 import TypographyArgTypes from "./typography.argtypes";
 
-import {LabelLarge} from "@khanacademy/wonder-blocks-typography";
+import {LabelLarge} from "@osati-ai/wonder-blocks-typography";
 
 export default {
     title: "Packages / Typography / LabelLarge",

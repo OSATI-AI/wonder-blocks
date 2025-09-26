@@ -1,5 +1,5 @@
 {
-  "name": "@khanacademy/wonder-blocks-tokens",
+  "name": "@osati-ai/wonder-blocks-tokens",
   "version": "12.2.0",
   "description": "Core primitive design tokens for Web Wonder Blocks",
   "exports": {
@@ -24,10 +24,10 @@
     "access": "public"
   },
   "dependencies": {
-    "@khanacademy/wonder-blocks-theming": "workspace:*"
+    "@osati-ai/wonder-blocks-theming": "workspace:*"
   },
   "devDependencies": {
-    "@khanacademy/wb-dev-build-settings": "workspace:*"
+    "@osati-ai/wb-dev-build-settings": "workspace:*"
   },
   "bin": "./bin/cli.js"
 }

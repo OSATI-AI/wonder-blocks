@@ -1,6 +1,6 @@
 import * as React from "react";
 import {StyleSheet} from "aphrodite";
-import {semanticColor} from "@khanacademy/wonder-blocks-tokens";
+import {semanticColor} from "@osati-ai/wonder-blocks-tokens";
 import {Badge} from "./badge";
 import {BaseBadgeProps, IconLabelProps} from "../types";
 

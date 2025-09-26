@@ -2,13 +2,13 @@ import * as React from "react";
 import {StyleSheet} from "aphrodite";
 import type {Meta, StoryObj} from "@storybook/react";
 
-import {View} from "@khanacademy/wonder-blocks-core";
-import {Strut} from "@khanacademy/wonder-blocks-layout";
-import {color, semanticColor, spacing} from "@khanacademy/wonder-blocks-tokens";
-import {PhosphorIcon} from "@khanacademy/wonder-blocks-icon";
+import {View} from "@osati-ai/wonder-blocks-core";
+import {Strut} from "@osati-ai/wonder-blocks-layout";
+import {color, semanticColor, spacing} from "@osati-ai/wonder-blocks-tokens";
+import {PhosphorIcon} from "@osati-ai/wonder-blocks-icon";
 
 import packageConfig from "../../packages/wonder-blocks-cell/package.json";
-import {CompactCell} from "@khanacademy/wonder-blocks-cell";
+import {CompactCell} from "@osati-ai/wonder-blocks-cell";
 
 import ComponentInfo from "../components/component-info";
 import CompactCellArgTypes, {AccessoryMappings} from "./compact-cell.argtypes";

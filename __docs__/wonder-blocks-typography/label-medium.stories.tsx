@@ -5,7 +5,7 @@ import packageConfig from "../../packages/wonder-blocks-typography/package.json"
 import ComponentInfo from "../components/component-info";
 import TypographyArgTypes from "./typography.argtypes";
 
-import {LabelMedium} from "@khanacademy/wonder-blocks-typography";
+import {LabelMedium} from "@osati-ai/wonder-blocks-typography";
 
 export default {
     title: "Packages / Typography / LabelMedium",

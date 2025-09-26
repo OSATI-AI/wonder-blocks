@@ -5,7 +5,7 @@ import bitcoinIcon from "@phosphor-icons/core/regular/currency-btc.svg";
 import euroIcon from "@phosphor-icons/core/regular/currency-eur.svg";
 import dollarIcon from "@phosphor-icons/core/regular/currency-dollar.svg";
 import yenIcon from "@phosphor-icons/core/regular/currency-jpy.svg";
-import {PhosphorIcon} from "@khanacademy/wonder-blocks-icon";
+import {PhosphorIcon} from "@osati-ai/wonder-blocks-icon";
 
 export const allCountries = [
     ["AF", "Afghanistan"],

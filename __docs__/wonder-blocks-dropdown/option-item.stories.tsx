@@ -1,10 +1,10 @@
 import {Meta} from "@storybook/react";
 import * as React from "react";
 import {StyleSheet} from "aphrodite";
-import {PropsFor, View} from "@khanacademy/wonder-blocks-core";
-import {OptionItem} from "@khanacademy/wonder-blocks-dropdown";
-import {PhosphorIcon} from "@khanacademy/wonder-blocks-icon";
-import {semanticColor, sizing} from "@khanacademy/wonder-blocks-tokens";
+import {PropsFor, View} from "@osati-ai/wonder-blocks-core";
+import {OptionItem} from "@osati-ai/wonder-blocks-dropdown";
+import {PhosphorIcon} from "@osati-ai/wonder-blocks-icon";
+import {semanticColor, sizing} from "@osati-ai/wonder-blocks-tokens";
 
 import ComponentInfo from "../components/component-info";
 import packageConfig from "../../packages/wonder-blocks-dropdown/package.json";
@@ -40,7 +40,7 @@ const styles = StyleSheet.create({
  * ### Usage
  *
  * ```tsx
- * import {OptionItem, SingleSelect} from "@khanacademy/wonder-blocks-dropdown";
+ * import {OptionItem, SingleSelect} from "@osati-ai/wonder-blocks-dropdown";
  *
  * <SingleSelect {...props}>
  *   <OptionItem label="Option Item" onClick={() => {}} />

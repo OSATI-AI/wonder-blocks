@@ -1,10 +1,10 @@
 import * as React from "react";
 import type {Meta, StoryObj} from "@storybook/react";
 
-import {PhosphorIcon} from "@khanacademy/wonder-blocks-icon";
+import {PhosphorIcon} from "@osati-ai/wonder-blocks-icon";
 import {IconMappings} from "../wonder-blocks-icon/phosphor-icon.argtypes";
-import {ActionItem} from "@khanacademy/wonder-blocks-dropdown";
-import {View} from "@khanacademy/wonder-blocks-core";
+import {ActionItem} from "@osati-ai/wonder-blocks-dropdown";
+import {View} from "@osati-ai/wonder-blocks-core";
 import {themeModes} from "../../.storybook/modes";
 import {defaultPseudoStates, StateSheet} from "../components/state-sheet";
 

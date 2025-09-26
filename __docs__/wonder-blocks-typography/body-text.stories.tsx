@@ -6,7 +6,7 @@ import packageConfig from "../../packages/wonder-blocks-typography/package.json"
 import ComponentInfo from "../components/component-info";
 import TypographyArgTypes from "./typography.argtypes";
 
-import {View} from "@khanacademy/wonder-blocks-core";
+import {View} from "@osati-ai/wonder-blocks-core";
 import {
     BodyText,
     LabelXSmall,
@@ -14,8 +14,8 @@ import {
     LabelMedium,
     LabelLarge,
     Body,
-} from "@khanacademy/wonder-blocks-typography";
-import {font, spacing, sizing} from "@khanacademy/wonder-blocks-tokens";
+} from "@osati-ai/wonder-blocks-typography";
+import {font, spacing, sizing} from "@osati-ai/wonder-blocks-tokens";
 import {themeModes} from "../../.storybook/modes";
 
 /**

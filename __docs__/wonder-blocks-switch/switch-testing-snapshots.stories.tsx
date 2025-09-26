@@ -2,12 +2,12 @@ import * as React from "react";
 import type {Meta, StoryObj} from "@storybook/react";
 
 import magnifyingGlassIcon from "@phosphor-icons/core/bold/magnifying-glass-bold.svg";
-import {PhosphorIcon} from "@khanacademy/wonder-blocks-icon";
-import Switch from "@khanacademy/wonder-blocks-switch";
+import {PhosphorIcon} from "@osati-ai/wonder-blocks-icon";
+import Switch from "@osati-ai/wonder-blocks-switch";
 
 import {defaultPseudoStates, StateSheet} from "../components/state-sheet";
-import {View} from "@khanacademy/wonder-blocks-core";
-import {sizing} from "@khanacademy/wonder-blocks-tokens";
+import {View} from "@osati-ai/wonder-blocks-core";
+import {sizing} from "@osati-ai/wonder-blocks-tokens";
 import {themeModes} from "../../.storybook/modes";
 
 const rows = [

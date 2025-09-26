@@ -6,14 +6,14 @@ import lightbulb from "@phosphor-icons/core/regular/lightbulb.svg";
 import magnifyingGlassPlus from "@phosphor-icons/core/regular/magnifying-glass-plus.svg";
 import magnifyingGlassMinus from "@phosphor-icons/core/regular/magnifying-glass-minus.svg";
 
-import Button from "@khanacademy/wonder-blocks-button";
-import {View} from "@khanacademy/wonder-blocks-core";
-import IconButton from "@khanacademy/wonder-blocks-icon-button";
-import {Strut} from "@khanacademy/wonder-blocks-layout";
-import Link from "@khanacademy/wonder-blocks-link";
-import {spacing} from "@khanacademy/wonder-blocks-tokens";
-import {LabelLarge} from "@khanacademy/wonder-blocks-typography";
-import {actionStyles} from "@khanacademy/wonder-blocks-styles";
+import Button from "@osati-ai/wonder-blocks-button";
+import {View} from "@osati-ai/wonder-blocks-core";
+import IconButton from "@osati-ai/wonder-blocks-icon-button";
+import {Strut} from "@osati-ai/wonder-blocks-layout";
+import Link from "@osati-ai/wonder-blocks-link";
+import {spacing} from "@osati-ai/wonder-blocks-tokens";
+import {LabelLarge} from "@osati-ai/wonder-blocks-typography";
+import {actionStyles} from "@osati-ai/wonder-blocks-styles";
 
 const mobile = "@media (max-width: 1023px)";
 

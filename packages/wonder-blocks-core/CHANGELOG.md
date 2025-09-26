@@ -1,4 +1,4 @@
-# @khanacademy/wonder-blocks-core
+# @osati-ai/wonder-blocks-core
 
 ## 12.4.0
 

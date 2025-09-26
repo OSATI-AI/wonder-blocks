@@ -2,8 +2,8 @@ import * as React from "react";
 import {render, screen} from "@testing-library/react";
 
 import {userEvent} from "@testing-library/user-event";
-import {PhosphorIcon} from "@khanacademy/wonder-blocks-icon";
-import {RenderStateRoot} from "@khanacademy/wonder-blocks-core";
+import {PhosphorIcon} from "@osati-ai/wonder-blocks-icon";
+import {RenderStateRoot} from "@osati-ai/wonder-blocks-core";
 import magnifyingGlassIcon from "@phosphor-icons/core/bold/magnifying-glass-bold.svg";
 import Switch from "../switch";
 

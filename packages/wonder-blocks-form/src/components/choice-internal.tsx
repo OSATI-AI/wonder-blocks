@@ -1,15 +1,15 @@
 import * as React from "react";
 import {StyleSheet} from "aphrodite";
 
-import {View, Id} from "@khanacademy/wonder-blocks-core";
+import {View, Id} from "@osati-ai/wonder-blocks-core";
 import {
     font,
     semanticColor,
     sizing,
     spacing,
-} from "@khanacademy/wonder-blocks-tokens";
-import {BodyText} from "@khanacademy/wonder-blocks-typography";
-import type {AriaProps, StyleType} from "@khanacademy/wonder-blocks-core";
+} from "@osati-ai/wonder-blocks-tokens";
+import {BodyText} from "@osati-ai/wonder-blocks-typography";
+import type {AriaProps, StyleType} from "@osati-ai/wonder-blocks-core";
 import CheckboxCore from "./checkbox-core";
 import RadioCore from "./radio-core";
 import theme from "../theme";

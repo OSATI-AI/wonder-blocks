@@ -1,15 +1,12 @@
 import * as React from "react";
 
-import {StaticRouter, MemoryRouter, Switch, Route} from "react-router-dom";
-import {CompatRouter, useLocation} from "react-router-dom-v5-compat";
+import {MemoryRouter, Route} from "react-router-dom";
+import {BrowserRouter, CompatRouter, Routes, useLocation} from "react-router-dom-v5-compat";
 
 import type {LocationDescriptor} from "history";
 import type {TestHarnessAdapter} from "../types";
 
-type MemoryRouterProps = JSX.LibraryManagedAttributes<
-    typeof MemoryRouter,
-    React.ComponentProps<typeof MemoryRouter>
->;
+type MemoryRouterProps = React.ComponentProps<typeof MemoryRouter>;
 
 /**
  * Configuration for the withLocation test harness adapter.
@@ -134,10 +131,10 @@ const MaybeWithRoute = ({
     // usage of RRv5-style APIs happening inside the component we're testing.
     // When we fully adopt v6, we can (and must) switch to using Routes.
     return (
-        <Switch>
-            <Route path={path} render={() => <>{children}</>} />
-            <Route path="*" component={ErrorElement} />
-        </Switch>
+        <Routes>
+            <Route path={path} element={<>{children}</>} />
+            <Route path="*" element={<ErrorElement />} />
+        </Routes>
     );
 };
 
@@ -169,19 +166,19 @@ export const adapter: TestHarnessAdapter<Config> = (
          */
         if (config.disableCompatRouter) {
             return (
-                <StaticRouter location={config.location} context={{}}>
+                <BrowserRouter>
                     <MaybeWithRoute
                         path={config.path}
                         configLocation={config.location}
                     >
                         {children}
                     </MaybeWithRoute>
-                </StaticRouter>
+                </BrowserRouter>
             );
         }
 
         return (
-            <StaticRouter location={config.location} context={{}}>
+            <BrowserRouter>
                 <CompatRouter>
                     <MaybeWithRoute
                         path={config.path}
@@ -190,7 +187,7 @@ export const adapter: TestHarnessAdapter<Config> = (
                         {children}
                     </MaybeWithRoute>
                 </CompatRouter>
-            </StaticRouter>
+            </BrowserRouter>
         );
     }
     /**

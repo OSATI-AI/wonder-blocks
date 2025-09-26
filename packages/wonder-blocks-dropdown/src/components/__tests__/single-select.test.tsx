@@ -12,7 +12,7 @@ import {
     PointerEventsCheckLevel,
 } from "@testing-library/user-event";
 
-import {PropsFor} from "@khanacademy/wonder-blocks-core";
+import {PropsFor} from "@osati-ai/wonder-blocks-core";
 
 import OptionItem from "../option-item";
 import SingleSelect from "../single-select";
@@ -1209,7 +1209,7 @@ describe("SingleSelect", () => {
         let announceMessageSpy: any;
         beforeAll(() => {
             announceMessageSpy = jest.spyOn(
-                require("@khanacademy/wonder-blocks-announcer"),
+                require("@osati-ai/wonder-blocks-announcer"),
                 "announceMessage",
             );
         });
@@ -2145,7 +2145,7 @@ describe("SingleSelect", () => {
                 // Act
                 doRender(
                     <ControlledSingleSelect
-                        validate={(value) => {
+                        validate={(value: any) => {
                             if (value === "1") {
                                 return "Error";
                             }
@@ -2165,7 +2165,7 @@ describe("SingleSelect", () => {
                 // Act
                 doRender(
                     <ControlledSingleSelect
-                        validate={(value) => {
+                        validate={(value: any) => {
                             if (value === "1") {
                                 return "Error";
                             }
@@ -2218,7 +2218,7 @@ describe("SingleSelect", () => {
                 const errorMessage = "Error message";
                 const {userEvent} = doRender(
                     <ControlledSingleSelect
-                        validate={(value) =>
+                        validate={(value: any) =>
                             value === "1" ? errorMessage : undefined
                         }
                         selectedValue={"1"}
@@ -2240,7 +2240,7 @@ describe("SingleSelect", () => {
                 const errorMessage = "Error message";
                 const {userEvent} = doRender(
                     <ControlledSingleSelect
-                        validate={(value) =>
+                        validate={(value: any) =>
                             value === "1" ? errorMessage : undefined
                         }
                         selectedValue={"1"}

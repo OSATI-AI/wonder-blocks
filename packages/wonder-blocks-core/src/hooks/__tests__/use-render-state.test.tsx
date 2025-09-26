@@ -1,5 +1,5 @@
 import * as React from "react";
-import {renderHookStatic} from "@khanacademy/wonder-blocks-testing-core";
+import {renderHookStatic} from "@osati-ai/wonder-blocks-testing-core";
 import {render} from "@testing-library/react";
 
 import {useRenderState} from "../use-render-state";

@@ -1,6 +1,6 @@
 import * as React from "react";
 
-import type {StyleType} from "@khanacademy/wonder-blocks-core";
+import type {StyleType} from "@osati-ai/wonder-blocks-core";
 import type {CSSProperties} from "aphrodite";
 
 export type getRefFn = (

@@ -1,4 +1,4 @@
-# @khanacademy/wonder-blocks-testing-core
+# @osati-ai/wonder-blocks-testing-core
 
 ## 3.0.1
 

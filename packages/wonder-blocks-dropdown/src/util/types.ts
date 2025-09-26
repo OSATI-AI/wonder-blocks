@@ -1,8 +1,8 @@
 import * as React from "react";
-import type {ClickableState} from "@khanacademy/wonder-blocks-clickable";
+import type {ClickableState} from "@osati-ai/wonder-blocks-clickable";
 
-import {DetailCell} from "@khanacademy/wonder-blocks-cell";
-import {PropsFor} from "@khanacademy/wonder-blocks-core";
+import {DetailCell} from "@osati-ai/wonder-blocks-cell";
+import {PropsFor} from "@osati-ai/wonder-blocks-core";
 import ActionItem from "../components/action-item";
 import OptionItem from "../components/option-item";
 import SeparatorItem from "../components/separator-item";

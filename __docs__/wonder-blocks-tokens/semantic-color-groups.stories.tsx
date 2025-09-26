@@ -1,8 +1,8 @@
 import * as React from "react";
 import {StyleSheet} from "aphrodite";
-import {semanticColor, sizing} from "@khanacademy/wonder-blocks-tokens";
+import {semanticColor, sizing} from "@osati-ai/wonder-blocks-tokens";
 import {ActionColorGroup, ColorGroup} from "../components/color";
-import {PropsFor, View} from "@khanacademy/wonder-blocks-core";
+import {PropsFor, View} from "@osati-ai/wonder-blocks-core";
 
 export default {
     title: "Packages/Tokens/Semantic Colors/Groups",

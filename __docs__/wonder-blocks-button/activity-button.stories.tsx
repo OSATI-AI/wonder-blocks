@@ -6,12 +6,12 @@ import magnifyingGlass from "@phosphor-icons/core/regular/magnifying-glass.svg";
 import caretRight from "@phosphor-icons/core/regular/caret-right.svg";
 
 import {action} from "@storybook/addon-actions";
-import {View} from "@khanacademy/wonder-blocks-core";
-import Button, {ActivityButton} from "@khanacademy/wonder-blocks-button";
+import {View} from "@osati-ai/wonder-blocks-core";
+import Button, {ActivityButton} from "@osati-ai/wonder-blocks-button";
 
 import ComponentInfo from "../components/component-info";
 import packageConfig from "../../packages/wonder-blocks-icon-button/package.json";
-import {border, semanticColor, sizing} from "@khanacademy/wonder-blocks-tokens";
+import {border, semanticColor, sizing} from "@osati-ai/wonder-blocks-tokens";
 
 import activityButtonArgtypes from "./activity-button.argtypes";
 

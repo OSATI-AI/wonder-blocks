@@ -1,0 +1,22 @@
+import * as React from "react";
+import type { StyleType } from "@osati-ai/wonder-blocks-core";
+import type { AccordionCornerKindType } from "./accordion";
+import type { TagType } from "./accordion-section";
+type Props = {
+    id: string;
+    header: string | React.ReactElement;
+    caretPosition: "start" | "end";
+    cornerKind: AccordionCornerKindType;
+    collapsible?: boolean;
+    expanded: boolean;
+    animated: boolean;
+    onClick?: () => void;
+    sectionContentUniqueId: string;
+    headerStyle?: StyleType;
+    tag?: TagType;
+    testId?: string;
+    isFirstSection: boolean;
+    isLastSection: boolean;
+};
+declare const AccordionSectionHeader: React.ForwardRefExoticComponent<Props & React.RefAttributes<HTMLButtonElement>>;
+export default AccordionSectionHeader;

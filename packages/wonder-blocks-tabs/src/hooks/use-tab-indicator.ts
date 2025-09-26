@@ -1,5 +1,5 @@
-import {AriaRole, useOnMountEffect} from "@khanacademy/wonder-blocks-core";
-import {border, semanticColor} from "@khanacademy/wonder-blocks-tokens";
+import {AriaRole, useOnMountEffect} from "@osati-ai/wonder-blocks-core";
+import {border, semanticColor} from "@osati-ai/wonder-blocks-tokens";
 import * as React from "react";
 
 type IndicatorProps = {

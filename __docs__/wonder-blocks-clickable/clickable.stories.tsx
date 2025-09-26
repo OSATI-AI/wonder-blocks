@@ -4,16 +4,16 @@ import {MemoryRouter} from "react-router-dom";
 import {CompatRouter, Route, Routes} from "react-router-dom-v5-compat";
 import type {Meta, StoryObj} from "@storybook/react";
 
-import {View} from "@khanacademy/wonder-blocks-core";
-import {semanticColor, spacing} from "@khanacademy/wonder-blocks-tokens";
-import {Body, LabelLarge} from "@khanacademy/wonder-blocks-typography";
+import {View} from "@osati-ai/wonder-blocks-core";
+import {semanticColor, spacing} from "@osati-ai/wonder-blocks-tokens";
+import {Body, LabelLarge} from "@osati-ai/wonder-blocks-typography";
 
-import Clickable from "@khanacademy/wonder-blocks-clickable";
+import Clickable from "@osati-ai/wonder-blocks-clickable";
 import packageConfig from "../../packages/wonder-blocks-clickable/package.json";
 
 import ComponentInfo from "../components/component-info";
 import argTypes from "./clickable.argtypes";
-import Button from "@khanacademy/wonder-blocks-button";
+import Button from "@osati-ai/wonder-blocks-button";
 
 export default {
     title: "Packages / Clickable / Clickable",

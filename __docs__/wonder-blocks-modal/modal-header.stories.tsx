@@ -5,16 +5,16 @@ import type {Meta, StoryObj} from "@storybook/react";
 import {
     Breadcrumbs,
     BreadcrumbsItem,
-} from "@khanacademy/wonder-blocks-breadcrumbs";
-import {View} from "@khanacademy/wonder-blocks-core";
-import Link from "@khanacademy/wonder-blocks-link";
-import {BodyText} from "@khanacademy/wonder-blocks-typography";
+} from "@osati-ai/wonder-blocks-breadcrumbs";
+import {View} from "@osati-ai/wonder-blocks-core";
+import Link from "@osati-ai/wonder-blocks-link";
+import {BodyText} from "@osati-ai/wonder-blocks-typography";
 
 import {
     ModalDialog,
     ModalPanel,
     ModalHeader,
-} from "@khanacademy/wonder-blocks-modal";
+} from "@osati-ai/wonder-blocks-modal";
 import packageConfig from "../../packages/wonder-blocks-modal/package.json";
 
 import ComponentInfo from "../components/component-info";

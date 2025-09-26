@@ -1,5 +1,5 @@
 import * as React from "react";
-import {Server} from "@khanacademy/wonder-blocks-core";
+import {Server} from "@osati-ai/wonder-blocks-core";
 import {render, screen} from "@testing-library/react";
 
 import TrackData from "../track-data";

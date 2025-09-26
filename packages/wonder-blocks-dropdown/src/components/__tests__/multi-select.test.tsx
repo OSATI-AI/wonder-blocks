@@ -14,7 +14,7 @@ import {
     UserEvent,
 } from "@testing-library/user-event";
 
-import {PropsFor} from "@khanacademy/wonder-blocks-core";
+import {PropsFor} from "@osati-ai/wonder-blocks-core";
 import OptionItem from "../option-item";
 import MultiSelect from "../multi-select";
 import {defaultLabels as builtinLabels} from "../../util/constants";
@@ -1669,7 +1669,7 @@ describe("MultiSelect", () => {
 
         beforeAll(() => {
             announceMessageSpy = jest.spyOn(
-                require("@khanacademy/wonder-blocks-announcer"),
+                require("@osati-ai/wonder-blocks-announcer"),
                 "announceMessage",
             );
         });
@@ -2562,7 +2562,7 @@ describe("MultiSelect", () => {
                 // Act
                 doRender(
                     <ControlledMultiSelect
-                        validate={(values) => {
+                        validate={(values: string[]) => {
                             if (values.includes("1")) {
                                 return "Error";
                             }
@@ -2582,7 +2582,7 @@ describe("MultiSelect", () => {
                 // Act
                 doRender(
                     <ControlledMultiSelect
-                        validate={(values) => {
+                        validate={(values: string[]) => {
                             if (values.includes("1")) {
                                 return "Error";
                             }
@@ -2635,7 +2635,7 @@ describe("MultiSelect", () => {
                 const errorMessage = "Error message";
                 const {userEvent} = doRender(
                     <ControlledMultiSelect
-                        validate={(values) =>
+                        validate={(values: string[]) =>
                             values.includes("1") ? errorMessage : undefined
                         }
                         selectedValues={["1"]}
@@ -2657,7 +2657,7 @@ describe("MultiSelect", () => {
                 const errorMessage = "Error message";
                 const {userEvent} = doRender(
                     <ControlledMultiSelect
-                        validate={(values) =>
+                        validate={(values: string[]) =>
                             values.includes("1") ? errorMessage : undefined
                         }
                         selectedValues={["1"]}
@@ -2680,7 +2680,7 @@ describe("MultiSelect", () => {
                 const errorMessage = "Error message";
                 const {userEvent} = doRender(
                     <ControlledMultiSelect
-                        validate={(values) =>
+                        validate={(values: string[]) =>
                             values.includes("1") ? errorMessage : undefined
                         }
                         selectedValues={["1"]}
@@ -2705,7 +2705,7 @@ describe("MultiSelect", () => {
                 const onValidate = jest.fn();
                 const {userEvent} = doRender(
                     <ControlledMultiSelect
-                        validate={(values) =>
+                        validate={(values: string[]) =>
                             values.includes("1") ? errorMessage : undefined
                         }
                         selectedValues={["1"]}
@@ -2727,7 +2727,7 @@ describe("MultiSelect", () => {
                 const errorMessage = "Error message";
                 const {userEvent} = doRender(
                     <ControlledMultiSelect
-                        validate={(values) =>
+                        validate={(values: string[]) =>
                             values.includes("1") ? errorMessage : undefined
                         }
                         selectedValues={["1"]}
@@ -2766,7 +2766,7 @@ describe("MultiSelect", () => {
                 const onValidate = jest.fn();
                 const {userEvent} = doRender(
                     <ControlledMultiSelect
-                        validate={(values) =>
+                        validate={(values: string[]) =>
                             values.includes("1") ? errorMessage : undefined
                         }
                         selectedValues={["1"]}
@@ -2789,7 +2789,7 @@ describe("MultiSelect", () => {
                 const errorMessage = "Error message";
                 const {userEvent} = doRender(
                     <ControlledMultiSelect
-                        validate={(values) =>
+                        validate={(values: string[]) =>
                             values.includes("1") ? errorMessage : undefined
                         }
                         selectedValues={["1"]}
@@ -2814,7 +2814,7 @@ describe("MultiSelect", () => {
                 const onValidate = jest.fn();
                 const {userEvent} = doRender(
                     <ControlledMultiSelect
-                        validate={(values) =>
+                        validate={(values: string[]) =>
                             values.includes("1") ? errorMessage : undefined
                         }
                         selectedValues={["1"]}
@@ -2839,7 +2839,7 @@ describe("MultiSelect", () => {
                 const errorMessage = "Error message";
                 const {userEvent} = doRender(
                     <ControlledMultiSelect
-                        validate={(values) =>
+                        validate={(values: string[]) =>
                             values.includes("1") ? errorMessage : undefined
                         }
                         selectedValues={["1"]}

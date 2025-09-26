@@ -3,13 +3,13 @@ import {action} from "@storybook/addon-actions";
 import type {Meta, StoryObj} from "@storybook/react";
 
 import paperPlaneIcon from "@phosphor-icons/core/fill/paper-plane-tilt-fill.svg";
-import {ActivityButton} from "@khanacademy/wonder-blocks-button";
+import {ActivityButton} from "@osati-ai/wonder-blocks-button";
 import {defaultPseudoStates, StateSheet} from "../components/state-sheet";
 import {themeModes} from "../../.storybook/modes";
 import {ScenariosLayout} from "../components/scenarios-layout";
 import {longTextWithNoWordBreak} from "../components/text-for-testing";
-import {View} from "@khanacademy/wonder-blocks-core";
-import {sizing} from "@khanacademy/wonder-blocks-tokens";
+import {View} from "@osati-ai/wonder-blocks-core";
+import {sizing} from "@osati-ai/wonder-blocks-tokens";
 
 /**
  * The following stories are used to generate the pseudo states for the

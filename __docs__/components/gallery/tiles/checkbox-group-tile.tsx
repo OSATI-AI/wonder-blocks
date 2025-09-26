@@ -1,6 +1,6 @@
 import * as React from "react";
 
-import {CheckboxGroup, Choice} from "@khanacademy/wonder-blocks-form";
+import {CheckboxGroup, Choice} from "@osati-ai/wonder-blocks-form";
 
 import ComponentTile from "../component-tile";
 import {CommonTileProps} from "../types";

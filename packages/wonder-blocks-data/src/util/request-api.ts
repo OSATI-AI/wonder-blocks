@@ -1,4 +1,4 @@
-import {Server} from "@khanacademy/wonder-blocks-core";
+import {Server} from "@osati-ai/wonder-blocks-core";
 import {RequestTracker} from "./request-tracking";
 import {RequestFulfillment} from "./request-fulfillment";
 import {DataError, DataErrors} from "./data-error";

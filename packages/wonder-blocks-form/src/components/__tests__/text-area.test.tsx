@@ -2,7 +2,7 @@
 import * as React from "react";
 import {render, screen} from "@testing-library/react";
 
-import {PropsFor, RenderStateRoot} from "@khanacademy/wonder-blocks-core";
+import {PropsFor, RenderStateRoot} from "@osati-ai/wonder-blocks-core";
 import {userEvent} from "@testing-library/user-event";
 import TextArea from "../text-area";
 

@@ -1,10 +1,10 @@
 import * as React from "react";
 
-import {View} from "@khanacademy/wonder-blocks-core";
+import {View} from "@osati-ai/wonder-blocks-core";
 
 import ComponentTile from "../component-tile";
 import {styles} from "../styles";
-import {TextArea} from "@khanacademy/wonder-blocks-form";
+import {TextArea} from "@osati-ai/wonder-blocks-form";
 import {CommonTileProps} from "../types";
 
 export default function TextAreaTile(props: CommonTileProps) {

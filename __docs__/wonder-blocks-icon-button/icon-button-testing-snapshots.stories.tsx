@@ -3,11 +3,11 @@ import {action} from "@storybook/addon-actions";
 import type {Meta, StoryObj} from "@storybook/react";
 
 import paperPlaneIcon from "@phosphor-icons/core/fill/paper-plane-tilt-fill.svg";
-import IconButton from "@khanacademy/wonder-blocks-icon-button";
+import IconButton from "@osati-ai/wonder-blocks-icon-button";
 import {AllVariants} from "../components/all-variants";
 import {defaultPseudoStates, StateSheet} from "../components/state-sheet";
-import {sizing} from "@khanacademy/wonder-blocks-tokens";
-import {View} from "@khanacademy/wonder-blocks-core";
+import {sizing} from "@osati-ai/wonder-blocks-tokens";
+import {View} from "@osati-ai/wonder-blocks-core";
 import {themeModes} from "../../.storybook/modes";
 
 /**

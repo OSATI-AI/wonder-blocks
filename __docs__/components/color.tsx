@@ -1,12 +1,12 @@
 import * as React from "react";
 import {StyleSheet} from "aphrodite";
 
-import {StyleType, View} from "@khanacademy/wonder-blocks-core";
+import {StyleType, View} from "@osati-ai/wonder-blocks-core";
 import {
     Footnote,
     LabelLarge,
     LabelSmall,
-} from "@khanacademy/wonder-blocks-typography";
+} from "@osati-ai/wonder-blocks-typography";
 import {
     border,
     color,
@@ -14,7 +14,7 @@ import {
     semanticColor,
     sizing,
     spacing,
-} from "@khanacademy/wonder-blocks-tokens";
+} from "@osati-ai/wonder-blocks-tokens";
 import {getTokenName, maybeGetCssVariableInfo} from "./tokens-util";
 import {CopyButton} from "./copy-button";
 

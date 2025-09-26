@@ -2,12 +2,12 @@ import * as React from "react";
 import {StyleSheet} from "aphrodite";
 import caretDown from "@phosphor-icons/core/bold/caret-down-bold.svg";
 
-import Clickable from "@khanacademy/wonder-blocks-clickable";
-import {View} from "@khanacademy/wonder-blocks-core";
-import {PhosphorIcon} from "@khanacademy/wonder-blocks-icon";
-import {HeadingSmall} from "@khanacademy/wonder-blocks-typography";
-import {spacing, semanticColor} from "@khanacademy/wonder-blocks-tokens";
-import type {StyleType} from "@khanacademy/wonder-blocks-core";
+import Clickable from "@osati-ai/wonder-blocks-clickable";
+import {View} from "@osati-ai/wonder-blocks-core";
+import {PhosphorIcon} from "@osati-ai/wonder-blocks-icon";
+import {HeadingSmall} from "@osati-ai/wonder-blocks-typography";
+import {spacing, semanticColor} from "@osati-ai/wonder-blocks-tokens";
+import type {StyleType} from "@osati-ai/wonder-blocks-core";
 
 import type {AccordionCornerKindType} from "./accordion";
 import type {TagType} from "./accordion-section";

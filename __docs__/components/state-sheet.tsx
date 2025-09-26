@@ -1,10 +1,10 @@
 import * as React from "react";
 
 import {StyleSheet} from "aphrodite";
-import {PropsFor, View} from "@khanacademy/wonder-blocks-core";
+import {PropsFor, View} from "@osati-ai/wonder-blocks-core";
 import {AllVariants} from "./all-variants";
-import {semanticColor, sizing} from "@khanacademy/wonder-blocks-tokens";
-import {LabelSmall} from "@khanacademy/wonder-blocks-typography";
+import {semanticColor, sizing} from "@osati-ai/wonder-blocks-tokens";
+import {LabelSmall} from "@osati-ai/wonder-blocks-typography";
 
 export const commonStates = {
     rest: {name: "Rest", className: "rest"},

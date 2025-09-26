@@ -1,9 +1,9 @@
 import * as React from "react";
 import caretDown from "@phosphor-icons/core/regular/caret-down.svg";
-import {OptionItem, SingleSelect} from "@khanacademy/wonder-blocks-dropdown";
-import {View} from "@khanacademy/wonder-blocks-core";
-import {LabeledField} from "@khanacademy/wonder-blocks-labeled-field";
-import {PhosphorIcon} from "@khanacademy/wonder-blocks-icon";
+import {OptionItem, SingleSelect} from "@osati-ai/wonder-blocks-dropdown";
+import {View} from "@osati-ai/wonder-blocks-core";
+import {LabeledField} from "@osati-ai/wonder-blocks-labeled-field";
+import {PhosphorIcon} from "@osati-ai/wonder-blocks-icon";
 import {allCountries} from "./option-item-examples";
 
 export default {

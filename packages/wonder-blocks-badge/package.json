@@ -1,5 +1,5 @@
 {
-  "name": "@khanacademy/wonder-blocks-badge",
+  "name": "@osati-ai/wonder-blocks-badge",
   "version": "1.0.8",
   "design": "v1",
   "description": "Badges are used to display information",
@@ -16,11 +16,11 @@
     "access": "public"
   },
   "dependencies": {
-    "@khanacademy/wonder-blocks-core": "workspace:*",
-    "@khanacademy/wonder-blocks-icon": "workspace:*",
-    "@khanacademy/wonder-blocks-styles": "workspace:*",
-    "@khanacademy/wonder-blocks-tokens": "workspace:*",
-    "@khanacademy/wonder-blocks-typography": "workspace:*"
+    "@osati-ai/wonder-blocks-core": "workspace:*",
+    "@osati-ai/wonder-blocks-icon": "workspace:*",
+    "@osati-ai/wonder-blocks-styles": "workspace:*",
+    "@osati-ai/wonder-blocks-tokens": "workspace:*",
+    "@osati-ai/wonder-blocks-typography": "workspace:*"
   },
   "peerDependencies": {
     "@phosphor-icons/core": "catalog:",
@@ -28,6 +28,6 @@
     "react": "catalog:"
   },
   "devDependencies": {
-    "@khanacademy/wb-dev-build-settings": "workspace:*"
+    "@osati-ai/wb-dev-build-settings": "workspace:*"
   }
 }

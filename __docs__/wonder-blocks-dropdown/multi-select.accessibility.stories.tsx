@@ -1,9 +1,9 @@
 import * as React from "react";
 import magnifyingGlassIcon from "@phosphor-icons/core/regular/magnifying-glass.svg";
-import {OptionItem, MultiSelect} from "@khanacademy/wonder-blocks-dropdown";
-import {LabeledField} from "@khanacademy/wonder-blocks-labeled-field";
-import {View} from "@khanacademy/wonder-blocks-core";
-import {PhosphorIcon} from "@khanacademy/wonder-blocks-icon";
+import {OptionItem, MultiSelect} from "@osati-ai/wonder-blocks-dropdown";
+import {LabeledField} from "@osati-ai/wonder-blocks-labeled-field";
+import {View} from "@osati-ai/wonder-blocks-core";
+import {PhosphorIcon} from "@osati-ai/wonder-blocks-icon";
 import {allCountries} from "./option-item-examples";
 
 export default {

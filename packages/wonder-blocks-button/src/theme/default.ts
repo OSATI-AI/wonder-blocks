@@ -1,4 +1,4 @@
-import {border, font, sizing} from "@khanacademy/wonder-blocks-tokens";
+import {border, font, sizing} from "@osati-ai/wonder-blocks-tokens";
 
 // The underline-offset is the distance between the text baseline and the
 // bottom of the underline. This is necessary to prevent the underline from

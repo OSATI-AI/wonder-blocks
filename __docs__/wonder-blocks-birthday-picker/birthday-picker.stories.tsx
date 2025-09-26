@@ -1,10 +1,10 @@
 import * as React from "react";
 import type {Meta, StoryObj} from "@storybook/react";
 
-import {View} from "@khanacademy/wonder-blocks-core";
+import {View} from "@osati-ai/wonder-blocks-core";
 
 import packageConfig from "../../packages/wonder-blocks-birthday-picker/package.json";
-import BirthdayPicker from "@khanacademy/wonder-blocks-birthday-picker";
+import BirthdayPicker from "@osati-ai/wonder-blocks-birthday-picker";
 
 import ComponentInfo from "../components/component-info";
 

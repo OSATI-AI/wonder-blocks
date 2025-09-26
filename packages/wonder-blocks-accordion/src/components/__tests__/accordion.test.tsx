@@ -2,7 +2,7 @@ import * as React from "react";
 import {render, screen} from "@testing-library/react";
 import {userEvent} from "@testing-library/user-event";
 
-import {RenderStateRoot} from "@khanacademy/wonder-blocks-core";
+import {RenderStateRoot} from "@osati-ai/wonder-blocks-core";
 
 import Accordion from "../accordion";
 import AccordionSection from "../accordion-section";

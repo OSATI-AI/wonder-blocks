@@ -1,5 +1,5 @@
-import {mergeTheme} from "@khanacademy/wonder-blocks-theming";
-import {sizing} from "@khanacademy/wonder-blocks-tokens";
+import {mergeTheme} from "@osati-ai/wonder-blocks-theming";
+import {sizing} from "@osati-ai/wonder-blocks-tokens";
 import {font as defaultFont} from "../../primitive/font";
 
 export const fontFamily = {

@@ -20,7 +20,7 @@ component that has been wrapped with `addStyle` will process the styles with
 ## Usage
 
 ```js
-import {addStyle} from "@khanacademy/wonder-blocks-core";
+import {addStyle} from "@osati-ai/wonder-blocks-core";
 
 addStyle(
     Component: React.Element | "string",
@@ -63,8 +63,8 @@ component so we don't have to create a new instance on every render.
 
 ```js
 import {StyleSheet} from "aphrodite";
-import {border, color, spacing} from "@khanacademy/wonder-blocks-tokens";
-import {addStyle} from "@khanacademy/wonder-blocks-core";
+import {border, color, spacing} from "@osati-ai/wonder-blocks-tokens";
+import {addStyle} from "@osati-ai/wonder-blocks-core";
 
 const StyledInput = addStyle("input", styles.input);
 

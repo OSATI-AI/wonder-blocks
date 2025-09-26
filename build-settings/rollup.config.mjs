@@ -5,6 +5,7 @@ import path from "path";
 import {nodeExternals} from "rollup-plugin-node-externals";
 import swc from "@rollup/plugin-swc";
 import resolve from "@rollup/plugin-node-resolve";
+import alias from "@rollup/plugin-alias";
 
 const createConfig = (pkgName) => {
     const packageJsonPath = path.join("packages", pkgName, "package.json");
@@ -13,6 +14,31 @@ const createConfig = (pkgName) => {
     }
 
     const extensions = [".js", ".jsx", ".ts", ".tsx"];
+
+    const isBarrel = pkgName === "wonder-blocks-full";
+
+    // For the barrel package, alias all internal Wonder Blocks packages to
+    // their local source entrypoints so they get bundled into the barrel.
+    // This ensures consumers only depend on the barrel and preserves singletons.
+    const wbAliasEntries = isBarrel
+        ? fs
+              .readdirSync("packages")
+              .filter(
+                  (dir) =>
+                      dir.startsWith("wonder-blocks-") &&
+                      dir !== "wonder-blocks-full",
+              )
+              .map((dir) => ({
+                  find: `@osati-ai/${dir}`,
+                  replacement: path.resolve(
+                      process.cwd(),
+                      "packages",
+                      dir,
+                      "src",
+                      "index.ts",
+                  ),
+              }))
+        : [];
 
     return {
         output: [
@@ -28,6 +54,15 @@ const createConfig = (pkgName) => {
         ],
         input: `packages/${pkgName}/src/index.ts`,
         plugins: [
+            // Alias must run before node resolution to rewrite package imports
+            // to local source files for bundling (barrel package only).
+            ...(isBarrel
+                ? [
+                      alias({
+                          entries: wbAliasEntries,
+                      }),
+                  ]
+                : []),
             swc({
                 swc: {
                     swcrc: true,

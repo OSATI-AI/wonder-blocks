@@ -1,5 +1,5 @@
 import * as React from "react";
-import {Heading, BodyText} from "@khanacademy/wonder-blocks-typography";
+import {Heading, BodyText} from "@osati-ai/wonder-blocks-typography";
 import FlexibleDialog from "../flexible-dialog";
 
 // Using aria-label

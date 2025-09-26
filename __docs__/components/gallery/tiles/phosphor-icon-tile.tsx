@@ -3,9 +3,9 @@ import {StyleSheet} from "aphrodite";
 
 import magnifyingGlass from "@phosphor-icons/core/regular/magnifying-glass.svg";
 import magnifyingGlassBold from "@phosphor-icons/core/bold/magnifying-glass-bold.svg";
-import {View} from "@khanacademy/wonder-blocks-core";
-import {PhosphorIcon} from "@khanacademy/wonder-blocks-icon";
-import {spacing} from "@khanacademy/wonder-blocks-tokens";
+import {View} from "@osati-ai/wonder-blocks-core";
+import {PhosphorIcon} from "@osati-ai/wonder-blocks-icon";
+import {spacing} from "@osati-ai/wonder-blocks-tokens";
 
 import ComponentTile from "../component-tile";
 import {styles} from "../styles";

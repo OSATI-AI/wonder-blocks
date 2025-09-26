@@ -1,7 +1,7 @@
 import * as React from "react";
 import {render, screen} from "@testing-library/react";
-import * as WBCore from "@khanacademy/wonder-blocks-core";
-import {makeTestHarness} from "@khanacademy/wonder-blocks-testing-core";
+import * as WBCore from "@osati-ai/wonder-blocks-core";
+import {makeTestHarness} from "@osati-ai/wonder-blocks-testing-core";
 
 import {useId} from "react";
 import * as RenderState from "../render-state";

@@ -1,1 +1,1 @@
-export * from "@khanacademy/wonder-blocks-birthday-picker";
+export * from "@osati-ai/wonder-blocks-birthday-picker";

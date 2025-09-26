@@ -1,5 +1,5 @@
 {
-  "name": "@khanacademy/wonder-blocks-banner",
+  "name": "@osati-ai/wonder-blocks-banner",
   "version": "4.3.2",
   "design": "v1",
   "description": "Banner components for Wonder Blocks.",
@@ -25,13 +25,13 @@
     "access": "public"
   },
   "dependencies": {
-    "@khanacademy/wonder-blocks-button": "workspace:*",
-    "@khanacademy/wonder-blocks-core": "workspace:*",
-    "@khanacademy/wonder-blocks-icon": "workspace:*",
-    "@khanacademy/wonder-blocks-icon-button": "workspace:*",
-    "@khanacademy/wonder-blocks-link": "workspace:*",
-    "@khanacademy/wonder-blocks-tokens": "workspace:*",
-    "@khanacademy/wonder-blocks-typography": "workspace:*"
+    "@osati-ai/wonder-blocks-button": "workspace:*",
+    "@osati-ai/wonder-blocks-core": "workspace:*",
+    "@osati-ai/wonder-blocks-icon": "workspace:*",
+    "@osati-ai/wonder-blocks-icon-button": "workspace:*",
+    "@osati-ai/wonder-blocks-link": "workspace:*",
+    "@osati-ai/wonder-blocks-tokens": "workspace:*",
+    "@osati-ai/wonder-blocks-typography": "workspace:*"
   },
   "peerDependencies": {
     "@phosphor-icons/core": "catalog:",
@@ -39,6 +39,6 @@
     "react": "catalog:"
   },
   "devDependencies": {
-    "@khanacademy/wb-dev-build-settings": "workspace:*"
+    "@osati-ai/wb-dev-build-settings": "workspace:*"
   }
 }

@@ -5,9 +5,9 @@ import {
     Id,
     type AriaProps,
     type StyleType,
-} from "@khanacademy/wonder-blocks-core";
+} from "@osati-ai/wonder-blocks-core";
 
-import {announceMessage} from "@khanacademy/wonder-blocks-announcer";
+import {announceMessage} from "@osati-ai/wonder-blocks-announcer";
 import ActionItem from "./action-item";
 import DropdownCore from "./dropdown-core";
 import DropdownOpener from "./dropdown-opener";
@@ -228,7 +228,7 @@ type Props = AriaProps &
  * ## Usage
  *
  * ```jsx
- * import {OptionItem, MultiSelect} from "@khanacademy/wonder-blocks-dropdown";
+ * import {OptionItem, MultiSelect} from "@osati-ai/wonder-blocks-dropdown";
  *
  * <MultiSelect aria-label="Fruits" onChange={setSelectedValues} selectedValues={selectedValues}>
  *  <OptionItem value="pear">Pear</OptionItem>
@@ -287,7 +287,7 @@ const MultiSelect = (props: Props) => {
 
     // The DOM reference to the opener element. This is mainly used to set focus
     // to this element, and also to pass the reference to Popper.js.
-    const [openerElement, setOpenerElement] = React.useState<HTMLElement>();
+    const [openerElement, setOpenerElement] = React.useState<HTMLElement | null>(null);
 
     const {
         errorMessage,
@@ -354,14 +354,14 @@ const MultiSelect = (props: Props) => {
     };
 
     const handleSelectAll = () => {
-        const allChildren = (Array.isArray(children) 
-            ? children 
+        const allChildren = (Array.isArray(children)
+            ? children
             : children ? [children] : []
         ) as Array<React.ReactElement>;
 
         const selected = allChildren
-            .filter((option) => !!option && !option.props.disabled)
-            .map((option) => option.props.value);
+            .filter((option) => !!option && !(option.props as any).disabled)
+            .map((option) => (option.props as any).value);
         onChange(selected);
         onSelectedValuesChangeValidation();
     };
@@ -568,8 +568,8 @@ const MultiSelect = (props: Props) => {
     );
 
     React.useEffect(() => {
-        const optionItems = (Array.isArray(children) 
-            ? children 
+        const optionItems = (Array.isArray(children)
+            ? children
             : children ? [children] : []
         ) as OptionItemComponentArray;
         const openerContent = getMenuTextOrNode(optionItems);
@@ -651,8 +651,8 @@ const MultiSelect = (props: Props) => {
     const {clearSearch, filter, noResults, someSelected} = labels;
 
     const allChildren = (
-        (Array.isArray(children) 
-            ? children 
+        (Array.isArray(children)
+            ? children
             : children ? [children] : []
         ) as Array<
             React.ReactElement<React.ComponentProps<typeof OptionItem>>
@@ -693,7 +693,7 @@ const MultiSelect = (props: Props) => {
                         isDisabled,
                         uniqueDropdownId,
                     )}
-                    openerElement={openerElement}
+                    openerElement={openerElement as HTMLElement | undefined}
                     selectionType="multi"
                     style={style}
                     className={className}

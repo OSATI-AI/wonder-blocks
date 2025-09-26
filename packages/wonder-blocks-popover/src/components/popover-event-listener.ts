@@ -14,7 +14,7 @@ type Props = {
      * Popover Content ref.
      * Will close the popover when clicking outside this element.
      */
-    contentRef?: React.RefObject<PopoverContentCore | PopoverContent>;
+    contentRef?: React.RefObject<PopoverContentCore | PopoverContent | null>;
 };
 
 type State = {
@@ -27,7 +27,7 @@ type State = {
 /**
  * A component that, when mounted, calls `onClose` when certain events occur.
  * This includes when pressing Escape or clicking outside the Popover.
- * @see @khanacademy/wonder-blocks-modal/components/modal-launcher.js
+ * @see @osati-ai/wonder-blocks-modal/components/modal-launcher.js
  */
 export default class PopoverEventListener extends React.Component<
     Props,
@@ -75,7 +75,7 @@ export default class PopoverEventListener extends React.Component<
         }
 
         const node = this.props.contentRef?.current;
-        if (node && !node.contains(e.target as any)) {
+        if (node && node instanceof HTMLElement && !node.contains(e.target as any)) {
             // Stop the event going any further.
             // Only allow click to cancel one thing at a time.
             e.preventDefault();

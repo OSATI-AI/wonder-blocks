@@ -1,10 +1,10 @@
 import * as React from "react";
 import {StyleSheet} from "aphrodite";
-import {Breadcrumbs} from "@khanacademy/wonder-blocks-breadcrumbs";
-import {MediaLayout} from "@khanacademy/wonder-blocks-layout";
-import type {StyleType} from "@khanacademy/wonder-blocks-core";
+import {Breadcrumbs} from "@osati-ai/wonder-blocks-breadcrumbs";
+import {MediaLayout} from "@osati-ai/wonder-blocks-layout";
+import type {StyleType} from "@osati-ai/wonder-blocks-core";
 
-import {Id} from "@khanacademy/wonder-blocks-core";
+import {Id} from "@osati-ai/wonder-blocks-core";
 import ModalDialog from "./modal-dialog";
 import ModalPanel from "./modal-panel";
 import ModalHeader from "./modal-header";
@@ -107,8 +107,8 @@ type DefaultProps = {
  * ### Usage
  *
  * ```jsx
- * import {OnePaneDialog} from "@khanacademy/wonder-blocks-modal";
- * import {BodyText} from "@khanacademy/wonder-blocks-typography";
+ * import {OnePaneDialog} from "@osati-ai/wonder-blocks-modal";
+ * import {BodyText} from "@osati-ai/wonder-blocks-typography";
  *
  * <OnePaneDialog
  *     title="Some title"

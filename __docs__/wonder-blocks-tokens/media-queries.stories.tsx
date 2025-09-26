@@ -4,7 +4,7 @@ import {Meta} from "@storybook/react";
 import TokenTable from "../components/token-table";
 import ComponentInfo from "../components/component-info";
 import packageConfig from "../../packages/wonder-blocks-tokens/package.json";
-import * as tokens from "@khanacademy/wonder-blocks-tokens";
+import * as tokens from "@osati-ai/wonder-blocks-tokens";
 import {Code} from "../components/code";
 
 /**
@@ -46,7 +46,7 @@ type Row = {label: string; css: string; value: string};
  * like so: `breakpoint.mediaQuery.sm`.
  *
  * ```js
- * import {breakpoint} from "@khanacademy/wonder-blocks-tokens";
+ * import {breakpoint} from "@osati-ai/wonder-blocks-tokens";
  * const styles = {
  *     [breakpoint.mediaQuery.sm]: {
  *         flexDirection: "column",
@@ -80,7 +80,7 @@ export const BreakpointMediaQueries = () => (
  * interpolate a string to add the `px` unit like so:
  *
  * ```js
- * import {breakpoint} from "@khanacademy/wonder-blocks-tokens";
+ * import {breakpoint} from "@osati-ai/wonder-blocks-tokens";
  * const styles = {
  *     element: {
  *         maxWidth: `${breakpoint.width.lg}px`,

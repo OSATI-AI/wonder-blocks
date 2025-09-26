@@ -1,5 +1,5 @@
 ```js
-import {View} from "@khanacademy/wonder-blocks-core";
+import {View} from "@osati-ai/wonder-blocks-core";
 import {
     Title,
     HeadingLarge,
@@ -17,7 +17,7 @@ import {
     Tagline,
     Caption,
     Footnote
-} from "@khanacademy/wonder-blocks-typography";
+} from "@osati-ai/wonder-blocks-typography";
 
 // NOTE(mdr): I added an `id` attribute to each of these tags, to ensure that
 //     they all pass the `id` attribute correctly. This fact will be saved in
@@ -47,8 +47,8 @@ You can change the color of text with the `style` prop:
 ```js
 import {StyleSheet} from "aphrodite";
 
-import Color from "@khanacademy/wonder-blocks-color";
-import {Title} from "@khanacademy/wonder-blocks-typography";
+import Color from "@osati-ai/wonder-blocks-color";
+import {Title} from "@osati-ai/wonder-blocks-typography";
 
 const styles = StyleSheet.create({
     blueText: {
@@ -65,7 +65,7 @@ The `role` and any `aria-` attribute can be set as props any of the typography
 components
 
 ```js
-import {Title} from "@khanacademy/wonder-blocks-typography";
+import {Title} from "@osati-ai/wonder-blocks-typography";
 
 <Title aria-label="Accessible Title">Title</Title>
 ```
@@ -75,7 +75,7 @@ import {Title} from "@khanacademy/wonder-blocks-typography";
 This is a example where we use Lato for Russian:
 
 ```js
-import {View} from "@khanacademy/wonder-blocks-core";
+import {View} from "@osati-ai/wonder-blocks-core";
 import {
     Title,
     HeadingLarge,
@@ -93,7 +93,7 @@ import {
     Tagline,
     Caption,
     Footnote
-} from "@khanacademy/wonder-blocks-typography";
+} from "@osati-ai/wonder-blocks-typography";
 
 <View>
     <Title>Для каждого ученика, независимо от возраста. Реальные результаты!</Title>
@@ -122,7 +122,7 @@ case, we also use the extended glyphs so we can add full support to Vietnamese
 using this font.
 
 ```js
-import {View} from "@khanacademy/wonder-blocks-core";
+import {View} from "@osati-ai/wonder-blocks-core";
 import {
     Title,
     HeadingLarge,
@@ -140,7 +140,7 @@ import {
     Tagline,
     Caption,
     Footnote
-} from "@khanacademy/wonder-blocks-typography";
+} from "@osati-ai/wonder-blocks-typography";
 
 <View>
     <Title>Dành cho mọi học sinh, mọi lớp học. Kết quả thực tế.</Title>
@@ -166,8 +166,8 @@ import {
 ## Noto for non-Latin languages
 
 ```js
-import {View} from "@khanacademy/wonder-blocks-core";
-import {OptionItem, SingleSelect} from "@khanacademy/wonder-blocks-dropdown";
+import {View} from "@osati-ai/wonder-blocks-core";
+import {OptionItem, SingleSelect} from "@osati-ai/wonder-blocks-dropdown";
 import {
     Title,
     HeadingLarge,
@@ -185,7 +185,7 @@ import {
     Tagline,
     Caption,
     Footnote
-} from "@khanacademy/wonder-blocks-typography";
+} from "@osati-ai/wonder-blocks-typography";
 
 const languages = {
     arabic: { text: "مرحبا", dir: "rtl" },

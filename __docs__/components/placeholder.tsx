@@ -1,6 +1,6 @@
 import * as React from "react";
-import {View} from "@khanacademy/wonder-blocks-core";
-import {border, semanticColor, sizing} from "@khanacademy/wonder-blocks-tokens";
+import {View} from "@osati-ai/wonder-blocks-core";
+import {border, semanticColor, sizing} from "@osati-ai/wonder-blocks-tokens";
 
 type Props = {
     children: React.ReactNode;

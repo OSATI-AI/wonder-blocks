@@ -1,16 +1,16 @@
 import * as React from "react";
 import {StyleSheet} from "aphrodite";
 
-import type {AriaProps, StyleType} from "@khanacademy/wonder-blocks-core";
-import {View} from "@khanacademy/wonder-blocks-core";
+import type {AriaProps, StyleType} from "@osati-ai/wonder-blocks-core";
+import {View} from "@osati-ai/wonder-blocks-core";
 import {
     border,
     color,
     semanticColor,
     spacing,
-} from "@khanacademy/wonder-blocks-tokens";
+} from "@osati-ai/wonder-blocks-tokens";
 
-import {actionStyles} from "@khanacademy/wonder-blocks-styles";
+import {actionStyles} from "@osati-ai/wonder-blocks-styles";
 import CloseButton from "./close-button";
 
 type Props = AriaProps & {
@@ -52,7 +52,7 @@ type DefaultProps = {
  * ### Usage
  *
  * ```jsx
- * import {PopoverContentCore} from "@khanacademy/wonder-blocks-popover";
+ * import {PopoverContentCore} from "@osati-ai/wonder-blocks-popover";
  *
  * <PopoverContentCore>
  *  <>

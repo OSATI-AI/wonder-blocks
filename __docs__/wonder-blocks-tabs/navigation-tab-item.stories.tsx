@@ -2,10 +2,10 @@ import * as React from "react";
 import type {Meta, StoryObj} from "@storybook/react";
 import ComponentInfo from "../components/component-info";
 import packageConfig from "../../packages/wonder-blocks-tabs/package.json";
-import {NavigationTabItem} from "@khanacademy/wonder-blocks-tabs";
-import Link from "@khanacademy/wonder-blocks-link";
-import {addStyle} from "@khanacademy/wonder-blocks-core";
-import {border, semanticColor, sizing} from "@khanacademy/wonder-blocks-tokens";
+import {NavigationTabItem} from "@osati-ai/wonder-blocks-tabs";
+import Link from "@osati-ai/wonder-blocks-link";
+import {addStyle} from "@osati-ai/wonder-blocks-core";
+import {border, semanticColor, sizing} from "@osati-ai/wonder-blocks-tokens";
 import argTypes from "./navigation-tab-item.argtypes";
 
 const StyledUl = addStyle("ul", {

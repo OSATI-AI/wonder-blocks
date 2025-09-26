@@ -1,5 +1,5 @@
 import {StyleSheet} from "aphrodite";
-import type {StyleType} from "@khanacademy/wonder-blocks-core";
+import type {StyleType} from "@osati-ai/wonder-blocks-core";
 import theme from "../../theme";
 
 import type {HorizontalRuleVariant} from "../../util/types";

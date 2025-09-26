@@ -1,9 +1,9 @@
 import * as React from "react";
 import {StyleSheet} from "aphrodite";
 
-import {spacing, color, border} from "@khanacademy/wonder-blocks-tokens";
-import {addStyle, View} from "@khanacademy/wonder-blocks-core";
-import {Checkbox} from "@khanacademy/wonder-blocks-form";
+import {spacing, color, border} from "@osati-ai/wonder-blocks-tokens";
+import {addStyle, View} from "@osati-ai/wonder-blocks-core";
+import {Checkbox} from "@osati-ai/wonder-blocks-form";
 
 const styles = StyleSheet.create({
     input: {

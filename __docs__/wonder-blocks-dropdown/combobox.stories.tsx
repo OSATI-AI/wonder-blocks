@@ -6,12 +6,12 @@ import {StyleSheet} from "aphrodite";
 import * as React from "react";
 import magnifyingGlassIcon from "@phosphor-icons/core/bold/magnifying-glass-bold.svg";
 
-import {BodyText} from "@khanacademy/wonder-blocks-typography";
-import {semanticColor, sizing} from "@khanacademy/wonder-blocks-tokens";
-import {Checkbox} from "@khanacademy/wonder-blocks-form";
-import {Combobox, OptionItem} from "@khanacademy/wonder-blocks-dropdown";
-import {PhosphorIcon} from "@khanacademy/wonder-blocks-icon";
-import {PropsFor, View} from "@khanacademy/wonder-blocks-core";
+import {BodyText} from "@osati-ai/wonder-blocks-typography";
+import {semanticColor, sizing} from "@osati-ai/wonder-blocks-tokens";
+import {Checkbox} from "@osati-ai/wonder-blocks-form";
+import {Combobox, OptionItem} from "@osati-ai/wonder-blocks-dropdown";
+import {PhosphorIcon} from "@osati-ai/wonder-blocks-icon";
+import {PropsFor, View} from "@osati-ai/wonder-blocks-core";
 import {allProfilesWithPictures} from "./option-item-examples";
 
 import argTypes from "./combobox.argtypes";

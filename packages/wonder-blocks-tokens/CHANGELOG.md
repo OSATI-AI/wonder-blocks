@@ -1,4 +1,4 @@
-# @khanacademy/wonder-blocks-tokens
+# @osati-ai/wonder-blocks-tokens
 
 ## 12.2.0
 
@@ -45,7 +45,7 @@
 - eafcfa3: Updates CSS variables for banner and form packages
 - 956f8bd: Update form component-level tokens
 - Updated dependencies [0f16c2e]
-    - @khanacademy/wonder-blocks-theming@4.0.0
+    - @osati-ai/wonder-blocks-theming@4.0.0
 
 ## 11.4.1
 
@@ -161,7 +161,7 @@
 
 ### Patch Changes
 
-- @khanacademy/wonder-blocks-theming@3.4.0
+- @osati-ai/wonder-blocks-theming@3.4.0
 
 ## 10.2.1
 
@@ -181,7 +181,7 @@
 ### Patch Changes
 
 - Updated dependencies [c7d95bf]
-    - @khanacademy/wonder-blocks-theming@3.4.0
+    - @osati-ai/wonder-blocks-theming@3.4.0
 
 ## 10.1.0
 
@@ -203,7 +203,7 @@
 
 ### Patch Changes
 
-- @khanacademy/wonder-blocks-theming@3.3.0
+- @osati-ai/wonder-blocks-theming@3.3.0
 
 ## 9.0.0
 
@@ -221,7 +221,7 @@
 - 6018552: Export TS types correctly in package.json so consumers can use them correctly
 - Updated dependencies [7f79943]
 - Updated dependencies [7bbf311]
-    - @khanacademy/wonder-blocks-theming@3.3.0
+    - @osati-ai/wonder-blocks-theming@3.3.0
 
 ## 8.0.0
 

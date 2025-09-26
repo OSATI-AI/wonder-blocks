@@ -1,10 +1,10 @@
 import * as React from "react";
-import {PropsFor, View} from "@khanacademy/wonder-blocks-core";
-import type {StyleType} from "@khanacademy/wonder-blocks-core";
+import {PropsFor, View} from "@osati-ai/wonder-blocks-core";
+import type {StyleType} from "@osati-ai/wonder-blocks-core";
 
-import {focusStyles} from "@khanacademy/wonder-blocks-styles";
+import {focusStyles} from "@osati-ai/wonder-blocks-styles";
 import {StyleSheet} from "aphrodite";
-import {semanticColor} from "@khanacademy/wonder-blocks-tokens";
+import {semanticColor} from "@osati-ai/wonder-blocks-tokens";
 import ModalContent from "./modal-content";
 import ModalHeader from "./modal-header";
 import ModalFooter from "./modal-footer";

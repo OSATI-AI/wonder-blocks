@@ -1,4 +1,4 @@
-import {border, semanticColor} from "@khanacademy/wonder-blocks-tokens";
+import {border, semanticColor} from "@osati-ai/wonder-blocks-tokens";
 import {focus} from "./focus-styles";
 
 const pressColor = `color-mix(in srgb, ${semanticColor.core.border.neutral.default} 55%, ${semanticColor.core.border.knockout.default})`;

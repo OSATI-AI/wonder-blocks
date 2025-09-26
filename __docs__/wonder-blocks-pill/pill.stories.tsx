@@ -2,17 +2,17 @@ import * as React from "react";
 import type {Meta, StoryObj} from "@storybook/react";
 
 // import {expect, within} from "@storybook/test";
-import {View} from "@khanacademy/wonder-blocks-core";
-import Link from "@khanacademy/wonder-blocks-link";
-import Pill from "@khanacademy/wonder-blocks-pill";
-import {Strut} from "@khanacademy/wonder-blocks-layout";
-import * as tokens from "@khanacademy/wonder-blocks-tokens";
+import {View} from "@osati-ai/wonder-blocks-core";
+import Link from "@osati-ai/wonder-blocks-link";
+import Pill from "@osati-ai/wonder-blocks-pill";
+import {Strut} from "@osati-ai/wonder-blocks-layout";
+import * as tokens from "@osati-ai/wonder-blocks-tokens";
 import {
     Body,
     BodySerif,
     LabelMedium,
-} from "@khanacademy/wonder-blocks-typography";
-import type {StyleType} from "@khanacademy/wonder-blocks-core";
+} from "@osati-ai/wonder-blocks-typography";
+import type {StyleType} from "@osati-ai/wonder-blocks-core";
 import type {
     PillKind,
     PillSize,

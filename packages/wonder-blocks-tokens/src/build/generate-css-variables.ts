@@ -1,7 +1,7 @@
 #!/usr/bin/env -S node -r @swc-node/register
 import fs from "fs";
 import path from "path";
-import {THEME_DATA_ATTRIBUTE} from "@khanacademy/wonder-blocks-theming";
+import {THEME_DATA_ATTRIBUTE} from "@osati-ai/wonder-blocks-theming";
 import {generateTokens} from "../internal/generate-tokens";
 import {CSS_VAR_PREFIX} from "../util/constants";
 

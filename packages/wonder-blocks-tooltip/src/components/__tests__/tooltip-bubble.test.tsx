@@ -1,7 +1,7 @@
 import * as React from "react";
 import {render, screen} from "@testing-library/react";
 
-import {View} from "@khanacademy/wonder-blocks-core";
+import {View} from "@osati-ai/wonder-blocks-core";
 
 import TooltipBubble from "../tooltip-bubble";
 import TooltipContent from "../tooltip-content";
@@ -38,7 +38,10 @@ describe("TooltipBubble", () => {
                 <TooltipBubble
                     id="bubble"
                     placement={props.placement}
-                    tailOffset={props.tailOffset}
+                    tailOffset={{
+                        x: parseInt(props.tailOffset?.left, 10),
+                        y: parseInt(props.tailOffset?.top, 10),
+                    }}
                     updateBubbleRef={jest.fn()}
                     onActiveChanged={() => {}}
                 >

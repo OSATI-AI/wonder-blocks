@@ -2,7 +2,7 @@ import * as React from "react";
 import {render, screen} from "@testing-library/react";
 import {userEvent} from "@testing-library/user-event";
 
-import {View} from "@khanacademy/wonder-blocks-core";
+import {View} from "@osati-ai/wonder-blocks-core";
 import PopoverEventListener from "../popover-event-listener";
 import PopoverContent from "../popover-content";
 
@@ -25,7 +25,7 @@ describe("PopoverKeypressListener", () => {
     it("should call onClose if clicked outside content ref", async () => {
         // Arrange
         const onCloseMock = jest.fn();
-        const contentRef: React.RefObject<PopoverContent> = React.createRef();
+        const contentRef: React.RefObject<PopoverContent | null> = React.createRef();
 
         const wrapper = render(
             <View>
@@ -54,7 +54,7 @@ describe("PopoverKeypressListener", () => {
     it("should not call onClose if clicked inside content ref", async () => {
         // Arrange
         const onCloseMock = jest.fn();
-        const contentRef: React.RefObject<PopoverContent> = React.createRef();
+        const contentRef: React.RefObject<PopoverContent | null> = React.createRef();
 
         render(
             <View>

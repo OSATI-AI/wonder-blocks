@@ -7,7 +7,7 @@
         "noEmit": true,
 
         "paths": {
-            "@khanacademy/*": ["./packages/*/src"]
+            "@osati-ai/*": ["./packages/*/src"]
         }
     }
 }

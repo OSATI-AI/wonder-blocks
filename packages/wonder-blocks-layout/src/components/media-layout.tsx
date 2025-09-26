@@ -1,8 +1,8 @@
 import * as React from "react";
 import type {StyleDeclaration} from "aphrodite";
-import type {StyleType} from "@khanacademy/wonder-blocks-core";
+import type {StyleType} from "@osati-ai/wonder-blocks-core";
 
-import {InitialFallback} from "@khanacademy/wonder-blocks-core";
+import {InitialFallback} from "@osati-ai/wonder-blocks-core";
 import MediaLayoutContext from "./media-layout-context";
 import type {MediaSize, MediaSpec} from "../util/types";
 import type {Context} from "./media-layout-context";

@@ -1,4 +1,4 @@
-import {addStyle} from "@khanacademy/wonder-blocks-core";
+import {addStyle} from "@osati-ai/wonder-blocks-core";
 import {StyleSheet} from "aphrodite";
 import * as React from "react";
 import {defaultComboboxLabels} from "../util/constants";

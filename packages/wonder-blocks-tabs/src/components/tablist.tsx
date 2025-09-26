@@ -1,5 +1,5 @@
-import {addStyle, StyleType} from "@khanacademy/wonder-blocks-core";
-import {border, semanticColor, sizing} from "@khanacademy/wonder-blocks-tokens";
+import {addStyle, StyleType} from "@osati-ai/wonder-blocks-core";
+import {border, semanticColor, sizing} from "@osati-ai/wonder-blocks-tokens";
 import {StyleSheet} from "aphrodite";
 import * as React from "react";
 

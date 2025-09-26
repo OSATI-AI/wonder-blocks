@@ -5,7 +5,7 @@ import {
     keys,
     PropsFor,
     StyleType,
-} from "@khanacademy/wonder-blocks-core";
+} from "@osati-ai/wonder-blocks-core";
 import {StyleSheet} from "aphrodite";
 import {TabPanel} from "./tab-panel";
 import {Tab} from "./tab";
@@ -237,7 +237,7 @@ export const Tabs = React.forwardRef(function Tabs(
 
     const {indicatorProps, updateUnderlineStyle} = useTabIndicator({
         animated,
-        tabsContainerRef: tablistRef,
+        tabsContainerRef: tablistRef as React.RefObject<HTMLElement>,
         isTabActive,
     });
 
@@ -381,7 +381,7 @@ export const Tabs = React.forwardRef(function Tabs(
                                 onTabSelected(id);
                             },
                             onKeyDown: handleKeyDown,
-                            ref: (element) => {
+                            ref: (element: HTMLButtonElement) => {
                                 tabRefs.current[tab.id] = element;
                             },
                             style: stylesProp?.tab,
@@ -391,6 +391,7 @@ export const Tabs = React.forwardRef(function Tabs(
                             return label(tabProps);
                         }
 
+                        // @ts-ignore
                         return <Tab {...tabProps}>{label}</Tab>;
                     })}
                 </Tablist>

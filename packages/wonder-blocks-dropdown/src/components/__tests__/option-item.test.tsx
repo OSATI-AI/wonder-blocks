@@ -1,8 +1,8 @@
 import * as React from "react";
 import {render, screen} from "@testing-library/react";
 
-import {Heading} from "@khanacademy/wonder-blocks-typography";
-import {PhosphorIcon} from "@khanacademy/wonder-blocks-icon";
+import {Heading} from "@osati-ai/wonder-blocks-typography";
+import {PhosphorIcon} from "@osati-ai/wonder-blocks-icon";
 
 import plusIcon from "@phosphor-icons/core/regular/plus.svg";
 import OptionItem from "../option-item";

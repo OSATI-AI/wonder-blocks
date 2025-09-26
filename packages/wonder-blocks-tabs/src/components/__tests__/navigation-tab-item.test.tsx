@@ -1,6 +1,6 @@
 import * as React from "react";
 import {render, screen} from "@testing-library/react";
-import Link from "@khanacademy/wonder-blocks-link";
+import Link from "@osati-ai/wonder-blocks-link";
 import {NavigationTabItem} from "../navigation-tab-item";
 
 describe("NavigationTabItem", () => {

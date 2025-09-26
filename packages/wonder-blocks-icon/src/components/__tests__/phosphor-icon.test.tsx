@@ -16,7 +16,7 @@ describe("PhosphorIcon", () => {
 
     it("forwards the ref to the `span` element", async () => {
         // Arrange
-        const ref: React.RefObject<HTMLSpanElement> = React.createRef();
+        const ref: React.RefObject<HTMLSpanElement | null> = React.createRef();
 
         // Act
         render(<PhosphorIcon icon={Plus} ref={ref} />);

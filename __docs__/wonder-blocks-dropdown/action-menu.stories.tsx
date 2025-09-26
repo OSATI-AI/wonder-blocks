@@ -6,18 +6,18 @@ import {expect, userEvent, within} from "@storybook/test";
 import {useArgs} from "@storybook/preview-api";
 import {action} from "@storybook/addon-actions";
 
-import {View} from "@khanacademy/wonder-blocks-core";
-import {Checkbox} from "@khanacademy/wonder-blocks-form";
-import {PhosphorIcon} from "@khanacademy/wonder-blocks-icon";
-import Pill from "@khanacademy/wonder-blocks-pill";
-import {border, semanticColor, sizing} from "@khanacademy/wonder-blocks-tokens";
-import {BodyText} from "@khanacademy/wonder-blocks-typography";
+import {View} from "@osati-ai/wonder-blocks-core";
+import {Checkbox} from "@osati-ai/wonder-blocks-form";
+import {PhosphorIcon} from "@osati-ai/wonder-blocks-icon";
+import Pill from "@osati-ai/wonder-blocks-pill";
+import {border, semanticColor, sizing} from "@osati-ai/wonder-blocks-tokens";
+import {BodyText} from "@osati-ai/wonder-blocks-typography";
 import {
     ActionItem,
     ActionMenu,
     OptionItem,
     SeparatorItem,
-} from "@khanacademy/wonder-blocks-dropdown";
+} from "@osati-ai/wonder-blocks-dropdown";
 
 import {IconMappings} from "../wonder-blocks-icon/phosphor-icon.argtypes";
 import actionMenuArgtypes from "./action-menu.argtypes";
@@ -25,10 +25,10 @@ import ComponentInfo from "../components/component-info";
 import packageConfig from "../../packages/wonder-blocks-dropdown/package.json";
 
 import type {Item} from "../../packages/wonder-blocks-dropdown/src/util/types";
-import IconButton from "@khanacademy/wonder-blocks-icon-button";
-import {ModalLauncher, OnePaneDialog} from "@khanacademy/wonder-blocks-modal";
-import Button from "@khanacademy/wonder-blocks-button";
-import {focusStyles} from "@khanacademy/wonder-blocks-styles";
+import IconButton from "@osati-ai/wonder-blocks-icon-button";
+import {ModalLauncher, OnePaneDialog} from "@osati-ai/wonder-blocks-modal";
+import Button from "@osati-ai/wonder-blocks-button";
+import {focusStyles} from "@osati-ai/wonder-blocks-styles";
 
 const actionItems: Array<Item> = [
     <ActionItem
@@ -92,7 +92,7 @@ const defaultArgs = {
  * ### Usage
  *
  * ```tsx
- * import {ActionMenu, ActionItem} from "@khanacademy/wonder-blocks-dropdown";
+ * import {ActionMenu, ActionItem} from "@osati-ai/wonder-blocks-dropdown";
  *
  * <ActionMenu menuText="Menu">
  *  <ActionItem href="/profile" label="Profile" />

@@ -1,9 +1,9 @@
 import * as React from "react";
 import {StyleSheet} from "aphrodite";
-import {View, addStyle} from "@khanacademy/wonder-blocks-core";
-import {color} from "@khanacademy/wonder-blocks-tokens";
+import {View, addStyle} from "@osati-ai/wonder-blocks-core";
+import {color} from "@osati-ai/wonder-blocks-tokens";
 
-import type {AriaProps, StyleType} from "@khanacademy/wonder-blocks-core";
+import type {AriaProps, StyleType} from "@osati-ai/wonder-blocks-core";
 
 const heights = {
     xsmall: 16,
@@ -56,7 +56,7 @@ type DefaultProps = {
  * ### Usage
  *
  * ```js
- * import {CircularSpinner} from "@khanacademy/wonder-blocks-progress-spinner";
+ * import {CircularSpinner} from "@osati-ai/wonder-blocks-progress-spinner";
  *
  * <CircularSpinner />
  * ```

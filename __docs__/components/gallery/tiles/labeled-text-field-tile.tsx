@@ -1,6 +1,6 @@
 import * as React from "react";
 
-import {LabeledTextField} from "@khanacademy/wonder-blocks-form";
+import {LabeledTextField} from "@osati-ai/wonder-blocks-form";
 
 import ComponentTile from "../component-tile";
 import {CommonTileProps} from "../types";

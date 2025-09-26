@@ -1,5 +1,5 @@
 import * as React from "react";
-import {PropsFor} from "@khanacademy/wonder-blocks-core";
+import {PropsFor} from "@osati-ai/wonder-blocks-core";
 import OptionItem from "../../components/option-item";
 import {
     debounce,

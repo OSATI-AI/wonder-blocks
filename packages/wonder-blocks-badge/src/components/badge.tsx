@@ -1,13 +1,13 @@
-import {addStyle} from "@khanacademy/wonder-blocks-core";
+import {addStyle} from "@osati-ai/wonder-blocks-core";
 import {
     border,
     font,
     semanticColor,
     sizing,
-} from "@khanacademy/wonder-blocks-tokens";
+} from "@osati-ai/wonder-blocks-tokens";
 import {StyleSheet} from "aphrodite";
 import * as React from "react";
-import {focusStyles} from "@khanacademy/wonder-blocks-styles";
+import {focusStyles} from "@osati-ai/wonder-blocks-styles";
 import {BaseBadgeProps, IconLabelProps} from "../types";
 
 type Props = IconLabelProps & BaseBadgeProps;

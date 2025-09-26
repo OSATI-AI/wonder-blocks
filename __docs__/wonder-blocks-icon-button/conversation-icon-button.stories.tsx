@@ -8,13 +8,13 @@ import microphoneFill from "@phosphor-icons/core/fill/microphone-fill.svg";
 import plusFill from "@phosphor-icons/core/fill/plus-fill.svg";
 
 import {action} from "@storybook/addon-actions";
-import {View} from "@khanacademy/wonder-blocks-core";
-import {ConversationIconButton} from "@khanacademy/wonder-blocks-icon-button";
+import {View} from "@osati-ai/wonder-blocks-core";
+import {ConversationIconButton} from "@osati-ai/wonder-blocks-icon-button";
 
-import {ActionItem, ActionMenu} from "@khanacademy/wonder-blocks-dropdown";
-import {PhosphorIcon} from "@khanacademy/wonder-blocks-icon";
-import {sizing} from "@khanacademy/wonder-blocks-tokens";
-import {BodyText} from "@khanacademy/wonder-blocks-typography";
+import {ActionItem, ActionMenu} from "@osati-ai/wonder-blocks-dropdown";
+import {PhosphorIcon} from "@osati-ai/wonder-blocks-icon";
+import {sizing} from "@osati-ai/wonder-blocks-tokens";
+import {BodyText} from "@osati-ai/wonder-blocks-typography";
 import packageConfig from "../../packages/wonder-blocks-icon-button/package.json";
 import ComponentInfo from "../components/component-info";
 import {IconMappings} from "../wonder-blocks-icon/phosphor-icon.argtypes";

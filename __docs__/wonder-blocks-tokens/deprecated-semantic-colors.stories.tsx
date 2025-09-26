@@ -3,10 +3,10 @@ import {Title, Subtitle, Description, Stories} from "@storybook/blocks";
 import {StyleSheet} from "aphrodite";
 import ComponentInfo from "../components/component-info";
 import packageConfig from "../../packages/wonder-blocks-tokens/package.json";
-import {PropsFor, View} from "@khanacademy/wonder-blocks-core";
+import {PropsFor, View} from "@osati-ai/wonder-blocks-core";
 import {ActionColorGroup, ColorGroup} from "../components/color";
-import {Heading} from "@khanacademy/wonder-blocks-typography";
-import {semanticColor} from "@khanacademy/wonder-blocks-tokens";
+import {Heading} from "@osati-ai/wonder-blocks-typography";
+import {semanticColor} from "@osati-ai/wonder-blocks-tokens";
 
 export default {
     title: "Packages / Tokens / Deprecated / Deprecated Semantic Colors",

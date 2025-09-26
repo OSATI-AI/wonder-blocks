@@ -4,10 +4,10 @@ import {userEvent} from "@testing-library/user-event";
 import {MemoryRouter} from "react-router-dom";
 import {CompatRouter} from "react-router-dom-v5-compat";
 
-import {View} from "@khanacademy/wonder-blocks-core";
-import Button from "@khanacademy/wonder-blocks-button";
+import {View} from "@osati-ai/wonder-blocks-core";
+import Button from "@osati-ai/wonder-blocks-button";
 
-import {BodyText} from "@khanacademy/wonder-blocks-typography";
+import {BodyText} from "@osati-ai/wonder-blocks-typography";
 import DrawerLauncher from "../drawer-launcher";
 import FlexibleDialog from "../flexible-dialog";
 

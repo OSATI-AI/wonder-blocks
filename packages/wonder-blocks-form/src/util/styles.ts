@@ -1,4 +1,4 @@
-import {border, sizing, semanticColor} from "@khanacademy/wonder-blocks-tokens";
+import {border, sizing, semanticColor} from "@osati-ai/wonder-blocks-tokens";
 
 type InteractionState = {
     background?: string;

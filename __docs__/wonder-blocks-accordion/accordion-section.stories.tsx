@@ -3,14 +3,14 @@ import {StyleSheet} from "aphrodite";
 import type {Meta, StoryObj} from "@storybook/react";
 import magnifyingGlass from "@phosphor-icons/core/regular/magnifying-glass.svg";
 
-import {AccordionSection} from "@khanacademy/wonder-blocks-accordion";
-import Button from "@khanacademy/wonder-blocks-button";
-import {DetailCell} from "@khanacademy/wonder-blocks-cell";
-import {View} from "@khanacademy/wonder-blocks-core";
-import {PhosphorIcon} from "@khanacademy/wonder-blocks-icon";
-import {Strut} from "@khanacademy/wonder-blocks-layout";
-import * as tokens from "@khanacademy/wonder-blocks-tokens";
-import {HeadingSmall, LabelLarge} from "@khanacademy/wonder-blocks-typography";
+import {AccordionSection} from "@osati-ai/wonder-blocks-accordion";
+import Button from "@osati-ai/wonder-blocks-button";
+import {DetailCell} from "@osati-ai/wonder-blocks-cell";
+import {View} from "@osati-ai/wonder-blocks-core";
+import {PhosphorIcon} from "@osati-ai/wonder-blocks-icon";
+import {Strut} from "@osati-ai/wonder-blocks-layout";
+import * as tokens from "@osati-ai/wonder-blocks-tokens";
+import {HeadingSmall, LabelLarge} from "@osati-ai/wonder-blocks-typography";
 
 import ComponentInfo from "../components/component-info";
 import packageConfig from "../../packages/wonder-blocks-accordion/package.json";
@@ -30,7 +30,7 @@ import {IconMappings} from "../wonder-blocks-icon/phosphor-icon.argtypes";
  * import {
  *      Accordion,
  *      AccordionSection
- * } from "@khanacademy/wonder-blocks-accordion";
+ * } from "@osati-ai/wonder-blocks-accordion";
  *
  * // Within an Accordion
  * <Accordion>

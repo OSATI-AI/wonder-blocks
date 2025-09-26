@@ -1,5 +1,5 @@
 import * as React from "react";
-import {PropsFor, Text} from "@khanacademy/wonder-blocks-core";
+import {PropsFor, Text} from "@osati-ai/wonder-blocks-core";
 import styles from "../util/styles";
 
 type Props = PropsFor<typeof Text> & {
@@ -32,7 +32,7 @@ const BodyText = React.forwardRef(function BodyText(
     ref,
 ) {
     // map props to theme and global token defaults for CSS styles
-    const themeBodyText = styleMapping[`${size}-${weight}`];
+    const themeBodyText: React.CSSProperties = styleMapping[`${size}-${weight}` as keyof typeof styleMapping];
     return (
         <Text
             {...otherProps}

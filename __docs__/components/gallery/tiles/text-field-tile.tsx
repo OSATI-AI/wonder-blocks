@@ -1,6 +1,6 @@
 import * as React from "react";
 
-import {TextField} from "@khanacademy/wonder-blocks-form";
+import {TextField} from "@osati-ai/wonder-blocks-form";
 
 import ComponentTile from "../component-tile";
 import {CommonTileProps} from "../types";

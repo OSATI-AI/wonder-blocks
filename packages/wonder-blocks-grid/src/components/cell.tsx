@@ -1,9 +1,9 @@
 import * as React from "react";
 
-import {MediaLayout} from "@khanacademy/wonder-blocks-layout";
-import {View} from "@khanacademy/wonder-blocks-core";
-import type {MediaSize} from "@khanacademy/wonder-blocks-layout";
-import type {StyleType} from "@khanacademy/wonder-blocks-core";
+import {MediaLayout} from "@osati-ai/wonder-blocks-layout";
+import {View} from "@osati-ai/wonder-blocks-core";
+import type {MediaSize} from "@osati-ai/wonder-blocks-layout";
+import type {StyleType} from "@osati-ai/wonder-blocks-core";
 
 import styles from "../util/styles";
 import {flexBasis} from "../util/utils";

@@ -1,4 +1,4 @@
-import {border, sizing} from "@khanacademy/wonder-blocks-tokens";
+import {border, sizing} from "@osati-ai/wonder-blocks-tokens";
 
 export default {
     iconButton: {

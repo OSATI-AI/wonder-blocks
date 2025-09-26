@@ -1,7 +1,7 @@
 import * as React from "react";
 import type {Meta, StoryObj} from "@storybook/react";
 
-import {MultiSelect, OptionItem} from "@khanacademy/wonder-blocks-dropdown";
+import {MultiSelect, OptionItem} from "@osati-ai/wonder-blocks-dropdown";
 import {themeModes} from "../../.storybook/modes";
 import {defaultPseudoStates, StateSheet} from "../components/state-sheet";
 

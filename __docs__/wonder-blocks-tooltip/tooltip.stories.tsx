@@ -7,16 +7,16 @@ import {expect, within, userEvent} from "@storybook/test";
 import magnifyingGlass from "@phosphor-icons/core/regular/magnifying-glass.svg";
 import info from "@phosphor-icons/core/regular/info.svg";
 
-import Button from "@khanacademy/wonder-blocks-button";
-import {PropsFor, View} from "@khanacademy/wonder-blocks-core";
-import {TextField} from "@khanacademy/wonder-blocks-form";
-import IconButton from "@khanacademy/wonder-blocks-icon-button";
-import {OnePaneDialog, ModalLauncher} from "@khanacademy/wonder-blocks-modal";
-import {semanticColor, spacing} from "@khanacademy/wonder-blocks-tokens";
-import {Body} from "@khanacademy/wonder-blocks-typography";
-import {PhosphorIcon} from "@khanacademy/wonder-blocks-icon";
+import Button from "@osati-ai/wonder-blocks-button";
+import {PropsFor, View} from "@osati-ai/wonder-blocks-core";
+import {TextField} from "@osati-ai/wonder-blocks-form";
+import IconButton from "@osati-ai/wonder-blocks-icon-button";
+import {OnePaneDialog, ModalLauncher} from "@osati-ai/wonder-blocks-modal";
+import {semanticColor, spacing} from "@osati-ai/wonder-blocks-tokens";
+import {Body} from "@osati-ai/wonder-blocks-typography";
+import {PhosphorIcon} from "@osati-ai/wonder-blocks-icon";
 
-import Tooltip from "@khanacademy/wonder-blocks-tooltip";
+import Tooltip from "@osati-ai/wonder-blocks-tooltip";
 import packageConfig from "../../packages/wonder-blocks-tooltip/package.json";
 
 import ComponentInfo from "../components/component-info";

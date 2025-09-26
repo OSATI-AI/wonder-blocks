@@ -1,18 +1,18 @@
 import * as React from "react";
 
 import {StyleSheet} from "aphrodite";
-import {RenderStateRoot, View} from "@khanacademy/wonder-blocks-core";
+import {RenderStateRoot, View} from "@osati-ai/wonder-blocks-core";
 
-import {spacing} from "@khanacademy/wonder-blocks-tokens";
+import {spacing} from "@osati-ai/wonder-blocks-tokens";
 
 import {packageGroups, functionGroups, alphabetGroups} from "./groups";
-import {HeadingLarge, LabelMedium} from "@khanacademy/wonder-blocks-typography";
-import {OptionItem, SingleSelect} from "@khanacademy/wonder-blocks-dropdown";
-import {Spring, Strut} from "@khanacademy/wonder-blocks-layout";
+import {HeadingLarge, LabelMedium} from "@osati-ai/wonder-blocks-typography";
+import {OptionItem, SingleSelect} from "@osati-ai/wonder-blocks-dropdown";
+import {Spring, Strut} from "@osati-ai/wonder-blocks-layout";
 
 import type {GroupMap} from "./groups";
-import Banner from "@khanacademy/wonder-blocks-banner";
-import Switch from "@khanacademy/wonder-blocks-switch";
+import Banner from "@osati-ai/wonder-blocks-banner";
+import Switch from "@osati-ai/wonder-blocks-switch";
 
 export default function ComponentGallery() {
     const groupMaps: Record<string, GroupMap[]> = {

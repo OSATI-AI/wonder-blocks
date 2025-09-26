@@ -1,4 +1,4 @@
-import type {GqlOperation, GqlContext} from "@khanacademy/wonder-blocks-data";
+import type {GqlOperation, GqlContext} from "@osati-ai/wonder-blocks-data";
 import type {GqlMockOperation} from "./types";
 
 // TODO(somewhatabstract, FEI-4268): use a third-party library to do this and

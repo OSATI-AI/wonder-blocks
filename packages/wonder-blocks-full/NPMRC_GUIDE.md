@@ -47,7 +47,7 @@ Create `.npmrc` in your project root:
 ## Mixed Registry Benefits
 
 ✅ **Private packages** (`@osati-ai/*`): GitHub Packages
-✅ **Public packages** (`@khanacademy/*`): npmjs.org (default)
+✅ **Public packages** (`@osati-ai/*`): npmjs.org (default)
 ✅ **No conflicts**: Scoped configuration ensures proper routing
 
 ## Troubleshooting

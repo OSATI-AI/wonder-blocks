@@ -1,6 +1,7 @@
 /* eslint-disable import/no-deprecated */
 import * as React from "react";
 import {action} from "@storybook/addon-actions";
+import type {PropsFor} from "@osati-ai/wonder-blocks-core";
 
 import type {FixtureFn, FixtureProps} from "./types";
 
@@ -19,10 +20,7 @@ import type {FixtureFn, FixtureProps} from "./types";
  */
 export const fixtures = <
     TComponent extends React.ComponentType<any>,
-    TProps extends JSX.LibraryManagedAttributes<
-        TComponent,
-        React.ComponentProps<TComponent>
-    >,
+    TProps extends PropsFor<TComponent>,
 >(
     Component: TComponent,
 ): FixtureFn<TProps> => {

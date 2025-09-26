@@ -1,6 +1,6 @@
 import * as React from "react";
 import {Meta} from "@storybook/react";
-import {View} from "@khanacademy/wonder-blocks-core";
+import {View} from "@osati-ai/wonder-blocks-core";
 
 import {
     Unmounter,

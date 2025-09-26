@@ -2,13 +2,13 @@ import * as React from "react";
 import {StyleSheet} from "aphrodite";
 import type {Meta, StoryObj} from "@storybook/react";
 
-import {color, spacing} from "@khanacademy/wonder-blocks-tokens";
+import {color, spacing} from "@osati-ai/wonder-blocks-tokens";
 import {
     HeadingMedium,
     LabelMedium,
-} from "@khanacademy/wonder-blocks-typography";
+} from "@osati-ai/wonder-blocks-typography";
 
-import {View} from "@khanacademy/wonder-blocks-core";
+import {View} from "@osati-ai/wonder-blocks-core";
 import packageConfig from "../../packages/wonder-blocks-core/package.json";
 
 import ComponentInfo from "../components/component-info";

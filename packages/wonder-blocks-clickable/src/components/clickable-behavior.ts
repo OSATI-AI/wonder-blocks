@@ -1,5 +1,5 @@
 import * as React from "react";
-import {keys} from "@khanacademy/wonder-blocks-core";
+import {keys} from "@osati-ai/wonder-blocks-core";
 import {NavigateFunction} from "react-router-dom-v5-compat";
 
 // NOTE: Potentially add to this as more cases come up.

@@ -12,7 +12,7 @@ import Breadcrumbs from "../../packages/wonder-blocks-breadcrumbs/src/components
 import BreadcrumbsItem from "../../packages/wonder-blocks-breadcrumbs/src/components/breadcrumbs-item";
 import Button from "../../packages/wonder-blocks-button/src/components/button";
 import {PhosphorIcon} from "../../packages/wonder-blocks-icon/src/components/phosphor-icon";
-import IconButton from "@khanacademy/wonder-blocks-icon-button";
+import IconButton from "@osati-ai/wonder-blocks-icon-button";
 import Link from "../../packages/wonder-blocks-link/src/components/link";
 import Pill from "../../packages/wonder-blocks-pill/src/components/pill";
 import Switch from "../../packages/wonder-blocks-switch/src/components/switch";

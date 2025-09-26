@@ -1,10 +1,10 @@
 import * as React from "react";
 
-import {getClickableBehavior} from "@khanacademy/wonder-blocks-clickable";
+import {getClickableBehavior} from "@osati-ai/wonder-blocks-clickable";
 import type {
     ClickableState,
     ChildrenProps,
-} from "@khanacademy/wonder-blocks-clickable";
+} from "@osati-ai/wonder-blocks-clickable";
 import {useInRouterContext} from "react-router-dom-v5-compat";
 import ButtonCore from "./button-core";
 import type {ButtonProps, ButtonRef} from "../util/button.types";
@@ -17,7 +17,7 @@ import type {ButtonProps, ButtonRef} from "../util/button.types";
  * ### Usage
  *
  * ```tsx
- * import Button from "@khanacademy/wonder-blocks-button";
+ * import Button from "@osati-ai/wonder-blocks-button";
  *
  * <Button
  *     onClick={(e) => console.log("Hello, world!")}

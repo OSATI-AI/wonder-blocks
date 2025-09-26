@@ -2,8 +2,8 @@ import * as React from "react";
 import {
     Breadcrumbs,
     BreadcrumbsItem,
-} from "@khanacademy/wonder-blocks-breadcrumbs";
-import Link from "@khanacademy/wonder-blocks-link";
+} from "@osati-ai/wonder-blocks-breadcrumbs";
+import Link from "@osati-ai/wonder-blocks-link";
 
 const BreadcrumbsMappings: {
     [key: string]: React.ReactNode;

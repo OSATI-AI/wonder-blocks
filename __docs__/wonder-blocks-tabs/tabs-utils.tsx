@@ -1,10 +1,10 @@
 import * as React from "react";
-import {sizing} from "@khanacademy/wonder-blocks-tokens";
+import {sizing} from "@osati-ai/wonder-blocks-tokens";
 import {IconMappings} from "../wonder-blocks-icon/phosphor-icon.argtypes";
-import {PhosphorIcon} from "@khanacademy/wonder-blocks-icon";
-import {PropsFor, View} from "@khanacademy/wonder-blocks-core";
+import {PhosphorIcon} from "@osati-ai/wonder-blocks-icon";
+import {PropsFor, View} from "@osati-ai/wonder-blocks-core";
 import {Placeholder} from "../components/placeholder";
-import {Tabs} from "@khanacademy/wonder-blocks-tabs";
+import {Tabs} from "@osati-ai/wonder-blocks-tabs";
 
 export const generateTabs = (
     count: number,

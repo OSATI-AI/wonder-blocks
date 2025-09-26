@@ -1,7 +1,7 @@
 import * as React from "react";
 
-import BirthdayPicker from "@khanacademy/wonder-blocks-birthday-picker";
-import {View} from "@khanacademy/wonder-blocks-core";
+import BirthdayPicker from "@osati-ai/wonder-blocks-birthday-picker";
+import {View} from "@osati-ai/wonder-blocks-core";
 
 import ComponentTile from "../component-tile";
 import {styles} from "../styles";

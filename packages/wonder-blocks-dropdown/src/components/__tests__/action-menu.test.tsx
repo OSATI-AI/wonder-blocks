@@ -4,7 +4,7 @@ import magnifyingGlassIcon from "@phosphor-icons/core/regular/magnifying-glass.s
 import {render, screen} from "@testing-library/react";
 import {PointerEventsCheckLevel, userEvent} from "@testing-library/user-event";
 
-import IconButton from "@khanacademy/wonder-blocks-icon-button";
+import IconButton from "@osati-ai/wonder-blocks-icon-button";
 
 import ActionItem from "../action-item";
 import OptionItem from "../option-item";

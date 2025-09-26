@@ -4,10 +4,10 @@ import * as React from "react";
 import {
     SupportedThemes,
     ThemeSwitcher,
-} from "@khanacademy/wonder-blocks-theming";
-import {View} from "@khanacademy/wonder-blocks-core";
-import {sizing} from "@khanacademy/wonder-blocks-tokens";
-import Button from "@khanacademy/wonder-blocks-button";
+} from "@osati-ai/wonder-blocks-theming";
+import {View} from "@osati-ai/wonder-blocks-core";
+import {sizing} from "@osati-ai/wonder-blocks-tokens";
+import Button from "@osati-ai/wonder-blocks-button";
 
 export default {
     title: "Packages / Theming / ThemeSwitcher",

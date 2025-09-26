@@ -5,15 +5,15 @@ import type {Meta, StoryObj} from "@storybook/react";
 import magnifyingGlass from "@phosphor-icons/core/regular/magnifying-glass.svg";
 
 import {action} from "@storybook/addon-actions";
-import {View} from "@khanacademy/wonder-blocks-core";
-import {ActivityIconButton} from "@khanacademy/wonder-blocks-icon-button";
+import {View} from "@osati-ai/wonder-blocks-core";
+import {ActivityIconButton} from "@osati-ai/wonder-blocks-icon-button";
 
 import ComponentInfo from "../components/component-info";
 import packageConfig from "../../packages/wonder-blocks-icon-button/package.json";
 import iconButtonSharedArgtypes from "./icon-button-shared.argtypes";
-import {sizing} from "@khanacademy/wonder-blocks-tokens";
+import {sizing} from "@osati-ai/wonder-blocks-tokens";
 import {IconMappings} from "../wonder-blocks-icon/phosphor-icon.argtypes";
-import {Icon} from "@khanacademy/wonder-blocks-icon";
+import {Icon} from "@osati-ai/wonder-blocks-icon";
 
 import khanmigoIcon from "./images/mini-khanmigo.svg";
 

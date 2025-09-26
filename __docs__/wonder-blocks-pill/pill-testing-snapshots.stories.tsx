@@ -1,11 +1,11 @@
 import type {Meta, StoryObj} from "@storybook/react";
 import * as React from "react";
 
-import Pill from "@khanacademy/wonder-blocks-pill";
+import Pill from "@osati-ai/wonder-blocks-pill";
 import {themeModes} from "../../.storybook/modes";
 import {defaultPseudoStates, StateSheet} from "../components/state-sheet";
-import {sizing} from "@khanacademy/wonder-blocks-tokens";
-import {View} from "@khanacademy/wonder-blocks-core";
+import {sizing} from "@osati-ai/wonder-blocks-tokens";
+import {View} from "@osati-ai/wonder-blocks-core";
 import {AllVariants} from "../components/all-variants";
 
 const columns = [

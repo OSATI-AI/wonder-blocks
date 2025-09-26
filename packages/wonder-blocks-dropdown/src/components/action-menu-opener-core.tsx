@@ -1,10 +1,10 @@
 import * as React from "react";
 
-import type {AriaProps} from "@khanacademy/wonder-blocks-core";
-import type {ClickableState} from "@khanacademy/wonder-blocks-clickable";
+import type {AriaProps} from "@osati-ai/wonder-blocks-core";
+import type {ClickableState} from "@osati-ai/wonder-blocks-clickable";
 import caretDownIcon from "@phosphor-icons/core/bold/caret-down-bold.svg";
 
-import Button from "@khanacademy/wonder-blocks-button";
+import Button from "@osati-ai/wonder-blocks-button";
 
 type Props = Partial<Omit<AriaProps, "aria-disabled">> &
     ClickableState & {

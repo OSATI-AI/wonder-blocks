@@ -2,14 +2,14 @@ import * as React from "react";
 import {StyleSheet} from "aphrodite";
 import type {Meta, StoryObj} from "@storybook/react";
 
-import Button from "@khanacademy/wonder-blocks-button";
-import {PropsFor, View} from "@khanacademy/wonder-blocks-core";
-import {Strut} from "@khanacademy/wonder-blocks-layout";
-import {semanticColor, spacing} from "@khanacademy/wonder-blocks-tokens";
-import {HeadingMedium, LabelLarge} from "@khanacademy/wonder-blocks-typography";
-import type {Placement} from "@khanacademy/wonder-blocks-tooltip";
+import Button from "@osati-ai/wonder-blocks-button";
+import {PropsFor, View} from "@osati-ai/wonder-blocks-core";
+import {Strut} from "@osati-ai/wonder-blocks-layout";
+import {semanticColor, spacing} from "@osati-ai/wonder-blocks-tokens";
+import {HeadingMedium, LabelLarge} from "@osati-ai/wonder-blocks-typography";
+import type {Placement} from "@osati-ai/wonder-blocks-tooltip";
 
-import {Popover, PopoverContent} from "@khanacademy/wonder-blocks-popover";
+import {Popover, PopoverContent} from "@osati-ai/wonder-blocks-popover";
 import packageConfig from "../../packages/wonder-blocks-popover/package.json";
 
 import ComponentInfo from "../components/component-info";
@@ -27,7 +27,7 @@ import PopoverArgtypes, {ContentMappings} from "./popover.argtypes";
  * ### Usage
  *
  * ```jsx
- * import {Popover, PopoverContent} from "@khanacademy/wonder-blocks-popover";
+ * import {Popover, PopoverContent} from "@osati-ai/wonder-blocks-popover";
  *
  * <Popover
  *  onClose={() => {}}

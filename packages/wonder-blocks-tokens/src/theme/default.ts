@@ -6,10 +6,10 @@ import {border} from "./primitive/border";
 /**
  * NOTE: All the tokens included in this `theme` file will be automatically
  * mapped to CSS vars and included in
- * @khanacademy/wonder-blocks-tokens/styles.css.
+ * @osati-ai/wonder-blocks-tokens/styles.css.
  *
  * The css vars transformation is done in the `generate-css-variables.ts`
- * script. Used by `pnpm run dev` in the `@khanacademy/wonder-blocks-tokens`
+ * script. Used by `pnpm run dev` in the `@osati-ai/wonder-blocks-tokens`
  * package.
  */
 export default {

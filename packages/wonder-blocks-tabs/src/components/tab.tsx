@@ -1,9 +1,9 @@
-import {addStyle, AriaProps, StyleType} from "@khanacademy/wonder-blocks-core";
+import {addStyle, AriaProps, StyleType} from "@osati-ai/wonder-blocks-core";
 import * as React from "react";
 import {StyleSheet} from "aphrodite";
-import {border, semanticColor, sizing} from "@khanacademy/wonder-blocks-tokens";
-import {styles as typographyStyles} from "@khanacademy/wonder-blocks-typography";
-import {focusStyles} from "@khanacademy/wonder-blocks-styles";
+import {border, semanticColor, sizing} from "@osati-ai/wonder-blocks-tokens";
+import {styles as typographyStyles} from "@osati-ai/wonder-blocks-typography";
+import {focusStyles} from "@osati-ai/wonder-blocks-styles";
 
 type Props = AriaProps & {
     /**
@@ -46,9 +46,9 @@ const StyledButton = addStyle("button");
  * A component that has `role="tab"` and is used to represent a tab in a tabbed
  * interface.
  */
-export const Tab = React.forwardRef(function Tab(
-    props: Props,
-    ref: React.ForwardedRef<HTMLButtonElement>,
+export const Tab = React.forwardRef<HTMLButtonElement, Props>(function Tab(
+    props,
+    ref,
 ) {
     const {
         children,

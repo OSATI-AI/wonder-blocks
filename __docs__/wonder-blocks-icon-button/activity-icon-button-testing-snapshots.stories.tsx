@@ -3,14 +3,14 @@ import {action} from "@storybook/addon-actions";
 import type {Meta, StoryObj} from "@storybook/react";
 
 import paperPlaneIcon from "@phosphor-icons/core/fill/paper-plane-tilt-fill.svg";
-import {ActivityIconButton} from "@khanacademy/wonder-blocks-icon-button";
+import {ActivityIconButton} from "@osati-ai/wonder-blocks-icon-button";
 import {defaultPseudoStates, StateSheet} from "../components/state-sheet";
 import {themeModes} from "../../.storybook/modes";
 import {ScenariosLayout} from "../components/scenarios-layout";
 import {longTextWithNoWordBreak} from "../components/text-for-testing";
-import {View} from "@khanacademy/wonder-blocks-core";
-import {semanticColor, sizing} from "@khanacademy/wonder-blocks-tokens";
-import {Icon} from "@khanacademy/wonder-blocks-icon";
+import {View} from "@osati-ai/wonder-blocks-core";
+import {semanticColor, sizing} from "@osati-ai/wonder-blocks-tokens";
+import {Icon} from "@osati-ai/wonder-blocks-icon";
 import khanmigoIcon from "./images/mini-khanmigo.svg";
 
 /**

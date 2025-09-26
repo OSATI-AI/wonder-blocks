@@ -14,10 +14,10 @@ import magnifyingGlass from "@phosphor-icons/core/regular/magnifying-glass.svg";
 import magnifyingGlassBold from "@phosphor-icons/core/bold/magnifying-glass-bold.svg";
 import minusCircle from "@phosphor-icons/core/regular/minus-circle.svg";
 
-import {View} from "@khanacademy/wonder-blocks-core";
-import {LabelMedium} from "@khanacademy/wonder-blocks-typography";
-import IconButton from "@khanacademy/wonder-blocks-icon-button";
-import {spacing} from "@khanacademy/wonder-blocks-tokens";
+import {View} from "@osati-ai/wonder-blocks-core";
+import {LabelMedium} from "@osati-ai/wonder-blocks-typography";
+import IconButton from "@osati-ai/wonder-blocks-icon-button";
+import {spacing} from "@osati-ai/wonder-blocks-tokens";
 
 import ComponentInfo from "../components/component-info";
 import packageConfig from "../../packages/wonder-blocks-icon-button/package.json";
@@ -52,7 +52,7 @@ import TextField from "../../packages/wonder-blocks-form/src/components/text-fie
  *
  * ```js
  * import magnifyingGlassIcon from "@phosphor-icons/core/regular/magnifying-glass.svg";
- * import IconButton from "@khanacademy/wonder-blocks-icon-button";
+ * import IconButton from "@osati-ai/wonder-blocks-icon-button";
  *
  * <IconButton
  *     icon={magnifyingGlassIcon}

@@ -1,6 +1,6 @@
 import * as React from "react";
-import {StyleType} from "@khanacademy/wonder-blocks-core";
-import {PhosphorIcon, PhosphorIconAsset} from "@khanacademy/wonder-blocks-icon";
+import {StyleType} from "@osati-ai/wonder-blocks-core";
+import {PhosphorIcon, PhosphorIconAsset} from "@osati-ai/wonder-blocks-icon";
 
 import theme from "../theme/index";
 

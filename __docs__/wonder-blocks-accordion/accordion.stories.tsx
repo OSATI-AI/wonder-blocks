@@ -5,17 +5,17 @@ import type {Meta, StoryObj} from "@storybook/react";
 import {
     Accordion,
     AccordionSection,
-} from "@khanacademy/wonder-blocks-accordion";
-import Button from "@khanacademy/wonder-blocks-button";
-import {View} from "@khanacademy/wonder-blocks-core";
-import {Strut} from "@khanacademy/wonder-blocks-layout";
-import * as tokens from "@khanacademy/wonder-blocks-tokens";
-import {LabelLarge} from "@khanacademy/wonder-blocks-typography";
+} from "@osati-ai/wonder-blocks-accordion";
+import Button from "@osati-ai/wonder-blocks-button";
+import {View} from "@osati-ai/wonder-blocks-core";
+import {Strut} from "@osati-ai/wonder-blocks-layout";
+import * as tokens from "@osati-ai/wonder-blocks-tokens";
+import {LabelLarge} from "@osati-ai/wonder-blocks-typography";
 import {
     MultiSelect,
     OptionItem,
     SingleSelect,
-} from "@khanacademy/wonder-blocks-dropdown";
+} from "@osati-ai/wonder-blocks-dropdown";
 
 import ComponentInfo from "../components/component-info";
 import packageConfig from "../../packages/wonder-blocks-accordion/package.json";
@@ -36,7 +36,7 @@ import AccordionArgtypes from "./accordion.argtypes";
  * import {
  *      Accordion,
  *      AccordionSection
- * } from "@khanacademy/wonder-blocks-accordion";
+ * } from "@osati-ai/wonder-blocks-accordion";
  *
  * <Accordion>
  *   <AccordionSection header="First section">

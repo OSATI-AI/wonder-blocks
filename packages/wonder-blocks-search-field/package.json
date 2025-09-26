@@ -1,5 +1,5 @@
 {
-  "name": "@khanacademy/wonder-blocks-search-field",
+  "name": "@osati-ai/wonder-blocks-search-field",
   "version": "5.1.42",
   "design": "v1",
   "description": "Search Field components for Wonder Blocks.",
@@ -16,12 +16,12 @@
     "access": "public"
   },
   "dependencies": {
-    "@khanacademy/wonder-blocks-core": "workspace:*",
-    "@khanacademy/wonder-blocks-form": "workspace:*",
-    "@khanacademy/wonder-blocks-icon": "workspace:*",
-    "@khanacademy/wonder-blocks-icon-button": "workspace:*",
-    "@khanacademy/wonder-blocks-tokens": "workspace:*",
-    "@khanacademy/wonder-blocks-typography": "workspace:*"
+    "@osati-ai/wonder-blocks-core": "workspace:*",
+    "@osati-ai/wonder-blocks-form": "workspace:*",
+    "@osati-ai/wonder-blocks-icon": "workspace:*",
+    "@osati-ai/wonder-blocks-icon-button": "workspace:*",
+    "@osati-ai/wonder-blocks-tokens": "workspace:*",
+    "@osati-ai/wonder-blocks-typography": "workspace:*"
   },
   "peerDependencies": {
     "@phosphor-icons/core": "catalog:",
@@ -29,6 +29,6 @@
     "react": "catalog:"
   },
   "devDependencies": {
-    "@khanacademy/wb-dev-build-settings": "workspace:*"
+    "@osati-ai/wb-dev-build-settings": "workspace:*"
   }
 }

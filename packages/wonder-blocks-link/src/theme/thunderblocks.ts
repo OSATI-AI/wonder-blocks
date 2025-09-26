@@ -1,6 +1,6 @@
-import {mergeTheme} from "@khanacademy/wonder-blocks-theming";
+import {mergeTheme} from "@osati-ai/wonder-blocks-theming";
 
-import {font} from "@khanacademy/wonder-blocks-tokens";
+import {font} from "@osati-ai/wonder-blocks-tokens";
 import defaultTheme from "./default";
 
 export default mergeTheme(defaultTheme, {

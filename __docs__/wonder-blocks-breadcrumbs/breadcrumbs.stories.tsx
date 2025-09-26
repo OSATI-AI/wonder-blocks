@@ -1,12 +1,12 @@
 import * as React from "react";
 import type {Meta, StoryObj} from "@storybook/react";
 
-import Link from "@khanacademy/wonder-blocks-link";
+import Link from "@osati-ai/wonder-blocks-link";
 
 import {
     Breadcrumbs,
     BreadcrumbsItem,
-} from "@khanacademy/wonder-blocks-breadcrumbs";
+} from "@osati-ai/wonder-blocks-breadcrumbs";
 import packageConfig from "../../packages/wonder-blocks-breadcrumbs/package.json";
 import ComponentInfo from "../components/component-info";
 

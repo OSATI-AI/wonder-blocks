@@ -1,9 +1,9 @@
-import type {GqlOperation, GqlContext} from "@khanacademy/wonder-blocks-data";
+import type {GqlOperation, GqlContext} from "@osati-ai/wonder-blocks-data";
 import type {
     ConfigureFn,
     GraphQLJson,
     MockResponse,
-} from "@khanacademy/wonder-blocks-testing-core";
+} from "@osati-ai/wonder-blocks-testing-core";
 
 /**
  * A GraphQL operation to be mocked.

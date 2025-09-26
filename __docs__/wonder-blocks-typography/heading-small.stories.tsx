@@ -5,7 +5,7 @@ import packageConfig from "../../packages/wonder-blocks-typography/package.json"
 import ComponentInfo from "../components/component-info";
 import TypographyArgTypes from "./typography.argtypes";
 
-import {HeadingSmall} from "@khanacademy/wonder-blocks-typography";
+import {HeadingSmall} from "@osati-ai/wonder-blocks-typography";
 
 export default {
     title: "Packages / Typography / HeadingSmall",

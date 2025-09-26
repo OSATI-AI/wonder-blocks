@@ -1,5 +1,5 @@
 {
-  "name": "@khanacademy/wonder-blocks-accordion",
+  "name": "@osati-ai/wonder-blocks-accordion",
   "version": "3.1.37",
   "design": "v1",
   "description": "Accordion components for Wonder Blocks.",
@@ -17,11 +17,11 @@
     "access": "public"
   },
   "dependencies": {
-    "@khanacademy/wonder-blocks-clickable": "workspace:*",
-    "@khanacademy/wonder-blocks-core": "workspace:*",
-    "@khanacademy/wonder-blocks-icon": "workspace:*",
-    "@khanacademy/wonder-blocks-tokens": "workspace:*",
-    "@khanacademy/wonder-blocks-typography": "workspace:*"
+    "@osati-ai/wonder-blocks-clickable": "workspace:*",
+    "@osati-ai/wonder-blocks-core": "workspace:*",
+    "@osati-ai/wonder-blocks-icon": "workspace:*",
+    "@osati-ai/wonder-blocks-tokens": "workspace:*",
+    "@osati-ai/wonder-blocks-typography": "workspace:*"
   },
   "peerDependencies": {
     "@phosphor-icons/core": "catalog:",
@@ -29,6 +29,6 @@
     "react": "catalog:"
   },
   "devDependencies": {
-    "@khanacademy/wb-dev-build-settings": "workspace:*"
+    "@osati-ai/wb-dev-build-settings": "workspace:*"
   }
 }

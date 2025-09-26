@@ -1,8 +1,8 @@
 import * as React from "react";
-import {NavigationTabItem} from "@khanacademy/wonder-blocks-tabs";
+import {NavigationTabItem} from "@osati-ai/wonder-blocks-tabs";
 import {IconMappings} from "../wonder-blocks-icon/phosphor-icon.argtypes";
-import {PhosphorIcon} from "@khanacademy/wonder-blocks-icon";
-import Link from "@khanacademy/wonder-blocks-link";
+import {PhosphorIcon} from "@osati-ai/wonder-blocks-icon";
+import Link from "@osati-ai/wonder-blocks-link";
 
 export const generateChildren = (
     numItems: number,

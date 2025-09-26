@@ -1,10 +1,10 @@
 import * as React from "react";
 
-import {addStyle} from "@khanacademy/wonder-blocks-core";
-import {spacing} from "@khanacademy/wonder-blocks-tokens";
-import {BodyText} from "@khanacademy/wonder-blocks-typography";
-import type {StyleType} from "@khanacademy/wonder-blocks-core";
-import {Strut} from "@khanacademy/wonder-blocks-layout";
+import {addStyle} from "@osati-ai/wonder-blocks-core";
+import {spacing} from "@osati-ai/wonder-blocks-tokens";
+import {BodyText} from "@osati-ai/wonder-blocks-typography";
+import type {StyleType} from "@osati-ai/wonder-blocks-core";
+import {Strut} from "@osati-ai/wonder-blocks-layout";
 
 import styles from "./group-styles";
 import Choice from "./choice";
@@ -72,7 +72,7 @@ const StyledLegend = addStyle("legend");
  * ### Usage
  *
  * ```jsx
- * import {Choice, RadioGroup} from "@khanacademy/wonder-blocks-form";
+ * import {Choice, RadioGroup} from "@osati-ai/wonder-blocks-form";
  *
  * const [selectedValue, setSelectedValue] = React.useState("");
  *

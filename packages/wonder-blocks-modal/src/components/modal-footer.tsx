@@ -1,6 +1,6 @@
 import * as React from "react";
-import {View} from "@khanacademy/wonder-blocks-core";
-import {semanticColor, sizing} from "@khanacademy/wonder-blocks-tokens";
+import {View} from "@osati-ai/wonder-blocks-core";
+import {semanticColor, sizing} from "@osati-ai/wonder-blocks-tokens";
 import {StyleSheet} from "aphrodite";
 import theme from "../theme";
 

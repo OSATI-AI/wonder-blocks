@@ -1,11 +1,11 @@
 import * as React from "react";
 import {StyleSheet} from "aphrodite";
 
-import {View} from "@khanacademy/wonder-blocks-core";
-import {Strut} from "@khanacademy/wonder-blocks-layout";
-import {spacing} from "@khanacademy/wonder-blocks-tokens";
-import {HeadingSmall, LabelMedium} from "@khanacademy/wonder-blocks-typography";
-import type {Typography} from "@khanacademy/wonder-blocks-typography";
+import {View} from "@osati-ai/wonder-blocks-core";
+import {Strut} from "@osati-ai/wonder-blocks-layout";
+import {spacing} from "@osati-ai/wonder-blocks-tokens";
+import {HeadingSmall, LabelMedium} from "@osati-ai/wonder-blocks-typography";
+import type {Typography} from "@osati-ai/wonder-blocks-typography";
 
 import {ContentStyle} from "../util/types";
 
@@ -39,7 +39,7 @@ type Props = {
  * ### Usage
  *
  * ```jsx
- * import {TooltipContent} from "@khanacademy/wonder-blocks-tooltip";
+ * import {TooltipContent} from "@osati-ai/wonder-blocks-tooltip";
  *
  * <TooltipContent title="Title text!">
  *  Some content in my tooltip.

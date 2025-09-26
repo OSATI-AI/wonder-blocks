@@ -4,7 +4,7 @@ import {render, act} from "@testing-library/react";
 
 // eslint-disable-next-line import/extensions
 import * as ReactDOMServer from "react-dom/server";
-import {Server, View} from "@khanacademy/wonder-blocks-core";
+import {Server, View} from "@osati-ai/wonder-blocks-core";
 
 import {SharedCache} from "../../hooks/use-shared-cache";
 import TrackData from "../track-data";

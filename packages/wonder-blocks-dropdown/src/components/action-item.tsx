@@ -1,13 +1,13 @@
 import * as React from "react";
 import {StyleSheet} from "aphrodite";
 
-import {DetailCell} from "@khanacademy/wonder-blocks-cell";
-import {border, semanticColor, sizing} from "@khanacademy/wonder-blocks-tokens";
-import {BodyText} from "@khanacademy/wonder-blocks-typography";
+import {DetailCell} from "@osati-ai/wonder-blocks-cell";
+import {border, semanticColor, sizing} from "@osati-ai/wonder-blocks-tokens";
+import {BodyText} from "@osati-ai/wonder-blocks-typography";
 
-import type {StyleType} from "@khanacademy/wonder-blocks-core";
+import type {StyleType} from "@osati-ai/wonder-blocks-core";
 
-import {focusStyles} from "@khanacademy/wonder-blocks-styles";
+import {focusStyles} from "@osati-ai/wonder-blocks-styles";
 import {DROPDOWN_ITEM_HEIGHT} from "../util/constants";
 import theme from "../theme";
 
@@ -213,7 +213,9 @@ const ActionItem = React.forwardRef<HTMLDivElement, ActionItemProps>((props, ref
 });
 
 // Preserve static properties and methods
+// @ts-expect-error [FEI-5019] - TS2339 - Property 'isClassOf' does not exist on type 'string | JSXElementConstructor<any>'.
 ActionItem.isClassOf = ActionItemInternal.isClassOf;
+// @ts-expect-error [FEI-5019] - TS2339 - Property '__IS_ACTION_ITEM__' does not exist on type 'string | JSXElementConstructor<any>'.
 ActionItem.__IS_ACTION_ITEM__ = true;
 (ActionItem as any).defaultProps = ActionItemInternal.defaultProps;
 

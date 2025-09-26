@@ -1,7 +1,7 @@
 import * as React from "react";
 import {render, screen} from "@testing-library/react";
 
-import {Heading} from "@khanacademy/wonder-blocks-typography";
+import {Heading} from "@osati-ai/wonder-blocks-typography";
 
 import DetailCell from "../detail-cell";
 

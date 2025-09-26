@@ -1,4 +1,4 @@
-import {useOnMountEffect} from "@khanacademy/wonder-blocks-core";
+import {useOnMountEffect} from "@osati-ai/wonder-blocks-core";
 import * as React from "react";
 
 const defaultErrorMessage = "This field is required.";

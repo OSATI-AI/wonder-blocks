@@ -1,16 +1,16 @@
 import * as React from "react";
 import {StyleSheet} from "aphrodite";
 import type {Meta, StoryObj} from "@storybook/react";
-import Button from "@khanacademy/wonder-blocks-button";
-import {View} from "@khanacademy/wonder-blocks-core";
-import {BodyText, Heading} from "@khanacademy/wonder-blocks-typography";
-import {semanticColor, sizing} from "@khanacademy/wonder-blocks-tokens";
+import Button from "@osati-ai/wonder-blocks-button";
+import {View} from "@osati-ai/wonder-blocks-core";
+import {BodyText, Heading} from "@osati-ai/wonder-blocks-typography";
+import {semanticColor, sizing} from "@osati-ai/wonder-blocks-tokens";
 
 import {
     ModalLauncher,
     ModalDialog,
     ModalPanel,
-} from "@khanacademy/wonder-blocks-modal";
+} from "@osati-ai/wonder-blocks-modal";
 
 import ComponentInfo from "../components/component-info";
 import packageConfig from "../../packages/wonder-blocks-modal/package.json";

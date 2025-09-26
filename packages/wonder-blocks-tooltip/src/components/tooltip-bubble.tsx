@@ -1,12 +1,12 @@
 import {StyleSheet} from "aphrodite";
 import * as React from "react";
-import {View} from "@khanacademy/wonder-blocks-core";
+import {View} from "@osati-ai/wonder-blocks-core";
 import {
     border,
     color,
     semanticColor,
     spacing,
-} from "@khanacademy/wonder-blocks-tokens";
+} from "@osati-ai/wonder-blocks-tokens";
 
 import TooltipContent from "./tooltip-content";
 import TooltipTail from "./tooltip-tail";
@@ -84,7 +84,13 @@ export default class TooltipBubble extends React.Component<Props, State> {
                 <TooltipTail
                     updateRef={updateTailRef}
                     placement={placement}
-                    offset={tailOffset}
+                    offset={{
+                        top: tailOffset?.y,
+                        left: tailOffset?.x,
+                        bottom: undefined,
+                        right: undefined,
+                        transform: undefined,
+                    }}
                     color={backgroundColor}
                 />
             </View>

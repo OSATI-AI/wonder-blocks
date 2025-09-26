@@ -1,15 +1,15 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
 
-import {Id} from "@khanacademy/wonder-blocks-core";
-import {TooltipPopper} from "@khanacademy/wonder-blocks-tooltip";
-import {maybeGetPortalMountedModalHostElement} from "@khanacademy/wonder-blocks-modal";
+import {Id} from "@osati-ai/wonder-blocks-core";
+import {TooltipPopper} from "@osati-ai/wonder-blocks-tooltip";
+import {maybeGetPortalMountedModalHostElement} from "@osati-ai/wonder-blocks-modal";
 
-import type {AriaProps} from "@khanacademy/wonder-blocks-core";
+import type {AriaProps} from "@osati-ai/wonder-blocks-core";
 import type {
     Placement,
     FloatingElementProps,
-} from "@khanacademy/wonder-blocks-tooltip";
+} from "@osati-ai/wonder-blocks-tooltip";
 
 import PopoverContent from "./popover-content";
 import PopoverContentCore from "./popover-content-core";
@@ -172,7 +172,7 @@ type DefaultProps = Readonly<{
  * ### Usage
  *
  * ```jsx
- * import {Popover, PopoverContent} from "@khanacademy/wonder-blocks-popover";
+ * import {Popover, PopoverContent} from "@osati-ai/wonder-blocks-popover";
  *
  * <Popover
  *  onClose={() => {}}
@@ -213,7 +213,7 @@ export default class Popover extends React.Component<Props, State> {
     /**
      * Popover content ref
      */
-    contentRef: React.RefObject<PopoverContent | PopoverContentCore> =
+    contentRef: React.RefObject<PopoverContent | PopoverContentCore | null> =
         React.createRef();
 
     /**
@@ -450,10 +450,10 @@ export default class Popover extends React.Component<Props, State> {
                     )}
                 </Id>
 
-                {dismissEnabled && opened && (
+                {dismissEnabled && opened && this.contentRef && (
                     <PopoverEventListener
                         onClose={this.handleClose}
-                        contentRef={this.contentRef}
+                        contentRef={this.contentRef as React.RefObject<PopoverContent | PopoverContentCore>}
                     />
                 )}
             </PopoverContext.Provider>

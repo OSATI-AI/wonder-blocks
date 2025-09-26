@@ -1,11 +1,11 @@
 import * as React from "react";
 import {StyleSheet} from "aphrodite";
 
-import Clickable from "@khanacademy/wonder-blocks-clickable";
-import {View} from "@khanacademy/wonder-blocks-core";
-import {PhosphorIcon} from "@khanacademy/wonder-blocks-icon";
-import {color, semanticColor, spacing} from "@khanacademy/wonder-blocks-tokens";
-import {Body} from "@khanacademy/wonder-blocks-typography";
+import Clickable from "@osati-ai/wonder-blocks-clickable";
+import {View} from "@osati-ai/wonder-blocks-core";
+import {PhosphorIcon} from "@osati-ai/wonder-blocks-icon";
+import {color, semanticColor, spacing} from "@osati-ai/wonder-blocks-tokens";
+import {Body} from "@osati-ai/wonder-blocks-typography";
 
 import {IconMappings} from "../wonder-blocks-icon/phosphor-icon.argtypes";
 

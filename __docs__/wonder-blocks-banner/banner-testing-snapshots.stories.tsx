@@ -4,15 +4,15 @@ import type {Meta, StoryObj} from "@storybook/react";
 
 import {themeModes} from "../../.storybook/modes";
 
-import {View} from "@khanacademy/wonder-blocks-core";
-import {sizing} from "@khanacademy/wonder-blocks-tokens";
+import {View} from "@osati-ai/wonder-blocks-core";
+import {sizing} from "@osati-ai/wonder-blocks-tokens";
 import {defaultPseudoStates, StateSheet} from "../components/state-sheet";
-import Banner from "@khanacademy/wonder-blocks-banner";
+import Banner from "@osati-ai/wonder-blocks-banner";
 import {longText, reallyLongText} from "../components/text-for-testing";
 import {IconMappings} from "../wonder-blocks-icon/phosphor-icon.argtypes";
 import {ScenariosLayout} from "../components/scenarios-layout";
-import Link from "@khanacademy/wonder-blocks-link";
-import Button from "@khanacademy/wonder-blocks-button";
+import Link from "@osati-ai/wonder-blocks-link";
+import Button from "@osati-ai/wonder-blocks-button";
 import crownIcon from "../wonder-blocks-icon/icons/crown.svg";
 import {AllVariants} from "../components/all-variants";
 

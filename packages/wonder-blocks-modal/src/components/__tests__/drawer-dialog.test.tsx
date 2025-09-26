@@ -2,9 +2,9 @@ import * as React from "react";
 import {render, screen, waitFor} from "@testing-library/react";
 import {userEvent} from "@testing-library/user-event";
 
-import {View} from "@khanacademy/wonder-blocks-core";
-import {BodyText} from "@khanacademy/wonder-blocks-typography";
-import Button from "@khanacademy/wonder-blocks-button";
+import {View} from "@osati-ai/wonder-blocks-core";
+import {BodyText} from "@osati-ai/wonder-blocks-typography";
+import Button from "@osati-ai/wonder-blocks-button";
 
 import DrawerLauncher from "../drawer-launcher";
 import DrawerDialog from "../drawer-dialog";

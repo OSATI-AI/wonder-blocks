@@ -1,6 +1,6 @@
 import * as React from "react";
 
-import type {AriaProps, StyleType} from "@khanacademy/wonder-blocks-core";
+import type {AriaProps, StyleType} from "@osati-ai/wonder-blocks-core";
 import type {Checked} from "../util/types";
 
 import ChoiceInternal from "./choice-internal";
@@ -72,7 +72,7 @@ type ChoiceComponentProps = AriaProps & {
  * ### Usage
  *
  * ```jsx
- * import {Checkbox} from "@khanacademy/wonder-blocks-form";
+ * import {Checkbox} from "@osati-ai/wonder-blocks-form";
  *
  * const [checked, setChecked] = React.useState(false);
  *

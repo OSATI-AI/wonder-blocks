@@ -2,9 +2,9 @@ import * as React from "react";
 import {StyleSheet} from "aphrodite";
 import type {Meta, StoryObj} from "@storybook/react";
 
-import {View} from "@khanacademy/wonder-blocks-core";
+import {View} from "@osati-ai/wonder-blocks-core";
 
-import {PopoverContent} from "@khanacademy/wonder-blocks-popover";
+import {PopoverContent} from "@osati-ai/wonder-blocks-popover";
 import packageConfig from "../../packages/wonder-blocks-popover/package.json";
 
 import ComponentInfo from "../components/component-info";

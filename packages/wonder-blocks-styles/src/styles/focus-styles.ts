@@ -1,4 +1,4 @@
-import {border, semanticColor} from "@khanacademy/wonder-blocks-tokens";
+import {border, semanticColor} from "@osati-ai/wonder-blocks-tokens";
 
 /**
  * A global focus style that can be applied to interactive elements.

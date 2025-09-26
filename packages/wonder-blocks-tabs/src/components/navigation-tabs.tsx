@@ -1,5 +1,5 @@
-import {addStyle, AriaProps, StyleType} from "@khanacademy/wonder-blocks-core";
-import {sizing} from "@khanacademy/wonder-blocks-tokens";
+import {addStyle, AriaProps, StyleType} from "@osati-ai/wonder-blocks-core";
+import {sizing} from "@osati-ai/wonder-blocks-tokens";
 import {StyleSheet} from "aphrodite";
 import * as React from "react";
 import {useTabIndicator} from "../hooks/use-tab-indicator";
@@ -65,8 +65,8 @@ const StyledDiv = addStyle("div");
  * ## Usage
  *
  * ```jsx
- * import {NavigationTab, NavigationTabItem} from "@khanacademy/wonder-blocks-tabs";
- * import Link from "@khanacademy/wonder-blocks-link";
+ * import {NavigationTab, NavigationTabItem} from "@osati-ai/wonder-blocks-tabs";
+ * import Link from "@osati-ai/wonder-blocks-link";
  *
  * <NavigationTabs>
  *  <NavigationTabItem>
@@ -112,7 +112,7 @@ export const NavigationTabs = React.forwardRef(function NavigationTabs(
 
     const {indicatorProps, updateUnderlineStyle} = useTabIndicator({
         animated,
-        tabsContainerRef: listRef,
+        tabsContainerRef: listRef as React.RefObject<HTMLElement>,
         isTabActive,
     });
 

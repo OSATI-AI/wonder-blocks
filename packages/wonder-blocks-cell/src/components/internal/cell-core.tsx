@@ -1,13 +1,13 @@
 import * as React from "react";
 import {StyleSheet} from "aphrodite";
 
-import type {StyleType} from "@khanacademy/wonder-blocks-core";
+import type {StyleType} from "@osati-ai/wonder-blocks-core";
 
-import Clickable from "@khanacademy/wonder-blocks-clickable";
-import {View} from "@khanacademy/wonder-blocks-core";
+import Clickable from "@osati-ai/wonder-blocks-clickable";
+import {View} from "@osati-ai/wonder-blocks-core";
 
-import {border, semanticColor} from "@khanacademy/wonder-blocks-tokens";
-import {focusStyles} from "@khanacademy/wonder-blocks-styles";
+import {border, semanticColor} from "@osati-ai/wonder-blocks-tokens";
+import {focusStyles} from "@osati-ai/wonder-blocks-styles";
 import {getHorizontalRuleStyles} from "./common";
 
 import type {CellProps} from "../../util/types";
@@ -178,6 +178,7 @@ const CellCore = React.forwardRef<HTMLDivElement, CellCoreProps>(function CellCo
     // Pressable cell.
     if (onClick || href) {
         return (
+            // @ts-expect-error [FEI-5019] - TS2339 - Property 'ref' does not exist on type 'Readonly<Props> & Readonly<{ children?: ReactNode; }>'.
             <Clickable
                 ref={ref as any}
                 disabled={disabled}

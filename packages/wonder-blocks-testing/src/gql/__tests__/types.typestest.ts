@@ -1,5 +1,5 @@
-import {GqlOperation} from "@khanacademy/wonder-blocks-data";
-import {RespondWith} from "@khanacademy/wonder-blocks-testing-core";
+import {GqlOperation} from "@osati-ai/wonder-blocks-data";
+import {RespondWith} from "@osati-ai/wonder-blocks-testing-core";
 import type {GqlFetchMockFn} from "../types";
 
 type SomeGqlData = {

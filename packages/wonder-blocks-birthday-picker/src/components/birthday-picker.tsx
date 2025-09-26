@@ -1,12 +1,12 @@
 import {Temporal} from "temporal-polyfill";
 import * as React from "react";
 import {StyleSheet} from "aphrodite";
-import {StyleType, View} from "@khanacademy/wonder-blocks-core";
-import {Strut} from "@khanacademy/wonder-blocks-layout";
-import {semanticColor, spacing} from "@khanacademy/wonder-blocks-tokens";
-import {Body} from "@khanacademy/wonder-blocks-typography";
-import {PhosphorIcon} from "@khanacademy/wonder-blocks-icon";
-import {SingleSelect, OptionItem} from "@khanacademy/wonder-blocks-dropdown";
+import {StyleType, View} from "@osati-ai/wonder-blocks-core";
+import {Strut} from "@osati-ai/wonder-blocks-layout";
+import {semanticColor, spacing} from "@osati-ai/wonder-blocks-tokens";
+import {Body} from "@osati-ai/wonder-blocks-typography";
+import {PhosphorIcon} from "@osati-ai/wonder-blocks-icon";
+import {SingleSelect, OptionItem} from "@osati-ai/wonder-blocks-dropdown";
 import infoIcon from "@phosphor-icons/core/bold/info-bold.svg";
 
 export type Labels = {
@@ -129,7 +129,7 @@ const FIELD_MIN_WIDTH_DAY = 100;
  * ### Usage
  *
  * ```jsx
- * import {BirthdayPicker} from "@khanacademy/wonder-blocks-dates";
+ * import {BirthdayPicker} from "@osati-ai/wonder-blocks-dates";
  *
  * <BirthdayPicker
  *  defaultValue="2021-05-26"

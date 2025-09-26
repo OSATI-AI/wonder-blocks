@@ -2,18 +2,18 @@ import * as React from "react";
 import {StyleSheet} from "aphrodite";
 
 import type {Meta, StoryObj} from "@storybook/react";
-import {View} from "@khanacademy/wonder-blocks-core";
-import {PhosphorIcon} from "@khanacademy/wonder-blocks-icon";
-import {semanticColor, spacing} from "@khanacademy/wonder-blocks-tokens";
-import {Body, LabelLarge} from "@khanacademy/wonder-blocks-typography";
+import {View} from "@osati-ai/wonder-blocks-core";
+import {PhosphorIcon} from "@osati-ai/wonder-blocks-icon";
+import {semanticColor, spacing} from "@osati-ai/wonder-blocks-tokens";
+import {Body, LabelLarge} from "@osati-ai/wonder-blocks-typography";
 
-import {PopoverContentCore} from "@khanacademy/wonder-blocks-popover";
+import {PopoverContentCore} from "@osati-ai/wonder-blocks-popover";
 import packageConfig from "../../packages/wonder-blocks-popover/package.json";
 import ComponentInfo from "../components/component-info";
 import {IconMappings} from "../wonder-blocks-icon/phosphor-icon.argtypes";
 
 import popoverContentCoreArgtypes from "./popover-content-core.argtypes";
-import {DetailCell} from "@khanacademy/wonder-blocks-cell";
+import {DetailCell} from "@osati-ai/wonder-blocks-cell";
 
 export default {
     title: "Packages / Popover / PopoverContentCore",

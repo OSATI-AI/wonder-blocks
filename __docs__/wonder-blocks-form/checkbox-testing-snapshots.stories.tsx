@@ -1,7 +1,7 @@
 import * as React from "react";
 import type {Meta, StoryObj} from "@storybook/react";
 
-import {Checkbox} from "@khanacademy/wonder-blocks-form";
+import {Checkbox} from "@osati-ai/wonder-blocks-form";
 
 import {defaultPseudoStates, StateSheet} from "../components/state-sheet";
 import {themeModes} from "../../.storybook/modes";

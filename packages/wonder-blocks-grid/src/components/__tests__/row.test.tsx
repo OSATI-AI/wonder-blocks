@@ -4,7 +4,7 @@ import {render} from "@testing-library/react";
 import {
     MEDIA_DEFAULT_SPEC,
     MediaLayoutContext,
-} from "@khanacademy/wonder-blocks-layout";
+} from "@osati-ai/wonder-blocks-layout";
 import Row from "../row";
 import Cell from "../cell";
 

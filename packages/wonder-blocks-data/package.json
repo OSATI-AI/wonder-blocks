@@ -1,5 +1,5 @@
 {
-  "name": "@khanacademy/wonder-blocks-data",
+  "name": "@osati-ai/wonder-blocks-data",
   "version": "14.1.5",
   "design": "v1",
   "publishConfig": {
@@ -14,16 +14,16 @@
     "prepublishOnly": "../../utils/publish/package-pre-publish-check.sh"
   },
   "dependencies": {
-    "@khanacademy/wonder-blocks-core": "workspace:*"
+    "@osati-ai/wonder-blocks-core": "workspace:*"
   },
   "peerDependencies": {
     "@khanacademy/wonder-stuff-core": "catalog:",
     "react": "catalog:"
   },
   "devDependencies": {
-    "@khanacademy/wb-dev-build-settings": "workspace:*",
+    "@osati-ai/wb-dev-build-settings": "workspace:*",
     "@khanacademy/wonder-stuff-testing": "catalog:",
-    "@khanacademy/wonder-blocks-testing-core": "workspace:*"
+    "@osati-ai/wonder-blocks-testing-core": "workspace:*"
   },
   "author": "",
   "license": "MIT"

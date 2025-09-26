@@ -3,8 +3,8 @@ import {
     MediaLayout,
     Strut,
     queryMatchesSize,
-} from "@khanacademy/wonder-blocks-layout";
-import type {MediaQuery} from "@khanacademy/wonder-blocks-layout";
+} from "@osati-ai/wonder-blocks-layout";
+import type {MediaQuery} from "@osati-ai/wonder-blocks-layout";
 
 type Props = {
     /**

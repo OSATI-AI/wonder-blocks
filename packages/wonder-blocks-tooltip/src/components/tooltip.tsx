@@ -20,11 +20,11 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
 
-import {Id} from "@khanacademy/wonder-blocks-core";
-import {maybeGetPortalMountedModalHostElement} from "@khanacademy/wonder-blocks-modal";
-import type {Typography} from "@khanacademy/wonder-blocks-typography";
-import type {AriaProps} from "@khanacademy/wonder-blocks-core";
-import {color} from "@khanacademy/wonder-blocks-tokens";
+import {Id} from "@osati-ai/wonder-blocks-core";
+import {maybeGetPortalMountedModalHostElement} from "@osati-ai/wonder-blocks-modal";
+import type {Typography} from "@osati-ai/wonder-blocks-typography";
+import type {AriaProps} from "@osati-ai/wonder-blocks-core";
+import {color} from "@osati-ai/wonder-blocks-tokens";
 
 import TooltipAnchor from "./tooltip-anchor";
 import TooltipBubble from "./tooltip-bubble";
@@ -157,7 +157,7 @@ type DefaultProps = {
  * ### Usage
  *
  * ```jsx
- * import Tooltip from "@khanacademy/wonder-blocks-tooltip";
+ * import Tooltip from "@osati-ai/wonder-blocks-tooltip";
  *
  * <Tooltip content="This is a text tooltip">
  *  Tooltip anchor

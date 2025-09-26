@@ -4,17 +4,17 @@ import {StyleSheet} from "aphrodite";
 import xIcon from "@phosphor-icons/core/regular/x.svg";
 import magnifyingGlassIcon from "@phosphor-icons/core/bold/magnifying-glass-bold.svg";
 
-import {styles as typographyStyles} from "@khanacademy/wonder-blocks-typography";
-import {View, Id} from "@khanacademy/wonder-blocks-core";
-import IconButton from "@khanacademy/wonder-blocks-icon-button";
-import {TextField} from "@khanacademy/wonder-blocks-form";
-import {PhosphorIcon} from "@khanacademy/wonder-blocks-icon";
+import {styles as typographyStyles} from "@osati-ai/wonder-blocks-typography";
+import {View, Id} from "@osati-ai/wonder-blocks-core";
+import IconButton from "@osati-ai/wonder-blocks-icon-button";
+import {TextField} from "@osati-ai/wonder-blocks-form";
+import {PhosphorIcon} from "@osati-ai/wonder-blocks-icon";
 import {
     border,
     semanticColor,
     spacing,
-} from "@khanacademy/wonder-blocks-tokens";
-import type {StyleType, AriaProps} from "@khanacademy/wonder-blocks-core";
+} from "@osati-ai/wonder-blocks-tokens";
+import type {StyleType, AriaProps} from "@osati-ai/wonder-blocks-core";
 
 import {defaultLabels} from "../util/constants";
 
@@ -124,7 +124,7 @@ type Props = AriaProps & {
  *
  * ### Usage
  * ```jsx
- * import {SearchField} from "@khanacademy/wonder-blocks-search-field";
+ * import {SearchField} from "@osati-ai/wonder-blocks-search-field";
  *
  * const [value, setValue] = React.useState("");
  *

@@ -1,7 +1,7 @@
 import * as React from "react";
 import {StyleSheet} from "aphrodite";
-import {semanticColor} from "@khanacademy/wonder-blocks-tokens";
-import {PhosphorIcon} from "@khanacademy/wonder-blocks-icon";
+import {semanticColor} from "@osati-ai/wonder-blocks-tokens";
+import {PhosphorIcon} from "@osati-ai/wonder-blocks-icon";
 import DateIcon from "@phosphor-icons/core/bold/calendar-blank-bold.svg";
 import WarningCircle from "@phosphor-icons/core/bold/warning-circle-bold.svg";
 import {Badge} from "./badge";

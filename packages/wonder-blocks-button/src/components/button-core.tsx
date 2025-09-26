@@ -1,16 +1,16 @@
 import * as React from "react";
 import {CSSProperties, StyleSheet} from "aphrodite";
 
-import {BodyText} from "@khanacademy/wonder-blocks-typography";
-import {View} from "@khanacademy/wonder-blocks-core";
-import {CircularSpinner} from "@khanacademy/wonder-blocks-progress-spinner";
+import {BodyText} from "@osati-ai/wonder-blocks-typography";
+import {View} from "@osati-ai/wonder-blocks-core";
+import {CircularSpinner} from "@osati-ai/wonder-blocks-progress-spinner";
 
 import type {
     ChildrenProps,
     ClickableState,
-} from "@khanacademy/wonder-blocks-clickable";
-import {focusStyles} from "@khanacademy/wonder-blocks-styles";
-import {semanticColor} from "@khanacademy/wonder-blocks-tokens";
+} from "@osati-ai/wonder-blocks-clickable";
+import {focusStyles} from "@osati-ai/wonder-blocks-styles";
+import {semanticColor} from "@osati-ai/wonder-blocks-tokens";
 import type {
     ButtonActionType,
     ButtonKind,

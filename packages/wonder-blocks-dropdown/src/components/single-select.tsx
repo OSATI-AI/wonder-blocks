@@ -5,9 +5,9 @@ import {
     Id,
     type AriaProps,
     type StyleType,
-} from "@khanacademy/wonder-blocks-core";
+} from "@osati-ai/wonder-blocks-core";
 
-import {announceMessage} from "@khanacademy/wonder-blocks-announcer";
+import {announceMessage} from "@osati-ai/wonder-blocks-announcer";
 import DropdownCore from "./dropdown-core";
 import DropdownOpener from "./dropdown-opener";
 import SelectOpener from "./select-opener";
@@ -227,7 +227,7 @@ type Props = AriaProps &
  * General usage
  *
  * ```jsx
- * import {OptionItem, SingleSelect} from "@khanacademy/wonder-blocks-dropdown";
+ * import {OptionItem, SingleSelect} from "@osati-ai/wonder-blocks-dropdown";
  *
  * const [selectedValue, setSelectedValue] = React.useState("");
  *
@@ -240,7 +240,7 @@ type Props = AriaProps &
  * Mapping a list
  *
  * ```jsx
- * import {OptionItem, SingleSelect} from "@khanacademy/wonder-blocks-dropdown";
+ * import {OptionItem, SingleSelect} from "@osati-ai/wonder-blocks-dropdown";
  *
  * const [selectedValue, setSelectedValue] = React.useState("");
  * const fruitArray = ["Apple", "Banana", "Orange", "Mango", "Pear"];
@@ -301,7 +301,7 @@ const SingleSelect = (props: Props) => {
     const [searchText, setSearchText] = React.useState("");
     // The DOM reference to the opener element. This is mainly used to set focus
     // to this element, and also to pass the reference to Popper.js.
-    const [openerElement, setOpenerElement] = React.useState<HTMLElement>();
+    const [openerElement, setOpenerElement] = React.useState<HTMLElement | null>(null);
 
     // Debug logging for selectedValue changes
     React.useEffect(() => {
@@ -449,8 +449,8 @@ const SingleSelect = (props: Props) => {
 
     // Announce when selectedValue or children changes in the opener
     React.useEffect(() => {
-        const optionItems = (Array.isArray(children) 
-            ? children 
+        const optionItems = (Array.isArray(children)
+            ? children
             : children ? [children] : []
         ) as OptionItemComponentArray;
         const selectedItem = optionItems.find(
@@ -474,17 +474,17 @@ const SingleSelect = (props: Props) => {
     ):
         | React.ReactElement<React.ComponentProps<typeof DropdownOpener>>
         | React.ReactElement<React.ComponentProps<typeof SelectOpener>> => {
-        const items = (Array.isArray(children) 
-            ? children 
+        const items = (Array.isArray(children)
+            ? children
             : children ? [children] : []
         ) as OptionItemComponentArray;
-        
+
         console.log("[SingleSelect] renderOpener - Looking for selectedValue:", selectedValue);
         console.log("[SingleSelect] renderOpener - Available items:", items.map(item => ({
             value: item.props.value,
             label: getLabel(item.props)
         })));
-        
+
         const selectedItem = items.find(
             (option) => option.props.value === selectedValue,
         );
@@ -558,8 +558,8 @@ const SingleSelect = (props: Props) => {
     };
 
     const allChildren = (
-        (Array.isArray(children) 
-            ? children 
+        (Array.isArray(children)
+            ? children
             : children ? [children] : []
         ) as Array<
             React.ReactElement<React.ComponentProps<typeof OptionItem>>

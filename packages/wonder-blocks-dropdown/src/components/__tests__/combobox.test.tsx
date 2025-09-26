@@ -1,9 +1,9 @@
-import {RenderStateRoot} from "@khanacademy/wonder-blocks-core";
+import {RenderStateRoot} from "@osati-ai/wonder-blocks-core";
 import {render, screen, waitFor} from "@testing-library/react";
 import * as React from "react";
 import magnifyingGlassIcon from "@phosphor-icons/core/regular/magnifying-glass.svg";
 
-import {PhosphorIcon} from "@khanacademy/wonder-blocks-icon";
+import {PhosphorIcon} from "@osati-ai/wonder-blocks-icon";
 import {PointerEventsCheckLevel, userEvent} from "@testing-library/user-event";
 import {defaultComboboxLabels} from "../../util/constants";
 import {MaybeValueOrValues} from "../../util/types";

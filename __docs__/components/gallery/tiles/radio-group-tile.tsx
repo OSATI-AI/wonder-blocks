@@ -1,6 +1,6 @@
 import * as React from "react";
 
-import {Choice, RadioGroup} from "@khanacademy/wonder-blocks-form";
+import {Choice, RadioGroup} from "@osati-ai/wonder-blocks-form";
 
 import ComponentTile from "../component-tile";
 import {CommonTileProps} from "../types";

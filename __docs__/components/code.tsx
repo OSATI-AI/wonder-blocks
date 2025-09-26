@@ -1,7 +1,7 @@
 import * as React from "react";
 import {StyleSheet} from "aphrodite";
-import {addStyle, View} from "@khanacademy/wonder-blocks-core";
-import {font, semanticColor, sizing} from "@khanacademy/wonder-blocks-tokens";
+import {addStyle, View} from "@osati-ai/wonder-blocks-core";
+import {font, semanticColor, sizing} from "@osati-ai/wonder-blocks-tokens";
 import {CopyButton} from "./copy-button";
 
 const StyledCode = addStyle("code");

@@ -1,1 +1,1 @@
-export * from "@khanacademy/wonder-blocks-accordion";
+export * from "@osati-ai/wonder-blocks-accordion";

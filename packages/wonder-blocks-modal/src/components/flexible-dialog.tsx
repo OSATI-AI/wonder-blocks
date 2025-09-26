@@ -1,10 +1,10 @@
 import * as React from "react";
 import {StyleSheet} from "aphrodite";
-import type {StyleType} from "@khanacademy/wonder-blocks-core";
-import {View} from "@khanacademy/wonder-blocks-core";
+import type {StyleType} from "@osati-ai/wonder-blocks-core";
+import {View} from "@osati-ai/wonder-blocks-core";
 
-import {breakpoint, semanticColor} from "@khanacademy/wonder-blocks-tokens";
-import {Heading} from "@khanacademy/wonder-blocks-typography";
+import {breakpoint, semanticColor} from "@osati-ai/wonder-blocks-tokens";
+import {Heading} from "@osati-ai/wonder-blocks-typography";
 import FlexiblePanel from "./flexible-panel";
 import theme from "../theme";
 
@@ -89,8 +89,8 @@ type RenderProps = {
  * ### Usage
  *
  * ```jsx
- * import {FlexibleDialog} from "@khanacademy/wonder-blocks-modal";
- * import {BodyText} from "@khanacademy/wonder-blocks-typography";
+ * import {FlexibleDialog} from "@osati-ai/wonder-blocks-modal";
+ * import {BodyText} from "@osati-ai/wonder-blocks-typography";
  *
  * <FlexibleDialog
  *     title={<Heading size="xxlarge" id="main-heading">Select mission</Heading>}
@@ -135,6 +135,7 @@ const FlexibleDialog = React.forwardRef(function FlexibleDialog(
         ) : (
             // Augment heading element with ID/testId
             React.cloneElement(title, {
+                // @ts-expect-error [FEI-5019] - TS2339 - Property 'id' does not exist on type 'Readonly<Props> & Readonly<{ children?: ReactNode; }>'.
                 id: headingId,
                 testId: "title-heading-wrapper",
             })

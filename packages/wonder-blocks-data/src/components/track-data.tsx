@@ -1,5 +1,5 @@
 import * as React from "react";
-import {Server} from "@khanacademy/wonder-blocks-core";
+import {Server} from "@osati-ai/wonder-blocks-core";
 
 import {RequestTracker, TrackerContext} from "../util/request-tracking";
 

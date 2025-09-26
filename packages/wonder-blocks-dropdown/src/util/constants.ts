@@ -1,4 +1,4 @@
-import {sizing} from "@khanacademy/wonder-blocks-tokens";
+import {sizing} from "@osati-ai/wonder-blocks-tokens";
 import {ComboboxLabels} from "./types";
 
 export const selectDropdownStyle = {

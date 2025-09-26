@@ -1,1 +1,1 @@
-export * from "@khanacademy/wonder-blocks-core";
+export * from "@osati-ai/wonder-blocks-core";

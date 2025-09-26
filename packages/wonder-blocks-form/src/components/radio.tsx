@@ -1,6 +1,6 @@
 import * as React from "react";
 
-import type {AriaProps, StyleType} from "@khanacademy/wonder-blocks-core";
+import type {AriaProps, StyleType} from "@osati-ai/wonder-blocks-core";
 import ChoiceInternal from "./choice-internal";
 
 // Keep synced with ChoiceComponentProps in ../util/types.js

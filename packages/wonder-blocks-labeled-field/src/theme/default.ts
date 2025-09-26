@@ -1,4 +1,4 @@
-import {font, semanticColor, sizing} from "@khanacademy/wonder-blocks-tokens";
+import {font, semanticColor, sizing} from "@osati-ai/wonder-blocks-tokens";
 
 const theme = {
     root: {

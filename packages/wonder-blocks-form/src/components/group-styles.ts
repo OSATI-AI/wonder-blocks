@@ -1,6 +1,6 @@
 import {StyleSheet} from "aphrodite";
 
-import {semanticColor, spacing} from "@khanacademy/wonder-blocks-tokens";
+import {semanticColor, spacing} from "@osati-ai/wonder-blocks-tokens";
 
 import type {StyleDeclaration} from "aphrodite";
 import theme from "../theme";

@@ -1,7 +1,7 @@
 import * as React from "react";
 import {StyleSheet} from "aphrodite";
 
-import {addStyle, AriaProps, StyleType} from "@khanacademy/wonder-blocks-core";
+import {addStyle, AriaProps, StyleType} from "@osati-ai/wonder-blocks-core";
 
 import {viewportPixelsForSize} from "../util/icon-util";
 import {IconSize, PhosphorIconAsset} from "../types";
@@ -65,7 +65,7 @@ type Props = Pick<AriaProps, "aria-hidden" | "aria-label" | "role"> & {
  * ## Usage
  *
  * ```tsx
- * import {PhosphorIcon} from "@khanacademy/wonder-blocks-icon";
+ * import {PhosphorIcon} from "@osati-ai/wonder-blocks-icon";
  * import MagnifyingGlass from "@phosphor-icons/core/regular/magnifying-glass.svg";
  *
  * <PhosphorIcon

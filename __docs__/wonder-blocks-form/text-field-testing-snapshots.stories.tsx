@@ -1,8 +1,8 @@
 import * as React from "react";
 import type {Meta, StoryObj} from "@storybook/react";
 
-import {TextField} from "@khanacademy/wonder-blocks-form";
-import {LabeledField} from "@khanacademy/wonder-blocks-labeled-field";
+import {TextField} from "@osati-ai/wonder-blocks-form";
+import {LabeledField} from "@osati-ai/wonder-blocks-labeled-field";
 import {themeModes} from "../../.storybook/modes";
 import {defaultPseudoStates, StateSheet} from "../components/state-sheet";
 import {ScenariosLayout} from "../components/scenarios-layout";

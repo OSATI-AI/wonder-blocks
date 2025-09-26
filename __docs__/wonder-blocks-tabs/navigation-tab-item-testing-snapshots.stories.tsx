@@ -3,20 +3,20 @@ import * as React from "react";
 
 import {StyleSheet} from "aphrodite";
 
-import {addStyle, View} from "@khanacademy/wonder-blocks-core";
-import {NavigationTabItem} from "@khanacademy/wonder-blocks-tabs";
-import {border, semanticColor, sizing} from "@khanacademy/wonder-blocks-tokens";
+import {addStyle, View} from "@osati-ai/wonder-blocks-core";
+import {NavigationTabItem} from "@osati-ai/wonder-blocks-tabs";
+import {border, semanticColor, sizing} from "@osati-ai/wonder-blocks-tokens";
 import {defaultPseudoStates, StateSheet} from "../components/state-sheet";
-import Link from "@khanacademy/wonder-blocks-link";
-import {PhosphorIcon} from "@khanacademy/wonder-blocks-icon";
+import Link from "@osati-ai/wonder-blocks-link";
+import {PhosphorIcon} from "@osati-ai/wonder-blocks-icon";
 import {IconMappings} from "../wonder-blocks-icon/phosphor-icon.argtypes";
-import {HeadingLarge} from "@khanacademy/wonder-blocks-typography";
+import {HeadingLarge} from "@osati-ai/wonder-blocks-typography";
 import {
     longText,
     longTextWithNoWordBreak,
     rtlText,
 } from "../components/text-for-testing";
-import IconButton from "@khanacademy/wonder-blocks-icon-button";
+import IconButton from "@osati-ai/wonder-blocks-icon-button";
 import {ScenariosLayout} from "../components/scenarios-layout";
 import {themeModes} from "../../.storybook/modes";
 

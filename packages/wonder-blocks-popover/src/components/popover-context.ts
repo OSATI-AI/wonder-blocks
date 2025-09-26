@@ -1,6 +1,6 @@
 import * as React from "react";
 
-import type {Placement} from "@khanacademy/wonder-blocks-tooltip";
+import type {Placement} from "@osati-ai/wonder-blocks-tooltip";
 
 export type PopoverContextType = {
     /**

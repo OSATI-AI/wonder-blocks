@@ -1,5 +1,5 @@
 import * as React from "react";
-import {useForceUpdate} from "@khanacademy/wonder-blocks-core";
+import {useForceUpdate} from "@osati-ai/wonder-blocks-core";
 import {DataError, DataErrors} from "../util/data-error";
 
 import {RequestFulfillment} from "../util/request-fulfillment";
@@ -120,10 +120,10 @@ export const useCachedEffect = <TData extends ValidCacheData>(
     const forceUpdate = useForceUpdate();
     // For the NetworkOnly fetch policy, we ignore the cached value.
     // So we need somewhere else to store the network value.
-    const networkResultRef = React.useRef<Result<TData> | null>();
+    const networkResultRef = React.useRef<Result<TData> | null>(null);
 
     // Set up the function that will do the fetching.
-    const currentRequestRef = React.useRef<InflightRequest<TData> | null>();
+    const currentRequestRef = React.useRef<InflightRequest<TData> | null>(null);
     const fetchRequest = React.useMemo(() => {
         // We aren't using useCallback here because we need to make sure that
         // if we are rememo-izing, we cancel any inflight request for the old

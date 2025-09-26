@@ -5,7 +5,7 @@ import packageConfig from "../../packages/wonder-blocks-typography/package.json"
 import ComponentInfo from "../components/component-info";
 import TypographyArgTypes from "./typography.argtypes";
 
-import {Tagline} from "@khanacademy/wonder-blocks-typography";
+import {Tagline} from "@osati-ai/wonder-blocks-typography";
 
 export default {
     title: "Packages / Typography / Tagline",

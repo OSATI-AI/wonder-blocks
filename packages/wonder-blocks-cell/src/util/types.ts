@@ -1,8 +1,8 @@
 import * as React from "react";
 
-import type {AriaProps, StyleType} from "@khanacademy/wonder-blocks-core";
-import type {Typography} from "@khanacademy/wonder-blocks-typography";
-import {ClickableRole} from "@khanacademy/wonder-blocks-clickable";
+import type {AriaProps, StyleType} from "@osati-ai/wonder-blocks-core";
+import type {Typography} from "@osati-ai/wonder-blocks-typography";
+import {ClickableRole} from "@osati-ai/wonder-blocks-clickable";
 
 /**
  * A set of values that can be used to configure the horizontal rule appearance.

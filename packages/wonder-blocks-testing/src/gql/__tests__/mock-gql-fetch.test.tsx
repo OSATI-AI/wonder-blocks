@@ -1,11 +1,11 @@
 import * as React from "react";
 import {render, screen, waitFor} from "@testing-library/react";
 
-import {GqlRouter, useGql} from "@khanacademy/wonder-blocks-data";
+import {GqlRouter, useGql} from "@osati-ai/wonder-blocks-data";
 import {
     RespondWith,
     testHarness,
-} from "@khanacademy/wonder-blocks-testing-core";
+} from "@osati-ai/wonder-blocks-testing-core";
 import {mockGqlFetch} from "../mock-gql-fetch";
 
 describe("#mockGqlFetch", () => {

@@ -1,9 +1,9 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
 import {VariableSizeList as List} from "react-window";
-import {withActionScheduler} from "@khanacademy/wonder-blocks-timing";
+import {withActionScheduler} from "@osati-ai/wonder-blocks-timing";
 
-import type {WithActionSchedulerProps} from "@khanacademy/wonder-blocks-timing";
+import type {WithActionSchedulerProps} from "@osati-ai/wonder-blocks-timing";
 import DropdownVirtualizedItem from "./dropdown-core-virtualized-item";
 import SeparatorItem from "./separator-item";
 
@@ -139,8 +139,8 @@ class DropdownCoreVirtualized extends React.Component<Props, State> {
 
         // 1. get the children opaque data structure to sort each item by its
         //    label length
-        const longestItems = (Array.isArray(allComponents) 
-            ? allComponents 
+        const longestItems = (Array.isArray(allComponents)
+            ? allComponents
             : allComponents ? [allComponents] : []
         ).filter(Boolean)
             .sort((a, b) => {
@@ -159,10 +159,11 @@ class DropdownCoreVirtualized extends React.Component<Props, State> {
 
         // Append longest items to calculate the container width.
         // We need to hide these sorted elements to avoid any FOUC.
+        // @ts-expect-error [FEI-5019] - TS2769 - No overload matches this call.
         return (
-            <div ref={this.containerRef}>
+            <div ref={this.containerRef as React.RefObject<HTMLDivElement> | undefined}>
                 {longestItems.map((item) =>
-                    // @ts-expect-error [FEI-5019] - TS2769 - No overload matches this call.
+                    // @ts-ignore
                     React.cloneElement(item, {
                         style: {visibility: "hidden"},
                     }),
@@ -185,7 +186,7 @@ class DropdownCoreVirtualized extends React.Component<Props, State> {
                 overscanCount={5}
                 ref={listRef}
             >
-                {/* @ts-expect-error: No overload matches this call. */}
+                {/* @ts-expect-error [FEI-5019] - TS2769 - No overload matches this call. */}
                 {DropdownVirtualizedItem}
             </List>
         );

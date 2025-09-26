@@ -1,5 +1,5 @@
 {
-  "name": "@khanacademy/wonder-blocks-form",
+  "name": "@osati-ai/wonder-blocks-form",
   "version": "7.3.5",
   "design": "v1",
   "description": "Form components for Wonder Blocks.",
@@ -25,12 +25,12 @@
     "access": "public"
   },
   "dependencies": {
-    "@khanacademy/wonder-blocks-clickable": "workspace:*",
-    "@khanacademy/wonder-blocks-core": "workspace:*",
-    "@khanacademy/wonder-blocks-icon": "workspace:*",
-    "@khanacademy/wonder-blocks-layout": "workspace:*",
-    "@khanacademy/wonder-blocks-tokens": "workspace:*",
-    "@khanacademy/wonder-blocks-typography": "workspace:*"
+    "@osati-ai/wonder-blocks-clickable": "workspace:*",
+    "@osati-ai/wonder-blocks-core": "workspace:*",
+    "@osati-ai/wonder-blocks-icon": "workspace:*",
+    "@osati-ai/wonder-blocks-layout": "workspace:*",
+    "@osati-ai/wonder-blocks-tokens": "workspace:*",
+    "@osati-ai/wonder-blocks-typography": "workspace:*"
   },
   "peerDependencies": {
     "@phosphor-icons/core": "catalog:",
@@ -38,6 +38,6 @@
     "react": "catalog:"
   },
   "devDependencies": {
-    "@khanacademy/wb-dev-build-settings": "workspace:*"
+    "@osati-ai/wb-dev-build-settings": "workspace:*"
   }
 }

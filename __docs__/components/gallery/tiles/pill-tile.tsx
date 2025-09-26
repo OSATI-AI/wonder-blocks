@@ -1,9 +1,9 @@
 import * as React from "react";
 import {StyleSheet} from "aphrodite";
 
-import {View} from "@khanacademy/wonder-blocks-core";
-import Pill from "@khanacademy/wonder-blocks-pill";
-import {spacing} from "@khanacademy/wonder-blocks-tokens";
+import {View} from "@osati-ai/wonder-blocks-core";
+import Pill from "@osati-ai/wonder-blocks-pill";
+import {spacing} from "@osati-ai/wonder-blocks-tokens";
 
 import ComponentTile from "../component-tile";
 import {styles} from "../styles";

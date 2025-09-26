@@ -1,12 +1,12 @@
-# @khanacademy/wonder-blocks-testing
+# @osati-ai/wonder-blocks-testing
 
 ## 15.1.7
 
 ### Patch Changes
 
 - Updated dependencies [1334e74]
-    - @khanacademy/wonder-blocks-core@12.4.0
-    - @khanacademy/wonder-blocks-data@14.1.5
+    - @osati-ai/wonder-blocks-core@12.4.0
+    - @osati-ai/wonder-blocks-data@14.1.5
 
 ## 15.1.6
 
@@ -14,26 +14,26 @@
 
 - Updated dependencies [28fa0c0]
 - Updated dependencies [28fa0c0]
-    - @khanacademy/wonder-blocks-core@12.3.0
-    - @khanacademy/wonder-blocks-data@14.1.4
+    - @osati-ai/wonder-blocks-core@12.3.0
+    - @osati-ai/wonder-blocks-data@14.1.4
 
 ## 15.1.5
 
 ### Patch Changes
 
 - Updated dependencies [30f357a]
-    - @khanacademy/wonder-blocks-testing-core@3.0.1
-    - @khanacademy/wonder-blocks-core@12.2.1
-    - @khanacademy/wonder-blocks-data@14.1.3
+    - @osati-ai/wonder-blocks-testing-core@3.0.1
+    - @osati-ai/wonder-blocks-core@12.2.1
+    - @osati-ai/wonder-blocks-data@14.1.3
 
 ## 15.1.4
 
 ### Patch Changes
 
 - Updated dependencies [38c926c]
-    - @khanacademy/wonder-blocks-testing-core@3.0.0
-    - @khanacademy/wonder-blocks-core@12.2.1
-    - @khanacademy/wonder-blocks-data@14.1.3
+    - @osati-ai/wonder-blocks-testing-core@3.0.0
+    - @osati-ai/wonder-blocks-core@12.2.1
+    - @osati-ai/wonder-blocks-data@14.1.3
 
 ## 15.1.3
 
@@ -41,9 +41,9 @@
 
 - 1d7be37: Use pnpm catalog to pin dependency versions across packages
 - Updated dependencies [1d7be37]
-    - @khanacademy/wonder-blocks-testing-core@2.2.1
-    - @khanacademy/wonder-blocks-core@12.2.1
-    - @khanacademy/wonder-blocks-data@14.1.3
+    - @osati-ai/wonder-blocks-testing-core@2.2.1
+    - @osati-ai/wonder-blocks-core@12.2.1
+    - @osati-ai/wonder-blocks-data@14.1.3
 
 ## 15.1.2
 
@@ -51,9 +51,9 @@
 
 - Updated dependencies [ed26d66]
 - Updated dependencies [eb47d37]
-    - @khanacademy/wonder-blocks-core@12.2.0
-    - @khanacademy/wonder-blocks-testing-core@2.2.0
-    - @khanacademy/wonder-blocks-data@14.1.2
+    - @osati-ai/wonder-blocks-core@12.2.0
+    - @osati-ai/wonder-blocks-testing-core@2.2.0
+    - @osati-ai/wonder-blocks-data@14.1.2
 
 ## 15.1.1
 
@@ -61,9 +61,9 @@
 
 - ee8d95a: Rollback rollup version from v4 to v2 to prevent an issue with CJS builds in unit tests
 - Updated dependencies [ee8d95a]
-    - @khanacademy/wonder-blocks-core@12.1.1
-    - @khanacademy/wonder-blocks-data@14.1.1
-    - @khanacademy/wonder-blocks-testing-core@2.1.1
+    - @osati-ai/wonder-blocks-core@12.1.1
+    - @osati-ai/wonder-blocks-data@14.1.1
+    - @osati-ai/wonder-blocks-testing-core@2.1.1
 
 ## 15.1.0
 
@@ -80,32 +80,32 @@
 - Updated dependencies [969864b]
 - Updated dependencies [bb2a026]
 - Updated dependencies [f03298f]
-    - @khanacademy/wonder-blocks-core@12.1.0
-    - @khanacademy/wonder-blocks-data@14.1.0
-    - @khanacademy/wonder-blocks-testing-core@2.1.0
+    - @osati-ai/wonder-blocks-core@12.1.0
+    - @osati-ai/wonder-blocks-data@14.1.0
+    - @osati-ai/wonder-blocks-testing-core@2.1.0
 
 ## 15.0.5
 
 ### Patch Changes
 
 - Updated dependencies [0199324d]
-    - @khanacademy/wonder-blocks-core@12.0.0
-    - @khanacademy/wonder-blocks-data@14.0.7
+    - @osati-ai/wonder-blocks-core@12.0.0
+    - @osati-ai/wonder-blocks-data@14.0.7
 
 ## 15.0.4
 
 ### Patch Changes
 
 - Updated dependencies [7516b239]
-    - @khanacademy/wonder-blocks-core@11.1.0
-    - @khanacademy/wonder-blocks-data@14.0.6
+    - @osati-ai/wonder-blocks-core@11.1.0
+    - @osati-ai/wonder-blocks-data@14.0.6
 
 ## 15.0.3
 
 ### Patch Changes
 
 - Updated dependencies [faf7bd21]
-    - @khanacademy/wonder-blocks-data@14.0.5
+    - @osati-ai/wonder-blocks-data@14.0.5
 
 ## 15.0.2
 
@@ -113,17 +113,17 @@
 
 - 11a0f5c6: No functional changes. Adding prepublishOnly script.
 - Updated dependencies [11a0f5c6]
-    - @khanacademy/wonder-blocks-testing-core@2.0.1
-    - @khanacademy/wonder-blocks-core@11.0.1
-    - @khanacademy/wonder-blocks-data@14.0.4
+    - @osati-ai/wonder-blocks-testing-core@2.0.1
+    - @osati-ai/wonder-blocks-core@11.0.1
+    - @osati-ai/wonder-blocks-data@14.0.4
 
 ## 15.0.1
 
 ### Patch Changes
 
 - Updated dependencies [d23c9c5f]
-    - @khanacademy/wonder-blocks-core@11.0.0
-    - @khanacademy/wonder-blocks-data@14.0.3
+    - @osati-ai/wonder-blocks-core@11.0.0
+    - @osati-ai/wonder-blocks-data@14.0.3
 
 ## 15.0.0
 
@@ -137,16 +137,16 @@
 - Updated dependencies [b6009b77]
 - Updated dependencies [897686bc]
 - Updated dependencies [56d961f1]
-    - @khanacademy/wonder-blocks-core@10.0.0
-    - @khanacademy/wonder-blocks-data@14.0.2
+    - @osati-ai/wonder-blocks-core@10.0.0
+    - @osati-ai/wonder-blocks-data@14.0.2
 
 ## 14.0.1
 
 ### Patch Changes
 
 - Updated dependencies [f4abd572]
-    - @khanacademy/wonder-blocks-core@9.0.0
-    - @khanacademy/wonder-blocks-data@14.0.1
+    - @osati-ai/wonder-blocks-core@9.0.0
+    - @osati-ai/wonder-blocks-data@14.0.1
 
 ## 14.0.0
 
@@ -157,9 +157,9 @@
 ### Patch Changes
 
 - Updated dependencies [e6abdd17]
-    - @khanacademy/wonder-blocks-testing-core@2.0.0
-    - @khanacademy/wonder-blocks-core@8.0.0
-    - @khanacademy/wonder-blocks-data@14.0.0
+    - @osati-ai/wonder-blocks-testing-core@2.0.0
+    - @osati-ai/wonder-blocks-core@8.0.0
+    - @osati-ai/wonder-blocks-data@14.0.0
 
 ## 13.0.0
 
@@ -174,7 +174,7 @@
 ### Patch Changes
 
 - Updated dependencies [16565a85]
-    - @khanacademy/wonder-blocks-testing-core@1.1.0
+    - @osati-ai/wonder-blocks-testing-core@1.1.0
 
 ## 12.0.1
 
@@ -182,9 +182,9 @@
 
 - 02a1b298: Make sure we don't package tsconfig and tsbuildinfo files
 - Updated dependencies [02a1b298]
-    - @khanacademy/wonder-blocks-core@7.0.1
-    - @khanacademy/wonder-blocks-data@13.0.12
-    - @khanacademy/wonder-blocks-testing-core@1.0.2
+    - @osati-ai/wonder-blocks-core@7.0.1
+    - @osati-ai/wonder-blocks-data@13.0.12
+    - @osati-ai/wonder-blocks-testing-core@1.0.2
 
 ## 12.0.0
 
@@ -195,8 +195,8 @@
 ### Patch Changes
 
 - Updated dependencies [07f7f407]
-    - @khanacademy/wonder-blocks-core@7.0.0
-    - @khanacademy/wonder-blocks-data@13.0.11
+    - @osati-ai/wonder-blocks-core@7.0.0
+    - @osati-ai/wonder-blocks-data@13.0.11
 
 ## 11.0.1
 
@@ -205,9 +205,9 @@
 - 559e82d5: Update to build tooling, generating smaller output
 - Updated dependencies [c954464a]
 - Updated dependencies [559e82d5]
-    - @khanacademy/wonder-blocks-testing-core@1.0.1
-    - @khanacademy/wonder-blocks-core@6.4.3
-    - @khanacademy/wonder-blocks-data@13.0.10
+    - @osati-ai/wonder-blocks-testing-core@1.0.1
+    - @osati-ai/wonder-blocks-core@6.4.3
+    - @osati-ai/wonder-blocks-data@13.0.10
 
 ## 11.0.0
 
@@ -222,17 +222,17 @@
 
 - Updated dependencies [2a6c85df]
 - Updated dependencies [eab37b8b]
-    - @khanacademy/wonder-blocks-testing-core@1.0.0
-    - @khanacademy/wonder-blocks-core@6.4.2
-    - @khanacademy/wonder-blocks-data@13.0.9
+    - @osati-ai/wonder-blocks-testing-core@1.0.0
+    - @osati-ai/wonder-blocks-core@6.4.2
+    - @osati-ai/wonder-blocks-data@13.0.9
 
 ## 10.1.1
 
 ### Patch Changes
 
 - Updated dependencies [5dfac06e]
-    - @khanacademy/wonder-blocks-core@6.4.1
-    - @khanacademy/wonder-blocks-data@13.0.8
+    - @osati-ai/wonder-blocks-core@6.4.1
+    - @osati-ai/wonder-blocks-data@13.0.8
 
 ## 10.1.0
 
@@ -243,16 +243,16 @@
 ### Patch Changes
 
 - Updated dependencies [58075352]
-    - @khanacademy/wonder-blocks-core@6.4.0
-    - @khanacademy/wonder-blocks-data@13.0.7
+    - @osati-ai/wonder-blocks-core@6.4.0
+    - @osati-ai/wonder-blocks-data@13.0.7
 
 ## 10.0.1
 
 ### Patch Changes
 
 - Updated dependencies [6df21f71]
-    - @khanacademy/wonder-blocks-core@6.3.1
-    - @khanacademy/wonder-blocks-data@13.0.6
+    - @osati-ai/wonder-blocks-core@6.3.1
+    - @osati-ai/wonder-blocks-data@13.0.6
 
 ## 10.0.0
 
@@ -265,24 +265,24 @@
 ### Patch Changes
 
 - Updated dependencies [7055ca94]
-    - @khanacademy/wonder-blocks-core@6.3.0
-    - @khanacademy/wonder-blocks-data@13.0.5
+    - @osati-ai/wonder-blocks-core@6.3.0
+    - @osati-ai/wonder-blocks-data@13.0.5
 
 ## 9.3.4
 
 ### Patch Changes
 
 - Updated dependencies [4b97b9a2]
-    - @khanacademy/wonder-blocks-core@6.2.0
-    - @khanacademy/wonder-blocks-data@13.0.4
+    - @osati-ai/wonder-blocks-core@6.2.0
+    - @osati-ai/wonder-blocks-data@13.0.4
 
 ## 9.3.3
 
 ### Patch Changes
 
 - Updated dependencies [2871f0a9]
-    - @khanacademy/wonder-blocks-core@6.1.1
-    - @khanacademy/wonder-blocks-data@13.0.3
+    - @osati-ai/wonder-blocks-core@6.1.1
+    - @osati-ai/wonder-blocks-data@13.0.3
 
 ## 9.3.2
 
@@ -290,8 +290,8 @@
 
 - Updated dependencies [efb59c29]
 - Updated dependencies [8bc40ed2]
-    - @khanacademy/wonder-blocks-core@6.1.0
-    - @khanacademy/wonder-blocks-data@13.0.2
+    - @osati-ai/wonder-blocks-core@6.1.0
+    - @osati-ai/wonder-blocks-data@13.0.2
 
 ## 9.3.1
 
@@ -315,8 +315,8 @@
 
 - 76883b4e: Output the adapter name with the Adapter component
 - Updated dependencies [f19da46e]
-    - @khanacademy/wonder-blocks-core@6.0.2
-    - @khanacademy/wonder-blocks-data@13.0.1
+    - @osati-ai/wonder-blocks-core@6.0.2
+    - @osati-ai/wonder-blocks-data@13.0.1
 
 ## 9.1.0
 
@@ -333,7 +333,7 @@
 ### Patch Changes
 
 - Updated dependencies [65c02cff]
-    - @khanacademy/wonder-blocks-data@13.0.0
+    - @osati-ai/wonder-blocks-data@13.0.0
 
 ## 8.0.21
 
@@ -342,44 +342,44 @@
 - 674a1e5c: We're no longer building flow types
 - Updated dependencies [674a1e5c]
 - Updated dependencies [674a1e5c]
-    - @khanacademy/wonder-blocks-data@12.0.0
+    - @osati-ai/wonder-blocks-data@12.0.0
 
 ## 8.0.20
 
 ### Patch Changes
 
-- @khanacademy/wonder-blocks-data@11.0.16
+- @osati-ai/wonder-blocks-data@11.0.16
 
 ## 8.0.19
 
 ### Patch Changes
 
-- @khanacademy/wonder-blocks-data@11.0.15
+- @osati-ai/wonder-blocks-data@11.0.15
 
 ## 8.0.18
 
 ### Patch Changes
 
-- @khanacademy/wonder-blocks-data@11.0.14
+- @osati-ai/wonder-blocks-data@11.0.14
 
 ## 8.0.17
 
 ### Patch Changes
 
-- @khanacademy/wonder-blocks-data@11.0.13
+- @osati-ai/wonder-blocks-data@11.0.13
 
 ## 8.0.16
 
 ### Patch Changes
 
-- @khanacademy/wonder-blocks-data@11.0.12
+- @osati-ai/wonder-blocks-data@11.0.12
 
 ## 8.0.15
 
 ### Patch Changes
 
 - Updated dependencies [5a1ea891]
-    - @khanacademy/wonder-blocks-data@11.0.11
+    - @osati-ai/wonder-blocks-data@11.0.11
 
 ## 8.0.14
 
@@ -392,7 +392,7 @@
 ### Patch Changes
 
 - 19ab0408: Update flowgen to convert React.ForwardRefExoticComponent<> and React.FowardedRef<> properly
-    - @khanacademy/wonder-blocks-data@11.0.10
+    - @osati-ai/wonder-blocks-data@11.0.10
 
 ## 8.0.12
 
@@ -400,7 +400,7 @@
 
 - a6164ed0: Don't use React.FC<> for functional components
 - Updated dependencies [a6164ed0]
-    - @khanacademy/wonder-blocks-data@11.0.9
+    - @osati-ai/wonder-blocks-data@11.0.9
 
 ## 8.0.11
 
@@ -424,13 +424,13 @@
 
 ### Patch Changes
 
-- @khanacademy/wonder-blocks-data@11.0.8
+- @osati-ai/wonder-blocks-data@11.0.8
 
 ## 8.0.7
 
 ### Patch Changes
 
-- @khanacademy/wonder-blocks-data@11.0.7
+- @osati-ai/wonder-blocks-data@11.0.7
 
 ## 8.0.6
 
@@ -438,33 +438,33 @@
 
 - c20f48f3: Don't transpile classes when building bundles
 - Updated dependencies [c20f48f3]
-    - @khanacademy/wonder-blocks-data@11.0.6
+    - @osati-ai/wonder-blocks-data@11.0.6
 
 ## 8.0.5
 
 ### Patch Changes
 
 - Updated dependencies [43155769]
-    - @khanacademy/wonder-blocks-data@11.0.5
+    - @osati-ai/wonder-blocks-data@11.0.5
 
 ## 8.0.4
 
 ### Patch Changes
 
 - Updated dependencies [bedcbcf8]
-    - @khanacademy/wonder-blocks-data@11.0.4
+    - @osati-ai/wonder-blocks-data@11.0.4
 
 ## 8.0.3
 
 ### Patch Changes
 
-- @khanacademy/wonder-blocks-data@11.0.3
+- @osati-ai/wonder-blocks-data@11.0.3
 
 ## 8.0.2
 
 ### Patch Changes
 
-- @khanacademy/wonder-blocks-data@11.0.2
+- @osati-ai/wonder-blocks-data@11.0.2
 
 ## 8.0.1
 
@@ -473,7 +473,7 @@
 - d4c2b18c: Fix a variety of issues with Flow types generated by flowgen
 - Updated dependencies [ccb6fe00]
 - Updated dependencies [d4c2b18c]
-    - @khanacademy/wonder-blocks-data@11.0.1
+    - @osati-ai/wonder-blocks-data@11.0.1
 
 ## 8.0.0
 
@@ -484,7 +484,7 @@
 ### Patch Changes
 
 - Updated dependencies [1ca4d7e3]
-    - @khanacademy/wonder-blocks-data@11.0.0
+    - @osati-ai/wonder-blocks-data@11.0.0
 
 ## 7.1.13
 
@@ -492,13 +492,13 @@
 
 - b5ba5568: Ensure that flow lib defs use React.ElementConfig<> isntead of JSX.LibraryManagedAttributes<>
 - Updated dependencies [b5ba5568]
-    - @khanacademy/wonder-blocks-data@10.1.3
+    - @osati-ai/wonder-blocks-data@10.1.3
 
 ## 7.1.12
 
 ### Patch Changes
 
-- @khanacademy/wonder-blocks-data@10.1.2
+- @osati-ai/wonder-blocks-data@10.1.2
 
 ## 7.1.11
 
@@ -523,7 +523,7 @@
 - Updated dependencies [2983c05b]
 - Updated dependencies [77ff6a66]
 - Updated dependencies [ec8d4b7f]
-    - @khanacademy/wonder-blocks-data@10.1.1
+    - @osati-ai/wonder-blocks-data@10.1.1
 
 ## 7.1.10
 
@@ -534,7 +534,7 @@
 - Updated dependencies [91cb727c]
 - Updated dependencies [91cb727c]
 - Updated dependencies [91cb727c]
-    - @khanacademy/wonder-blocks-data@10.1.0
+    - @osati-ai/wonder-blocks-data@10.1.0
 
 ## 7.1.9
 
@@ -542,58 +542,58 @@
 
 - 1a5624d4: Update wonder-stuff dependencies to use newly published packages after migrating wonder-stuff to TypeScript
 - Updated dependencies [1a5624d4]
-    - @khanacademy/wonder-blocks-data@10.0.5
+    - @osati-ai/wonder-blocks-data@10.0.5
 
 ## 7.1.8
 
 ### Patch Changes
 
-- @khanacademy/wonder-blocks-data@10.0.4
+- @osati-ai/wonder-blocks-data@10.0.4
 
 ## 7.1.7
 
 ### Patch Changes
 
-- @khanacademy/wonder-blocks-data@10.0.3
+- @osati-ai/wonder-blocks-data@10.0.3
 
 ## 7.1.6
 
 ### Patch Changes
 
-- @khanacademy/wonder-blocks-data@10.0.2
+- @osati-ai/wonder-blocks-data@10.0.2
 
 ## 7.1.5
 
 ### Patch Changes
 
-- @khanacademy/wonder-blocks-data@10.0.1
+- @osati-ai/wonder-blocks-data@10.0.1
 
 ## 7.1.4
 
 ### Patch Changes
 
 - Updated dependencies [5a3ec7f9]
-    - @khanacademy/wonder-blocks-data@10.0.0
+    - @osati-ai/wonder-blocks-data@10.0.0
 
 ## 7.1.3
 
 ### Patch Changes
 
-- @khanacademy/wonder-blocks-data@9.1.2
+- @osati-ai/wonder-blocks-data@9.1.2
 
 ## 7.1.2
 
 ### Patch Changes
 
 - Updated dependencies [eb59ce34]
-    - @khanacademy/wonder-blocks-data@9.1.1
+    - @osati-ai/wonder-blocks-data@9.1.1
 
 ## 7.1.1
 
 ### Patch Changes
 
 - Updated dependencies [944c3071]
-    - @khanacademy/wonder-blocks-data@9.1.0
+    - @osati-ai/wonder-blocks-data@9.1.0
 
 ## 7.1.0
 
@@ -611,21 +611,21 @@
 
 - Updated dependencies [778f8e43]
 - Updated dependencies [778f8e43]
-    - @khanacademy/wonder-blocks-data@9.0.0
+    - @osati-ai/wonder-blocks-data@9.0.0
 
 ## 7.0.4
 
 ### Patch Changes
 
 - Updated dependencies [08238b89]
-    - @khanacademy/wonder-blocks-data@8.0.5
+    - @osati-ai/wonder-blocks-data@8.0.5
 
 ## 7.0.3
 
 ### Patch Changes
 
 - Updated dependencies [dc2e00f4]
-    - @khanacademy/wonder-blocks-data@8.0.4
+    - @osati-ai/wonder-blocks-data@8.0.4
 
 ## 7.0.2
 
@@ -663,7 +663,7 @@
 
 - Updated dependencies [5f4a4297]
 - Updated dependencies [2b96fd59]
-    - @khanacademy/wonder-blocks-data@8.0.3
+    - @osati-ai/wonder-blocks-data@8.0.3
 
 ## 5.0.1
 
@@ -683,14 +683,14 @@
 ### Patch Changes
 
 - Updated dependencies [580141ed]
-    - @khanacademy/wonder-blocks-data@8.0.2
+    - @osati-ai/wonder-blocks-data@8.0.2
 
 ## 4.0.3
 
 ### Patch Changes
 
 - Updated dependencies [e5fa4d9e]
-    - @khanacademy/wonder-blocks-data@8.0.1
+    - @osati-ai/wonder-blocks-data@8.0.1
 
 ## 4.0.2
 
@@ -705,13 +705,13 @@
 - Updated dependencies [75c10036]
 - Updated dependencies [a85f2f3a]
 - Updated dependencies [0720470e]
-    - @khanacademy/wonder-blocks-data@8.0.0
+    - @osati-ai/wonder-blocks-data@8.0.0
 
 ## 4.0.1
 
 ### Patch Changes
 
-- @khanacademy/wonder-blocks-data@7.0.1
+- @osati-ai/wonder-blocks-data@7.0.1
 
 ## 4.0.0
 
@@ -740,14 +740,14 @@
 ### Patch Changes
 
 - Updated dependencies [34407c4a]
-    - @khanacademy/wonder-blocks-data@7.0.0
+    - @osati-ai/wonder-blocks-data@7.0.0
 
 ## 2.0.7
 
 ### Patch Changes
 
 - Updated dependencies [5ad01891]
-    - @khanacademy/wonder-blocks-data@6.0.1
+    - @osati-ai/wonder-blocks-data@6.0.1
 
 ## 2.0.6
 
@@ -759,21 +759,21 @@
 - Updated dependencies [c91f3959]
 - Updated dependencies [5d614ed4]
 - Updated dependencies [753220a4]
-    - @khanacademy/wonder-blocks-data@6.0.0
+    - @osati-ai/wonder-blocks-data@6.0.0
 
 ## 2.0.5
 
 ### Patch Changes
 
 - Updated dependencies [c9922b34]
-    - @khanacademy/wonder-blocks-data@5.0.1
+    - @osati-ai/wonder-blocks-data@5.0.1
 
 ## 2.0.4
 
 ### Patch Changes
 
 - Updated dependencies [5b5f85ac]
-    - @khanacademy/wonder-blocks-data@5.0.0
+    - @osati-ai/wonder-blocks-data@5.0.0
 
 ## 2.0.3
 
@@ -782,14 +782,14 @@
 - Updated dependencies [7c9dd09b]
 - Updated dependencies [febc7309]
 - Updated dependencies [bffc345e]
-    - @khanacademy/wonder-blocks-data@4.0.0
+    - @osati-ai/wonder-blocks-data@4.0.0
 
 ## 2.0.2
 
 ### Patch Changes
 
 - Updated dependencies [6973afa2]
-    - @khanacademy/wonder-blocks-data@3.2.0
+    - @osati-ai/wonder-blocks-data@3.2.0
 
 ## 2.0.1
 
@@ -797,7 +797,7 @@
 
 - 9931ae6b: Simplify GQL types
 - Updated dependencies [9931ae6b]
-    - @khanacademy/wonder-blocks-data@3.1.3
+    - @osati-ai/wonder-blocks-data@3.1.3
 
 ## 2.0.0
 
@@ -807,7 +807,7 @@
 
 ### Patch Changes
 
-- @khanacademy/wonder-blocks-data@3.1.2
+- @osati-ai/wonder-blocks-data@3.1.2
 
 ## 1.0.0
 
@@ -818,7 +818,7 @@
 ### Patch Changes
 
 - Updated dependencies [4ff59815]
-    - @khanacademy/wonder-blocks-data@3.1.1
+    - @osati-ai/wonder-blocks-data@3.1.1
 
 ## 0.0.2
 

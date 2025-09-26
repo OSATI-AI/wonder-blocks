@@ -2,15 +2,15 @@ import * as React from "react";
 import type {StoryObj} from "@storybook/react";
 import ComponentInfo from "../components/component-info";
 import packageConfig from "../../packages/wonder-blocks-badge/package.json";
-import {Badge} from "@khanacademy/wonder-blocks-badge";
-import {Icon, PhosphorIcon} from "@khanacademy/wonder-blocks-icon";
+import {Badge} from "@osati-ai/wonder-blocks-badge";
+import {Icon, PhosphorIcon} from "@osati-ai/wonder-blocks-icon";
 import singleColoredIcon from "../components/single-colored-icon.svg";
-import {PropsFor, View} from "@khanacademy/wonder-blocks-core";
-import {font, semanticColor, sizing} from "@khanacademy/wonder-blocks-tokens";
-import {HeadingLarge} from "@khanacademy/wonder-blocks-typography";
+import {PropsFor, View} from "@osati-ai/wonder-blocks-core";
+import {font, semanticColor, sizing} from "@osati-ai/wonder-blocks-tokens";
+import {HeadingLarge} from "@osati-ai/wonder-blocks-typography";
 import badgeArgtypes, {iconArgType} from "./badge.argtypes";
 import {multiColoredIcon} from "../components/icons-for-testing";
-import Tooltip from "@khanacademy/wonder-blocks-tooltip";
+import Tooltip from "@osati-ai/wonder-blocks-tooltip";
 import {themeModes} from "../../.storybook/modes";
 
 export default {

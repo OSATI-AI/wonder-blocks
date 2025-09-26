@@ -2,10 +2,10 @@ import * as React from "react";
 import {StyleSheet} from "aphrodite";
 import type {Meta, StoryObj} from "@storybook/react";
 
-import {View} from "@khanacademy/wonder-blocks-core";
-import {BodyText} from "@khanacademy/wonder-blocks-typography";
-import {Checkbox, CheckboxGroup, Choice} from "@khanacademy/wonder-blocks-form";
-import {sizing, spacing, font} from "@khanacademy/wonder-blocks-tokens";
+import {View} from "@osati-ai/wonder-blocks-core";
+import {BodyText} from "@osati-ai/wonder-blocks-typography";
+import {Checkbox, CheckboxGroup, Choice} from "@osati-ai/wonder-blocks-form";
+import {sizing, spacing, font} from "@osati-ai/wonder-blocks-tokens";
 
 import packageConfig from "../../packages/wonder-blocks-form/package.json";
 import ComponentInfo from "../components/component-info";

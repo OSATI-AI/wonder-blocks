@@ -7,11 +7,12 @@ import {
     flip,
     shift,
     size,
+    Boundary,
 } from "@floating-ui/react";
 
-import {maybeGetPortalMountedModalHostElement} from "@khanacademy/wonder-blocks-modal";
+import {maybeGetPortalMountedModalHostElement} from "@osati-ai/wonder-blocks-modal";
 
-import type {StyleType} from "@khanacademy/wonder-blocks-core";
+import type {StyleType} from "@osati-ai/wonder-blocks-core";
 import {DROPDOWN_ITEM_HEIGHT} from "../util/constants";
 
 type Props = {
@@ -22,7 +23,7 @@ type Props = {
     /**
      * The reference element used to position the popper.
      */
-    referenceElement?: HTMLElement;
+    referenceElement?: HTMLElement | null;
     /**
      * Whether this menu should be left-aligned or right-aligned with the
      * reference component. Defaults to left-aligned.
@@ -52,7 +53,7 @@ const DropdownPopper = function ({
 }: Props): React.ReactElement {
     // Validate that referenceElement is a real DOM element, not a React component instance
     const isValidElement = referenceElement && referenceElement instanceof Element;
-    
+
     const {refs, floatingStyles, placement, middlewareData} = useFloating({
         placement: alignment === "left" ? "bottom-start" : "bottom-end",
         elements: {
@@ -63,13 +64,14 @@ const DropdownPopper = function ({
         middleware: [
             offset(0),
             flip({
-                altAxis: true,
+                crossAxis: "alignment",
+                fallbackPlacements: ["bottom-start", "bottom-end"],
+                fallbackStrategy: "bestFit",
                 // Allows to overlap the popper in case there's no more vertical
                 // room in the viewport.
-                boundary: 'viewport' as const,
+                boundary: 'viewport' as Boundary,
                 // Also needed to make sure the Popper will be displayed correctly
                 // in different contexts (e.g inside a Modal)
-                crossAxis: false,
             }),
             shift(),
             // Replace maxHeightModifier with size middleware
@@ -77,7 +79,7 @@ const DropdownPopper = function ({
                 apply({availableHeight, elements}) {
                     const padding = DROPDOWN_ITEM_HEIGHT;
                     const maxHeight = availableHeight - padding;
-                    
+
                     if (elements.floating) {
                         Object.assign(elements.floating.style, {
                             maxHeight: `${maxHeight}px`,
@@ -90,13 +92,13 @@ const DropdownPopper = function ({
             }),
         ],
     });
-    
+
     React.useEffect(() => {
         if (refs.floating.current && onPopperElement) {
             onPopperElement(refs.floating.current);
         }
     }, [refs.floating.current, onPopperElement]);
-    
+
     // If we are in a modal, we find where we should be portalling the menu by
     // using the helper function from the modal package on the opener element.
     // If we are not in a modal, we use body as the location to portal to.

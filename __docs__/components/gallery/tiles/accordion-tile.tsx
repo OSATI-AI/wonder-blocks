@@ -3,7 +3,7 @@ import * as React from "react";
 import {
     Accordion,
     AccordionSection,
-} from "@khanacademy/wonder-blocks-accordion";
+} from "@osati-ai/wonder-blocks-accordion";
 
 import ComponentTile from "../component-tile";
 import {CommonTileProps} from "../types";

@@ -9,9 +9,9 @@ import {
     StatusBadge,
     StreakBadge,
     DueBadge,
-} from "@khanacademy/wonder-blocks-badge";
+} from "@osati-ai/wonder-blocks-badge";
 import {IconMappings} from "../wonder-blocks-icon/phosphor-icon.argtypes";
-import {Icon, PhosphorIcon} from "@khanacademy/wonder-blocks-icon";
+import {Icon, PhosphorIcon} from "@osati-ai/wonder-blocks-icon";
 import {
     commonStates,
     defaultPseudoStates,
@@ -22,12 +22,12 @@ import {
     longText,
     longTextWithNoWordBreak,
 } from "../components/text-for-testing";
-import {View} from "@khanacademy/wonder-blocks-core";
-import {font, semanticColor, sizing} from "@khanacademy/wonder-blocks-tokens";
-import {Heading, HeadingLarge} from "@khanacademy/wonder-blocks-typography";
+import {View} from "@osati-ai/wonder-blocks-core";
+import {font, semanticColor, sizing} from "@osati-ai/wonder-blocks-tokens";
+import {Heading, HeadingLarge} from "@osati-ai/wonder-blocks-typography";
 import singleColoredIcon from "../components/single-colored-icon.svg";
 import {multiColoredIcon} from "../components/icons-for-testing";
-import Tooltip from "@khanacademy/wonder-blocks-tooltip";
+import Tooltip from "@osati-ai/wonder-blocks-tooltip";
 import {themeModes} from "../../.storybook/modes";
 
 /**

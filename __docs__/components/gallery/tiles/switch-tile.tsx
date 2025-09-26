@@ -1,7 +1,7 @@
 import * as React from "react";
 
-import {View} from "@khanacademy/wonder-blocks-core";
-import Switch from "@khanacademy/wonder-blocks-switch";
+import {View} from "@osati-ai/wonder-blocks-core";
+import Switch from "@osati-ai/wonder-blocks-switch";
 
 import ComponentTile from "../component-tile";
 import {styles} from "../styles";

@@ -7,9 +7,7 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
 
-import type {PopperChildrenProps} from "react-popper";
-
-type PopperRef = PopperChildrenProps["ref"];
+type PopperRef = React.RefObject<HTMLElement | null>;
 type TargetFn = (target?: HTMLElement | null) => void;
 
 export default class RefTracker {
@@ -41,6 +39,7 @@ export default class RefTracker {
 
             this._targetFn = targetFn || undefined;
             if (this._lastRef && this._targetFn) {
+                // @ts-expect-error [FEI-5019] - TS2345 - Argument of type 'HTMLElement | null' is not assignable to parameter of type 'HTMLElement | null | undefined'.
                 this._targetFn(this._lastRef);
             }
         }

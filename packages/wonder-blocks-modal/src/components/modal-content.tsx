@@ -1,7 +1,7 @@
 import * as React from "react";
-import {View} from "@khanacademy/wonder-blocks-core";
+import {View} from "@osati-ai/wonder-blocks-core";
 
-import type {StyleType} from "@khanacademy/wonder-blocks-core";
+import type {StyleType} from "@osati-ai/wonder-blocks-core";
 import {StyleSheet} from "aphrodite";
 import theme from "../theme";
 

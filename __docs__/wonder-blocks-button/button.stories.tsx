@@ -11,17 +11,17 @@ import pencilSimple from "@phosphor-icons/core/regular/pencil-simple.svg";
 import pencilSimpleBold from "@phosphor-icons/core/bold/pencil-simple-bold.svg";
 import plus from "@phosphor-icons/core/regular/plus.svg";
 
-import {View} from "@khanacademy/wonder-blocks-core";
-import {Strut} from "@khanacademy/wonder-blocks-layout";
-import {color, spacing} from "@khanacademy/wonder-blocks-tokens";
-import {LabelMedium, LabelLarge} from "@khanacademy/wonder-blocks-typography";
+import {View} from "@osati-ai/wonder-blocks-core";
+import {Strut} from "@osati-ai/wonder-blocks-layout";
+import {color, spacing} from "@osati-ai/wonder-blocks-tokens";
+import {LabelMedium, LabelLarge} from "@osati-ai/wonder-blocks-typography";
 
-import Button from "@khanacademy/wonder-blocks-button";
+import Button from "@osati-ai/wonder-blocks-button";
 import packageConfig from "../../packages/wonder-blocks-button/package.json";
 import ComponentInfo from "../components/component-info";
 
 import ButtonArgTypes from "./button.argtypes";
-import {LabeledField} from "@khanacademy/wonder-blocks-labeled-field";
+import {LabeledField} from "@osati-ai/wonder-blocks-labeled-field";
 
 export default {
     title: "Packages / Button / Button",

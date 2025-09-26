@@ -1,15 +1,15 @@
 import * as React from "react";
 import {StyleSheet} from "aphrodite";
 
-import {View} from "@khanacademy/wonder-blocks-core";
-import {TooltipTail} from "@khanacademy/wonder-blocks-tooltip";
-import * as tokens from "@khanacademy/wonder-blocks-tokens";
+import {View} from "@osati-ai/wonder-blocks-core";
+import {TooltipTail} from "@osati-ai/wonder-blocks-tooltip";
+import * as tokens from "@osati-ai/wonder-blocks-tokens";
 
-import type {AriaProps} from "@khanacademy/wonder-blocks-core";
+import type {AriaProps} from "@osati-ai/wonder-blocks-core";
 import type {
     Placement,
     FloatingElementProps,
-} from "@khanacademy/wonder-blocks-tooltip";
+} from "@osati-ai/wonder-blocks-tooltip";
 
 import PopoverContent from "./popover-content";
 import PopoverContentCore from "./popover-content-core";
@@ -117,7 +117,6 @@ export default class PopoverDialog extends React.Component<Props> {
                         color={color}
                         updateRef={updateTailRef}
                         placement={placement}
-                        offset={tailOffset}
                     />
                 </View>
             </React.Fragment>

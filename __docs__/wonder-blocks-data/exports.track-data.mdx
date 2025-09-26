@@ -1,5 +1,5 @@
 import {Meta} from "@storybook/blocks";
-import {TrackData} from "@khanacademy/wonder-blocks-data";
+import {TrackData} from "@osati-ai/wonder-blocks-data";
 
 <Meta
     title="Packages / Data / Exports / TrackData"
@@ -18,9 +18,9 @@ If used outside of server-side mode (as set using `Server.setServerSide`), this
 component will throw, as demonstrated below.
 
 ```jsx
-import {Body, BodyMonospace} from "@khanacademy/wonder-blocks-typography";
-import {Server, View} from "@khanacademy/wonder-blocks-core";
-import {TrackData} from "@khanacademy/wonder-blocks-data";
+import {Body, BodyMonospace} from "@osati-ai/wonder-blocks-typography";
+import {Server, View} from "@osati-ai/wonder-blocks-core";
+import {TrackData} from "@osati-ai/wonder-blocks-data";
 
 class ErrorBoundary extends React.Component {
     constructor(props) {
@@ -69,16 +69,16 @@ using the `fetchTrackedRequests` method. The data can then be used in an
 additional render cycle to render with that data.
 
 ```jsx
-import {Body, BodyMonospace} from "@khanacademy/wonder-blocks-typography";
-import {Strut} from "@khanacademy/wonder-blocks-layout";
-import {spacing} from "@khanacademy/wonder-blocks-tokens";
-import Button from "@khanacademy/wonder-blocks-button";
-import {Server, View} from "@khanacademy/wonder-blocks-core";
+import {Body, BodyMonospace} from "@osati-ai/wonder-blocks-typography";
+import {Strut} from "@osati-ai/wonder-blocks-layout";
+import {spacing} from "@osati-ai/wonder-blocks-tokens";
+import Button from "@osati-ai/wonder-blocks-button";
+import {Server, View} from "@osati-ai/wonder-blocks-core";
 import {
     Data,
     TrackData,
     fetchTrackedRequests,
-} from "@khanacademy/wonder-blocks-data";
+} from "@osati-ai/wonder-blocks-data";
 
 const myPretendHandler = () =>
     new Promise((resolve, reject) => setTimeout(() => resolve("DATA!"), 3000));

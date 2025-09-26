@@ -1,9 +1,9 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
 
-import {withActionScheduler} from "@khanacademy/wonder-blocks-timing";
-import type {WithActionSchedulerProps} from "@khanacademy/wonder-blocks-timing";
-import type {StyleType} from "@khanacademy/wonder-blocks-core";
+import {withActionScheduler} from "@osati-ai/wonder-blocks-timing";
+import type {WithActionSchedulerProps} from "@osati-ai/wonder-blocks-timing";
+import type {StyleType} from "@osati-ai/wonder-blocks-core";
 
 import FocusTrap from "./focus-trap";
 import DrawerBackdrop from "./drawer-backdrop";
@@ -378,8 +378,8 @@ function DrawerLauncherKeypressListener({onClose}: {onClose: () => unknown}) {
  * ### Usage
  *
  * ```jsx
- * import {DrawerLauncher, DrawerDialog} from "@khanacademy/wonder-blocks-modal";
- * import {BodyText} from "@khanacademy/wonder-blocks-typography";
+ * import {DrawerLauncher, DrawerDialog} from "@osati-ai/wonder-blocks-modal";
+ * import {BodyText} from "@osati-ai/wonder-blocks-typography";
  *
  * <DrawerLauncher
  *      onClose={handleClose}

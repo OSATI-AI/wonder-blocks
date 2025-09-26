@@ -2,11 +2,11 @@ import * as React from "react";
 import {StyleSheet} from "aphrodite";
 
 import type {Meta, StoryObj} from "@storybook/react";
-import {View} from "@khanacademy/wonder-blocks-core";
-import {color} from "@khanacademy/wonder-blocks-tokens";
-import Button from "@khanacademy/wonder-blocks-button";
+import {View} from "@osati-ai/wonder-blocks-core";
+import {color} from "@osati-ai/wonder-blocks-tokens";
+import Button from "@osati-ai/wonder-blocks-button";
 
-import {Spring, Strut} from "@khanacademy/wonder-blocks-layout";
+import {Spring, Strut} from "@osati-ai/wonder-blocks-layout";
 import packageConfig from "../../packages/wonder-blocks-layout/package.json";
 
 import ComponentInfo from "../components/component-info";

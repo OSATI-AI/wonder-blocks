@@ -1,6 +1,6 @@
 import * as React from "react";
 
-import {BodyText} from "@khanacademy/wonder-blocks-typography";
+import {BodyText} from "@osati-ai/wonder-blocks-typography";
 
 import CellCore from "./internal/cell-core";
 
@@ -17,8 +17,8 @@ import theme from "../theme";
  * ### Usage
  *
  * ```jsx
- * import {CompactCell} from "@khanacademy/wonder-blocks-cell";
- * import {PhosphorIcon} from "@khanacademy/wonder-blocks-icon";
+ * import {CompactCell} from "@osati-ai/wonder-blocks-cell";
+ * import {PhosphorIcon} from "@osati-ai/wonder-blocks-icon";
  * import caretRightIcon from "@phosphor-icons/core/regular/caret-right.svg";
  *
  * <CompactCell

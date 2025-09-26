@@ -1,8 +1,8 @@
 import * as React from "react";
 
-import type {AriaProps, StyleType} from "@khanacademy/wonder-blocks-core";
+import type {AriaProps, StyleType} from "@osati-ai/wonder-blocks-core";
 import xIcon from "@phosphor-icons/core/regular/x.svg";
-import IconButton from "@khanacademy/wonder-blocks-icon-button";
+import IconButton from "@osati-ai/wonder-blocks-icon-button";
 
 import PopoverContext from "./popover-context";
 

@@ -2,23 +2,23 @@ import * as React from "react";
 import {StyleSheet} from "aphrodite";
 import type {Meta, StoryObj} from "@storybook/react";
 
-import Button from "@khanacademy/wonder-blocks-button";
-import {addStyle, View} from "@khanacademy/wonder-blocks-core";
-import {ActionMenu, ActionItem} from "@khanacademy/wonder-blocks-dropdown";
+import Button from "@osati-ai/wonder-blocks-button";
+import {addStyle, View} from "@osati-ai/wonder-blocks-core";
+import {ActionMenu, ActionItem} from "@osati-ai/wonder-blocks-dropdown";
 import {
     LabeledTextField,
     RadioGroup,
     Choice,
-} from "@khanacademy/wonder-blocks-form";
-import {sizing} from "@khanacademy/wonder-blocks-tokens";
-import {BodyText, Heading} from "@khanacademy/wonder-blocks-typography";
+} from "@osati-ai/wonder-blocks-form";
+import {sizing} from "@osati-ai/wonder-blocks-tokens";
+import {BodyText, Heading} from "@osati-ai/wonder-blocks-typography";
 
 import {
     ModalDialog,
     ModalLauncher,
     ModalPanel,
     OnePaneDialog,
-} from "@khanacademy/wonder-blocks-modal";
+} from "@osati-ai/wonder-blocks-modal";
 import packageConfig from "../../packages/wonder-blocks-modal/package.json";
 
 import type {ModalElement} from "../../packages/wonder-blocks-modal/src/util/types";

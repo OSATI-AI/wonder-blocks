@@ -1,8 +1,8 @@
 import * as React from "react";
 import {StyleSheet} from "aphrodite";
 
-import {addStyle} from "@khanacademy/wonder-blocks-core";
-import type {AriaProps, StyleType} from "@khanacademy/wonder-blocks-core";
+import {addStyle} from "@osati-ai/wonder-blocks-core";
+import type {AriaProps, StyleType} from "@osati-ai/wonder-blocks-core";
 
 import AccordionSection from "./accordion-section";
 
@@ -91,7 +91,7 @@ const LANDMARK_PROLIFERATION_THRESHOLD = 6;
  * import {
  *      Accordion,
  *      AccordionSection
- * } from "@khanacademy/wonder-blocks-accordion";
+ * } from "@osati-ai/wonder-blocks-accordion";
  *
  * <Accordion>
  *   <AccordionSection header="First section">

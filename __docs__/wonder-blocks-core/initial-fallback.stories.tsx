@@ -1,8 +1,8 @@
 import * as React from "react";
 import type {Meta, StoryObj} from "@storybook/react";
-import {Body} from "@khanacademy/wonder-blocks-typography";
+import {Body} from "@osati-ai/wonder-blocks-typography";
 
-import {View, InitialFallback} from "@khanacademy/wonder-blocks-core";
+import {View, InitialFallback} from "@osati-ai/wonder-blocks-core";
 import packageConfig from "../../packages/wonder-blocks-core/package.json";
 
 import ComponentInfo from "../components/component-info";

@@ -1,8 +1,8 @@
 import * as React from "react";
 import {StyleSheet} from "aphrodite";
 
-import type {AriaProps} from "@khanacademy/wonder-blocks-core";
-import {addStyle} from "@khanacademy/wonder-blocks-core";
+import type {AriaProps} from "@osati-ai/wonder-blocks-core";
+import {addStyle} from "@osati-ai/wonder-blocks-core";
 import BreadcrumbsItem from "./breadcrumbs-item";
 
 type Props = AriaProps & {
@@ -48,7 +48,7 @@ const StyledOl = addStyle("ol");
  * import {
  *     Breadcrumbs,
  *     BreadcrumbsItem
- * } from "@khanacademy/wonder-blocks-breadcrumbs";
+ * } from "@osati-ai/wonder-blocks-breadcrumbs";
  *
  * <Breadcrumbs>
  *     <BreadcrumbsItem>

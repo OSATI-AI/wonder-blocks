@@ -2,14 +2,14 @@ import * as React from "react";
 import {StyleSheet} from "aphrodite";
 import type {StyleDeclaration} from "aphrodite";
 
-import {View} from "@khanacademy/wonder-blocks-core";
+import {View} from "@osati-ai/wonder-blocks-core";
 import {
     border,
     semanticColor,
     spacing,
-} from "@khanacademy/wonder-blocks-tokens";
-import {Body} from "@khanacademy/wonder-blocks-typography";
-import type {AriaProps, StyleType} from "@khanacademy/wonder-blocks-core";
+} from "@osati-ai/wonder-blocks-tokens";
+import {Body} from "@osati-ai/wonder-blocks-typography";
+import type {AriaProps, StyleType} from "@osati-ai/wonder-blocks-core";
 
 import {useId} from "react";
 import type {AccordionCornerKindType} from "./accordion";
@@ -139,7 +139,7 @@ type Props = AriaProps & {
  * import {
  *      Accordion,
  *      AccordionSection
- * } from "@khanacademy/wonder-blocks-accordion";
+ * } from "@osati-ai/wonder-blocks-accordion";
  *
  * // Within an Accordion
  * <Accordion>

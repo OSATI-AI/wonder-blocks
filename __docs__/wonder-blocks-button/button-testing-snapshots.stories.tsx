@@ -5,9 +5,9 @@ import type {Meta, StoryObj} from "@storybook/react";
 import paperPlaneIcon from "@phosphor-icons/core/fill/paper-plane-tilt-fill.svg";
 import {themeModes} from "../../.storybook/modes";
 
-import Button from "@khanacademy/wonder-blocks-button";
-import {View} from "@khanacademy/wonder-blocks-core";
-import {sizing} from "@khanacademy/wonder-blocks-tokens";
+import Button from "@osati-ai/wonder-blocks-button";
+import {View} from "@osati-ai/wonder-blocks-core";
+import {sizing} from "@osati-ai/wonder-blocks-tokens";
 import {AllVariants} from "../components/all-variants";
 import {defaultPseudoStates, StateSheet} from "../components/state-sheet";
 

@@ -1,10 +1,10 @@
 import type {ArgTypes} from "@storybook/react";
 import * as React from "react";
 
-import Button from "@khanacademy/wonder-blocks-button";
-import {Spring, Strut} from "@khanacademy/wonder-blocks-layout";
-import {spacing} from "@khanacademy/wonder-blocks-tokens";
-import {LabelLarge} from "@khanacademy/wonder-blocks-typography";
+import Button from "@osati-ai/wonder-blocks-button";
+import {Spring, Strut} from "@osati-ai/wonder-blocks-layout";
+import {spacing} from "@osati-ai/wonder-blocks-tokens";
+import {LabelLarge} from "@osati-ai/wonder-blocks-typography";
 
 type Mappings = Record<string, React.ReactNode>;
 

@@ -2,8 +2,8 @@ import * as React from "react";
 import {render, screen} from "@testing-library/react";
 import {userEvent} from "@testing-library/user-event";
 
-import Button from "@khanacademy/wonder-blocks-button";
-import {Choice, RadioGroup} from "@khanacademy/wonder-blocks-form";
+import Button from "@osati-ai/wonder-blocks-button";
+import {Choice, RadioGroup} from "@osati-ai/wonder-blocks-form";
 
 import FocusTrap from "../focus-trap";
 

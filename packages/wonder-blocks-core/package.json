@@ -1,5 +1,5 @@
 {
-  "name": "@khanacademy/wonder-blocks-core",
+  "name": "@osati-ai/wonder-blocks-core",
   "version": "12.4.0",
   "design": "v1",
   "publishConfig": {
@@ -23,8 +23,8 @@
     "react-router-dom-v5-compat": "catalog:"
   },
   "devDependencies": {
-    "@khanacademy/wb-dev-build-settings": "workspace:*",
-    "@khanacademy/wonder-blocks-testing-core": "workspace:*"
+    "@osati-ai/wb-dev-build-settings": "workspace:*",
+    "@osati-ai/wonder-blocks-testing-core": "workspace:*"
   },
   "author": "",
   "license": "MIT"

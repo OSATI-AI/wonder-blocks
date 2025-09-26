@@ -1,9 +1,9 @@
 import React from "react";
 import type {StrictArgs} from "@storybook/react";
 import {StyleSheet} from "aphrodite";
-import {StyleType, View} from "@khanacademy/wonder-blocks-core";
-import {LabelLarge} from "@khanacademy/wonder-blocks-typography";
-import {sizing} from "@khanacademy/wonder-blocks-tokens";
+import {StyleType, View} from "@osati-ai/wonder-blocks-core";
+import {LabelLarge} from "@osati-ai/wonder-blocks-typography";
+import {sizing} from "@osati-ai/wonder-blocks-tokens";
 
 type Props = {
     scenarios: {name: string; props: StrictArgs}[];

@@ -38,6 +38,7 @@ export default (element: React.ReactNode, expectedError: string) => {
     window.addEventListener("error", handleTopLevelError);
     try {
         // eslint-disable-next-line react/no-deprecated, import/no-deprecated
+        // @ts-ignore
         ReactDOM.render(<TestBoundary>{element}</TestBoundary>, div);
     } finally {
         window.removeEventListener("error", handleTopLevelError);

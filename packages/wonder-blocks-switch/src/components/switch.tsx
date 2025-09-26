@@ -1,11 +1,11 @@
 import * as React from "react";
 import {CSSProperties, StyleSheet} from "aphrodite";
 
-import {AriaProps, View, addStyle} from "@khanacademy/wonder-blocks-core";
-import {semanticColor} from "@khanacademy/wonder-blocks-tokens";
-import {PhosphorIcon} from "@khanacademy/wonder-blocks-icon";
+import {AriaProps, View, addStyle} from "@osati-ai/wonder-blocks-core";
+import {semanticColor} from "@osati-ai/wonder-blocks-tokens";
+import {PhosphorIcon} from "@osati-ai/wonder-blocks-icon";
 import {useId} from "react";
-import {focusStyles} from "@khanacademy/wonder-blocks-styles";
+import {focusStyles} from "@osati-ai/wonder-blocks-styles";
 import theme from "../theme/index";
 
 type Props = Pick<

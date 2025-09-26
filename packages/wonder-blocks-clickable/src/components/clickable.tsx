@@ -2,9 +2,9 @@ import * as React from "react";
 import {StyleSheet} from "aphrodite";
 import {Link, useInRouterContext} from "react-router-dom-v5-compat";
 
-import {addStyle} from "@khanacademy/wonder-blocks-core";
-import type {AriaProps, StyleType} from "@khanacademy/wonder-blocks-core";
-import {border, semanticColor} from "@khanacademy/wonder-blocks-tokens";
+import {addStyle} from "@osati-ai/wonder-blocks-core";
+import type {AriaProps, StyleType} from "@osati-ai/wonder-blocks-core";
+import {border, semanticColor} from "@osati-ai/wonder-blocks-tokens";
 
 import getClickableBehavior from "../util/get-clickable-behavior";
 import type {ClickableRole, ClickableState} from "./clickable-behavior";
@@ -130,6 +130,8 @@ type Props =
     | (CommonProps & {
           href: string;
 
+          ref?: React.RefObject<HTMLElement | null>;
+
           /**
            * Run async code in the background while client-side navigating. If the
            * browser does a full page load navigation, the callback promise must be
@@ -147,6 +149,8 @@ type Props =
       })
     | (CommonProps & {
           href?: string;
+
+          ref?: React.RefObject<HTMLElement | null>;
 
           /**
            * Run async code before navigating. If the promise returned rejects then
@@ -243,7 +247,7 @@ const Clickable = React.forwardRef(function Clickable(
                     role={props.role}
                     target={props.target || undefined}
                     aria-disabled={disabled ? "true" : "false"}
-                    ref={ref as React.Ref<typeof Link>}
+                    ref={ref as React.Ref<typeof Link> | undefined}
                 >
                     {props.children(clickableState)}
                 </StyledLink>
@@ -256,7 +260,7 @@ const Clickable = React.forwardRef(function Clickable(
                     role={props.role}
                     target={props.target || undefined}
                     aria-disabled={disabled ? "true" : "false"}
-                    ref={ref as React.Ref<HTMLAnchorElement>}
+                    ref={ref as React.Ref<HTMLAnchorElement> | undefined}
                 >
                     {props.children(clickableState)}
                 </StyledA>
@@ -267,7 +271,7 @@ const Clickable = React.forwardRef(function Clickable(
                     {...commonProps}
                     type="button"
                     aria-disabled={disabled}
-                    ref={ref as React.Ref<HTMLButtonElement>}
+                    ref={ref as React.Ref<HTMLButtonElement> | undefined}
                 >
                     {props.children(clickableState)}
                 </StyledButton>

@@ -1,0 +1,58 @@
+import * as React from "react";
+type Direction = "ltr" | "rtl";
+interface DirectionDetectionOptions {
+    /**
+     * Explicit direction to use, bypassing DOM detection.
+     * Useful when direction is known from external sources like RequestInfo.
+     */
+    direction?: Direction;
+    /**
+     * The default direction to use if no dir attribute is found.
+     * Defaults to "ltr".
+     */
+    defaultDirection?: Direction;
+}
+/**
+ * Hook for detecting the text direction (LTR/RTL). Supports both element-specific
+ * and document-level direction detection.
+ *
+ * This hook performs DOM queries on each render and does not use state or
+ * observers, making it stable and predictable.
+ *
+ * @param elementRef - Optional ref to the element to start searching from.
+ *                     If provided, searches up the DOM tree from this element.
+ *                     If not provided, uses document-level detection.
+ * @param options - Configuration options for direction detection
+ * @returns The detected direction ("ltr" or "rtl")
+ *
+ * @example
+ * ```tsx
+ * // Element-specific detection - searches up DOM tree from the element
+ * const MyComponent = () => {
+ *     const ref = React.useRef<HTMLDivElement>(null);
+ *     const direction = useDirectionDetection(ref);
+ *
+ *     return (
+ *         <div ref={ref}>
+ *             Direction is: {direction}
+ *         </div>
+ *     );
+ * };
+ *
+ * // Document-level detection - uses document.documentElement.dir
+ * const MyOtherComponent = () => {
+ *     const direction = useDirectionDetection();
+ *     return <div>Page direction is: {direction}</div>;
+ * };
+ *
+ * // With explicit direction (e.g., from RequestInfo)
+ * const MyRTLComponent = ({requestInfo}) => {
+ *     const direction = useDirectionDetection(undefined, {
+ *         direction: requestInfo.isRTL ? "rtl" : "ltr"
+ *     });
+ *     return <div>Explicit direction: {direction}</div>;
+ * };
+ * ```
+ */
+export declare function useDirectionDetection(elementRef?: React.RefObject<HTMLElement | null>, options?: DirectionDetectionOptions): Direction;
+export {};

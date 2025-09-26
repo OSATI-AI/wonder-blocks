@@ -1,4 +1,4 @@
-import {border, semanticColor, sizing} from "@khanacademy/wonder-blocks-tokens";
+import {border, semanticColor, sizing} from "@osati-ai/wonder-blocks-tokens";
 
 export default {
     choice: {

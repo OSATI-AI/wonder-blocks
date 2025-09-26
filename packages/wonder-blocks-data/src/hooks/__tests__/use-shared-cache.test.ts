@@ -1,5 +1,5 @@
 import {renderHook} from "@testing-library/react";
-import {hookHarness} from "@khanacademy/wonder-blocks-testing-core";
+import {hookHarness} from "@osati-ai/wonder-blocks-testing-core";
 
 import {useSharedCache, SharedCache} from "../use-shared-cache";
 

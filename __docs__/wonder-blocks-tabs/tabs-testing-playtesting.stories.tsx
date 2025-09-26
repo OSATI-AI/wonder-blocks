@@ -1,9 +1,9 @@
 import * as React from "react";
 import {Meta, StoryObj} from "@storybook/react";
-import {Tabs} from "@khanacademy/wonder-blocks-tabs";
+import {Tabs} from "@osati-ai/wonder-blocks-tabs";
 import {Placeholder} from "../components/placeholder";
 import {ControlledTabs} from "./tabs-utils";
-import {PropsFor} from "@khanacademy/wonder-blocks-core";
+import {PropsFor} from "@osati-ai/wonder-blocks-core";
 
 export default {
     title: "Packages / Tabs / Tabs / Testing / Tabs - Playtesting",

@@ -1,12 +1,12 @@
 import * as React from "react";
 import {StyleSheet} from "aphrodite";
 
-import {Id, addStyle} from "@khanacademy/wonder-blocks-core";
-import {border, semanticColor, sizing} from "@khanacademy/wonder-blocks-tokens";
-import {styles as typographyStyles} from "@khanacademy/wonder-blocks-typography";
+import {Id, addStyle} from "@osati-ai/wonder-blocks-core";
+import {border, semanticColor, sizing} from "@osati-ai/wonder-blocks-tokens";
+import {styles as typographyStyles} from "@osati-ai/wonder-blocks-typography";
 
-import type {StyleType, AriaProps} from "@khanacademy/wonder-blocks-core";
-import {focusStyles} from "@khanacademy/wonder-blocks-styles";
+import type {StyleType, AriaProps} from "@osati-ai/wonder-blocks-core";
+import {focusStyles} from "@osati-ai/wonder-blocks-styles";
 import {OmitConstrained} from "../util/types";
 import {useFieldValidation} from "../hooks/use-field-validation";
 import theme from "../theme";
@@ -314,13 +314,7 @@ const styles = StyleSheet.create({
     },
 });
 
-type ExportProps = OmitConstrained<
-    JSX.LibraryManagedAttributes<
-        typeof TextField,
-        React.ComponentProps<typeof TextField>
-    >,
-    "forwardedRef"
->;
+type ExportProps = OmitConstrained<Props, "forwardedRef">;
 
 /**
  * A TextField is an element used to accept a single line of text from the user.
@@ -335,7 +329,7 @@ type ExportProps = OmitConstrained<
  * ### Usage
  *
  * ```jsx
- * import {TextField} from "@khanacademy/wonder-blocks-form";
+ * import {TextField} from "@osati-ai/wonder-blocks-form";
  *
  * const [value, setValue] = React.useState("");
  *

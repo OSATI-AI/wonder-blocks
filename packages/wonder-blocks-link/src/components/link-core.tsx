@@ -2,23 +2,23 @@ import * as React from "react";
 import {StyleSheet} from "aphrodite";
 import {Link, useInRouterContext} from "react-router-dom-v5-compat";
 
-import {addStyle} from "@khanacademy/wonder-blocks-core";
+import {addStyle} from "@osati-ai/wonder-blocks-core";
 import {
     color,
     spacing,
     semanticColor,
     border,
     font,
-} from "@khanacademy/wonder-blocks-tokens";
-import {focusStyles} from "@khanacademy/wonder-blocks-styles";
-import {isClientSideUrl} from "@khanacademy/wonder-blocks-clickable";
-import {PhosphorIcon} from "@khanacademy/wonder-blocks-icon";
+} from "@osati-ai/wonder-blocks-tokens";
+import {focusStyles} from "@osati-ai/wonder-blocks-styles";
+import {isClientSideUrl} from "@osati-ai/wonder-blocks-clickable";
+import {PhosphorIcon} from "@osati-ai/wonder-blocks-icon";
 import externalLinkIcon from "@phosphor-icons/core/bold/arrow-square-out-bold.svg";
 
 import type {
     ChildrenProps,
     ClickableState,
-} from "@khanacademy/wonder-blocks-clickable";
+} from "@osati-ai/wonder-blocks-clickable";
 import type {StyleDeclaration} from "aphrodite";
 import type {SharedProps} from "./link";
 import theme from "../theme";

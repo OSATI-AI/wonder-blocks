@@ -1,10 +1,10 @@
 import * as React from "react";
 import type {Meta, StoryObj} from "@storybook/react";
 
-import {View} from "@khanacademy/wonder-blocks-core";
-import {BodyText} from "@khanacademy/wonder-blocks-typography";
+import {View} from "@osati-ai/wonder-blocks-core";
+import {BodyText} from "@osati-ai/wonder-blocks-typography";
 
-import {DrawerDialog, DrawerLauncher} from "@khanacademy/wonder-blocks-modal";
+import {DrawerDialog, DrawerLauncher} from "@osati-ai/wonder-blocks-modal";
 
 import type {ModalElement} from "../../packages/wonder-blocks-modal/src/util/types";
 

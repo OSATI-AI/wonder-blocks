@@ -1,8 +1,8 @@
 import * as React from "react";
 import {Meta, Story, ColorItem} from "@storybook/blocks";
-import {View} from "@khanacademy/wonder-blocks-core";
-import {PhosphorIcon} from "@khanacademy/wonder-blocks-icon";
-import {color, fade, font, spacing} from "@khanacademy/wonder-blocks-tokens";
+import {View} from "@osati-ai/wonder-blocks-core";
+import {PhosphorIcon} from "@osati-ai/wonder-blocks-icon";
+import {color, fade, font, spacing} from "@osati-ai/wonder-blocks-tokens";
 
 import equalsIcon from "@phosphor-icons/core/bold/equals-bold.svg";
 import plusIcon from "@phosphor-icons/core/bold/plus-bold.svg";
@@ -16,7 +16,7 @@ The `fade` function adjusts the alpha value of a color.
 ## Usage
 
 ```js
-import {fade} from "@khanacademy/wonder-blocks-tokens";
+import {fade} from "@osati-ai/wonder-blocks-tokens";
 
 fade(color: string, percentage: number): string;
 ```
@@ -35,7 +35,7 @@ color. The `fade` function takes a color and a percentage as arguments and
 returns a new color with the adjusted alpha value.
 
 ```typescript
-import {color, fade} from "@khanacademy/wonder-blocks-tokens";
+import {color, fade} from "@osati-ai/wonder-blocks-tokens";
 
 const fadedPurple64 = fade(color.purple, 0.64);
 const fadedGreen50 = fade(color.green, 0.5);

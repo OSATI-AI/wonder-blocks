@@ -2,16 +2,16 @@ import * as React from "react";
 import type {Meta, StoryObj} from "@storybook/react";
 
 import {StyleSheet} from "aphrodite";
-import {TextArea} from "@khanacademy/wonder-blocks-form";
+import {TextArea} from "@osati-ai/wonder-blocks-form";
 import packageConfig from "../../packages/wonder-blocks-form/package.json";
 
 import ComponentInfo from "../components/component-info";
-import {semanticColor, spacing} from "@khanacademy/wonder-blocks-tokens";
-import Button from "@khanacademy/wonder-blocks-button";
-import {LabelLarge} from "@khanacademy/wonder-blocks-typography";
-import {Strut} from "@khanacademy/wonder-blocks-layout";
-import {PropsFor, View} from "@khanacademy/wonder-blocks-core";
-import {LabeledField} from "@khanacademy/wonder-blocks-labeled-field";
+import {semanticColor, spacing} from "@osati-ai/wonder-blocks-tokens";
+import Button from "@osati-ai/wonder-blocks-button";
+import {LabelLarge} from "@osati-ai/wonder-blocks-typography";
+import {Strut} from "@osati-ai/wonder-blocks-layout";
+import {PropsFor, View} from "@osati-ai/wonder-blocks-core";
+import {LabeledField} from "@osati-ai/wonder-blocks-labeled-field";
 
 import TextAreaArgTypes from "./text-area.argtypes";
 import {validateEmail} from "./form-utilities";

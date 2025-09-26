@@ -1,6 +1,6 @@
 import {StyleSheet} from "aphrodite";
 import type {StyleDeclaration} from "aphrodite";
-import {font, breakpoint} from "@khanacademy/wonder-blocks-tokens";
+import {font, breakpoint} from "@osati-ai/wonder-blocks-tokens";
 
 const common = {
     display: "block",

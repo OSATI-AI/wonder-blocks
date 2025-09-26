@@ -12,22 +12,22 @@ import {
 } from "react-router-dom-v5-compat";
 import type {Meta, StoryObj} from "@storybook/react";
 
-import {View} from "@khanacademy/wonder-blocks-core";
-import {PhosphorIcon} from "@khanacademy/wonder-blocks-icon";
-import {Strut} from "@khanacademy/wonder-blocks-layout";
+import {View} from "@osati-ai/wonder-blocks-core";
+import {PhosphorIcon} from "@osati-ai/wonder-blocks-icon";
+import {Strut} from "@osati-ai/wonder-blocks-layout";
 import {
     border,
     semanticColor,
     sizing,
     spacing,
-} from "@khanacademy/wonder-blocks-tokens";
+} from "@osati-ai/wonder-blocks-tokens";
 import {
     Body,
     HeadingMedium,
     HeadingSmall,
     LabelLarge,
-} from "@khanacademy/wonder-blocks-typography";
-import Link from "@khanacademy/wonder-blocks-link";
+} from "@osati-ai/wonder-blocks-typography";
+import Link from "@osati-ai/wonder-blocks-link";
 import packageConfig from "../../packages/wonder-blocks-link/package.json";
 
 import ComponentInfo from "../components/component-info";

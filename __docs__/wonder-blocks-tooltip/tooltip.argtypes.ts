@@ -1,4 +1,4 @@
-import {color} from "@khanacademy/wonder-blocks-tokens";
+import {color} from "@osati-ai/wonder-blocks-tokens";
 
 export default {
     placement: {

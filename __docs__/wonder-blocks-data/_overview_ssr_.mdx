@@ -22,7 +22,7 @@ In order for the requests made through <a href="./?path=/docs/packages-data-expo
 First, Wonder Blocks Data has to be told to work in server-side mode:
 
 ```ts
-import {Server} from "@khanacademy/wonder-blocks-core";
+import {Server} from "@osati-ai/wonder-blocks-core";
 
 Server.setServerSide();
 ```
@@ -72,13 +72,13 @@ Once the rendered component no longer requires any further data, the cached resp
 A function for server-side rendering with Wonder Blocks Data could look something like this.
 
 ```tsx
-import {Server} from "@khanacademy/wonder-blocks-core";
+import {Server} from "@osati-ai/wonder-blocks-core";
 import {
     TrackData,
     hasTrackedRequestsToBeFetched,
     fetchTrackedRequests,
     SharedCache,
-} from "@khanacademy/wonder-blocks-data";
+} from "@osati-ai/wonder-blocks-data";
 
 // Don't forget to import your app!
 import App from "./App.js";
@@ -154,7 +154,7 @@ In the previous section, this was displayed as the `hydrate.js` script. Here is 
 
 ```tsx
 import {hydrate} from "react-dom";
-import {initializeHydrationCache} from "@khanacademy/wonder-blocks-data";
+import {initializeHydrationCache} from "@osati-ai/wonder-blocks-data";
 
 // Don't forget to import your app!
 import App from "./App.js";

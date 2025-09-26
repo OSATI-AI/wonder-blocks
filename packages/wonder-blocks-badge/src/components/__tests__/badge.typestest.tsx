@@ -1,5 +1,5 @@
 import * as React from "react";
-import {PhosphorIcon} from "@khanacademy/wonder-blocks-icon";
+import {PhosphorIcon} from "@osati-ai/wonder-blocks-icon";
 import cookie from "@phosphor-icons/core/regular/cookie.svg";
 import {Badge} from "../badge";
 import {GemBadge} from "../gem-badge";

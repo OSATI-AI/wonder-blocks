@@ -2,16 +2,16 @@ import * as React from "react";
 import type {StrictArgs} from "@storybook/react";
 
 import {StyleSheet} from "aphrodite";
-import {addStyle, StyleType, View} from "@khanacademy/wonder-blocks-core";
+import {addStyle, StyleType, View} from "@osati-ai/wonder-blocks-core";
 import {
     border,
     breakpoint,
     semanticColor,
     sizing,
     spacing,
-} from "@khanacademy/wonder-blocks-tokens";
+} from "@osati-ai/wonder-blocks-tokens";
 
-import {LabelLarge} from "@khanacademy/wonder-blocks-typography";
+import {LabelLarge} from "@osati-ai/wonder-blocks-typography";
 
 const StyledTable = addStyle("table");
 const StyledTh = addStyle("th");

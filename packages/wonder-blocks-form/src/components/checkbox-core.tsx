@@ -1,12 +1,12 @@
 import * as React from "react";
 import {StyleSheet} from "aphrodite";
 
-import {border} from "@khanacademy/wonder-blocks-tokens";
-import {addStyle, View} from "@khanacademy/wonder-blocks-core";
-import {PhosphorIcon} from "@khanacademy/wonder-blocks-icon";
+import {border} from "@osati-ai/wonder-blocks-tokens";
+import {addStyle, View} from "@osati-ai/wonder-blocks-core";
+import {PhosphorIcon} from "@osati-ai/wonder-blocks-icon";
 import checkIcon from "@phosphor-icons/core/bold/check-bold.svg";
 import minusIcon from "@phosphor-icons/core/bold/minus-bold.svg";
-import {focusStyles} from "@khanacademy/wonder-blocks-styles";
+import {focusStyles} from "@osati-ai/wonder-blocks-styles";
 import theme from "../theme/index";
 
 import type {ChoiceCoreProps, Checked} from "../util/types";
@@ -104,7 +104,7 @@ const CheckboxCore = React.forwardRef(function CheckboxCore(
                 <StyledInput
                     {...sharedProps}
                     ref={(node) => {
-                        // @ts-expect-error: current is not actually read-only
+                        // @ts-ignore: current is not actually read-only
                         innerRef.current = node;
                         if (typeof ref === "function") {
                             ref(node);

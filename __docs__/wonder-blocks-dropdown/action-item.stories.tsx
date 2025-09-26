@@ -1,16 +1,16 @@
 import {Meta} from "@storybook/react";
 import * as React from "react";
 import {StyleSheet} from "aphrodite";
-import {PropsFor, View} from "@khanacademy/wonder-blocks-core";
-import {ActionItem} from "@khanacademy/wonder-blocks-dropdown";
-import {PhosphorIcon} from "@khanacademy/wonder-blocks-icon";
-import {semanticColor, sizing} from "@khanacademy/wonder-blocks-tokens";
+import {PropsFor, View} from "@osati-ai/wonder-blocks-core";
+import {ActionItem} from "@osati-ai/wonder-blocks-dropdown";
+import {PhosphorIcon} from "@osati-ai/wonder-blocks-icon";
+import {semanticColor, sizing} from "@osati-ai/wonder-blocks-tokens";
 
 import ComponentInfo from "../components/component-info";
 import packageConfig from "../../packages/wonder-blocks-dropdown/package.json";
 import {IconMappings} from "../wonder-blocks-icon/phosphor-icon.argtypes";
 import actionItemArgtypes from "./action-item.argtypes";
-import {BodyText} from "@khanacademy/wonder-blocks-typography";
+import {BodyText} from "@osati-ai/wonder-blocks-typography";
 
 const defaultArgs = {
     label: "Action Item",
@@ -44,7 +44,7 @@ const styles = StyleSheet.create({
  * ### Usage
  *
  * ```tsx
- * import {ActionItem, ActionMenu} from "@khanacademy/wonder-blocks-dropdown";
+ * import {ActionItem, ActionMenu} from "@osati-ai/wonder-blocks-dropdown";
  *
  * <ActionMenu {...props}>
  *   <ActionItem label="Action Item" onClick={() => {}} />

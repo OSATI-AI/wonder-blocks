@@ -1,7 +1,7 @@
 import * as React from "react";
 
-import {View} from "@khanacademy/wonder-blocks-core";
-import Tooltip from "@khanacademy/wonder-blocks-tooltip";
+import {View} from "@osati-ai/wonder-blocks-core";
+import Tooltip from "@osati-ai/wonder-blocks-tooltip";
 
 import ComponentTile from "../component-tile";
 import {styles} from "../styles";

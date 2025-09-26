@@ -2,17 +2,17 @@ import * as React from "react";
 import {CSSProperties, StyleSheet} from "aphrodite";
 import {useInRouterContext} from "react-router-dom-v5-compat";
 
-import {View} from "@khanacademy/wonder-blocks-core";
-import {PhosphorIcon} from "@khanacademy/wonder-blocks-icon";
-import {focusStyles} from "@khanacademy/wonder-blocks-styles";
-import {border, semanticColor, sizing} from "@khanacademy/wonder-blocks-tokens";
+import {View} from "@osati-ai/wonder-blocks-core";
+import {PhosphorIcon} from "@osati-ai/wonder-blocks-icon";
+import {focusStyles} from "@osati-ai/wonder-blocks-styles";
+import {border, semanticColor, sizing} from "@osati-ai/wonder-blocks-tokens";
 
-import {BodyText} from "@khanacademy/wonder-blocks-typography";
+import {BodyText} from "@osati-ai/wonder-blocks-typography";
 import {
     ChildrenProps,
     ClickableState,
     getClickableBehavior,
-} from "@khanacademy/wonder-blocks-clickable";
+} from "@osati-ai/wonder-blocks-clickable";
 import type {
     ActivityButtonActionType,
     ButtonKind,
@@ -121,7 +121,7 @@ const ActivityButtonCore: React.ForwardRefExoticComponent<
  * ```tsx
  * import magnifyingGlassIcon from
  * "@phosphor-icons/core/regular/magnifying-glass.svg";
- * import {ActivityButton} from "@khanacademy/wonder-blocks-button";
+ * import {ActivityButton} from "@osati-ai/wonder-blocks-button";
  *
  * <ActivityButton
  *     startIcon={magnifyingGlassIcon}

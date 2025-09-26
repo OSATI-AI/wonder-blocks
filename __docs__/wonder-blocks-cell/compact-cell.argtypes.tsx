@@ -1,8 +1,8 @@
 import type {ArgTypes} from "@storybook/react";
 import * as React from "react";
-import {View} from "@khanacademy/wonder-blocks-core";
-import {PhosphorIcon} from "@khanacademy/wonder-blocks-icon";
-import {LabelSmall, LabelXSmall} from "@khanacademy/wonder-blocks-typography";
+import {View} from "@osati-ai/wonder-blocks-core";
+import {PhosphorIcon} from "@osati-ai/wonder-blocks-icon";
+import {LabelSmall, LabelXSmall} from "@osati-ai/wonder-blocks-typography";
 
 import {IconMappings} from "../wonder-blocks-icon/phosphor-icon.argtypes";
 

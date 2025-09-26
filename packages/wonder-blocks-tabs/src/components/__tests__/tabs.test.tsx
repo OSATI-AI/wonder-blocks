@@ -2,7 +2,7 @@
 import * as React from "react";
 import {render, screen, within} from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
-import {PropsFor} from "@khanacademy/wonder-blocks-core";
+import {PropsFor} from "@osati-ai/wonder-blocks-core";
 import {TabItem, Tabs} from "../tabs";
 import {Tab} from "../tab";
 
@@ -38,6 +38,7 @@ describe("Tabs", () => {
         );
 
         return (
+            // @ts-ignore
             <Tabs
                 {...props}
                 aria-label={tabsAriaLabel}
@@ -472,6 +473,7 @@ describe("Tabs", () => {
                                             key={tabProps.id}
                                             data-testid="tab-wrapper"
                                         >
+                                            {/* @ts-ignore */}
                                             <Tab {...tabProps}>Label</Tab>
                                         </div>
                                     ),

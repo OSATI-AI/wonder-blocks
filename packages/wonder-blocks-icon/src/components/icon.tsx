@@ -1,7 +1,7 @@
 import * as React from "react";
-import {addStyle, AriaProps, StyleType} from "@khanacademy/wonder-blocks-core";
+import {addStyle, AriaProps, StyleType} from "@osati-ai/wonder-blocks-core";
 import {CSSProperties, StyleSheet} from "aphrodite";
-import {sizing} from "@khanacademy/wonder-blocks-tokens";
+import {sizing} from "@osati-ai/wonder-blocks-tokens";
 import {IconSize} from "../types";
 
 type Props = AriaProps & {
@@ -69,6 +69,7 @@ const Icon = React.forwardRef(
             ...otherProps
         } = props;
         const childrenElement = React.cloneElement(children, {
+            // @ts-ignore
             style: {
                 // Make sure the children element takes up the width/height of
                 // the Icon component div

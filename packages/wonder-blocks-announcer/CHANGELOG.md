@@ -1,11 +1,11 @@
-# @khanacademy/wonder-blocks-announcer
+# @osati-ai/wonder-blocks-announcer
 
 ## 1.0.3
 
 ### Patch Changes
 
 - Updated dependencies [1334e74]
-    - @khanacademy/wonder-blocks-core@12.4.0
+    - @osati-ai/wonder-blocks-core@12.4.0
 
 ## 1.0.2
 
@@ -13,7 +13,7 @@
 
 - Updated dependencies [28fa0c0]
 - Updated dependencies [28fa0c0]
-    - @khanacademy/wonder-blocks-core@12.3.0
+    - @osati-ai/wonder-blocks-core@12.3.0
 
 ## 1.0.1
 

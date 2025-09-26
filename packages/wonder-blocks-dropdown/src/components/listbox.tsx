@@ -1,7 +1,7 @@
 import * as React from "react";
 import {StyleSheet} from "aphrodite";
-import {StyleType, View} from "@khanacademy/wonder-blocks-core";
-import {semanticColor} from "@khanacademy/wonder-blocks-tokens";
+import {StyleType, View} from "@osati-ai/wonder-blocks-core";
+import {semanticColor} from "@osati-ai/wonder-blocks-tokens";
 
 import {useId} from "react";
 import {useListbox} from "../hooks/use-listbox";
@@ -162,7 +162,7 @@ function StandaloneListbox(props: Props) {
  * ### Usage
  *
  * ```tsx
- * import {Listbox} from "@khanacademy/wonder-blocks-dropdown";
+ * import {Listbox} from "@osati-ai/wonder-blocks-dropdown";
  *
  * <Listbox>
  *  <OptionItem label="Apple" value="apple" />

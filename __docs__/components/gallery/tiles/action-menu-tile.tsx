@@ -1,11 +1,11 @@
 import * as React from "react";
 
-import {View} from "@khanacademy/wonder-blocks-core";
+import {View} from "@osati-ai/wonder-blocks-core";
 import {
     ActionItem,
     ActionMenu,
     SeparatorItem,
-} from "@khanacademy/wonder-blocks-dropdown";
+} from "@osati-ai/wonder-blocks-dropdown";
 
 import ComponentTile from "../component-tile";
 import {styles} from "../styles";

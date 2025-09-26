@@ -6,21 +6,21 @@ import planetIcon from "@phosphor-icons/core/regular/planet.svg";
 import {action} from "@storybook/addon-actions";
 import type {Meta, StoryObj} from "@storybook/react";
 
-import Button from "@khanacademy/wonder-blocks-button";
-import {border, semanticColor, sizing} from "@khanacademy/wonder-blocks-tokens";
-import {PropsFor, View} from "@khanacademy/wonder-blocks-core";
-import {TextField} from "@khanacademy/wonder-blocks-form";
-import {PhosphorIcon} from "@khanacademy/wonder-blocks-icon";
-import {OnePaneDialog, ModalLauncher} from "@khanacademy/wonder-blocks-modal";
-import Pill from "@khanacademy/wonder-blocks-pill";
-import {BodyText, Heading} from "@khanacademy/wonder-blocks-typography";
+import Button from "@osati-ai/wonder-blocks-button";
+import {border, semanticColor, sizing} from "@osati-ai/wonder-blocks-tokens";
+import {PropsFor, View} from "@osati-ai/wonder-blocks-core";
+import {TextField} from "@osati-ai/wonder-blocks-form";
+import {PhosphorIcon} from "@osati-ai/wonder-blocks-icon";
+import {OnePaneDialog, ModalLauncher} from "@osati-ai/wonder-blocks-modal";
+import Pill from "@osati-ai/wonder-blocks-pill";
+import {BodyText, Heading} from "@osati-ai/wonder-blocks-typography";
 import {
     SingleSelect,
     OptionItem,
     SeparatorItem,
-} from "@khanacademy/wonder-blocks-dropdown";
+} from "@osati-ai/wonder-blocks-dropdown";
 
-import type {SingleSelectLabelsValues} from "@khanacademy/wonder-blocks-dropdown";
+import type {SingleSelectLabelsValues} from "@osati-ai/wonder-blocks-dropdown";
 import packageConfig from "../../packages/wonder-blocks-dropdown/package.json";
 
 import ComponentInfo from "../components/component-info";
@@ -33,7 +33,7 @@ import {
     currencies,
 } from "./option-item-examples";
 import {OpenerProps} from "../../packages/wonder-blocks-dropdown/src/util/types";
-import {LabeledField} from "@khanacademy/wonder-blocks-labeled-field";
+import {LabeledField} from "@osati-ai/wonder-blocks-labeled-field";
 
 type StoryComponentType = StoryObj<typeof SingleSelect>;
 type SingleSelectArgs = Partial<typeof SingleSelect>;
@@ -63,7 +63,7 @@ type SingleSelectArgs = Partial<typeof SingleSelect>;
  * #### General usage
  *
  * ```tsx
- * import {OptionItem, SingleSelect} from "@khanacademy/wonder-blocks-dropdown";
+ * import {OptionItem, SingleSelect} from "@osati-ai/wonder-blocks-dropdown";
  *
  * const [selectedValue, setSelectedValue] = React.useState("");
  *

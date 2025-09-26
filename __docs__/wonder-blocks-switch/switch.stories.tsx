@@ -4,10 +4,10 @@ import {StyleSheet} from "aphrodite";
 import {expect, userEvent, within} from "@storybook/test";
 import magnifyingGlassIcon from "@phosphor-icons/core/bold/magnifying-glass-bold.svg";
 
-import Switch from "@khanacademy/wonder-blocks-switch";
-import {PropsFor, View} from "@khanacademy/wonder-blocks-core";
-import {PhosphorIcon} from "@khanacademy/wonder-blocks-icon";
-import * as tokens from "@khanacademy/wonder-blocks-tokens";
+import Switch from "@osati-ai/wonder-blocks-switch";
+import {PropsFor, View} from "@osati-ai/wonder-blocks-core";
+import {PhosphorIcon} from "@osati-ai/wonder-blocks-icon";
+import * as tokens from "@osati-ai/wonder-blocks-tokens";
 
 import packageConfig from "../../packages/wonder-blocks-switch/package.json";
 import ComponentInfo from "../components/component-info";
@@ -26,7 +26,7 @@ type StoryComponentType = StoryObj<typeof Switch>;
  * ### Usage
  * ```jsx
  *
- *import Switch from "@khanacademy/wonder-blocks-switch";
+ *import Switch from "@osati-ai/wonder-blocks-switch";
  *
  *<Switch checked={false} onChange={() => {}} />
  *```

@@ -1,12 +1,12 @@
 import {StyleSheet} from "aphrodite";
 import * as React from "react";
 
-import {PhosphorIcon} from "@khanacademy/wonder-blocks-icon";
-import Pill from "@khanacademy/wonder-blocks-pill";
-import {font, sizing} from "@khanacademy/wonder-blocks-tokens";
+import {PhosphorIcon} from "@osati-ai/wonder-blocks-icon";
+import Pill from "@osati-ai/wonder-blocks-pill";
+import {font, sizing} from "@osati-ai/wonder-blocks-tokens";
 import xIcon from "@phosphor-icons/core/regular/x.svg";
-import {View} from "@khanacademy/wonder-blocks-core";
-import {focusStyles} from "@khanacademy/wonder-blocks-styles";
+import {View} from "@osati-ai/wonder-blocks-core";
+import {focusStyles} from "@osati-ai/wonder-blocks-styles";
 
 type Props = {
     /**

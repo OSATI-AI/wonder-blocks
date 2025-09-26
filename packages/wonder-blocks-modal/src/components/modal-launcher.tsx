@@ -2,8 +2,8 @@ import * as React from "react";
 import * as ReactDOM from "react-dom";
 import {StyleSheet} from "aphrodite";
 
-import {withActionScheduler} from "@khanacademy/wonder-blocks-timing";
-import type {WithActionSchedulerProps} from "@khanacademy/wonder-blocks-timing";
+import {withActionScheduler} from "@osati-ai/wonder-blocks-timing";
+import type {WithActionSchedulerProps} from "@osati-ai/wonder-blocks-timing";
 
 import FocusTrap from "./focus-trap";
 import ModalBackdrop from "./modal-backdrop";

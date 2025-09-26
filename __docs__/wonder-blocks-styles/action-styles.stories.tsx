@@ -3,12 +3,12 @@ import {Meta, StoryObj} from "@storybook/react";
 import info from "@phosphor-icons/core/regular/info.svg";
 import ComponentInfo from "../components/component-info";
 import packageConfig from "../../packages/wonder-blocks-styles/package.json";
-import IconButton from "@khanacademy/wonder-blocks-icon-button";
-import {actionStyles} from "@khanacademy/wonder-blocks-styles";
-import {addStyle, View} from "@khanacademy/wonder-blocks-core";
-import {semanticColor, spacing} from "@khanacademy/wonder-blocks-tokens";
-import Clickable from "@khanacademy/wonder-blocks-clickable";
-import Button from "@khanacademy/wonder-blocks-button";
+import IconButton from "@osati-ai/wonder-blocks-icon-button";
+import {actionStyles} from "@osati-ai/wonder-blocks-styles";
+import {addStyle, View} from "@osati-ai/wonder-blocks-core";
+import {semanticColor, spacing} from "@osati-ai/wonder-blocks-tokens";
+import Clickable from "@osati-ai/wonder-blocks-clickable";
+import Button from "@osati-ai/wonder-blocks-button";
 
 /**
  * Styles that can be used to create reusable states for interactive elements.
@@ -20,7 +20,7 @@ import Button from "@khanacademy/wonder-blocks-button";
  * ### Usage
  *
  * ```tsx
- * import {actionStyles} from "@khanacademy/wonder-blocks-styles";
+ * import {actionStyles} from "@osati-ai/wonder-blocks-styles";
  *
  * <StyledButton style={actionStyles.inverse}>
  *      Custom button

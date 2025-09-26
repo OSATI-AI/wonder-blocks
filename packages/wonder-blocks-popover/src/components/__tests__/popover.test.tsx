@@ -2,8 +2,8 @@ import * as React from "react";
 import {render, screen, waitFor} from "@testing-library/react";
 import {userEvent, PointerEventsCheckLevel} from "@testing-library/user-event";
 
-import {View} from "@khanacademy/wonder-blocks-core";
-import Button from "@khanacademy/wonder-blocks-button";
+import {View} from "@osati-ai/wonder-blocks-core";
+import Button from "@osati-ai/wonder-blocks-button";
 
 import {fireEvent} from "@storybook/test";
 import Popover from "../popover";
@@ -13,7 +13,7 @@ import {PopoverContentCore} from "../../index";
 describe("Popover", () => {
     it("should set the anchor as the popover ref", async () => {
         // Arrange
-        const ref: React.RefObject<HTMLButtonElement> = React.createRef();
+        const ref: React.RefObject<HTMLButtonElement | null> = React.createRef();
 
         render(
             <Popover

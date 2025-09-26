@@ -1,8 +1,8 @@
 import * as React from "react";
 import {Meta, Story, ColorItem} from "@storybook/blocks";
-import {View} from "@khanacademy/wonder-blocks-core";
-import {PhosphorIcon} from "@khanacademy/wonder-blocks-icon";
-import {color, mix, spacing} from "@khanacademy/wonder-blocks-tokens";
+import {View} from "@osati-ai/wonder-blocks-core";
+import {PhosphorIcon} from "@osati-ai/wonder-blocks-icon";
+import {color, mix, spacing} from "@osati-ai/wonder-blocks-tokens";
 
 import equalsIcon from "@phosphor-icons/core/bold/equals-bold.svg";
 import plusIcon from "@phosphor-icons/core/bold/plus-bold.svg";
@@ -17,7 +17,7 @@ alpha channel of the base color to determine the linear blend.
 ## Usage
 
 ```js
-import {mix} from "@khanacademy/wonder-blocks-tokens";
+import {mix} from "@osati-ai/wonder-blocks-tokens";
 
 mix(color: string, background: string): string;
 ```
@@ -36,7 +36,7 @@ are using an alpha channel of `0.32` for the base color, and a solid color for
 the background. The result is a color that is a linear blend of the two colors.
 
 ```typescript
-import {color, mix} from "@khanacademy/wonder-blocks-tokens";
+import {color, mix} from "@osati-ai/wonder-blocks-tokens";
 
 const mixedColor = mix(color.offBlack32, color.white);
 const mixedColor2 = mix(color.white32, color.blue);

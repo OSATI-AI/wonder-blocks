@@ -2,14 +2,14 @@ import * as React from "react";
 import {StyleSheet} from "aphrodite";
 import externalLinkIcon from "@phosphor-icons/core/bold/arrow-square-out-bold.svg";
 
-import Clickable from "@khanacademy/wonder-blocks-clickable";
-import {View} from "@khanacademy/wonder-blocks-core";
-import {PhosphorIcon} from "@khanacademy/wonder-blocks-icon";
-import * as tokens from "@khanacademy/wonder-blocks-tokens";
-import {Body, HeadingSmall} from "@khanacademy/wonder-blocks-typography";
-import {DetailCell} from "@khanacademy/wonder-blocks-cell";
+import Clickable from "@osati-ai/wonder-blocks-clickable";
+import {View} from "@osati-ai/wonder-blocks-core";
+import {PhosphorIcon} from "@osati-ai/wonder-blocks-icon";
+import * as tokens from "@osati-ai/wonder-blocks-tokens";
+import {Body, HeadingSmall} from "@osati-ai/wonder-blocks-typography";
+import {DetailCell} from "@osati-ai/wonder-blocks-cell";
 import {CommonTileProps} from "./types";
-import {Spring} from "@khanacademy/wonder-blocks-layout";
+import {Spring} from "@osati-ai/wonder-blocks-layout";
 
 type Props = CommonTileProps & {
     children: React.ReactNode;

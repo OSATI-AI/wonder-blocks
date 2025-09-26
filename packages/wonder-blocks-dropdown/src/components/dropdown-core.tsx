@@ -7,15 +7,15 @@ import * as ReactDOM from "react-dom";
 import {StyleSheet} from "aphrodite";
 import {VariableSizeList as List} from "react-window";
 
-import {semanticColor, border, sizing} from "@khanacademy/wonder-blocks-tokens";
+import {semanticColor, border, sizing} from "@osati-ai/wonder-blocks-tokens";
 
-import {PropsFor, View, keys} from "@khanacademy/wonder-blocks-core";
-import SearchField from "@khanacademy/wonder-blocks-search-field";
-import {BodyText} from "@khanacademy/wonder-blocks-typography";
-import {withActionScheduler} from "@khanacademy/wonder-blocks-timing";
+import {PropsFor, View, keys} from "@osati-ai/wonder-blocks-core";
+import SearchField from "@osati-ai/wonder-blocks-search-field";
+import {BodyText} from "@osati-ai/wonder-blocks-typography";
+import {withActionScheduler} from "@osati-ai/wonder-blocks-timing";
 
-import type {AriaProps, StyleType} from "@khanacademy/wonder-blocks-core";
-import type {WithActionSchedulerProps} from "@khanacademy/wonder-blocks-timing";
+import type {AriaProps, StyleType} from "@osati-ai/wonder-blocks-core";
+import type {WithActionSchedulerProps} from "@osati-ai/wonder-blocks-timing";
 import DropdownCoreVirtualized from "./dropdown-core-virtualized";
 import SeparatorItem from "./separator-item";
 import {defaultLabels} from "../util/constants";
@@ -126,7 +126,7 @@ type ExportProps = Readonly<{
     /**
      * Ref to the opener element.
      */
-    openerElement?: HTMLElement;
+    openerElement?: HTMLElement | null;
     /**
      * The aria "role" applied to the dropdown container.
      */
@@ -349,7 +349,7 @@ class DropdownCore extends React.Component<Props, State> {
             },
         };
 
-        this.virtualizedListRef = React.createRef();
+        this.virtualizedListRef = React.createRef() as React.RefObject<List>;
 
         // We debounce the keydown handler to get the ASCII chars because it's
         // called on every keydown
@@ -731,6 +731,7 @@ class DropdownCore extends React.Component<Props, State> {
                     return false;
                 }
 
+                // @ts-expect-error [FEI-5019] - TS2339 - Property 'isClassOf' does not exist on type 'string | JSXElementConstructor<any>'.
                 if (OptionItem.isClassOf(component)) {
                     const optionItemProps = component.props as PropsFor<
                         typeof OptionItem

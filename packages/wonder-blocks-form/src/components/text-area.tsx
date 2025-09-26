@@ -6,11 +6,11 @@ import {
     StyleType,
     addStyle,
     View,
-} from "@khanacademy/wonder-blocks-core";
-import {border, semanticColor} from "@khanacademy/wonder-blocks-tokens";
-import {styles as typographyStyles} from "@khanacademy/wonder-blocks-typography";
+} from "@osati-ai/wonder-blocks-core";
+import {border, semanticColor} from "@osati-ai/wonder-blocks-tokens";
+import {styles as typographyStyles} from "@osati-ai/wonder-blocks-typography";
 import {useId} from "react";
-import {focusStyles} from "@khanacademy/wonder-blocks-styles";
+import {focusStyles} from "@osati-ai/wonder-blocks-styles";
 import {useFieldValidation} from "../hooks/use-field-validation";
 import theme from "../theme";
 

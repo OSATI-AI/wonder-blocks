@@ -1,8 +1,8 @@
 import * as React from "react";
 import {Link, useInRouterContext} from "react-router-dom-v5-compat";
 
-import {addStyle, keys} from "@khanacademy/wonder-blocks-core";
-import {isClientSideUrl} from "@khanacademy/wonder-blocks-clickable";
+import {addStyle, keys} from "@osati-ai/wonder-blocks-core";
+import {isClientSideUrl} from "@osati-ai/wonder-blocks-clickable";
 import {StyleSheet} from "aphrodite";
 import type {IconButtonProps, IconButtonRef} from "../util/icon-button.types";
 

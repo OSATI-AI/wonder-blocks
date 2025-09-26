@@ -1,10 +1,10 @@
 import * as React from "react";
 
 import {Meta} from "@storybook/react";
-import {View, Id} from "@khanacademy/wonder-blocks-core";
-import {Body, BodyMonospace} from "@khanacademy/wonder-blocks-typography";
-import {Strut} from "@khanacademy/wonder-blocks-layout";
-import {spacing} from "@khanacademy/wonder-blocks-tokens";
+import {View, Id} from "@osati-ai/wonder-blocks-core";
+import {Body, BodyMonospace} from "@osati-ai/wonder-blocks-typography";
+import {Strut} from "@osati-ai/wonder-blocks-layout";
+import {spacing} from "@osati-ai/wonder-blocks-tokens";
 
 export default {
     title: "Packages / Core / Id",

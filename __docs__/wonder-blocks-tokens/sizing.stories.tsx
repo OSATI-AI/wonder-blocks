@@ -1,11 +1,11 @@
 import * as React from "react";
 import {Title, Subtitle, Description, Stories} from "@storybook/blocks";
 import {Meta} from "@storybook/react";
-import {View} from "@khanacademy/wonder-blocks-core";
+import {View} from "@osati-ai/wonder-blocks-core";
 import TokenTable from "../components/token-table";
 import ComponentInfo from "../components/component-info";
 import packageConfig from "../../packages/wonder-blocks-tokens/package.json";
-import * as tokens from "@khanacademy/wonder-blocks-tokens";
+import * as tokens from "@osati-ai/wonder-blocks-tokens";
 import {Code} from "../components/code";
 
 /**
@@ -24,7 +24,7 @@ import {Code} from "../components/code";
  * `sizing.size_160`.
  *
  * ```js
- * import {sizing} from "@khanacademy/wonder-blocks-tokens";
+ * import {sizing} from "@osati-ai/wonder-blocks-tokens";
  * const styles = {padding: sizing.size_160};
  * ```
  */

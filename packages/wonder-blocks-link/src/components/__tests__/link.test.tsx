@@ -4,7 +4,7 @@ import {CompatRouter, Route, Routes} from "react-router-dom-v5-compat";
 import {fireEvent, render, screen, waitFor} from "@testing-library/react";
 import {userEvent} from "@testing-library/user-event";
 
-import {PhosphorIcon} from "@khanacademy/wonder-blocks-icon";
+import {PhosphorIcon} from "@osati-ai/wonder-blocks-icon";
 import plusIcon from "@phosphor-icons/core/bold/plus-bold.svg";
 
 import Link from "../link";

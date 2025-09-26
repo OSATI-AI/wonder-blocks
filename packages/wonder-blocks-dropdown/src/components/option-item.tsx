@@ -1,13 +1,13 @@
 import * as React from "react";
 import {StyleSheet} from "aphrodite";
 
-import {DetailCell} from "@khanacademy/wonder-blocks-cell";
-import {semanticColor, border, sizing} from "@khanacademy/wonder-blocks-tokens";
-import {BodyText} from "@khanacademy/wonder-blocks-typography";
+import {DetailCell} from "@osati-ai/wonder-blocks-cell";
+import {semanticColor, border, sizing} from "@osati-ai/wonder-blocks-tokens";
+import {BodyText} from "@osati-ai/wonder-blocks-typography";
 
-import {AriaProps, StyleType, View} from "@khanacademy/wonder-blocks-core";
+import {AriaProps, StyleType, View} from "@osati-ai/wonder-blocks-core";
 
-import {focusStyles} from "@khanacademy/wonder-blocks-styles";
+import {focusStyles} from "@osati-ai/wonder-blocks-styles";
 import Check from "./check";
 import Checkbox from "./checkbox";
 import {CellProps, OptionLabel} from "../util/types";
@@ -183,10 +183,10 @@ class OptionItemInternal extends React.Component<OptionPropsInternal> {
             hasOnToggle: !!onToggle,
             hasOnClick: !!onClick
         });
-        
+
         console.log("[OptionItem] Calling onToggle with value:", value);
         onToggle(value);
-        
+
         if (onClick) {
             console.log("[OptionItem] Calling custom onClick");
             onClick();
@@ -301,8 +301,8 @@ const OptionItem = React.forwardRef<HTMLDivElement, OptionItemProps>((props, ref
 });
 
 // Preserve static properties and methods
-OptionItem.isClassOf = OptionItemInternal.isClassOf;
-OptionItem.__IS_OPTION_ITEM__ = true;
+// OptionItem.isClassOf = OptionItemInternal.isClassOf;
+// OptionItem.__IS_OPTION_ITEM__ = true;
 (OptionItem as any).defaultProps = OptionItemInternal.defaultProps;
 
 export default OptionItem;

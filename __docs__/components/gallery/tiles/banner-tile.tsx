@@ -1,6 +1,6 @@
 import * as React from "react";
 
-import Banner from "@khanacademy/wonder-blocks-banner";
+import Banner from "@osati-ai/wonder-blocks-banner";
 
 import ComponentTile from "../component-tile";
 import {CommonTileProps} from "../types";

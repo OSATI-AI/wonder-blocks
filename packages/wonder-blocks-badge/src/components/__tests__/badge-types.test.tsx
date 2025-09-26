@@ -1,7 +1,7 @@
 import * as React from "react";
 import {render, screen} from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
-import Tooltip from "@khanacademy/wonder-blocks-tooltip";
+import Tooltip from "@osati-ai/wonder-blocks-tooltip";
 import {StatusBadge} from "../status-badge";
 import {GemBadge} from "../gem-badge";
 import {StreakBadge} from "../streak-badge";

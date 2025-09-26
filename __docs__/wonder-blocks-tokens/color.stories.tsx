@@ -1,9 +1,9 @@
 import * as React from "react";
 import {Title, Subtitle, Description, Stories} from "@storybook/blocks";
 import {Meta} from "@storybook/react";
-import {View} from "@khanacademy/wonder-blocks-core";
+import {View} from "@osati-ai/wonder-blocks-core";
 import TokenTable from "../components/token-table";
-import {semanticColor, sizing, color} from "@khanacademy/wonder-blocks-tokens";
+import {semanticColor, sizing, color} from "@osati-ai/wonder-blocks-tokens";
 import ComponentInfo from "../components/component-info";
 import packageConfig from "../../packages/wonder-blocks-tokens/package.json";
 import {Code} from "../components/code";
@@ -21,7 +21,7 @@ import {Code} from "../components/code";
  * components. The colors are exported as constants and can be used like so:
  *
  * ```ts
- * import {color} from "@khanacademy/wonder-blocks-tokens";
+ * import {color} from "@osati-ai/wonder-blocks-tokens";
  * const styles = {background: color.darkBlue};
  * ```
  */

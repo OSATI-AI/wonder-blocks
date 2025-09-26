@@ -1,5 +1,5 @@
 import * as React from "react";
-import {PropsFor, Text} from "@khanacademy/wonder-blocks-core";
+import {PropsFor, Text} from "@osati-ai/wonder-blocks-core";
 
 import styles from "../util/styles";
 

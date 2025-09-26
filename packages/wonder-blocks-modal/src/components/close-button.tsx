@@ -1,7 +1,7 @@
 import * as React from "react";
 import xIcon from "@phosphor-icons/core/bold/x-bold.svg";
-import IconButton from "@khanacademy/wonder-blocks-icon-button";
-import type {StyleType} from "@khanacademy/wonder-blocks-core";
+import IconButton from "@osati-ai/wonder-blocks-icon-button";
+import type {StyleType} from "@osati-ai/wonder-blocks-core";
 
 import ModalContext from "./modal-context";
 

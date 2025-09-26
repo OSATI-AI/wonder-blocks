@@ -6,7 +6,7 @@ import {MemoryRouter} from "react-router-dom";
 import {CompatRouter, Route, Routes} from "react-router-dom-v5-compat";
 import magnifyingGlassIcon from "@phosphor-icons/core/regular/magnifying-glass.svg";
 
-import {PhosphorIcon} from "@khanacademy/wonder-blocks-icon";
+import {PhosphorIcon} from "@osati-ai/wonder-blocks-icon";
 import {IconButtonUnstyled} from "../icon-button-unstyled";
 
 describe("IconButtonUnstyled", () => {

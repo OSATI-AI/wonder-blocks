@@ -1,5 +1,5 @@
 import {Meta} from "@storybook/blocks";
-import {InterceptRequests} from "@khanacademy/wonder-blocks-data";
+import {InterceptRequests} from "@osati-ai/wonder-blocks-data";
 
 <Meta
     title="Packages / Data / Exports / InterceptRequests"
@@ -34,10 +34,10 @@ means that a request will be made for data via the handler assigned to the
 `Data` component being intercepted if no interceptor handles the request first.
 
 ```jsx
-import {Body, BodyMonospace} from "@khanacademy/wonder-blocks-typography";
-import {View} from "@khanacademy/wonder-blocks-core";
-import {InterceptRequests, Data} from "@khanacademy/wonder-blocks-data";
-import {Strut} from "@khanacademy/wonder-blocks-layout";
+import {Body, BodyMonospace} from "@osati-ai/wonder-blocks-typography";
+import {View} from "@osati-ai/wonder-blocks-core";
+import {InterceptRequests, Data} from "@osati-ai/wonder-blocks-data";
+import {Strut} from "@osati-ai/wonder-blocks-layout";
 
 const myHandler = () => Promise.reject(new Error("You should not see this!"));
 

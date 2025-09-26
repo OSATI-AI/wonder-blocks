@@ -4,14 +4,14 @@
 import * as React from "react";
 import {StyleSheet} from "aphrodite";
 
-import {View} from "@khanacademy/wonder-blocks-core";
-import {color, semanticColor, spacing} from "@khanacademy/wonder-blocks-tokens";
+import {View} from "@osati-ai/wonder-blocks-core";
+import {color, semanticColor, spacing} from "@osati-ai/wonder-blocks-tokens";
 import {
     HeadingSmall,
     LabelLarge,
     LabelSmall,
-} from "@khanacademy/wonder-blocks-typography";
-import type {AriaProps} from "@khanacademy/wonder-blocks-core";
+} from "@osati-ai/wonder-blocks-typography";
+import type {AriaProps} from "@osati-ai/wonder-blocks-core";
 
 type Props = AriaProps & {
     /**
@@ -58,7 +58,7 @@ type Props = AriaProps & {
  * ### Usage
  *
  * ```jsx
- * import Toolbar from "@khanacademy/wonder-blocks-toolbar";
+ * import Toolbar from "@osati-ai/wonder-blocks-toolbar";
  *
  * <Toolbar
  *   size="small"

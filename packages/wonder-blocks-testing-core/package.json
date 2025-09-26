@@ -1,5 +1,5 @@
 {
-  "name": "@khanacademy/wonder-blocks-testing-core",
+  "name": "@osati-ai/wonder-blocks-testing-core",
   "version": "3.0.1",
   "design": "v1",
   "publishConfig": {
@@ -25,7 +25,7 @@
     "react-router-dom-v5-compat": "catalog:"
   },
   "devDependencies": {
-    "@khanacademy/wb-dev-build-settings": "workspace:*",
+    "@osati-ai/wb-dev-build-settings": "workspace:*",
     "@khanacademy/wonder-stuff-testing": "catalog:"
   },
   "author": "",

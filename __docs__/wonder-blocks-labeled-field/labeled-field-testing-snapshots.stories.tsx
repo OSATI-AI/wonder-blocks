@@ -1,14 +1,14 @@
 import * as React from "react";
 import {Meta} from "@storybook/react";
 import {StyleSheet} from "aphrodite";
-import {LabeledField} from "@khanacademy/wonder-blocks-labeled-field";
+import {LabeledField} from "@osati-ai/wonder-blocks-labeled-field";
 import packageConfig from "../../packages/wonder-blocks-labeled-field/package.json";
 import ComponentInfo from "../components/component-info";
 import {themeModes} from "../../.storybook/modes";
-import {PropsFor, View} from "@khanacademy/wonder-blocks-core";
+import {PropsFor, View} from "@osati-ai/wonder-blocks-core";
 import {ScenariosLayout} from "../components/scenarios-layout";
-import {border, semanticColor} from "@khanacademy/wonder-blocks-tokens";
-import {TextField} from "@khanacademy/wonder-blocks-form";
+import {border, semanticColor} from "@osati-ai/wonder-blocks-tokens";
+import {TextField} from "@osati-ai/wonder-blocks-form";
 import {
     longText,
     longTextWithNoWordBreak,

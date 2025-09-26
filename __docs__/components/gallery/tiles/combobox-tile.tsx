@@ -1,10 +1,10 @@
 import * as React from "react";
-import {View} from "@khanacademy/wonder-blocks-core";
+import {View} from "@osati-ai/wonder-blocks-core";
 
 import ComponentTile from "../component-tile";
-import {Combobox, OptionItem} from "@khanacademy/wonder-blocks-dropdown";
+import {Combobox, OptionItem} from "@osati-ai/wonder-blocks-dropdown";
 import {CommonTileProps} from "../types";
-import Pill from "@khanacademy/wonder-blocks-pill";
+import Pill from "@osati-ai/wonder-blocks-pill";
 
 type MaybeString = string | null | undefined;
 type MaybeValueOrValues = MaybeString | Array<MaybeString>;

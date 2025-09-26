@@ -2,19 +2,19 @@ import * as React from "react";
 import wonderBlocksTheme from "./wonder-blocks-theme";
 import {Decorator} from "@storybook/react";
 import {DocsContainer} from "@storybook/blocks";
-import {RenderStateRoot} from "@khanacademy/wonder-blocks-core";
-import {semanticColor} from "@khanacademy/wonder-blocks-tokens";
-import {initAnnouncer} from "@khanacademy/wonder-blocks-announcer";
-import Link from "@khanacademy/wonder-blocks-link";
+import {RenderStateRoot} from "@osati-ai/wonder-blocks-core";
+import {semanticColor} from "@osati-ai/wonder-blocks-tokens";
+import {initAnnouncer} from "@osati-ai/wonder-blocks-announcer";
+import Link from "@osati-ai/wonder-blocks-link";
 import {
     ThemeSwitcherContext,
     ThemeSwitcher,
     THEME_DATA_ATTRIBUTE,
-} from "@khanacademy/wonder-blocks-theming";
+} from "@osati-ai/wonder-blocks-theming";
 import {Preview} from "@storybook/react";
 
 // Import the Wonder Blocks CSS variables
-import "@khanacademy/wonder-blocks-tokens/styles.css";
+import "@osati-ai/wonder-blocks-tokens/styles.css";
 
 /**
  * WB Official breakpoints
